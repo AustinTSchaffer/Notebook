@@ -16,7 +16,8 @@ Running Docker on Windows requires a totally different version for Docker than
 what is installed on virtually every other platform. Also, (currently, mid 
 2018), Docker for Windows only works on Windows 10 Pro and Windows 10 
 Enterprise. Also, it has compatibility issues with VirtulBox and VMWare, since
-Docker for Windows uses HyperV.
+Docker for Windows uses HyperV. Along with Docker for Mac, d4Win has to set
+up a Linux server in the background for running Docker.
 
 Alternatively, the Docker Toolbox is an option that will allow you to run
 Docker on older versions of Windows, and the Home version of Windows 10. This
