@@ -3,7 +3,7 @@ Client:
  API version:       1.38
  Go version:        go1.10.3
  Git commit:        e68fc7a
- Built:             Tue Aug 21 17:24:58 2018
+ Built:             Tue Aug 21 17:24:51 2018
  OS/Arch:           linux/amd64
  Experimental:      false
 
@@ -13,6 +13,6 @@ Server:
   API version:      1.38 (minimum version 1.12)
   Go version:       go1.10.3
   Git commit:       e68fc7a
-  Built:            Tue Aug 21 17:23:24 2018
+  Built:            Tue Aug 21 17:23:15 2018
   OS/Arch:          linux/amd64
   Experimental:     false
