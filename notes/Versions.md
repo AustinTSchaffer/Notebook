@@ -41,3 +41,6 @@ the previous and new versions, once the new version comes out.
 
 EE is supported for way longer.
 
+## Versioning
+
+Docker versions are currently formatted `YY.MM`.
