@@ -60,6 +60,10 @@ require users to type sudo for every single actionable Docker command.
 ## Docker Compose and Docker Machine
 
 Docker Compose and Docker Machine are 2 other good components to have.
-Unfortunately, Docker machine appears to be in maintenance mode.
-Docker Compose is great for getting started with muli-container environments.
+Unfortunately, Docker machine appears to be in maintenance mode, but it may
+still help with some Docker woes.
+Docker Compose is great for getting started with multi-container environments.
+
+For both of these, please check the current documentation on how to install
+these supplemental applications.
 
