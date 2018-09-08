@@ -90,3 +90,35 @@ docker container rm -f nginx_1 nginx_2 nginx_3 nginx_4
    the override command specified in the Docker run command.
 
 
+## What's Going In My Containers?
+
+```bash
+# Process list of one container
+docker container top
+
+# details of one container configuration, how it was started, its virtual network information
+# all in JSON format.
+docker container inspect
+
+# Live performance stats for all containers.
+docker container stats
+```
+
+**Example:**
+
+```bash
+docker container run -d --name db --env MYSQL_RANDOM_ROOT_PASSWORD=yes mysql
+docker container run -d --name nginx nginx
+docker container stats
+```
+
+**Output Snapshot:**
+
+    CONTAINER ID        NAME                CPU %               MEM USAGE / LIMIT     MEM %               NET I/O             BLOCK I/O           PIDS
+    49ca2eb97205        db                  0.44%               375.6MiB / 11.65GiB   3.15%               4.26kB / 0B         16.4kB / 814MB      36
+    a2e0f7f39251        nginx               0.00%               2.426MiB / 11.65GiB   0.02%               4.49kB / 0B         0B / 0B             2
+
+
+
+
+
