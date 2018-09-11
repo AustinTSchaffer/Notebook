@@ -191,3 +191,15 @@ Results:
     lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
         inet 127.0.0.1  netmask 255.0.0.0
         ...
+
+
+## Docker Networking and Security
+
+- Create apps so that the frontend and backend sit on the same Docker network.
+- As a result, the communication between apps never leaves the host machine. All
+  network traffic is local.
+- All externally exposed ports are closed by default
+- In order to expose a port to the rest of the web, you have to manually expose
+  the port using the `-p` option.
+
+When we get to swarm, you get to learn about multihost networking.
