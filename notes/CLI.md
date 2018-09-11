@@ -70,3 +70,20 @@ docker container logs
 docker container top
 ```
 
+
+## Docker Networks
+
+```bash
+# Show all networks
+docker network ls
+
+# Inspect a specific network
+docker network inspect
+
+# Create a new Docker network (virtual network)
+docker network create --driver
+
+# Adding/Removing containers from networks
+docker network connect
+docker network remove
+```
