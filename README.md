@@ -4,7 +4,7 @@ Resources and Demos that were used or created while working on a Docker Certific
 
 ## Help
 
-If you are havin touble running any of these demos, make sure you have root
+If you are having touble running any of these demos, make sure you have root
 permissions. You may also want to check the output of your docker version
 against the version that I was using.
 
