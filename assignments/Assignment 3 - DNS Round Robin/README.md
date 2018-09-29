@@ -71,12 +71,20 @@ nslookup search
 # Address: 172.19.0.4
 
 curl search:9200 # { name: "Mop Man", ... }
-curl search:9200 # { name: "Bishop", ... }
-curl search:9200 # { name: "Mop Man", ... }
 curl search:9200 # { name: "Mop Man", ... }
 curl search:9200 # { name: "Mister One", ... }
+curl search:9200 # { name: "Bishop", ... }
+curl search:9200 # { name: "Mop Man", ... }
 # etc
 exit
 
 docker container rm -f es1 es2 es3 alpine
 ```
+
+## Notes
+
+Please note that DNS-round-robin is not an acceptable stand-in for a genuine
+load balancer.
+
+If you keep retrying the connection to the search service, you'll notice that
+the machine that is chosen is a bit random every time.
