@@ -60,8 +60,51 @@ docker container run -d \
     -e MYSQL_ALLOW_EMPTY_PASSWORD=True \
     --name mysql mysql
 
-docker container inspect mysql # Look for the Name property of Mounts
-docker volume inspect $THE_VOLUME_NAME_OR_ID # Use the Name property from the above
-docker container rm -f mysql # Destroy the container, just like you would in production
-docker volume inspect $THE_VOLUME_NAME_OR_ID # Still works
+# Look for the Name property of .Mounts
+docker container inspect mysql 
+
+# Use the Name property from the above
+docker volume inspect $THE_VOLUME_NAME_OR_ID
+
+# Destroy the container, just like you would in production 😉
+docker container rm -f mysql
+
+# Still works
+docker volume inspect $THE_VOLUME_NAME_OR_ID 
+
+# Creates a new volume for the /var/lib/mysql directory of the container
+docker container run -d \
+    -e MYSQL_ALLOW_EMPTY_PASSWORD=True \
+    -v /var/lib/mysql \
+    --name mysql mysql
+docker container rm -f mysql
+
+# Creates a "Named Volume", a volume named "mysql-db". More user friendly. 
+docker container run -d \
+    -e MYSQL_ALLOW_EMPTY_PASSWORD=True \
+    -v mysql-db:/var/lib/mysql
+    --name mysql mysql
+docker container rm -f mysql
+
+# Uses the Named Volume from before.
+docker container run -d \
+    -e MYSQL_ALLOW_EMPTY_PASSWORD=True \
+    -v mysql-db:/var/lib/mysql
+    --name mysql mysql
+# docker container rm -f mysql
+docker container stop mysql
+
+# Mounts the volumes that the "mysql" container is using.
+docker container run -d \
+    -e MYSQL_ALLOW_EMPTY_PASSWORD=True \
+    --volumes-from mysql
+    --name mysql2 mysql
+
+docker container rm -f mysql mysql2
+
+# Look at the mess we made.
+docker volume ls
+
+# Ok clean it up
+docker volume prune
 ```
