@@ -43,12 +43,12 @@ RUN apk add --update tini
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-COPY node-app/package.json .
+COPY package.json .
 
 RUN npm install \
     && npm cache clean --force
 
-COPY node-app/* ./
+COPY . .
 
 EXPOSE 80 3000
 
