@@ -40,16 +40,17 @@ FROM node:6-alpine
 
 RUN apk add --update tini
 
-RUN mkdir /usr/src/app
+RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
-COPY node-app/package.json ./package.json
+COPY node-app/package.json .
 
 RUN npm install \
     && npm cache clean --force
 
 COPY node-app/* ./
 
-EXPOSE 80
+EXPOSE 80 3000
 
 CMD [ "/sbin/tini", "--", "node", "./bin/www" ]
+
