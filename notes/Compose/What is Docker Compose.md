@@ -73,3 +73,28 @@ services to that network. That's why you don't see any port mappings for the
 `db` service. The wordpress app can connect to the container(s) that is/are
 configured by the `db` service, using `mysql://db:3306`. This helps harden your
 server. No visible attack surface for the `db` containers.
+
+You can also add a `depends_on` list to the wordpress service. If you run a
+service that has a `depends_on` list, then compose will build a dependency tree
+from all of the services in your compose file, and will start up all of the
+services required by that service, along with all of the services required by
+those services, etc.
+
+```yml
+services:
+  wordpress:
+    image: wordpress
+    ports:
+      - 8080:80
+    environment:
+      WORDPRESS_DB_PASSWORD: example
+      TEST_ENV_VAR: this_wont_be_used
+    volumes:
+      - ./wordpress-site:/var/www/html
+    depends_on:
+      - db
+```
+
+## What All is Available?
+
+http://docs.docker.com
