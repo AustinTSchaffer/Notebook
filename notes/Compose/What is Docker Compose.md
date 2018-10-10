@@ -5,6 +5,14 @@
 - Specify images, containers, volumes, networks, environment variables, most
   other container run options are supported.
 
+Not a production-grade tool, but helps automate local testing and development.
+
+2 Common commands:
+
+`docker-compose up`
+
+`docker-compose down`
+
 ## docker-compose.yml
 
 YAML is a really easy and forgiving markup language, so don't worry about that
