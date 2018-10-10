@@ -12,7 +12,24 @@ being a barrier to entry. The file can be used on the command line for local
 Docker automation and testing. Also, Docker itself can use compose files
 directly, thanks to Swarm (Docker version 1.13).
 
-`docker-compose.yml` is the default file name for this file, but any file name, as long as it points to a valid YML file can 
+`docker-compose.yml` is the default file name for this file, but any file name, as long as it points to a valid YML file. Below is an example of how the files is structured.
+
+```yml
+version: '3.1'
+
+services:
+  service1:
+    image:
+    command:
+    environment:
+    volumes:
+  service2:
+
+volumes:
+
+networks:
+
+```
 
 ### Version
 
