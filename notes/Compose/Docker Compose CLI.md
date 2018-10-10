@@ -16,3 +16,10 @@ configurations for docker-compose.
 `docker-compose logs` prints the logs for the containers.
 
 `docker-compose top` Same as `docker container top`, except for all services.
+
+## Default Behavior
+
+- the compose CLI checks to see if there is a docker-compose.yml file in the pwd, if there was no file specified.
+- Containers, networks, built images, etc are all named with the name of the
+  parent directory, as a namespacing consideration, to help prevent name
+  conflicts. This can be overridden with the `-p` (project) option.
