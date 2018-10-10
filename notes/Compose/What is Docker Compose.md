@@ -12,7 +12,9 @@ being a barrier to entry. The file can be used on the command line for local
 Docker automation and testing. Also, Docker itself can use compose files
 directly, thanks to Swarm (Docker version 1.13).
 
-`docker-compose.yml` is the default file name for this file, but any file name, as long as it points to a valid YML file. Below is an example of how the files is structured.
+`docker-compose.yml` is the default file name for this file, but any file name,
+as long as it points to a valid YML file. Below is an example of how the files
+is structured.
 
 ```yml
 version: '3.1'
@@ -37,6 +39,20 @@ Docker compose files have a version, usually the first option in the file. If
 you do not specify a version, version 1 is assumed, so ALWAYS specify the
 version number. Use 2 at a minimum, but it's recommended to start trying out
 features from version 3.
+
+### Environment
+
+There 2 ways to specify environment variables for your containers:
+
+```yml
+environment:
+  SOME_VAR: 'Some Value'
+  SOME_VAR_2: 'Some Other Value'
+
+environment:
+  - 'SOME_VAR=Some Value'
+  - 'SOME_VAR_2=Some Other Value'
+```
 
 ### Services
 
