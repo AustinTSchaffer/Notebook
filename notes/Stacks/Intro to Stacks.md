@@ -22,3 +22,6 @@ ignores this key, but lets you know that you're doing it wrong.
 `docker-compose` cli is not needed on Swarm server. It's just the file syntax
 that is the same. `docker-compose` is not meant for production anyway. It's a
 local automation tool, for dev purposes only. Feels more like a toy every day.
+
+Check out the diagram in this same folder. It's missing "secrets", but that will
+be covered later.
