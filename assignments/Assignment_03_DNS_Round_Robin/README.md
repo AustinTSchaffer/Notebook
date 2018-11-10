@@ -1,4 +1,7 @@
-# Containers and DNS. Testing Links Between Containers
+# Assignment 3 - Containers and DNS
+
+This assignment is to test linking between containers within a Docker virtual
+network.
 
 ## Prerequisites
 

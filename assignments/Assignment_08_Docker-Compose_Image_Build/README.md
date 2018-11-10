@@ -1,4 +1,4 @@
-# Assignment 7 - Building a Docker-Compose File
+# Assignment 8 - Building a Docker-Compose File
 
 - build a basic compose file for a Drupal CMS website.
 - Use the `drupal` image along with a `postgres` image

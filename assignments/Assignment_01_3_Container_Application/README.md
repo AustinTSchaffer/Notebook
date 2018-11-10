@@ -1,4 +1,4 @@
-# 3 Container Application
+# Assignment 1 - 3 Container Application
 
 - Run `nginx`, `mysql`, `httpd` (apache) servers
 - Detach all of them and give them all a name.

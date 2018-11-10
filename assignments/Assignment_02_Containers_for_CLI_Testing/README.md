@@ -1,4 +1,4 @@
-# Assignment: CLI App Testing
+# Assignment 2 - CLI App Testing
 
 ## Objectives
 

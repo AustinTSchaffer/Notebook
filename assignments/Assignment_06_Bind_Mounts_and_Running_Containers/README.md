@@ -1,4 +1,4 @@
-# Jekyll Static Site Generator
+# Assignment 6 - Jekyll Static Site Generator
 
 - Use Jekyll "Static Site Generator" to start a local web server
 - Bridge gap between local file access and apps running in containers
