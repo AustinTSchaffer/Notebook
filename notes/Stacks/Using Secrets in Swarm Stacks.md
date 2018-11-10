@@ -45,3 +45,14 @@ of that secret data.
 
 - text files (delete them)
 - bash history (truncate)
+
+## Docker Compose
+
+It's possible to use file-based secrets in Docker Compose. This allows you to
+test your stacks locally, but you don't get any of the benefits of the stack
+secrets. For one, you can't use external secrets, because there is no Raft DB to
+store the secrets, so the secrets have to be written as local files. Also, the
+secrets are not encrypted on disk, because compose just creates a bind mount
+from the local file into `/run/secrets/`.
+
+DOCKER COMPOSE IS ONLY FOR DEVELOPMENT PURPOSES.
