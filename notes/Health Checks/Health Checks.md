@@ -1,4 +1,4 @@
-# Health Checks in Dockerfiles
+# Health Checks
 
 The `HEALTHCHECK` stanza was added in Docker 1.12. It is supported in
 Dockerfiles, Compose YAML, docker run, and Swarm Services.
