@@ -1,4 +1,4 @@
-# Introduction.md
+# Introduction
 
 This examination is based upon the most critical job activities a Docker
 Certified Associate performs. The skills and knowledge certified by this
