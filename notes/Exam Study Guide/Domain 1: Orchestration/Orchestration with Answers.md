@@ -93,6 +93,8 @@ The output of this command will be formatted as JSON.
 
 ## Convert an application deployment into a stack file using a YAML compose file with "docker stack deploy"
 
+Please see the notes section on Stacks for the usage of YAML files.
+
 ## Manipulate a running stack of services
 
 If you used `docker stack deploy` to specify your stack of services, you can
