@@ -127,9 +127,9 @@ docker service rm someservice
 
 **Networks**
 
-You can add networks to swarm services, if and only if the networks are using
-some form of an "overlay" network, which specifies that the network works across
-all of the nodes in a swarm.
+You can add networks to swarm services, if the networks are using some form of
+an "overlay" network, which specifies that the network works across all of the
+nodes in a swarm. Networks must exist prior to being added to the service.
 
 On creation:
 
@@ -160,17 +160,21 @@ docker service update \
 
 **Ports**
 
-On creation:
+On creation, you can use either `-p` or `--publish`, both work the same. There
+is also a long and short version of the command.
 
 ```bash
 docker service create \
-    -publish 8081:8081 \
+    -p 8081:8081 \
     -p published=8080,target=80 \
     --name myservice \
     nginx
 ```
 
-On update:
+On update, you can either add or remove ports. Adding ports has the same
+configuration options as `docker service create`. Removing ports works by
+specifying one or many **target** ports (the port that the program thinks it is
+talking to).
 
 ```bash
 docker service update \
