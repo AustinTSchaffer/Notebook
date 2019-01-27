@@ -125,9 +125,121 @@ docker service rm someservice
 
 ## Add networks, publish ports
 
+**Networks**
+
+You can add networks to swarm services, if and only if the networks are using
+some form of an "overlay" network, which specifies that the network works across
+all of the nodes in a swarm.
+
+On creation:
+
+```bash
+docker network create --driver overlay mynet
+
+docker service create \
+    --network mynet \
+    --name myservice \
+    nginx
+```
+
+
+On update:
+
+```bash
+docker service update --help | grep net
+# --network-add network                Add a network
+# --network-rm list                    Remove a network
+
+docker network create --driver overlay newnet
+
+docker service update \
+    --network-add newnet \
+    --network-rm mynet \
+    myservice
+```
+
+**Ports**
+
+On creation:
+
+```bash
+docker service create \
+    -publish 8081:8081 \
+    -p published=8080,target=80 \
+    --name myservice \
+    nginx
+```
+
+On update:
+
+```bash
+docker service update \
+    --publish-add 8082:8080 \
+    --publish-rm 8081 80 \
+    myservice
+```
+
 ## Mount volumes
 
+When specifying volume options for services, you need to make sure that you are using the term "mount", instead of the term "volume". The relevant options are:
+
+- `docker service create`
+  - `--mount`
+- `docker service update`
+  - `--mount-add`
+  - `--mount-rm`
+
+If you are setting up a `bind` type mount on either creation or update, the
+directory must exist on all docker hosts that might accept a container from the
+service. If you are setting up a `volume` type mount, the new volumes will bes
+either created or reused.
+
+On creation: 
+
+```bash
+mkdir /root/mymount1
+
+docker service create \
+    --mount type=volume,source=a-new-volume,destination=/path/in/container \
+    --mount type=bind,source=/root/mymount1,destination=/another/path/in/container \
+    --name myservice \
+    --replicas 3 \
+    nginx:alpine
+```
+
+On update:
+
+```bash
+docker service update \
+    --mount-add type=volume,source=another-new-volume,destination=/yet/another/path/in/container \
+    --mount-rm /another/path/in/container \
+    myservice
+```
+
 ## Illustrate running a replicated vs global service
+
+Using the `--mode` option flag, you can specify "replicated" vs "global".
+"replicated" is the default, and allows you to specify a number of replications
+for the service, which will be spread across all valid nodes in the swarm, more
+or less evenly. "global" specifies that every active node should have a running
+instance of the service.
+
+```bash
+docker service create \
+    --mode global \
+    --name my_redis_service  \
+    redis:3.0.6
+
+# vs
+
+docker service create \
+    --replicas 5 \
+    --name my_redis_service \
+    redis:3.0.6
+```
+
+There is no option to update mode after the service has already been created.
+The mode must be specified on service creation.
 
 ## Identify the steps needed to troubleshoot a service not deploying
 
