@@ -52,6 +52,18 @@ multiple replicas can be replicated across all of the nodes in the swarm.
 
 ## Demonstrate steps to lock a swarm cluster
 
+Docker swarm locking procedures
+
+- On swarm init, you can set `--autolock`, which will require a key to unlock
+  stopped swarm managers before starting them again.
+- On swarm init, you can use `--cert-expiry duration` to specify the lifetime of
+  swarm certificates. In docker `18.09`, this duration defaults to 90 days.
+- On swarm init, you can use `--external-ca external-ca` to specify an external
+  certificate authority.
+- You can specify overlay networks that allow communication between containers
+  running in the swarm. This network can be setup so that all traffic is
+  encrypted.
+
 ## Extend the instructions to run individual containers into running services under swarm
 
 Instead of using `docker container run`, you have to use
@@ -72,11 +84,42 @@ $ docker service create [OPTIONS] IMAGE [COMMAND] [ARG...]
 
 ## Interpret the output of "docker inspect" commands
 
+`docker inspect` allows you to dump information about the configuration and the
+current state of any object currently running in Docker. You can use the name of
+the object, but if there is any ambiguity with that name, like a case where a
+container and a network share a name, you can use the object's unique ID.
+
+The output of this command will be formatted as JSON.
+
 ## Convert an application deployment into a stack file using a YAML compose file with "docker stack deploy"
 
 ## Manipulate a running stack of services
 
+If you used `docker stack deploy` to specify your stack of services, you can
+modify the stack configuration through the YAML configuration file, and then
+redeploy the stack with `docker stack deploy`.
+
+If you manually performed a `docker service create` for each of the services in
+your stack, you can change any of the properties of that service using
+`docker service update`.
+
+You may also be able to modify a service that was created by
+`docker stack deploy` using `docker service update`, but that is not
+recommended, because then the state of the service will not match the
+configuration recorded in the YAML file.
+
 ## Increase # of replicas
+
+```bash
+# Create a service with a single replica (default number of replicas)
+docker service create --name someservice alpine ping 8.8.8.8
+
+# Set the replicas to 10 for that service
+docker service update --replicas=10 someservice
+
+# Clean up
+docker service rm someservice
+```
 
 ## Add networks, publish ports
 
