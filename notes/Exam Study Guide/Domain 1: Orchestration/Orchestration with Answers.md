@@ -247,10 +247,34 @@ The mode must be specified on service creation.
 
 ## Identify the steps needed to troubleshoot a service not deploying
 
+
+
 ## Apply node labels to demonstrate placement of tasks
+
+Labels can be applied to docker swarm nodes using
+`docker node update --label-add`. Labels can be applied as a single value, or as
+a `key=value` pair. You can then remove the labels with
+`docker node update --label-rm key`.
+
+```bash
+self="<some node>"
+docker node update --label-add test $self
+docker node update --label-add somelabel $self
+docker node update --label-add somekey=somevalue $self
+docker node update --label-add anotherkey=anothervalue $self
+docker node update --label-rm somekey $self
+# {"anotherkey":"anothervalue","somelabel":"","test":""}
+```
+
+
 
 ## Sketch how a Dockerized application communicates with legacy systems
 
+
+
 ## Paraphrase the importance of quorum in a swarm cluster
 
+
+
 ## Demonstrate the usage of templates with "docker service create"
+
