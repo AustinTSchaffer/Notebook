@@ -266,7 +266,23 @@ docker node update --label-rm somekey $self
 # {"anotherkey":"anothervalue","somelabel":"","test":""}
 ```
 
+When creating or updating a service, you can specify **constraints** on the service,
+which control the nodes that the service is permitted to run on.
 
+Specify service constraints (--constraint)
+
+You can limit the set of nodes where a task can be scheduled by defining
+constraint expressions. Multiple constraints find nodes that satisfy every
+expression (AND match). Constraints can match node or Docker Engine labels as
+follows:
+
+| node attribute | matches                  | example                                     |
+| -------------- | ------------------------ | ------------------------------------------- |
+| node.id        | Node ID                  | node.id==2ivku8v2gvtg4                      |
+| node.hostname  | Node hostname            | node.hostname!=node-2                       |
+| node.role      | Node role                | node.role==manager                          |
+| node.labels    | user defined node labels | node.labels.security==high                  |
+| engine.labels  | Docker Engine's labels   | engine.labels.operatingsystem==ubuntu 14.04 |
 
 ## Sketch how a Dockerized application communicates with legacy systems
 
