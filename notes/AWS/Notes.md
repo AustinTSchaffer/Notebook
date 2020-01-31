@@ -175,3 +175,26 @@ You need more queues than you think.
 If something is timing out, you haven't decoupled properly.
 
 Make sure that your errors are coming from the thing that caused it.
+
+## AWS Athena
+
+Interactive query service that makes it easy to analyze data in Amazon S3 using
+standard SQL. Think of it as a managed ETL service that interacts with any data
+written to AWS S3.
+
+Athena is easy to use. Simply point to your data in Amazon S3, define the
+schema, and start querying using standard SQL.
+
+With Athena, there's no need for complex ETL jobs to prepare you data for
+analysis. This makes it easy for anyone with SQL skills to quickly analyze
+large-scale datasets.
+
+> No-SQL: I don't care, here's your data. Have a nice day or don't.
+
+Athena is out-of-the-box integrated with
+[AWS Glue](https://aws.amazon.com/glue/) Data Catalog, allowing you to create a
+unified metadata repo across various services, crawl data sources to discover
+schemas and populate your Catalog with new and modified table and partition
+definition, and maintain schema versioning.
+
+> It's a SQL-compliant ETL.
