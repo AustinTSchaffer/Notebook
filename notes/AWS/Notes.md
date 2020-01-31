@@ -189,16 +189,20 @@ With Athena, there's no need for complex ETL jobs to prepare you data for
 analysis. This makes it easy for anyone with SQL skills to quickly analyze
 large-scale datasets.
 
-> No-SQL: I don't care, here's your data. Have a nice day or don't.
-
 Athena is out-of-the-box integrated with
 [AWS Glue](https://aws.amazon.com/glue/) Data Catalog, allowing you to create a
 unified metadata repo across various services, crawl data sources to discover
 schemas and populate your Catalog with new and modified table and partition
 definition, and maintain schema versioning.
 
+## Closing Quotes
+
+> No-SQL: I don't care, here's your data. Have a nice day or don't.
+
 > Athena is a SQL-compliant ETL.
 
 > - ETL is for relational databases.
 > 
 > - Map-Reduce is for No-SQL databases.
+
+> All a data-lake is is a place to store all of your crap.
