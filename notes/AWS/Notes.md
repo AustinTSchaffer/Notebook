@@ -197,4 +197,8 @@ unified metadata repo across various services, crawl data sources to discover
 schemas and populate your Catalog with new and modified table and partition
 definition, and maintain schema versioning.
 
-> It's a SQL-compliant ETL.
+> Athena is a SQL-compliant ETL.
+
+> - ETL is for relational databases.
+> 
+> - Map-Reduce is for No-SQL databases.
