@@ -158,6 +158,20 @@ Make sure you minimize your FIFO points.
 
 **FIFO Queues**
 
-- ~300 TPS
+- ~300 TPS, but you can batch up to 10 messages to achieve ~3000 TPS. You can
+  file a support request to increase this/these limit(s).
 - Exactly-Once Processing
 - First-In-First-Out Delivery
+
+## SNS
+
+SNS is designed for more public-facing messages and should not be used as a
+stand-in for SQS. That's just silly.
+
+## Notes on Architecture
+
+You need more queues than you think.
+
+If something is timing out, you haven't decoupled properly.
+
+Make sure that your errors are coming from the thing that caused it.
