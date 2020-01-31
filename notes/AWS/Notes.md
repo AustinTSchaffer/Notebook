@@ -67,4 +67,97 @@ smart networking.
 > Mainframe:
 > ![](bender-im-back-baby.jpg)
 
-## 
+## Message Queues
+
+Software application interactions are programmed in 3 main ways
+
+**Direct code call**
+
+This is IPC
+
+**API call**
+
+This is an RPC call on the same machine. A remote procedure call (RPC) is an
+internal procedure call (IPC) with an IP address.
+
+> Take some Kernel classes.
+> 
+> - Brinton Sherwood
+
+**Messaging**
+
+In messaging, the call and payload are contained in a "message" that persists on
+a message server. There is a central broker that never sleeps.
+
+All three types can be synchronous or asynchronous.
+
+## Why Messaging
+
+- Central broker can handle messages without doing much compute.
+- Many senders, many receivers.
+- Increased reliability. Queues can persist your data and reduce the errors that
+  happen when different parts of your system go offline. Messages sent to a dead
+  service will wait until the service comes back online.
+- Granular scalability. When workloads peak, multiple instances of your
+  application can all add requests to the queue without risk of collision. As
+  your queues get longer, you can increase the number of consumers.
+- Simplified decoupling. Message queues remove dependencies between components
+  and significantly simplify the coding of decoupled applications.
+
+> Blast Radius: If something happens, what's the worst thing that could happen?
+
+In AWS, each user's "blast radius" is their account. If someone compromises an
+S3 role, the "blast radius" is all of the S3s associated with that role.
+
+If you're using a single message broker and it goes down, the blast radius is
+everything.
+
+## AWS Simple Queue Service
+
+AWS SQS was the 2nd service that AWS added. (The first was S3.)
+
+SQS is a queue-based message pipe.
+
+SQS is a fully managed message queueing service that enables you to decouple and
+scale microservices, distributed systems, and serverless applications.
+
+SQS eliminates the complexity and overhead associated with managing and
+operating message-oriented middleware, and empowers developers to focus on
+differentiating work.
+
+SQS has 2 types of queues
+
+- Standard queues offer maximum throughput, best-effort ordering, and
+  at-least-once delivery.
+- SQS FIFO queues are designed to guarantee that messages are processed exactly
+  once, in the exact order that they are sent. They are synchronous. The message
+  at the tip of the queue will block the queue if the consumers can't process
+  it. You might want that.
+
+SQS is built for performance, sacrificing "bells and whistle" features. But who
+needs features? It's a queue. It's queues.
+
+## AWS SQS Benefits
+
+It's a managed queue. Don't need to stand-up servers to hold applications that
+do basically do the same thing.
+
+> It's a distributed broker. The big selling point is that AWS manages that
+> complexity for you. (Unless you're using a FIFO.)
+
+Make sure you minimize your FIFO points.
+
+## Facts Sheet
+
+**Standard Queues**
+
+- Unlimited Throughput: Support a practically unlimited number of transactions
+  per second (TPS) per API action.
+- At-Least-Once Delivery
+- Best-Effort Ordering
+
+**FIFO Queues**
+
+- ~300 TPS
+- Exactly-Once Processing
+- First-In-First-Out Delivery
