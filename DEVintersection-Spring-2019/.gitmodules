@@ -1,0 +1,9 @@
+[submodule "developer-challenge"]
+	path = developer-challenge
+	url = https://github.com/oktadeveloper/developer-challenge.git
+[submodule "devops-for-windows-apps"]
+	path = devops-for-windows-apps
+	url = https://github.com/Microsoft/devops-for-windows-apps
+[submodule "efcore-code-first-demo"]
+	path = efcore-code-first-demo
+	url = https://github.com/digitaldrummerj/efcore-code-first-demo
