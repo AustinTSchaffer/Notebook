@@ -1,0 +1,41 @@
+version: '3.1'
+
+services:
+  drupal:
+    image: drupal:8.6.2
+    depends_on:
+      - db
+    volumes:
+      - drupal-modules:/var/www/html/modules
+      - drupal-profiles:/var/www/html/profiles
+      - drupal-themes:/var/www/html/themes
+      - drupal-sites:/var/www/html/sites
+    ports:
+      - 8080:80
+
+  db:
+    image: postgres:10
+    secrets:
+      - psql_password
+    environment:
+      POSTGRES_PASSWORD_FILE: /run/secrets/psql_password
+    volumes:
+      - drupal-data:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    ports:
+      - 8081:8080
+
+volumes:
+  drupal-modules:
+  drupal-profiles:
+  drupal-themes:
+  drupal-sites:
+  drupal-data:
+
+secrets:
+  psql_password:
+    external:
+      name: psql_pass
+
