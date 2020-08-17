@@ -2,7 +2,7 @@
 favorited: true
 title: 00 - Certified Solutions Architect - Associate
 created: '2020-08-17T00:23:46.054Z'
-modified: '2020-08-17T00:45:00.334Z'
+modified: '2020-08-17T00:46:25.235Z'
 ---
 
 # 00 - Certified Solutions Architect - Associate
@@ -30,4 +30,8 @@ The AWS Certified Solutions Architect - Associate examination is intended for in
 - An understanding of the AWS global infrastructure
 - An understanding of network technologies as they relate to AWS
 - An understanding of security features and tools that AWS provides and how they relate to traditional services
+
+## Resources Used for this Certification
+
+Below is a list of the resources that I (Austin) used to complete this exam, along with some of the costs associated with those resources.
 
