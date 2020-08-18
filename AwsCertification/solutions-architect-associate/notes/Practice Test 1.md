@@ -1,9 +1,8 @@
 ---
-attachments: [AWS_EBS_Types_Chart.png, CloudFront_Request_Response_Diagram.png]
 tags: [AWS Services]
 title: Practice Test 1
 created: '2020-08-17T18:35:46.987Z'
-modified: '2020-08-18T01:44:45.135Z'
+modified: '2020-08-18T01:47:08.477Z'
 ---
 
 # Practice Test 1
@@ -150,7 +149,7 @@ Provisioned IOPS SSD EBS (`io1`)
 - The HDD EBS options deliver optimal performance only when I/O operations are **large and sequential**. Best for large streaming workloads. Low price compared to SSDs. Good for big data, data warehouses, log processing. Best when data is infrequently accessed.
 - The SSD EBS options are best for small/random I/O operations. Best for transaction workloads. Critical for business applications that require sustained IOPS performace. Good for DB service workloads.
 
-![](@attachment/AWS_EBS_Types_Chart.png)
+![](../attachments/AWS_EBS_Types_Chart.png)
 
 ### Question 29 :heavy_check_mark:
 
@@ -190,7 +189,7 @@ The ALB will stop routing traffic to the EC2 instance
 - Lambda@Edge lets you run lambda functions to customize the content that CloudFront delivers, executing the functions in AWS locations closer to the user.
 - You can use lambda functions to change requests and responses brokered by CloudFront between the end user and the origin
 
-![](@attachment/CloudFront_Request_Response_Diagram.png)
+![](../attachments/CloudFront_Request_Response_Diagram.png)
 
 ### Question 42 :heavy_check_mark:
 
