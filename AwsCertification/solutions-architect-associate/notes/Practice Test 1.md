@@ -180,11 +180,9 @@ The ALB will stop routing traffic to the EC2 instance
 - CloudFront will automatically switch to the secondary origin when the primary origin returns specific HTTP status codes
 - customize the content that the CloudFront web distribution delivers to your users using Lambda@Edge. This will allow lambda functions to execute authentication closer to each user
 
-**From UDemy**
+**Notes**
 
 > In the given scenario, you can use Lambda@Edge to allow your Lambda functions to customize the content that CloudFront delivers and to execute the authentication process in AWS locations closer to the users. In addition, you can set up an origin failover by creating an origin group with two origins with one as the primary origin and the other as the **second origin which CloudFront automatically switches to when the primary origin fails. This will alleviate the occasional HTTP 504 errors** that users are experiencing.
-
-**Notes**
 
 - Lambda@Edge lets you run lambda functions to customize the content that CloudFront delivers, executing the functions in AWS locations closer to the user.
 - You can use lambda functions to change requests and responses brokered by CloudFront between the end user and the origin
