@@ -2,7 +2,7 @@
 favorited: true
 title: 00 - Certified Solutions Architect - Associate
 created: '2020-08-17T00:23:46.054Z'
-modified: '2020-08-17T00:46:25.235Z'
+modified: '2020-08-18T18:16:05.748Z'
 ---
 
 # 00 - Certified Solutions Architect - Associate
@@ -33,5 +33,6 @@ The AWS Certified Solutions Architect - Associate examination is intended for in
 
 ## Resources Used for this Certification
 
-Below is a list of the resources that I (Austin) used to complete this exam, along with some of the costs associated with those resources.
+Below is a list of the resources that I used to complete this exam, along with some of the costs associated with those resources.
 
+I spent $30 for the ["AWS Certified Solutions Architect Associate Practice Exams" course on Udemy](https://www.udemy.com/course/aws-certified-solutions-architect-associate-amazon-practice-exams-saa-c02). This course contains 6 practice exams with over 60 questions each. I worked through an exam without studying to check my baseline understanding of the material. I then went back through all of the practice questions, recording the prompt and the correct answer, writing notes on all the topics presented in each question.
