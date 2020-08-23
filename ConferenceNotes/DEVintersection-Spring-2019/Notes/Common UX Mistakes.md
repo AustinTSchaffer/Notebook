@@ -5,16 +5,12 @@
 Violate several design principles
 - inattentional blindness
     - principle stems from the way human visual system works
-    - High-res imagery only comes from an arc the size of a quarter at arms
-      length
+    - High-res imagery only comes from an arc the size of a quarter at arms length
 - preference for openness
 - Cognitive load
 - Horror vacui (emotional response to crowded screens)
 
-Users see what they expect to see. Their brains "filter" the images of the
-crowded screens on the fly so they only process what they're looking for. If you
-know what users need to see, you can speed them up and reduce their stress just
-by showing them what they need to see.
+Users see what they expect to see. Their brains "filter" the images of the crowded screens on the fly so they only process what they're looking for. If you know what users need to see, you can speed them up and reduce their stress just by showing them what they need to see.
 
 Alt Designs:
 
@@ -29,8 +25,7 @@ Alt Designs:
 - Labels that look like buttons
 - Buttons that are not obviously buttons
 
-Better signalling can also be achieved with better icons, relative sizes,
-appropriately sized headers, appropriate groupings.
+Better signalling can also be achieved with better icons, relative sizes, appropriately sized headers, appropriate groupings.
 
 ## 3. No Indication of Information Importance
 
@@ -52,8 +47,7 @@ Try out:
 
 ## 6. Too Many Options
 
-Hick's Law: Time required to locate and use an option increases as the number of
-options increases.
+Hick's Law: Time required to locate and use an option increases as the number of options increases.
 
 - Favorites
 - Recently Used
@@ -71,8 +65,7 @@ options increases.
 - menu item heatmap
 - Jumplist
 
-> Windows 8 failed in part because it was too hard to find different apps. Tried
-> to satisfy too many people and satisfied none of them.
+> Windows 8 failed in part because it was too hard to find different apps. Tried to satisfy too many people and satisfied none of them.
 
 # 7. Bad search experience
 

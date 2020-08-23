@@ -41,9 +41,7 @@ There's a general perscribed pyramid hierarchy to describe how many of what kind
   - Acceptance (business desired outcome)
   - Exploratory/Manual tests
 
-CUIT are deprecated. Sounds like that statement is a "full stop" situation to me.
-Mentioned how they never really game the MSoft teams useful results.
-MSoft is pushing people toward selenium and appium tests.
+CUIT are deprecated. Sounds like that statement is a "full stop" situation to me. Mentioned how they never really game the MSoft teams useful results. MSoft is pushing people toward selenium and appium tests.
 
 > TDD is writing a failing test then writitng the code to make it pass. Points out things that are not isolated.
 
@@ -53,7 +51,6 @@ MSoft is pushing people toward selenium and appium tests.
 - analyze code coverage (runs at DLL level) (integrates with AZ DO pipes)
 - intellitest
 
-Intellitest is Enterprise only. (.net FW and C# only)
-Right click, intellitest context menu. R.C.&Run intellitest to generate the tests.
+Intellitest is Enterprise only. (.net FW and C# only) Right click, intellitest context menu. R.C.&Run intellitest to generate the tests.
 
 Code fix to sync namespace names between the project and test project.

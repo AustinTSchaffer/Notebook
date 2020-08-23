@@ -60,9 +60,7 @@ dotnet ef database update
 ## Things to Consider
 
 - `[ProducesResponseType]` is for documentation
-- EF is already a Unit Of Work pattern, so avoid putting a Unit Of Work pattern
-  on top of it
+- EF is already a Unit Of Work pattern, so avoid putting a Unit Of Work pattern on top of it
 - Use `async` for all WebApi junk
 - `ICurrentUserService` 🤷‍♂
 - VStudio still sucks at not locking things
-
