@@ -2,7 +2,7 @@
 tags: [AWS Services]
 title: Practice Test 1
 created: '2020-08-17T18:35:46.987Z'
-modified: '2020-08-21T00:07:06.515Z'
+modified: '2020-08-23T19:48:47.090Z'
 ---
 
 # Practice Test 1
@@ -16,7 +16,7 @@ modified: '2020-08-21T00:07:06.515Z'
 - 25 questions
 - 52% Correct (Failing)
 
-TODO: Review results, add notes on topics
+
 
 ## Domain 2: Security
 
@@ -94,7 +94,7 @@ CloudTrail for security logs
 
 **Notes**
 
-![](../attachments/idp_to_aws_with_saml.png)
+![](./attachments/idp_to_aws_with_saml.png)
 
 - Microsoft AD implements Security Assertion Markup Language (SAML)
 - You can set up SAML-Based Federation for API Access to AWS
@@ -269,7 +269,7 @@ Enable IAM DB Authentication
 - There is no direct way of integrating Amazon S3 with Amazon WorkDocs for this particular scenario. WorkDocs is a fully managed, secure content creation, storage, and collaboration service.
 - This solution is similar to what [the company I work for that uses AWS] does with Okta.
 
-![](../attachments/saml-based-federation.diagram.png)
+![](./attachments/saml-based-federation.diagram.png)
 
 ### Question 45 :x:
 
@@ -346,7 +346,7 @@ Configure the RDS DB instance so it's deployed in a Multi-AZ deployment
 - RDS Read Replicas provide asynchronous replication instead of synchronous.
 - DynamoDB and CloudFront do not have a Read Replica feature.
 
-![](../attachments/multi-az-deployment-vs-read-replicas.png)
+![](./attachments/multi-az-deployment-vs-read-replicas.png)
 
 ### Question 57 :x:
 
@@ -384,7 +384,7 @@ Use AWS DynamoDB (DDB)
 
 For questions about schema changes being an issue, go with the NoSQL option.
 
-![](../attachments/rdbms-vs-dynamodb.png)
+![](./attachments/rdbms-vs-dynamodb.png)
 
 ### Question 63 :x:
 
@@ -527,7 +527,7 @@ Provisioned IOPS SSD EBS (`io1`)
 - The HDD EBS options deliver optimal performance only when I/O operations are **large and sequential**. Best for large streaming workloads. Low price compared to SSDs. Good for big data, data warehouses, log processing. Best when data is infrequently accessed.
 - The SSD EBS options are best for small/random I/O operations. Best for transaction workloads. Critical for business applications that require sustained IOPS performace. Good for DB service workloads.
 
-![](../attachments/AWS_EBS_Types_Chart.png)
+![](./attachments/AWS_EBS_Types_Chart.png)
 
 ### Question 29
 
@@ -565,7 +565,7 @@ The ALB will stop routing traffic to the EC2 instance
 - Lambda@Edge lets you run lambda functions to customize the content that CloudFront delivers, executing the functions in AWS locations closer to the user.
 - You can use lambda functions to change requests and responses brokered by CloudFront between the end user and the origin
 
-![](../attachments/CloudFront_Request_Response_Diagram.png)
+![](./attachments/CloudFront_Request_Response_Diagram.png)
 
 ### Question 42
 
@@ -624,6 +624,10 @@ EFS
 
 > Amazon Elastic File System (Amazon EFS) provides simple, scalable, elastic file storage for use with AWS Cloud services and on-premises resources. When mounted on Amazon EC2 instances, an Amazon **EFS file system provides a standard file system interface and file system access semantics**, allowing you to seamlessly integrate Amazon EFS with your existing applications and tools. **Multiple Amazon EC2 instances can access an Amazon EFS file system at the same time**, allowing Amazon EFS to provide a common data source for workloads and applications running on more than one Amazon EC2 instance.
 
+**Notes**
+
+- AWS Aurora is a MySQL and PostgreSQL-compatible relational database
+
 ### Question 52
 
 - app uses cloudfront, lambda, dynamodb for backend services
@@ -635,6 +639,7 @@ Amazon DynamoDB Accelerator (DAX)
 
 **Notes**
 
+- AWS CloudFront is a content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally
 - Amazon DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memory cache that can reduce Amazon DynamoDB response times
 - Amazon ElastiCache can be used as a database cache, but if you're trying to accelerate AWS DynamoDB (DDB), you can more easily use DAX.
 - AWS Device Farm is an app testing service that lets you test and interact with your Android, iOS, and web apps on many devices at once, or reproduce issues on a device in real time.
