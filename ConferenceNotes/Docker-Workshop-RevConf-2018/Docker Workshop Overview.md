@@ -1,7 +1,6 @@
 # Docker Examples
 
-The following Docker examples were worked on and played with at Bret Fisher's
-**Introduction to Docker and Containers Workshop** at Revolution Conf 2018.
+The following Docker examples were worked on and played with at Bret Fisher's **Introduction to Docker and Containers Workshop** at Revolution Conf 2018.
 
 https://revolutionconf.com/#bret_fisher
 
