@@ -9,7 +9,7 @@ modified: '2020-08-23T19:48:47.090Z'
 
 - Took a practice test to check my baseline understanding of the topics on this exam.
 - Failed with a result of **55% correct**.
-- Spent 2 hours and 10 minutes in total (took breaks, :cat: wanted food)
+- Spent 1 hour and 22 minutes in total (took breaks, :cat: wanted food)
 
 ## Domain 1: Resiliency
 
@@ -1061,4 +1061,3 @@ Optimize costs related to transferring data from EC2 to S3
 
 - Transferring data from EC2 to S3 within the same region costs $0
 - "Transferring data from an EC2 instance to Amazon S3, Amazon Glacier, Amazon DynamoDB, Amazon SES, Amazon SQS, or Amazon SimpleDB in the same AWS Region has no cost at all." Apparently it's all block storage on the backend.
-
