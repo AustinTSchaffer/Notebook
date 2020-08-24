@@ -16,7 +16,94 @@ modified: '2020-08-23T19:48:47.090Z'
 - 25 questions
 - 52% Correct (Failing)
 
+### Question 1
 
+- host a web application in a new VPC
+- app will use public and private subnets
+- app needs to use a MySQL DB server
+- app needs a fleet of EC2 instances
+- In which subnet should the DB server be launched?
+
+**Answer**
+
+The private subnet
+
+**Notes**
+
+- In an ideal and secure VPC architecture, you launch the web servers or elastic load balancers in the public subnet and the database servers in the private subnet.
+- VPC = Virtual Private Cloud
+
+![](attachments/vpc-example-configuration.png)
+
+### Question 2 :x:
+
+- web app consists of EC2 instances and an oracle relational database server
+- database must be in a high-availability configuration
+- operators must have full control over database's operating system
+
+**TODO**
+
+- Deploy the Oracle DB on EC2
+- Configure EC2 instances in multiple Availability Zones
+- Configure Oracle DB to set up data replication between the 2 AZs
+
+**Notes**
+
+- You can deploy Oracle database to Amazon EC2 instances with data replication between two different Availability Zones. 
+- The deployment of this architecture can be achieved by using Terraform or CloudFormation and Quick Start.
+- Quick Start is an AWS service that is essentially a "one click deployment" service for AWS.
+- Quick Start has support for deploying Oracle DB in a multiple AZ configuration.
+- Amazon RDS is a managed database service, which means that Amazon is the one that manages the underlying operating system.
+- High Availability (HA) often implies that you'll need multiple AZs.
+
+### Question 3
+
+- company uses a hybrid-cloud architecture, using both an on-prem data center and AWS.
+- company requires durable storage backup for corporate on-prem documents
+- company requires a local cache that provides low-latency access and reduced data egress charges on their AWS bills
+- documents must be I/O-ed to AWS via the Server Message Block (SMB) protocol
+- Files must be immediately be accessible within minutes for 6 months, and archived for a decade to meet data compliance
+
+**TODO**
+
+- Launch a File Gateway that connects to the on-prem data center using AWS Storage Gateway
+- Upload documents to the file gateway
+- Set up a lifecycle policy for moving files to Glacier after 6 months
+
+**Notes**
+
+- A file gateway supports a file interface into Amazon Simple Storage Service (Amazon S3) and combines a service and a virtual software appliance
+- AWS provides downloads for VM images for the File Gateway
+- S3 supports industry-standard file protocols such as Network File System (NFS) and Server Message Block (SMB).
+- File gateways allow
+  - Store and retrieve files directly using
+    - NFS protocol version 3 or 4.1
+    - SMB file system protocol version 2 or 3
+  - Access S3 data from any AWS Cloud application or service
+  - Manage your AWS S3 using lifecycle policies, replication, and versioning
+- You can think of a file gateway as a file system mount on S3
+- AWS Storage Gateway supports the Amazon S3 Standard, Amazon S3 Standard-Infrequent Access, Amazon S3 One Zone-Infrequent Access and Amazon Glacier storage classes.
+- AWS Glacier uses tape
+- AWS Snowmobile is a service that is used to migrate the data of an on-premises data center to AWS.
+
+### Question 5
+
+- app is hosted on ECS cluster
+- app uses RDS in multi-AZ deployment configuration
+- app heavily uses RDS instance
+- need lots of monitoring for the RDS instance
+  - different processes/threads use CPU
+  - percentage of CPU bandwidth
+  - total memory consumed on a per-process basis
+
+**TODO**
+
+Enable Enhanced Monitoring in RDS
+
+**Notes**
+
+- 
+- By default, Enhanced Monitoring metrics are stored in the CloudWatch Logs for **30 days**.
 
 ## Domain 2: Security
 

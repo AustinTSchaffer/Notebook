@@ -7,7 +7,7 @@ modified: '2020-08-18T18:16:05.748Z'
 
 # 00 - Certified Solutions Architect - Associate
 
-This directory of notes was created and managed using [Noteable :tada:](https://github.com/notable/notable)!
+https://aws.amazon.com/certification/certified-solutions-architect-associate/
 
 ## Brief Description
 
