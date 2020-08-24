@@ -138,7 +138,173 @@ Future-proof the configuration by enabling multi-AZ failover
 - Amazon RDS Multi-AZ deployments provide enhanced availability and durability for Database (DB) Instances
 - When you provision a Multi-AZ DB Instance, Amazon RDS automatically creates a primary DB Instance and synchronously replicates the data to a standby instance in a different Availability Zone (AZ).
 - It's possible to perform snapshots/backups of AWS RDS instances, but that's not applicable in this situation.
-- It's possible to create read replicas of AWS RDS instances. It's possible to promote read replicas to be the master instance
+- It's possible to create read replicas of AWS RDS instances. It's possible to promote read replicas to be the master instance, but data is copied to read replicas asynchronously, so the read replica might not be current.
+
+### Question 9
+
+- web apps hosted in an autoscaling group of EC2 instances across 3 Availability Zones
+- configured with default settings
+- An Application Load Balancer (ALB) forwards requests to the respective target group
+- scale-in policy triggered due to low traffic
+- which EC2 instance will be the first one terminated?
+
+**Answer**
+
+The EC2 instance launched from the oldest launch configuration
+
+- The default termination policy is designed to help ensure that network architecture spans Availability Zones evenly.
+- With the default termination policy, the behavior of the Auto Scaling group is as follows
+  - If there are instances in multiple Availability Zones, choose the Availability Zone with the most instances and at least one instance that is not protected from scale in. If there is more than one Availability Zone with this number of instances, choose the Availability Zone with the instances that use the oldest launch configuration.
+  - Determine which unprotected instances in the selected Availability Zone use the oldest launch configuration. If there is one such instance, terminate it.
+  - If there are multiple instances to terminate based on the above criteria, terminate the instance that's closest to the next billing hour (picking one randomly if multiple).
+
+![](attachments/alb-scale-in-decision-graph.png)
+
+### Question 15
+
+- manager instructs a solutions architect to avoid using fully-managed AWS services
+- Use only services that allow you to manage the underlying operating system for the resource
+- Allows the company to have better control over underlying resources that systems are using in AWS
+
+**Use**
+
+- EC2
+- EMR
+- (Containers)
+
+**Dont Use**
+
+- DynamoDB
+- AWS RDS
+- AWS Neptune (Graph Database)
+- AWS Athena
+
+**Notes**
+
+- Enterprise Resource Planning (ERP)
+- Amazon EC2 provides you access to the operating system of the instance that you created.
+- Amazon EMR provides you a managed Hadoop framework, using scalable Amazon EC2 instances. You can access/control the operating systems of the EC2 instances in the scaling group, managed by AWS EMR.
+- Managed services typically gives you less control over underlying low-level resources (such as the OS), and give you less control over your infra (vendor lock-in).
+
+### Question 18
+
+- company is planning to give AWS Console access to developers
+- policy mandates thae use of an identity federation and role-based access control (RBAC)
+- roles are already assigned using groups in the corporate AD
+
+**TODO**
+
+- Use AWS Directory Service AD Connector
+- Use IAM Roles
+
+**Notes**
+
+- AWS Directory Service provides multiple ways to use Amazon Cloud Directory and Microsoft Active Directory (AD) with other AWS services.
+- You can assign an IAM Role to the users or groups from your Active Directory once it is integrated with your VPC via the AWS Directory Service AD Connector.
+- IAM Groups let you specify permissions for multiple users, which can make it easier to manage the permissions for those users. Groups already exist in AD which can be brought over using AWS Directory Service.
+- AWS Directory Service Simple AD is a **subset** of the features offered by AWS Managed Microsoft AD, including:
+  - the ability to manage user accounts 
+  - group memberships
+  - create and apply group policies
+  - securely connect to Amazon EC2 instances
+  - provide Kerberos-based single sign-on (SSO)
+
+### Question 20 :x:
+
+- traffic monitoring and reporting application uses Kinesis to accept real-time data
+- to process and store data, app uses Kinesis Data Firehose to load streaming data to various AWS resources
+- Which service can you load streaming data into?
+
+**Answer**
+
+AWS Elasticsearch Service
+
+**Notes**
+
+- Amazon Kinesis Data Firehose can capture, transform, and load streaming data into Amazon S3, Amazon Redshift, Amazon Elasticsearch Service, and Splunk
+- Kinesis Data Firehose can load streaming data to both Amazon S3 and Amazon Redshift, it **does not directly** load the data to S3 Select and Redshift Spectrum.
+- S3 Select is an Amazon S3 feature that makes it easy to retrieve specific data from the contents of an object using simple SQL expressions without having to retrieve the entire object.
+- Amazon Redshift Spectrum is a feature of Amazon Redshift that enables you to run queries against exabytes of unstructured data in Amazon S3 with no loading or ETL required.
+- Amazon Kinesis Data Firehose cannot load streaming data to Athena.
+
+![](attachments/aws-firehose-delivery-diagram.png)
+
+### Question 25
+
+- company announced a surprise IT audit on all AWS resources in prod :tada:
+- during the audit it was noted that you are using a combination of Standard and Scheduled Reserved EC2 instances in your applications
+- They argued that you should have used Spot EC2 instances instead as it is cheaper than the Reserved Instance
+
+**Clapback**
+
+Reserved instances don't get interrupted, unlike Spot instances. If there are not enough Spot instances to meet demand, AWS can take yours away.
+
+Scheduled Reserved instances allow you to have capacity reservations that recur on a daily, weekly, or monthly basis, with a specified start time and duration, for a one-year term.
+
+**Notes**
+
+- Reserved Instances (RIs) provide you with a significant discount (up to 75%) compared to On-Demand instance pricing. You have the flexibility to change families, OS types, and tenancies while benefiting from RI pricing when you use Convertible RIs.
+- Reserved Instances are not physical instances, but rather a billing discount applied to the use of On-Demand Instances in your account.
+- When your computing needs change, you can modify your Standard or Convertible Reserved Instances and continue to take advantage of the billing benefit. You can modify the Availability Zone, scope, network platform, or instance size (within the same instance type) of your Reserved Instance. You can also sell your unused instance on the Reserved Instance Marketplace.
+- only Convertible Reserved Instances can be exchanged for other Convertible Reserved Instances.
+- You cannot reserve capacity to multiple AWS Regions in a single RI purchase.
+
+### Question 27
+
+TODO:
+
+### Question 28 :x:
+
+TODO:
+
+### Question 31
+
+TODO:
+
+### Question 34
+
+TODO:
+
+### Question 35
+
+TODO:
+
+### Question 37
+
+TODO:
+
+### Question 39
+
+TODO:
+
+### Question 40
+
+TODO:
+
+### Question 41
+
+TODO:
+
+### Question 54
+
+TODO:
+
+### Question 56
+
+TODO:
+
+### Question 59
+
+TODO:
+
+### Question 62
+
+TODO:
+
+### Question 65
+
+TODO:
+
 
 ## Domain 2: Security
 
@@ -183,6 +349,22 @@ CloudTrail for security logs
 - SSH uses TCP, **not UDP**
 - `/32` means "only this IP address"
 - `/0` means "all IP addresses"
+
+### Question 12 :x:
+
+- app will allow users to pay their taxes or claim their tax refund
+- app is hosted on EC2
+- Due to confidentiality, security policy requires app to encrypt data before writing it to the disk
+
+**TODO**
+
+Use the AWS KMS API to encrypt files before writing them to the disk.
+
+**Notes**
+
+- AWS Key Management Service (AWS KMS) is a managed service that makes it easy for you to create and control the encryption keys used to encrypt your data.
+- EBS encryption provides additional security for EBS volumes, but does not allow for encryption of individual files. Better to use KMS API to encrypt data **before** saving it to the disk.
+- Security Token Service (STS) is a web service that enables you to request temporary, limited-privilege credentials for AWS Identity and Access Management (IAM) users or for users that you authenticate (federated users).
 
 ### Question 17 :x:
 
@@ -525,6 +707,10 @@ For questions about schema changes being an issue, go with the NoSQL option.
 - When your Lambda function is invoked, those values are decrypted and made available to the Lambda code.
 - The first time you create or update Lambda functions that use environment variables in a region, a default service key is created for you automatically within AWS KMS. This key is used to encrypt environment variables. However, if you wish to use encryption helpers and use KMS to encrypt environment variables after your Lambda function is created, you must create your own AWS KMS key and choose it instead of the default key.
 
+### Question 64
+
+TODO:
+
 ## Domain 3: High-Performance
 
 - 15 questions
@@ -806,10 +992,37 @@ Use partition keys with high-cardinality attributes, which have a **large number
 
 ## Domain 4: Cost-Optimization
 
-- 3 questions
+- ~~3~~ 4 questions
 - 100% correct
 
+### Question 13
+
+- new startup provides storage for high-quality photos which are infrequently accessed by users
+- to improve costs, the app uses an S3 One Zone-Infrequent Access (S3 One Zone-IA) storage type for free users and S3 Standard-Infrequent Access) (S3 Standard-IA) storage type for premium users.
+- What are the differences between One Zone-IA and Standard-IA?
+
+**Differences**
+
+- Storing data in S3 One Zone IA costs less than using S3 Standard IA
+- S3 One Zone IA stores data in a single AZ
+
+**Notes**
+
+- In other AWS object storage classes, data is stored in a minimum of 3 AZs
+- S3 1Z-IA
+  - S3 One Zone-Infrequent Access (S3 One Zone-IA) is an Amazon S3 storage class for data that is accessed less frequently but requires rapid access when needed. 
+  - Storing data in S3 One Zone-IA costs 20% less than storing it in S3 Standard-IA
+  - ideal for customers who want a lower cost option for infrequently accessed data but do not require the availability and resilience of S3 Standard or S3 Standard-IA storage.
+  - Same low latency and high throughput performance of S3 Standard and S3 Standard-IA
+  - Designed for durability of 99.999999999% of objects in a single Availability Zone, but **data will be lost in the event of Availability Zone destruction**
+  - Designed for 99.5% availability over a given year
+  - Backed with the Amazon S3 Service Level Agreement for availability
+  - Supports SSL for data in transit and encryption of data at rest
+  - Lifecycle management for automatic migration of objects
+- S3 One Zone-IA offers the same high durability, high throughput, and low latency of Amazon S3 Standard and S3 Standard-IA, with a low per GB storage price and per GB retrieval fee.
+
 ### Question 46
+
 - App hosted on AWS Fargate (ECS)
 - App runs a batch job when object uploaded to S3
 - "minimum number of ECS tasks" is set to `1` to save costs
