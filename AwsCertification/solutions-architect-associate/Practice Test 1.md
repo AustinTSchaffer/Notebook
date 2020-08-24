@@ -102,8 +102,43 @@ Enable Enhanced Monitoring in RDS
 
 **Notes**
 
-- 
+- Amazon RDS provides realtime metrics for the operating system (OS) that RDS DB instances run on. You can view the metrics for your DB instance using the AWS console, or consume the Enhanced Monitoring JSON output from CloudWatch Logs in a monitoring system of your choice (DataDog).
+- CloudWatch gathers metrics about CPU utilization from the hypervisor for a DB instance, along with other metrics that can be gleamed from the hypervisor.
+- Enhanced Monitoring gathers its metrics from **an agent on the instance**. This is not a standard configuration in most situations and must be explicitly enabled.
 - By default, Enhanced Monitoring metrics are stored in the CloudWatch Logs for **30 days**.
+
+### Question 6
+
+- multiple apps hosted in a VPC
+- multiple port scans are coming from a specific IP address block (unwanted connection attempts)
+- internal security team has requested that all offending IP addresses be denied for the next 24 hours for security purposes
+
+**TODO**
+
+Modify the Network Access Control List (ACL) to deny access from the IP Address block
+
+**Notes**
+
+- An Access Control List (ACL) is an optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets
+- IAM policies does not and can not control the inbound and outbound traffic of a VPC.
+
+### Question 7 :x:
+
+- company owns an RDS instance in an AZ
+- AZ is experiencing outages
+- company has lost access to the RDS :angry:
+
+**TODO**
+
+Future-proof the configuration by enabling multi-AZ failover
+
+**Notes**
+
+- **Each AZ runs on its own physically distinct, independent infrastructure**
+- Amazon RDS Multi-AZ deployments provide enhanced availability and durability for Database (DB) Instances
+- When you provision a Multi-AZ DB Instance, Amazon RDS automatically creates a primary DB Instance and synchronously replicates the data to a standby instance in a different Availability Zone (AZ).
+- It's possible to perform snapshots/backups of AWS RDS instances, but that's not applicable in this situation.
+- It's possible to create read replicas of AWS RDS instances. It's possible to promote read replicas to be the master instance
 
 ## Domain 2: Security
 
