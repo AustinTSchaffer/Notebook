@@ -1,8 +1,5 @@
 ---
 tags: [AWS Services]
-title: Practice Test 1
-created: '2020-08-17T18:35:46.987Z'
-modified: '2020-08-23T19:48:47.090Z'
 ---
 
 # Practice Test 1
