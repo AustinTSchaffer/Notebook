@@ -257,60 +257,260 @@ Scheduled Reserved instances allow you to have capacity reservations that recur 
 
 ### Question 27
 
-TODO:
+- company has multiple VPCs in various AWS regions
+- set up a logging system that will track all changes made to resources in all regions
+- include services: IAM, CloudFront, AWS WAF, Route 53
+- solution must ensure security, integrity, and durability of log data
+- solution must provide an event history of API calls made in AWS console/CLI
 
-### Question 28 :x:
+**TODO**
 
-TODO:
+- set up CloudTrail tail in a new S3 bucket
+- Use the CLI and pass both `--is-multi-region-trail` and `--include-global-service-events` options
+- Encrypt log files using KMS encryption
+- Apply Multi Factor Authentication (MFA) Delete on the S3 bucket
+- Ensure only authorized users can access the logs by configuring bucket policies
+
+**Notes**
+
+- An event in CloudTrail is the record of an activity in an AWS account.
+- CloudTrail events provide a history of both API and non-API account activity made through the AWS Management Console, AWS SDKs, command line tools, and other AWS services.
+- There are two types of events that can be logged in CloudTrail: management events and data events. By default, trails does not log data events.
+- A trail can be applied to all regions or a single region.
+- IAM, CloudFront, AWS WAF, and Route 53 are **"global services"** while EC2, S3, RDS (and others) are "regional services". Setting up monitoring for events for these services is why this scenario requires `--include-global-service-events`. You cannot enable the Global Service Events using the CloudTrail console. You MUST use the CLI.
+
+### Question 28
+
+:x:
+
+- application hosted on an autoscaling group of EC2 instances in 2 AZs
+- application served via an ELB
+- autoscaling group is configured with default settings
+- what happens when an EC2 instance behind an ELB fails a health check?
+
+**Answer**
+
+The ELB stops sending traffic to the EC2 instance
+
+**Notes**
+
+- In this scenario, the load balancer will route the incoming requests only to the healthy instances. When the load balancer determines that an instance is unhealthy, it stops routing requests to that instance. The load balancer resumes routing requests to the instance when it has been restored to a healthy state.
+- If an EC2 instance fails a status/health check in an Auto Scaling group, the Auto Scaling group will replace the instance. **The ELB does not replace the EC2 instance**.
+- The default health checks for an Auto Scaling group are **EC2 status checks only**. You can **optionally** configure the **Auto Scaling group** to use Elastic Load Balancing health checks. If you configure the Auto Scaling group to use Elastic Load Balancing health checks, it considers the instance unhealthy if it fails either the EC2 status checks or the load balancer health checks.
+- You can attach multiple load balancers to an autoscaling group
 
 ### Question 31
 
-TODO:
+- an EC2 instance has its data stored in an instance store
+- the instance was shut down by staff over the weekend to save costs
+- All data was lost and is no longer available
+
+**TODO**
+
+use more durable data storage such as Amazon S3, Amazon EBS, or Amazon EFS.
+
+**Notes**
+
+- The instance was using an instance store, so all data was erased when the instance stopped/terminated. The instance store lives on the host machine that hosts EC2 instances.
+- The data in an instance store persists only during the lifetime of its associated instance. If an instance reboots (intentionally or unintentionally), data in the instance store persists.
+- When you stop or terminate an instance, every block of storage in the instance store is reset.
+- The data in an instance store is not persisted when an AMI is created from an instance
+- You can specify instance store volumes for an instance only when you launch it. You can't detach an instance store volume from one instance and attach it to a different instance.
 
 ### Question 34
 
-TODO:
+- app hosted on-prem data center
+- app uses an Oracle DB
+- company needs to migrate infra to AWS
+- ensure database is properly migrated and remains available in case of database server failure in the future.  
+
+**TODO**
+
+- Create an Oracle DB instance in RDS with Multi-AZ deployment
+
+**Notes**
+
+[See notes for Question 7](#question-7)
 
 ### Question 35
 
-TODO:
+:x:
+
+- apps hosted on-prem
+- apps use trusted IP addresses that partners and customers have whitelisted in their firewalls
+- migrate apps to AWS without changing their IPs
+
+**TODO**
+
+- Create a Route Origin Authorization (ROA)
+- once done, advertise your whitelisted IP address range to your AWS account
+
+**Notes**
+
+- You can bring part or all of your public IPv4 address range from your on-premises network to your AWS account. You continue to own the address range, but AWS advertises it on the Internet. After you bring the address range to AWS, it appears in your account as an address pool.
+- You can create an Elastic IP (EIP) address from your address pool and use it with your AWS resources, such as EC2 instances, NAT gateways, and Network Load Balancers. This is also called **"Bring Your Own IP Addresses (BYOIP)"**.
+- A Route Origin Authorization (ROA) is a document that you can create through your Regional internet registry (RIR), such as the American Registry for Internet Numbers (ARIN) or Réseaux IP Européens Network Coordination Centre (RIPE). It contains the address range, the ASNs that are allowed to advertise the address range, and an expiration date.
+- You cannot map the IP address of your on-premises network, which you are migrating to AWS, to an EIP address of your VPC. 
+- **IP match conditions** in CloudFront are primarily used in allowing or blocking the incoming web requests based on the IP addresses that the requests originate from.
+- you don't need to submit an AWS request in order to do this.
 
 ### Question 37
 
-TODO:
+:x:
+
+- cloud architecture is composed of linux/windows EC2 instances
+- monitor the memory/disk utilization of all instances
+
+**TODO**
+
+- Install the CloudWatch agent on all EC2 instances
+- Set up custom metrics in AWS CloudWatch console
+
+**Notes**
+
+- Default CloudWatch EC2 metrics: CPU utilization, Network utilization, Disk performance, Disk Reads/Writes
+- Requires CloudWatch agent or customscript: Memory utilization, disk swap utilization, disk space utilization, page file utilization, log collection
+- CloudWatch agent can be installed on both Linux and Windows-based instances, both EC2 and on-prem.
+- Enhanced Monitoring is a feature of RDS, **not CloudWatch**.
+- 
 
 ### Question 39
 
-TODO:
+- app consists of multiple EC2 instances in different AZs on a private subnet
+- app uses a single NAT Gateway for downloading software patches from the internet to the instances
+- There is a requirement to protect the app from a single point of failure when the NAT Gateway encounters a failure or if the AZ goes down
+
+**TODO**
+
+- Create a NAT Gateway in each AZ
+- Configure the route table in each private subnet to ensure that instaces use the NAT Gateway in the same AZ
+- A NAT Gateway is a highly available, managed Network Address Translation (NAT) service for your resources in a private subnet to access the Internet. NAT gateway is created in a specific Availability Zone and **implemented with redundancy** in that zone.
+- You must create a NAT Gateway on a public subnet to enable instances in a private subnet to connect to the Internet or other AWS services, but prevent the Internet from initiating a connection with those instances.
 
 ### Question 40
 
-TODO:
+:x:
+
+- app is hosted on an Auto Scaling group of Spot EC2 instances
+- app uses Amazon Aurora PostgreSQL as its database
+- optimize database workloads in the cluster
+- direct write operations of production traffic to high-capacity instances
+- point reporting queries sent by internal staff to low-capacity instances
+
+**TODO**
+
+- Create a custom endpoint in Aurora based on the specified criteria for prod traffic
+- Create a custom endpoint in Aurora for reporting queries
+
+**Notes**
+
+- Amazon Aurora typically involves a cluster of DB instances instead of a single instance. 
+- Using endpoints, you can map each connection to the appropriate instance or group of instances based on your use case.
+- The custom endpoint provides load-balanced database connections based on criteria other than the read-only or read-write capability of the DB instances.
 
 ### Question 41
 
-TODO:
+:x:
+
+user data stored in an S3 bucket was accidentally deleted
+
+**TODO**
+
+- Enable S3 Object Versioning
+- Enable Multi-Factor Auth (MFA) Delete
+
+**Notes**
+
+By using Versioning and enabling MFA (Multi-Factor Authentication) Delete, you can secure and recover your S3 objects from accidental deletion or overwrite.
 
 ### Question 54
 
-TODO:
+:x:
+
+- apps being migrated to AWS
+- EBS-Backed EC2 instance is using ephemeral instance store volumes
+- If this instance is stopped, what will happen to the data on the ephemeral store volumes?
+
+**Answer**
+
+Data will be permanently deleted
+
+**Notes**
+
+If you see **instance store** then that data will go bye-bye if you stop the instance.
 
 ### Question 56
 
-TODO:
+:x:
+
+build a highly available web application using stateless web servers. Which AWS services are suitable for storing session state data?
+
+**Answer**
+
+- ElastiCache
+- DynamoDB
+
+**Notes**
+
+Redshift Spectrum is a data warehousing solution. Redshift is not suitable for storing session state
 
 ### Question 59
 
-TODO:
+- app hosted on-prem
+- app uses a message broker service, using industry-standard messaging APIs and protocols
+- migrate app without rewriting messaging code in your application
+
+**TODO**
+
+Use AWS MQ
+
+**Notes**
+
+- Amazon MQ, Amazon SQS, and Amazon SNS are messaging services
+- Amazon MQ supports industry-standard APIs and protocols so you can switch to/from any standards-based message broker from/to Amazon MQ without rewriting the messaging code
+- Amazon SQS is a managed message queuing/brokering service
+- Amazon SNS is a managed pub/sub messaging service
+- Amazon SWF is a managed state tracker and task coordinator service
 
 ### Question 62
 
-TODO:
+:x:
+
+- app deployed in AWS currently in `eu-central-1` region
+- Auto Scaling group of On-Demand EC2 instances which are using pre-built AMIs
+- implement disaster recovery for your system so in the event that the application goes down in `eu-central-1`, a new instance can be started in `us-west-2`
+
+**TODO**
+
+- Copy the AMI from `eu-central-1` to `us-west-2`
+- create a new autoscaling group in `us-west-2` to use the AMI
+
+**Notes**
+
+- AMIs are typically only accessible to a single region
+- AMIs do not have a Network Access Control List (ACL) nor a Share functionality
 
 ### Question 65
 
-TODO:
+:x:
 
+- app has intermittent, sporadic, and unpredictable transactional workloads throughout the day that are hard to predict
+- app hosted on-prem
+- migrate app to AWS
+- app uses a relational database
+- database needs autoscaling capabilities
+
+**TODO**
+
+- Launch AWS Aurora Serverless DB cluster
+- set the minimum/maximum capacity for the cluster
+
+**Notes**
+
+- Amazon Aurora Serverless is an on-demand, auto-scaling configuration for Amazon Aurora. Provides a relatively simple, cost-effective option for infrequent, intermittent, sporadic or unpredictable workloads.
+- A non-Serverless DB cluster for Aurora is called a provisioned DB cluster. Allows you to set DB instance class types. Not suitable for intermittent, sporadic, and unpredictable transactional workloads.
+- "Serverless is better for unpredictable workloads"
+- 
 
 ## Domain 2: Security
 
@@ -739,7 +939,20 @@ For questions about schema changes being an issue, go with the NoSQL option.
 
 ### Question 64
 
-TODO:
+:x:
+
+- improve security of your database tier by tightly managing the data flow of your Amazon Redshift cluster
+- use VPC flow logs to monitor all the COPY and UNLOAD traffic of your Redshift cluster that moves in and out of your VPC
+
+**TODO**
+
+Enable Enhanced VPC routing on your AWS Redshift cluster
+
+**Notes**
+
+- When you use Amazon Redshift Enhanced VPC Routing, Amazon Redshift forces all COPY and UNLOAD traffic between your cluster and your data repositories through your Amazon VPC. You use these features to tightly manage the flow of data between your Amazon Redshift cluster and other resources. If Enhanced VPC Routing is not enabled, Amazon Redshift routes traffic through the Internet, including traffic to other services within the AWS network.
+- The Audit Logging feature is used to get the information about the connection, queries, and user activities in your Redshift cluster.
+- By default, you cannot create a flow log for an Amazon Redshift cluster. You have to enable Enhanced VPC Routing and set up the required VPC configuration.
 
 ## Domain 3: High-Performance
 
