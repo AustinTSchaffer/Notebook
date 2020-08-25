@@ -1,5 +1,5 @@
 ---
-tags: [AWS Services]
+tags: [AWS Services, Infrastructure, Practice Exam]
 ---
 
 # Practice Test 1
@@ -12,6 +12,7 @@ tags: [AWS Services]
 
 - 25 questions
 - 52% Correct (Failing)
+- VPC = Virtual Private Cloud
 
 ### Question 1
 
