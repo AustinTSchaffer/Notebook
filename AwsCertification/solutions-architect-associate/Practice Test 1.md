@@ -10,9 +10,7 @@ tags: [AWS Services, Infrastructure, Practice Exam]
 
 ## Domain 1: Resiliency
 
-- 25 questions
-- 52% Correct (Failing)
-- VPC = Virtual Private Cloud
+52% Correct (Failing)
 
 ### Question 1
 
@@ -512,8 +510,7 @@ Use AWS MQ
 
 ## Domain 2: Security
 
-- 19 questions
-- 53% Correct (Failing)
+53% Correct (Failing)
 
 ### Question 4
 
@@ -954,8 +951,7 @@ Enable Enhanced VPC routing on your AWS Redshift cluster
 
 ## Domain 3: High-Performance
 
-- 15 questions
-- 60% Correct (Failing)
+60% Correct (Failing)
 
 ### Question 8
 
@@ -1245,8 +1241,7 @@ Use partition keys with high-cardinality attributes, which have a **large number
 
 ## Domain 4: Cost-Optimization
 
-- ~~3~~ 4 questions
-- 100% correct
+100% correct
 
 ### Question 13
 
