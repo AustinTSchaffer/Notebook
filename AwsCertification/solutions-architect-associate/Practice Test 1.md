@@ -35,7 +35,9 @@ The private subnet
 
 ![](attachments/vpc-example-configuration.png)
 
-### Question 2 :x:
+### Question 2
+
+:x:
 
 - web app consists of EC2 instances and an oracle relational database server
 - database must be in a high-availability configuration
@@ -122,7 +124,9 @@ Modify the Network Access Control List (ACL) to deny access from the IP Address 
 - An Access Control List (ACL) is an optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets
 - IAM policies does not and can not control the inbound and outbound traffic of a VPC.
 
-### Question 7 :x:
+### Question 7
+
+:x:
 
 - company owns an RDS instance in an AZ
 - AZ is experiencing outages
@@ -209,7 +213,9 @@ The EC2 instance launched from the oldest launch configuration
   - securely connect to Amazon EC2 instances
   - provide Kerberos-based single sign-on (SSO)
 
-### Question 20 :x:
+### Question 20
+
+:x:
 
 - traffic monitoring and reporting application uses Kinesis to accept real-time data
 - to process and store data, app uses Kinesis Data Firehose to load streaming data to various AWS resources
@@ -311,7 +317,9 @@ TODO:
 - 19 questions
 - 53% Correct (Failing)
 
-### Question 4 :x:
+### Question 4
+
+:x:
 
 - app uses Redshift Cluster for a data warehouse
 - best service for monitoring all API calls to the Redshift instance?
@@ -329,7 +337,9 @@ CloudTrail for security logs
 - AWS X-Ray helps **developers analyze and debug production, distributed applications**, such as those built using a microservices architecture. X-Ray provides an end-to-end view of requests as they travel through your application, and shows a map of your application’s underlying components. This is not a security monitoring tool.
 - Redshift Spectrum **is not a monitoring service**. Is a feature of Amazon Redshift that enables you to query and analyze data in S3
 
-### Question 10 :x:
+### Question 10
+
+:x:
 
 - On-Demand EC2 instance
 - should only allow SSH connections
@@ -350,7 +360,9 @@ CloudTrail for security logs
 - `/32` means "only this IP address"
 - `/0` means "all IP addresses"
 
-### Question 12 :x:
+### Question 12
+
+:x:
 
 - app will allow users to pay their taxes or claim their tax refund
 - app is hosted on EC2
@@ -366,7 +378,9 @@ Use the AWS KMS API to encrypt files before writing them to the disk.
 - EBS encryption provides additional security for EBS volumes, but does not allow for encryption of individual files. Better to use KMS API to encrypt data **before** saving it to the disk.
 - Security Token Service (STS) is a web service that enables you to request temporary, limited-privilege credentials for AWS Identity and Access Management (IAM) users or for users that you authenticate (federated users).
 
-### Question 17 :x:
+### Question 17
+
+:x:
 
 - store confidential tax documents in AWS
 - there is concern from a security perspective on what can be put in AWS
@@ -407,7 +421,9 @@ Use the AWS KMS API to encrypt files before writing them to the disk.
 - Shibboleth also supports SAML 2.0
 - Web Identity Federation is primarily used to let users sign in via a well-known external identity provider (IdP), such as Login with Amazon, Facebook, Google.
 
-### Question 22 :x:
+### Question 22
+
+:x:
 
 - web app uses CloudFront to distribute static content from an S3 bucket
 - content will be distributed globally
@@ -432,7 +448,9 @@ Use the AWS KMS API to encrypt files before writing them to the disk.
 - Match Viewer is an Origin Protocol Policy which configures CloudFront to communicate with your origin using HTTP or HTTPS, depending on the protocol of the viewer request.
 - Field-Level Encryption only allows you to securely upload user-submitted sensitive information to your web servers.
 
-### Question 23 :x:
+### Question 23
+
+:x:
 
 - confidential information is being uploaded to S3
 - engineer is tasked with setting up compliance policies that verify sensitive data in a manner that meets compliance standards
@@ -486,7 +504,9 @@ This policy does not contain permissions for
 - changing access rights on any bucket
 - deleting objects in any bucket
 
-### Question 32 :x:
+### Question 32
+
+:x:
 
 - app uses ElastiCache for Redis as its distributed session management component
 - requirements require you to secure the session data in the app by requiring other engineers to enter a password before they are granted permissions to execute redis commands
@@ -534,7 +554,9 @@ Enable Cross-origin resource sharing (CORS) configuration in the bucket
 
 - Cross-origin resource sharing (CORS) defines a way for client web applications that are loaded in one domain to interact with resources in a different domain.
 
-### Question 43 :x:
+### Question 43
+
+:x:
 
 - application is composed of an Auto Scaling group of EC2 instances, an Application Load Balancer (ALB), and a MySQL RDS instance in a Multi-AZ deployment configuration
 - protect confidential data of customers
@@ -552,7 +574,9 @@ Enable IAM DB Authentication
 - You can create and assign an IAM Role to the EC2 instances, granting them exclusive access to the RDS instance, but you still need to configure the RDS to use IAM DB Authentication.
 - IAM+STS is not a compatible use case for this scenario
 
-### Question 44 :x:
+### Question 44
+
+:x:
 
 - company has undertaken a Total Cost of Ownership (TCO) analysis evaluating the use of Amazon S3 versus acquiring more storage hardware.
 - 1200 employees are to be given access to use S3 for personal documents
@@ -575,7 +599,9 @@ Enable IAM DB Authentication
 
 ![](./attachments/saml-based-federation.diagram.png)
 
-### Question 45 :x:
+### Question 45
+
+:x:
 
 - company is using AWS to serve high-quality photos to website visitors
 - other travel sites are linking to the company's photos
@@ -652,7 +678,9 @@ Configure the RDS DB instance so it's deployed in a Multi-AZ deployment
 
 ![](./attachments/multi-az-deployment-vs-read-replicas.png)
 
-### Question 57 :x:
+### Question 57
+
+:x:
 
 - company uses an ECS Cluster, using Fargate to host a website
 - database credentials should be supplied using environment variables
@@ -690,7 +718,9 @@ For questions about schema changes being an issue, go with the NoSQL option.
 
 ![](./attachments/rdbms-vs-dynamodb.png)
 
-### Question 63 :x:
+### Question 63
+
+:x:
 
 - software team uses AWS Lambda for stuff
 - lambda app uses MongoDB Atlas
@@ -716,7 +746,9 @@ TODO:
 - 15 questions
 - 60% Correct (Failing)
 
-### Question 8 :x:
+### Question 8
+
+:x:
 
 - You are using a combination of API Gateway and Lambda for the web services of your online web portal
 - It is expected that your web portal will receive a massive number of visitors all around the globe
@@ -732,7 +764,9 @@ Use throttling limits in API Gateway
 - Throttling limits can be set for standard rates and bursts.
 - Throttling ensures that calls to the Amazon EC2 API do not exceed the maximum allowed API request limits.
 
-### Question 11 :x:
+### Question 11
+
+:x:
 
 - A global IT company with offices around the world has multiple AWS accounts
 - set up a solution that centrally manages their AWS resources
@@ -852,7 +886,9 @@ The ALB will stop routing traffic to the EC2 instance
 
 - ALBs will stop sending traffic to EC2 instances if they fail a health check.
 
-### Question 36 :x:
+### Question 36
+
+:x:
 
 - app uses CloudFront web distribution to serve static content to global users
 - users are experiencing long wait times for logins
@@ -893,7 +929,9 @@ Which CloudWatch metrics are available by default for EC2 instances? Which are n
   - Log collection
 - It's possible to write custom metrics in Perl using CloudWatch Monitoring Scripts (please don't do this)
 
-### Question 48 :x:
+### Question 48
+
+:x:
 
 - application uses a machine learning model
 - app's workflow requries high-performance, parallel hot storage to process the training datasets concurrently
@@ -953,7 +991,9 @@ Amazon DynamoDB Accelerator (DAX)
 - AWS Device Farm is an app testing service that lets you test and interact with your Android, iOS, and web apps on many devices at once, or reproduce issues on a device in real time.
 - DynamoDB Auto Scaling is primarily used to automate capacity management for your tables and global secondary indexes.
 
-### Question 60 :x:
+### Question 60
+
+:x:
 
 - app uses an API build with Lambda and API Gateway
 - app maintainers are expecting significant increase in traffic in the coming days
@@ -969,7 +1009,9 @@ Enable throttling limits and result caching in API Gateway
 - AWS API Gateway provides throttling at multiple levels including global and by service call
 - API Gateway: https://aws.amazon.com/api-gateway/faqs/
 
-### Question 61 :x:
+### Question 61
+
+:x:
 
 - containerized app running on AWS ECS cluster behind a load balancer
 - app heavily uses DynamoDB
