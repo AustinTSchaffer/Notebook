@@ -259,3 +259,184 @@ A VPC peering connection does not support edge to edge routing. If either VPC in
 - (IPv6) A ClassicLink connection. You can enable IPv4 communication between a linked EC2-Classic instance and instances in a VPC on the other side of a VPC peering connection. However, IPv6 is not supported in EC2-Classic, so you cannot extend this connection for IPv6 communication.
 
 ![](attachments/VPCs-with-peering-connection-plus-corporate-VPN.png)
+
+## Question 35
+
+- data analytics app updates a real-time, foreign exchange dashboard
+- another app archives data to Amazon Redshift
+- both apps are configured to consume data from the same stream concurrently and independently by using Amazon Kinesis Data Streams
+- you noticed that there are a lot of occurrences where a shard iterator expires unexpectedly
+- you found out that the DynamoDB table used by Kinesis does not have enough capacity to store the lease data
+
+You should **increase the write capacity assigned to the shard table**
+
+> A new shard iterator is returned by every `GetRecords` request (as `NextShardIterator`), which you then use in the next `GetRecords` request (as `ShardIterator`). Typically, this shard iterator does not expire before you use it. You may find that shard iterators expire because you have not called `GetRecords` for more than 5 minutes, or because you've performed a restart of your consumer application.
+> 
+> If the shard iterator expires immediately before you can use it, this might indicate that the DynamoDB table used by Kinesis does not have enough capacity to store the lease data. This situation is more likely to happen if you have a large number of shards. To solve this problem, increase the write capacity assigned to the shard table.
+
+- DynamoDB is a fully managed service which automatically scales its storage and does not have a concept of "storage capacity".
+- DynamoDB Accelerator (DAX) is used for read performance improvement of your DynamoDB table.
+
+## Question 36
+
+- Both historical records and frequently accessed data are stored on an on-premises storage system.
+- The amount of current data is growing at an exponential rate.
+- As the storage’s capacity is nearing its limit, the company’s Solutions Architect has decided to move the historical records to AWS to free up space for the active data.
+
+You should use **AWS DataSync** to move historical records from on-prem to AWS. Choose **AWS S3 Glacier Deep Archive** to be the destination for the data.
+
+**AWS Storage Gateway** is used in providing low-latency access to data by caching frequently accessed data on-premises while storing archive data securely and durably in Amazon cloud storage services. Storage Gateway optimizes data transfer to AWS by sending only changed data and compressing data. Not really suitable for a big dump.
+
+## Question 37
+
+- You have an Auto Scaling group of EC2 instances
+- You want the Auto Scaling group to behave in such a way that it will follow a predefined set of parameters before it scales down the number of EC2 instances, which protects your system from unintended slowdown or unavailability.   
+
+In Auto Scaling, the following statements are correct regarding the cooldown period:
+
+- It ensures that the Auto Scaling group does not launch or terminate additional EC2 instances before the previous scaling activity takes effect.
+- Its default value is 300 seconds.
+- It is a configurable setting for your Auto Scaling group.
+
+## Question 39
+
+- company wants to have a disaster recovery strategy in AWS for mission-critical applications
+- they also want to minimize the monthly costs
+- set up a minimal version of the application that is always available in case of any outages
+- The Disaster Recovery (DR) site should only run the most critical core elements of your system in AWS to save cost which can be rapidly upgraded to a full-scale production environment in the event of system outages
+
+The term pilot light is often used to describe a DR scenario in which a minimal version of an environment is always running in the cloud.
+
+![](attachments/pilot-light-DR.png)
+
+**Backup & Restore** can be good when migrating an application, but the speed of recovery provided by a backup and restore solution might not meet your RTO and RPO.
+
+**Warm Standby** is a method of redundancy in which the scaled-down secondary system runs in the background of the primary system. Doing so would not optimize cost savings as much as running a pilot light recovery since some of your services are always running in the background.
+
+**Multi Site** is the most expensive solution out of disaster recovery solutions.
+
+## Question 40
+
+To protect your enterprise applications against unauthorized access, you configured multiple rules for your Network ACLs in your VPC. How are the access rules evaluated?
+
+A network access control list (ACL) is an optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets. You might set up network ACLs with rules similar to your security groups in order to add an additional layer of security to your VPC. Network ACL Rules are evaluated by rule number, from **lowest to highest**, and **executed immediately** when a matching allow/deny rule is found.
+
+![](attachments/network-acl-example-diagram.png)
+
+## Question 42
+
+Elastic Load Balancing (ELB) supports three types of load balancers. You can select the appropriate load balancer based on your application needs.
+
+**Application Load Balancers (ALB)** support path-based routing, host-based routing and support for containerized applications. If you need path-based/host-based routing, you need an ALB.
+
+> **Application Load Balancers (ALB)** routes traffic to targets - EC2 instances, containers, IP addresses and Lambda functions based on the content of the request. Ideal for advanced load balancing of HTTP and HTTPS traffic, Application Load Balancer provides advanced request routing targeted at delivery of modern application architectures, including microservices and container-based applications.
+>
+> **Classic Load Balancers** provide basic load balancing across multiple Amazon EC2 instances and operates at both the request level and connection level. Classic Load Balancer is intended for applications that were built within the EC2-Classic network.
+>
+> **Network Load Balancer** operates at the connection level (Layer 4), routing connections to targets - Amazon EC2 instances, microservices, and containers – within Amazon Virtual Private Cloud (Amazon VPC) based on IP protocol data. Ideal for load balancing of both TCP and UDP traffic, Network Load Balancer is capable of handling millions of requests per second while maintaining ultra-low latencies. Network Load Balancer is optimized to handle sudden and volatile traffic patterns while using a single static IP address per Availability Zone. It is integrated with other popular AWS services such as Auto Scaling, Amazon EC2 Container Service (ECS), Amazon CloudFormation and AWS Certificate Manager (ACM).
+>
+> - https://aws.amazon.com/elasticloadbalancing/features/#compare
+
+## Question 47
+
+- company uses Chef Configuration management in their datacenter
+- migrate to AWS without changing configuration management tool
+
+**AWS OpsWorks** is a configuration management service that provides managed instances of Chef and Puppet. Chef and Puppet are automation platforms that allow you to use code to automate the configurations of your servers.
+
+**Amazon Simple Workflow Service (SWF)** is a fully-managed state tracker and task coordinator in the Cloud.
+
+**AWS Elastic Beanstalk** handles an application's deployment details of capacity provisioning, load balancing, auto-scaling, and application health monitoring.
+
+**AWS CloudFormation** is a service that lets you create a collection of related AWS resources and provision them in a predictable fashion using infrastructure as code. It does not let you leverage Chef recipes just like Amazon SWF and AWS Elastic Beanstalk.
+
+## Question 48
+
+- app hosted in an Auto Scaling group of EC2 instances, behind an Application Load Balancer.
+- the Solutions Architect identified a series of SQL injection attempts and cross-site scripting attacks to the application
+
+You should set up security rules that block SQL injection and Cross Site Scripting (XSS) attacks in **AWS Web Application Firewall (WAF)**. Associate the rules to the Application Load Balancer (ELB/ALB)
+
+**Amazon Guard​Duty** is a threat detection service that continuously monitors for malicious activity and unauthorized behavior to protect your AWS accounts and workloads.
+
+**AWS Firewall Manager** simplifies your AWS WAF and AWS Shield Advanced administration and maintenance tasks across multiple accounts and resources.
+
+**Network Access Control List (NACL)** is an optional layer of security for your VPC that acts as a firewall for controlling traffic in and out of one or more subnets. NACLs are not effective in blocking SQL injection and XSS attacks.
+
+## Question 50
+
+- EC2 instances require access to various AWS services such as S3 and Redshift.
+- provision access to system administrators so they can deploy and test their changes
+
+You should assign an IAM role to the EC2 instances for point 1. You should enable multi factor authentication for point 2.
+
+**AWS ACM** is a service that lets you provision, manage, and deploy public and private SSL/TLS certificates for use with AWS services and your internal connected resources. It is not used as a secure storage for your access keys.
+
+## Question 51
+
+- app is hosted in AWS and uses ECS to host its front-end tier and a Multi-AZ RDS for its database tier, with a standby replica.
+- What are the events that will make Amazon RDS automatically perform a failover to the standby replica?
+
+In a Multi-AZ deployment, Amazon RDS automatically provisions and maintains a synchronous standby replica in a different Availability Zone. The primary DB instance is synchronously replicated across Availability Zones.
+
+Amazon RDS automatically performs a failover in the event of any of the following:
+
+- Loss of availability in primary Availability Zone
+- Loss of network connectivity to primary
+- Compute unit failure on primary
+- Storage failure on primary
+
+## Question 52
+
+- company has resources hosted in AWS and on-premises servers. 
+- You have been requested to create a decoupled architecture for applications which make use of both resources. 
+
+**Amazon Simple Queue Service (SQS)** and **Amazon Simple Workflow Service (SWF)** are the services that you can use for creating a decoupled architecture in AWS. Decoupled architecture is a type of computing architecture that enables computing components or layers to execute independently while still interfacing with each other.
+
+**Amazon SQS** offers reliable, highly-scalable hosted queues for storing messages while they travel between applications or microservices.
+
+**Amazon SWF** is a web service that makes it easy to coordinate work across distributed application components.
+
+**Note:** This question is not about decoupling from AWS, it's about decoupling components in AWS. There is no such thing as Amazon Simple Decoupling Service. 
+
+## Question 54
+
+> A company has an enterprise web application hosted in an AWS Fargate cluster with an Amazon FSx for Lustre filesystem for its high performance computing workloads. A warm standby environment is running in another AWS region for disaster recovery. A Solutions Architect was assigned to design a system that will automatically route the live traffic to the disaster recovery (DR) environment only in the event that the primary application stack experiences an outage.
+
+You need to:
+
+- set up a failover routing policy configuration in Route 53 by adding a health check on the primary service endpoint.
+- Configure Route 53 to direct the DNS queries to the secondary record when the primary resource is unhealthy. 
+- Configure the network access control list and the route table to allow Route 53 to send requests to the endpoints specified in the health checks.
+- Enable the `Evaluate Target Health` option by setting it to `Yes`.
+
+## Question 56
+
+In Route 53, which record types should you use to point the DNS name of an Application Load Balancer?
+
+Use 2 alias records: one `AAAA` type, one `A` type.
+
+To route domain traffic to an ELB load balancer, use Amazon Route 53 to create an alias (`A`) record that points to your load balancer. An `A` record is a Route 53 extension to DNS. It's similar to a `CNAME` record, but you can create an alias record both for the domain and for subdomains. To enable IPv6 resolution, you would need to create an `ALIAS AAAA` record. This is assuming your Elastic Load Balancer has IPv6 support.
+
+`CNAME` records are only for subdomains.
+
+`MX` records are primarily used for mail servers. It includes a priority number and a domain name.
+
+## Question 61
+
+Which of the following configuration types will allow you to specify the percentage of traffic shifted to your updated Lambda function version before the remaining traffic is shifted in the second increment?
+
+**Canary** Traffic is shifted in two increments. You can choose from predefined canary options that specify the percentage of traffic shifted to your updated Lambda function version in the first increment and the interval, in minutes, before the remaining traffic is shifted in the second increment.
+
+**Linear** Traffic is shifted in equal increments with an equal number of minutes between each increment. You can choose from predefined linear options that specify the percentage of traffic shifted in each increment and the number of minutes between each increment.
+
+**All-at-once** All traffic is shifted from the original Lambda function to the updated Lambda function version at once.
+
+**Blue/Green** is not a predefined deployment type configuration for an AWS Lambda Compute Platform.
+
+## Question 65
+
+What are the things you have to check so that these EC2 instances can communicate inside the VPC?
+
+- Check if all security groups are set to allow the application host to communicate to the database on the right port and protocol.
+- Check the Network ACL if it allows communication between the two subnets.
