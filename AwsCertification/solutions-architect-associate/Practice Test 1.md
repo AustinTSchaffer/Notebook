@@ -1,5 +1,6 @@
 ---
 tags: [AWS Services, Infrastructure, Practice Exam]
+date: August, 2020
 ---
 
 # Practice Test 1
