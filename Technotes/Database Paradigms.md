@@ -90,13 +90,10 @@ A good variant will rank results, handle typos, do other seemingly Google-y thin
 
 Can be expensive at scale. Adds value to user experience. Typeahead search-boxes are a great example.
 
-## Multi-Model Database
-
-> Don't want to use more than one database? Pick one that has the features/drawbacks of 2 or more, at the same time!
-
-FaunaDB is an example
-
-## Other DB Types
+## Other Notable DB Types
 
 - Data Warehouse
 - Time-series database
+- Multi-Model Database
+  - Don't want to use more than one database? Pick one that has the features/drawbacks of 2 or more, at the same time!
+  - Example: FaunaDB
