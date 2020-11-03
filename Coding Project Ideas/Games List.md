@@ -12,7 +12,7 @@ Games where you need to route one or more vehicles to objectives, where the path
 
 ## Line-Placement
 
-Games where lines must be placed on a board, where all placed lines must form a single map.
+Games where lines must be placed on a board, where all placed lines must form a single map or cycle.
 
 - Hashi, Bridge Game
 - SlitherLink
