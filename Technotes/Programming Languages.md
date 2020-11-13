@@ -17,7 +17,7 @@ login("password", "username", "firefox", "123456")
 - If the parameters had different types, the program's compiler would let you know that params are swapped. That doesn't happen when they're the same type.
 - If you make the function accept a configuration object instead of the raw params themselves, then it would help developer intention, but really it just MOVES the problem somewhere else.
 
-The part that's frustrating is most programming languages don't have any inherent controls for ensuring that a developer's intentions are considered in cases such as these. In cases such as this where you have multiple ordered function parameters with the same type, they should probably be keyword arguments that can't be supplied as ordered parameters. It would be nice if the compiler warned about this at least, to reduce future ambiguity and miscommunication issues between the developer and the program.
+The part that's frustrating is most programming languages don't have any inherent controls for ensuring that a developer's intentions are considered in cases such as these. In cases such as this where you have multiple ordered function parameters with the same type, they should probably be keyword arguments that can't be supplied as ordered parameters. It would be nice if the compiler warned about this at least, to reduce future ambiguity and miscommunication issues between the developer and the program's source code.
 
 Python has a neat feature where you can force arguments to be kwargs without specifying default values.
 
