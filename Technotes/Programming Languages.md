@@ -46,7 +46,7 @@ It's a lot wordier, you have to remember to use it, and there's not an easy way 
 
 - Source control depends on newline characters to separate chunks of code
 - Sometimes chunks of code are a single variable assignment in a list of parameters
-- Results in cases where 
+- Results in cases where changes that are functionally identical but cannot be merged by the VCS
 
 In the example below, if a dev changes one property of the `login` function call and another dev changes a different propery, the VCS should be able to merge the 2 changes. However, if the function call was short enough to fit on one line and the 2 devs did the exact same thing, the VCS would likely not be able to merge the changes.
 
@@ -62,3 +62,5 @@ login(
 # Changes to individual properties are cannot be easily merged.
 login("password", "username", "firefox", "123456")
 ```
+
+Should there be a VCS that can merge program files based on expressions instead of lines? How do you track changes to a program's expressions?
