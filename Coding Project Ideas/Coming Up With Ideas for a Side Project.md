@@ -41,6 +41,7 @@ Other data sources / programming competition sites:
 - https://innocentive.wazoku.com/#/community/9396a088f8614c2eac89aacf2ae1c624/home-page
 - https://www.topcoder.com/challenges
 - https://www.hackerrank.com/dashboard
+- https://hdsc.nws.noaa.gov/hdsc/pfds/pfds_map_cont.html
 
 ## ASCII Images from Photos
 
