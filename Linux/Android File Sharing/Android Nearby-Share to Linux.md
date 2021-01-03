@@ -12,6 +12,14 @@ It is possible (and pretty easy) to send files from an Android device to an Ubun
     - Select "send files"
     - Select the files to send and send them
     - Accept the file share on the Android device
+- From Linux to Android via Bash
+
+```bash
+# Provided by Gnome, allows you to provide partial info as to what you want to transfer where.
+# Asks the user for additional info via a GUI when necessary. File transfers unfortunately
+# fail if the file extension is not recognized by the Android device.
+bluetooth-sendto
+```
 
 This was pretty seamless without any tweaks or additional installs. YMMV, but this should work on any Linux device with a comparable Bluetooth menu. It looks like you can also send files to non-paired devices over Bluetooth, you just need to accept the file transfer.
 
