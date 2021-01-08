@@ -94,6 +94,23 @@ Requesting information ...
 
 Now that we've verified that both of my devices use Bluetooth 5, we check the math to show that Bluetooth 5's "Basic Rate" of 721.2 kb/s would take about 11 seconds to transfer a 1MB file. This lines up with my experience, though a bit optimistic. My testing with a 1MB file showed a progress bar that lasted at least 20 seconds.
 
+Wait hold on, Bluetooth 5 has speeds advertised up to 54 Mb/s in High Speed mode. The Linux kernel has build options for enabling High Speed mode. If I check my `/boot/config-*`, I should be able to see if my Kernel was build with `CONFIG_BT_HS=y`. I checked, and it is in fact NOT enabled.
+
+
+```bash
+$ cat "/boot/config-$(uname -r)" | grep CONFIG_BT_HS
+# CONFIG_BT_HS is not set
+```
+
+This appears to be due to not being "widely adopted" and "also been referenced upstream by BleedingTooth vulnerability"
+
+Bummer.
+
+Refs:
+- https://core.docs.ubuntu.com/en/stacks/bluetooth/bluez/docs/reference/enablement/kernel-configuration-options
+- https://www.spinics.net/linux/fedora/fedora-kernel/msg09378.html
+
+
 ## A Faster Open device-to-device Transfer Method?
 
 At this stage there are a few of tradeoffs and problems:
@@ -104,8 +121,9 @@ At this stage there are a few of tradeoffs and problems:
 - Email often has max file size limits, and again, that's not peer-to-peer, device-to-device. You're not going to be sending someone a movie over email.
 - If you're at home on your network, you could set up a public file share location on dedicated hardware. That's kind of like using Google Drive, but the transfer speeds will likely be faster. This does also tethers your data transfer to a network you own, takes planning, setup, maintenance, also you have to help your friend get connected.
 
+
 ## Snapdrop
 
 https://snapdrop.net/
 
-This site appears to help devices find each other, then allows the devices to send files to each other P2P using WebRTC.
+This site appears to help devices find each other, then allows the devices to send files to each other P2P using WebRTC. Neat! Works really well. Unfortunately requires a 3rd party for device discovery, but at least the data moves locally-ish. It appears to require both devices to be on the same network.
