@@ -15,7 +15,7 @@
     "esbenp.prettier-vscode",
 
     // GitLens for seeing version history inline
-    "eamodio.gitlens",
+    // "eamodio.gitlens",
 
     // [[wiki-links]], backlinking etc
     "kortina.vscode-markdown-notes",
@@ -24,7 +24,7 @@
     "tchayen.markdown-links",
 
     // Understated grayscale theme (light and dark variants)
-    "philipbe.theme-gray-matter"
+    // "philipbe.theme-gray-matter"
 	],
 	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
 	"unwantedRecommendations": [

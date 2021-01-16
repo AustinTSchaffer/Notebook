@@ -1,3 +1,7 @@
+---
+tags: [Gripes, Programming]
+---
+
 # Assorted Notes on Programming Languages
 
 Most of these are gripes on code style, honestly.

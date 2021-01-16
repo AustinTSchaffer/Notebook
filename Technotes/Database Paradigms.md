@@ -1,6 +1,5 @@
 ---
 tags: [Infrastructure, Databases, Architecture]
-date: September 2020
 ---
 
 # Database Paradigms

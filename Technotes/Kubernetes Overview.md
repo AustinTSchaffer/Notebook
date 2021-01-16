@@ -1,3 +1,7 @@
+---
+tags: [Infrastructure, Kubernetes, Containers]
+---
+
 # Kubernetes Overview
 
 This document was written while watching [Kubernetes Explained in 100 Seconds](https://www.youtube.com/watch?v=PziYflu8cB8) by [Fireship](https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA)
