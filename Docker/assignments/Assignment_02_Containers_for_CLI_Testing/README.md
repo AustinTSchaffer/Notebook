@@ -1,3 +1,7 @@
+---
+tags: [Docker, Assignment]
+---
+
 # Assignment 2 - CLI App Testing
 
 ## Objectives
@@ -22,9 +26,8 @@ sudo docker container run -it --rm alpine:3.8 /bin/sh
 
 ## Results
 
-| Linux OS	| Image Tag 	| CURL Version 	|
-|-		|-		|-		|
-| Centos 	| 7		| 7.29.0	|
-| Ubuntu	| 14.04		| 7.35.0	|
-| Alpine	| 3.8		| 7.61.1	|
-
+| Linux OS | Image Tag | CURL Version |
+| -------- | --------- | ------------ |
+| Centos   | 7         | 7.29.0       |
+| Ubuntu   | 14.04     | 7.35.0       |
+| Alpine   | 3.8       | 7.61.1       |

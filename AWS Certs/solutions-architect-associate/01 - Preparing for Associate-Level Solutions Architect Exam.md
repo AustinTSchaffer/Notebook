@@ -1,7 +1,5 @@
 ---
-title: 01 - Preparing for Associate-Level Solutions Architect Exam
-created: '2020-08-17T00:48:07.098Z'
-modified: '2020-08-17T01:11:35.893Z'
+tags: [AWS, Certification]
 ---
 
 # 01 - Preparing for Associate-Level Solutions Architect Exam

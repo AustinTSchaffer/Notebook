@@ -1,3 +1,7 @@
+---
+tags: [Linux, Kernel, Nvidia]
+---
+
 # Update Kernel Notes
 
 Source: https://www.linux.org/threads/kernel-update-with-nvidia.19323/

@@ -1,3 +1,7 @@
+---
+tags: [Workshop, AWS]
+---
+
 # AWS Workshop Day 2
 
 Jan 30, 2020

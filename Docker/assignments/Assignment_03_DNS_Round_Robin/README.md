@@ -1,3 +1,7 @@
+---
+tags: [Docker, Assignment, DNS, Networking]
+---
+
 # Assignment 3 - Containers and DNS
 
 This assignment is to test linking between containers within a Docker virtual

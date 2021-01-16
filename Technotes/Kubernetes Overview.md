@@ -6,7 +6,7 @@ tags: [Infrastructure, Kubernetes, Containers]
 
 This document was written while watching [Kubernetes Explained in 100 Seconds](https://www.youtube.com/watch?v=PziYflu8cB8) by [Fireship](https://www.youtube.com/channel/UCsBjURrPoezykLs9EqgamOA)
 
-At the highest-level, Kubernetes is a tool for automating and orchestrating containerized workloads. It's become the de-facto standard for container orchestration in the cloud, providing more support and more features than Docker Swarm. It is also considerably more complex and more difficult to deploy compared to deploying Swarm and `docker-compose`. Part of Kubernetes ubiquity is due to it being open-source and also due to most cloud platforms providing managed Kubernetes instances.
+At the highest-level, #Kubernetes is a tool for automating and orchestrating containerized workloads. It's become the de-facto standard for container orchestration in the cloud, providing more support and more features than Docker Swarm. It is also considerably more complex and more difficult to deploy compared to deploying Swarm and `docker-compose`. Part of Kubernetes ubiquity is due to it being open-source and also due to most cloud platforms providing managed Kubernetes instances.
 
 Kubernetes is commonly deployed as a [**cluster**](https://kubernetes.io/docs/concepts/architecture/), where multiple compute nodes each run a Kubernetes runtime which all communicate together. Kubernetes distributes containers to each node in the cluster and is capable of auto-scaling the container jobs. Kubernetes is also capable of auto-healing, meaning it has the capability to replace compute nodes if one goes offline or becomes otherwise unhealthy.
 

@@ -1,3 +1,7 @@
+---
+tags: [Ideas, Programming, Architecture]
+---
+
 # Coming up with ideas for a side project
 
 https://www.youtube.com/watch?v=JTOJsU3FSD8
@@ -62,11 +66,11 @@ There are tons of APIs out there that you can leverage and build value on top of
 
 People like online portals that allow them to put in information and get back immediate analysis. For example: tax/net worth calculations are pretty neat.
 
-Build an app that runs a survey about cloud costs, then returns price optimizations. Maybe find the cheapest cloud provider. Maybe a cross-cloud kubernetes would be cool (except networking would be crappy).
+Build an app that runs a survey about cloud costs, then returns price optimizations. Maybe find the cheapest cloud provider. Maybe a cross-cloud kubernetes would be cool (except node-node networking would be crappy).
 
 ## Slack Video Chat (Video Streaming)
 
-Yeah ok I'm probably not going to 
+Yeah ok I'm probably not going to bother with this.
 
 ## Hosting Provider
 

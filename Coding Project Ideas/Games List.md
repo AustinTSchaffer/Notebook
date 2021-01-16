@@ -1,3 +1,7 @@
+---
+tags: [Ideas, Programming]
+---
+
 # Games List
 
 List of games that'd be interesting to solve as part of a larger exploration into synthesizing algorithms for solving problems proposed by games with simple rules.

@@ -1,3 +1,7 @@
+---
+notes: [Docker, Jekyll, Volumes, WebServer]
+---
+
 # Assignment 6 - Jekyll Static Site Generator
 
 - Use Jekyll "Static Site Generator" to start a local web server

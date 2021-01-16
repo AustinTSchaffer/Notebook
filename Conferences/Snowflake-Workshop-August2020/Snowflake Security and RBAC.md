@@ -1,3 +1,7 @@
+---
+notes: [Snowflake, Permissions, RBAC, Workshop]
+---
+
 # Snowflake Security: Role Based Access Control (RBAC)
 
 Purpose: Provide high level understanding of the capabilities and features that are relevant to security and access control.

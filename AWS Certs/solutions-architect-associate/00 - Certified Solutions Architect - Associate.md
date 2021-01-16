@@ -1,8 +1,5 @@
 ---
-favorited: true
-title: 00 - Certified Solutions Architect - Associate
-created: '2020-08-17T00:23:46.054Z'
-modified: '2020-08-18T18:16:05.748Z'
+tags: [AWS, Certification]
 ---
 
 # 00 - Certified Solutions Architect - Associate

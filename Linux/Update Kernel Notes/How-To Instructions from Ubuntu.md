@@ -1,3 +1,7 @@
+---
+tags: [Linux, Kernel, Ubuntu]
+---
+
 # Ubuntu Installing Mainline Kernel Builds
 
 Source: https://wiki.ubuntu.com/Kernel/MainlineBuilds

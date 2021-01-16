@@ -1,3 +1,7 @@
+---
+tags: [Conference, dotnet, CSharp]
+---
+
 # DEVintersection Spring 2019
 
 This section is dedicated to all of the notes that I took while at DEVintersection Spring 2019.
@@ -73,7 +77,7 @@ This talk was incredible. Good code samples. Well presented and well reasoned. R
    "generalize and cross boundaries, decoupling your code from a specific
    service or technology or platform".
 
-I felt that both of these points were a pretty big case for functional programming in general, but even if you hate functional programming, they are interesting concepts that can help expand your pattern-programming tool-belt.
+I felt that both of these points were a pretty big case for functional programming in general, but even if you hate functional programming, they are interesting concepts that can help expand your programming patterns toolbelt.
 
 ### DevOps for Desktop Apps
 

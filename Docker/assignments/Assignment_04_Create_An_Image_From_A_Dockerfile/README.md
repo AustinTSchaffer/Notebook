@@ -1,3 +1,7 @@
+---
+tags: [Docker, Images, NodeJS, Assignment]
+---
+
 # Assignment 4 - Create Your Own Image
 
 Dockerize an existing node.js app.
