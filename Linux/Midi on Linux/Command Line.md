@@ -1,3 +1,7 @@
+---
+tags: [Linux, Audio, MIDI]
+---
+
 # Command Line
 
 There are some cool command line utilities for midi recording and playback. Pretty much all of them work by specifying the port number of a midi device, performing some action in tandem with the MIDI device. You can get all of these programs from the `alsa-utils` package.

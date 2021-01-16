@@ -1,3 +1,7 @@
+---
+tags: [Docker, Docker-Swarm, Assignment]
+---
+
 # Assignment 9 - Create a MultiService App
 
 - Docker's Distributed Voting App

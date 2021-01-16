@@ -1,3 +1,7 @@
+---
+tags: [Linux, Audio, MIDI]
+---
+
 # Rosegarden
 
 https://www.rosegardenmusic.com/

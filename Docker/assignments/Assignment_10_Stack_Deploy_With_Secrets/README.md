@@ -1,3 +1,7 @@
+---
+tags: [Docker, Docker-Swarm, Secrets, Assignment]
+---
+
 # Assignment 10 - Create Stack with Secrets
 
 - Fork Assignment 8 (compose-assignment-2)

@@ -1,3 +1,7 @@
+---
+tags: [Linux, Android, Bluetooth, FileSharing]
+---
+
 # Android Nearby Share to Linux
 
 It is possible (and pretty easy) to send files from an Android device to a Linux laptop over Bluetooth. For my testing, I used a **Google Pixel 4a on Android 11** and a **Dell XPS 15 laptop running Ubuntu 20.10**.
