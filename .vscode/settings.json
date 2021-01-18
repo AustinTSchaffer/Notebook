@@ -18,7 +18,7 @@
   },
   "vscodeMarkdownNotes.noteCompletionConvention": "noExtension",
   "vscodeMarkdownNotes.slugifyMethod": "github-slugger",
-  "foam.edit.linkReferenceDefinitions": "withExtensions",
-  "foam.openDailyNote.directory": "journal",
+  "foam.edit.linkReferenceDefinitions": "off",
+  "foam.openDailyNote.directory": "Journal",
   "foam.openDailyNote.titleFormat": "fullDate",
 }

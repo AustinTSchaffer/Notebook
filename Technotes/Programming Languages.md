@@ -44,7 +44,7 @@ login(
 )
 ```
 
-It's a lot wordier, you have to remember to use it, and there's not an easy way to express when you should use it. Any usage of the `*`, "keywords only after this point" character comes down to one's opinion on code style.
+It's a lot wordier, you have to remember to use it, and there's not an easy way to express when you should use it. Any usage of the `*`, "keywords only after this point", character comes down to one's opinion on code style.
 
 ## Playing Nice with Source/Version Control Systems
 
