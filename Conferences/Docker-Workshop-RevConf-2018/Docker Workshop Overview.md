@@ -1,5 +1,5 @@
 ---
-notes: [Docker, Containers, Workshop]
+tags: [Docker, Containers, Workshop]
 ---
 
 # Docker Examples

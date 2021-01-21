@@ -20,5 +20,5 @@
   "vscodeMarkdownNotes.slugifyMethod": "github-slugger",
   "foam.edit.linkReferenceDefinitions": "off",
   "foam.openDailyNote.directory": "Journal",
-  "foam.openDailyNote.titleFormat": "fullDate",
+  "foam.openDailyNote.titleFormat": "fullDate"
 }

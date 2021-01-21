@@ -1,5 +1,5 @@
 ---
-notes: [Snowflake, Permissions, RBAC, Workshop]
+tags: [Snowflake, Permissions, RBAC, Workshop]
 ---
 
 # Snowflake Security: Role Based Access Control (RBAC)
