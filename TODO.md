@@ -7,6 +7,7 @@ tags: ["TODO"]
 Some quick reminders of notes that I need to write on various topics.
 
 * Continue with AWS Solutions Architect Associate certification [[00 - Certified Solutions Architect - Associate]]
+* Airflow seems pretty cool: https://airflow.apache.org/
 * Set up python script to generate markdown files that act as a table of contents for all of my notes files
     * Scrape all tags from all markdown files
     * Invert the graph so that each tag points to all files that contain the tag
