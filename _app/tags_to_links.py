@@ -4,6 +4,7 @@ import git
 
 NOTES_REPO_DIR = "../"
 TAGS_DIR = "../Tags/"
+TAG_SEPARATOR = ","
 
 repo = git.Git(NOTES_REPO_DIR)
 
@@ -33,7 +34,7 @@ for md_file_name in md_files:
         tags = (
             tag.strip('" ')
             for tag in
-            re_match.group(1).split(",")
+            re_match.group(1).split(TAG_SEPARATOR)
         )
 
         for tag in tags:
