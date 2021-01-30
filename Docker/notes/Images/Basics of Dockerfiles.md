@@ -65,3 +65,16 @@ EXPOSE 80 443 3306 8080 8081
 Required parameter (if the base image has no CMD specified). Specifies the
 program that executes EVERY TIME the image is `docker container run`ed, or the
 container is started or restarted.
+
+## VOLUME
+
+This Dockerfile command registers a file path in an image as a volume, which results in `docker container run` creating an anonymous volume for containers created from the image. I wrote this segment primarily because if this interesting Reddit question:
+
+> When is VOLUME instruction in Dockerfile is useful? It just seem to create lots of useless anonymous volumes. I don't want anyone to include VOLUME in Dockerfile. It just leaves lots of useless anonymous volumes after stopping and removing containers.
+> From: https://www.reddit.com/r/docker/comments/l7hbzd/when_is_volume_instruction_in_dockerfile_is/
+
+Top response:
+
+> Performance mainly. Writing to a container's writable layer is relatively slow compared to writing to a volume. Let's say you're a developer and know your application is going to write a large amount of data to /somedir. If you don't add /somedir as a VOLUME instruction and the end user also doesn't mount /somedir, all of those writes to /somedir end up in that container's writable layer slowing things down.
+> By adding /somedir as a VOLUME instruction, you're ensuring your heavily written /somedir directory is bound to something with less of a performance hit. Hopefully the end user takes the effort to mount that same path to a named volume or bind mount, but even if they don't the container doesn't incur any real performance penalty from it.
+> This does mean you'll end up some with a lot of dangling volumes over time, but that's what "docker system prune" is for.
