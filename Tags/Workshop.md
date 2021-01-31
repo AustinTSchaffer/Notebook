@@ -1,7 +1,7 @@
 ---
-type: tagged_files
+type: tag
 ---
-# Tagged: "Workshop"
+# Workshop
 
 - [[../Conferences/Docker-Workshop-RevConf-2018/namer/README.md]]
 - [[../Conferences/Docker-Workshop-RevConf-2018/Docker Workshop Overview.md]]

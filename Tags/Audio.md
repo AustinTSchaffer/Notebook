@@ -1,7 +1,7 @@
 ---
-type: tagged_files
+type: tag
 ---
-# Tagged: "Audio"
+# Audio
 
 - [[../Linux/Midi on Linux/Command Line.md]]
 - [[../Linux/Midi on Linux/Rosegarden.md]]

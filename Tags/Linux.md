@@ -1,7 +1,7 @@
 ---
-type: tagged_files
+type: tag
 ---
-# Tagged: "Linux"
+# Linux
 
 - [[../Technotes/Reverse Cloud Migrations.md]]
 - [[../Linux/Setting Up a Kiosk.md]]

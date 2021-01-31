@@ -1,7 +1,7 @@
 ---
-type: tagged_files
+type: tag
 ---
-# Tagged: "Containers"
+# Containers
 
 - [[../Technotes/Kubernetes Overview.md]]
 - [[../Conferences/Docker-Workshop-RevConf-2018/Docker Workshop Overview.md]]

@@ -1,6 +1,6 @@
 ---
-type: tagged_files
+type: tag
 ---
-# Tagged: "RBAC"
+# RBAC
 
 - [[../Conferences/Snowflake-Workshop-August2020/Snowflake Security and RBAC.md]]

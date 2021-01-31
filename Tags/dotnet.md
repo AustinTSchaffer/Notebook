@@ -1,6 +1,6 @@
 ---
-type: tagged_files
+type: tag
 ---
-# Tagged: "dotnet"
+# dotnet
 
 - [[../Conferences/DEVintersection-Spring-2019/DevIntersection Overview.md]]

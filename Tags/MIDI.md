@@ -1,7 +1,7 @@
 ---
-type: tagged_files
+type: tag
 ---
-# Tagged: "MIDI"
+# MIDI
 
 - [[../Linux/Midi on Linux/Command Line.md]]
 - [[../Linux/Midi on Linux/Rosegarden.md]]

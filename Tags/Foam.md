@@ -1,7 +1,7 @@
 ---
-type: tagged_files
+type: tag
 ---
-# Tagged: "Foam"
+# Foam
 
 - [[../Foam/Readme.md]]
 - [[../Foam/Getting Started.md]]

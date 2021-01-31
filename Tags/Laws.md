@@ -1,6 +1,6 @@
 ---
-type: tagged_files
+type: tag
 ---
-# Tagged: "Laws"
+# Laws
 
 - [[../Coding Project Ideas/Compiling Federal Code.md]]

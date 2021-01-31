@@ -1,6 +1,6 @@
 ---
-type: tagged_files
+type: tag
 ---
-# Tagged: "Raspbian"
+# Raspbian
 
 - [[../Linux/Setting Up a Kiosk.md]]

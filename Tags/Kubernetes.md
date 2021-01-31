@@ -1,6 +1,6 @@
 ---
-type: tagged_files
+type: tag
 ---
-# Tagged: "Kubernetes"
+# Kubernetes
 
 - [[../Technotes/Kubernetes Overview.md]]

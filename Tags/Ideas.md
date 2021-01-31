@@ -1,7 +1,7 @@
 ---
-type: tagged_files
+type: tag
 ---
-# Tagged: "Ideas"
+# Ideas
 
 - [[../Coding Project Ideas/Compiling Federal Code.md]]
 - [[../Coding Project Ideas/Automatic Semantic Versioning.md]]

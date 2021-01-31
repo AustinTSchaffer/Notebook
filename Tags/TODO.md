@@ -1,7 +1,7 @@
 ---
-type: tagged_files
+type: tag
 ---
-# Tagged: "TODO"
+# TODO
 
 - [[../TODO.md]]
 - [[../Coding Project Ideas/Compiling Federal Code.md]]

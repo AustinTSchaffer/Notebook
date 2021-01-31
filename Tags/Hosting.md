@@ -1,6 +1,6 @@
 ---
-type: tagged_files
+type: tag
 ---
-# Tagged: "Hosting"
+# Hosting
 
 - [[../Technotes/Reverse Cloud Migrations.md]]

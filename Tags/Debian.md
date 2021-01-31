@@ -1,6 +1,6 @@
 ---
-type: tagged_files
+type: tag
 ---
-# Tagged: "Debian"
+# Debian
 
 - [[../Linux/Setting Up a Kiosk.md]]

@@ -1,6 +1,6 @@
 ---
-type: tagged_files
+type: tag
 ---
-# Tagged: "Nvidia"
+# Nvidia
 
 - [[../Linux/Update Kernel Notes/Dealing with NVIDIA Drivers.md]]

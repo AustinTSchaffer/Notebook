@@ -1,6 +1,6 @@
 ---
-type: tagged_files
+type: tag
 ---
-# Tagged: "SemanticVersioning"
+# SemanticVersioning
 
 - [[../Coding Project Ideas/Automatic Semantic Versioning.md]]

@@ -24,7 +24,7 @@
   "vscodeMarkdownNotes.workspaceFilenameConvention": "relativePaths",
   "foam.graph.style": {
     "node": {
-      "tagged_files": "orange"
+      "tag": "orange"
     },
   },
   "spellright.language": [

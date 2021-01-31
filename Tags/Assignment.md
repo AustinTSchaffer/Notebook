@@ -1,7 +1,7 @@
 ---
-type: tagged_files
+type: tag
 ---
-# Tagged: "Assignment"
+# Assignment
 
 - [[../Docker/assignments/Assignment_09_Multi-Service_App/README.md]]
 - [[../Docker/assignments/Assignment_03_DNS_Round_Robin/README.md]]

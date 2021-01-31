@@ -1,7 +1,7 @@
 ---
-type: tagged_files
+type: tag
 ---
-# Tagged: "Infrastructure"
+# Infrastructure
 
 - [[../Technotes/Database Paradigms.md]]
 - [[../Technotes/Kubernetes Overview.md]]

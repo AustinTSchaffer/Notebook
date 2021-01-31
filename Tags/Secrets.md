@@ -1,6 +1,6 @@
 ---
-type: tagged_files
+type: tag
 ---
-# Tagged: "Secrets"
+# Secrets
 
 - [[../Docker/assignments/Assignment_10_Stack_Deploy_With_Secrets/README.md]]

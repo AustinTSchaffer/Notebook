@@ -1,6 +1,6 @@
 ---
-type: tagged_files
+type: tag
 ---
-# Tagged: "Gripes"
+# Gripes
 
 - [[../Technotes/Programming Languages.md]]

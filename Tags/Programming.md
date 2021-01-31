@@ -1,7 +1,7 @@
 ---
-type: tagged_files
+type: tag
 ---
-# Tagged: "Programming"
+# Programming
 
 - [[../Technotes/Programming Languages.md]]
 - [[../Coding Project Ideas/Compiling Federal Code.md]]

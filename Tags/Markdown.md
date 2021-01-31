@@ -1,6 +1,6 @@
 ---
-type: tagged_files
+type: tag
 ---
-# Tagged: "Markdown"
+# Markdown
 
 - [[../Foam/Getting Started.md]]

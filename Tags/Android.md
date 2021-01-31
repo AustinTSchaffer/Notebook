@@ -1,6 +1,6 @@
 ---
-type: tagged_files
+type: tag
 ---
-# Tagged: "Android"
+# Android
 
 - [[../Linux/Android File Sharing/Android Nearby-Share to Linux.md]]
