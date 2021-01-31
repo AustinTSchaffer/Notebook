@@ -65,7 +65,7 @@ for tag, filenames in tags_to_docs.items():
         tag_file.write(os.linesep)
 
         tag_file.writelines((
-            f"- [[{filename}]]{os.linesep}"
+            f"- [[{os.path.relpath(filename, TAGS_DIR)}]]{os.linesep}"
             for filename in
             filenames
         ))
