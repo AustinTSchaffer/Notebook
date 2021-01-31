@@ -4,6 +4,8 @@ tags: Programming
 
 # Fancy Programming Words
 
+From Fireship's video "7 Fancy Programming Words": https://www.youtube.com/watch?v=4Zc9ci9L5wY
+
 - idempotent
     - "idem" is Latin for "the same".
     - Means that an operation will have the same result even when applied multiple times.
