@@ -1,18 +1,28 @@
 # %% Get all markdown files in the repo
 
-import git
+import os
+import shutil
 
-NOTES_REPO_DIR = "../"
+NOTES_DIR = "../"
 TAGS_DIR = "../Tags/"
 TAG_SEPARATOR = ","
 
-repo = git.Git(NOTES_REPO_DIR)
+shutil.rmtree(TAGS_DIR, ignore_errors=True)
+os.makedirs(TAGS_DIR, exist_ok=True)
+
+def rec_find_files(dir):
+    for path in os.listdir(dir):
+        path = os.path.join(dir, path)
+        if os.path.isdir(path):
+            yield from rec_find_files(path)
+        else:
+            yield path
 
 md_files = [
-    file_.strip()
-    for file_ in
-    repo.ls_files().split("\n")
-    if file_.strip().endswith(".md")
+    file_relpath
+    for file_relpath in
+    rec_find_files(NOTES_DIR)
+    if file_relpath.endswith(".md")
 ]
 
 # %% Find all tags in each file
@@ -20,12 +30,12 @@ md_files = [
 import re
 import collections
 
-TAGS_RE = re.compile(r'^tags: *\[?([^\]]+)\]? *$', re.M)
+TAGS_RE = re.compile(r'^tags: *\[?([^\]\n]+)\]? *$', re.M)
 
 tags_to_docs = collections.defaultdict(list)
 
 for md_file_name in md_files:
-    with open(NOTES_REPO_DIR + md_file_name) as md_file:
+    with open(md_file_name) as md_file:
         contents = md_file.read()
         re_match = TAGS_RE.search(contents)
 
@@ -42,14 +52,9 @@ for md_file_name in md_files:
 
 # %% Generate a directory of files that relate tags to filenames
 
-import os
-import shutil
-
-shutil.rmtree(TAGS_DIR)
-os.makedirs(TAGS_DIR, exist_ok=True)
-
 for tag, filenames in tags_to_docs.items():
-    with open(TAGS_DIR + tag + ".md", "w") as tag_file:
+    output_file_name = os.path.join(TAGS_DIR, f"{tag}.md")
+    with open(output_file_name, "w") as tag_file:
         tag_file.write(f"---{os.linesep}")
         tag_file.write(f"type: tagged_files{os.linesep}")
         tag_file.write(f"---{os.linesep}")
@@ -60,7 +65,7 @@ for tag, filenames in tags_to_docs.items():
         tag_file.write(os.linesep)
 
         tag_file.writelines((
-            f"- [[../{filename}]]{os.linesep}"
+            f"- [[{filename}]]{os.linesep}"
             for filename in
             filenames
         ))

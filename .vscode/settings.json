@@ -21,7 +21,6 @@
   "foam.edit.linkReferenceDefinitions": "off",
   "foam.openDailyNote.directory": "Journal",
   "foam.openDailyNote.titleFormat": "fullDate",
-  "python.pythonPath": "/home/austin/.virtualenvs/_app-Knua-fsS/bin/python",
   "vscodeMarkdownNotes.workspaceFilenameConvention": "relativePaths",
   "foam.graph.style": {
     "node": {
