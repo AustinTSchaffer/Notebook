@@ -4,6 +4,7 @@ type: tag
 # Linux
 
 - [[../Technotes/Reverse Cloud Migrations.md]]
+- [[../Journal/2021-01-31.md]]
 - [[../Linux/Setting Up a Kiosk.md]]
 - [[../Linux/Midi on Linux/Command Line.md]]
 - [[../Linux/Midi on Linux/Rosegarden.md]]
