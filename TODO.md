@@ -11,7 +11,6 @@ Some quick reminders of notes that I need to write on various topics.
 * Set up python script to generate markdown files that act as a table of contents for all of my notes files
     * Set up a Github pipeline to do this for me auto-magically
 * Fireship
-    * ["7 fancy programming words"](https://www.youtube.com/watch?v=4Zc9ci9L5wY)
     * [7 features of the web that I probably don't know about](https://www.youtube.com/watch?v=ppwagkhrZJs)
     * [WASM](https://www.youtube.com/watch?v=ucmbO2lWC2A). Might be interesting to hear another take on WASM and maybe get some notes written on it.
     * [Typescript](https://www.youtube.com/watch?v=zQnBQ4tB3ZA)

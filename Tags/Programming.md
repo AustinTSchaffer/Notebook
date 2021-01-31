@@ -3,6 +3,7 @@ type: tag
 ---
 # Programming
 
+- [[../Technotes/Fancy Programming Words.md]]
 - [[../Technotes/Programming Languages.md]]
 - [[../Coding Project Ideas/Compiling Federal Code.md]]
 - [[../Coding Project Ideas/Automatic Semantic Versioning.md]]
