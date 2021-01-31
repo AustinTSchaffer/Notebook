@@ -1,5 +1,5 @@
 ---
-tags: [Docker, Images, NodeJS, Assignment]
+tags: Docker, Images, NodeJS, Assignment
 ---
 
 # Assignment 4 - Create Your Own Image

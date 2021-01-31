@@ -1,5 +1,5 @@
 ---
-tags: [Linux, Kernel, Ubuntu]
+tags: Linux, Kernel, Ubuntu
 ---
 
 # Ubuntu Installing Mainline Kernel Builds

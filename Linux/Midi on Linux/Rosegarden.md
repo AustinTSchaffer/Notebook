@@ -1,5 +1,5 @@
 ---
-tags: [Linux, Audio, MIDI]
+tags: Linux, Audio, MIDI
 ---
 
 # Rosegarden

@@ -1,5 +1,5 @@
 ---
-tags: [AWS, Certification]
+tags: AWS, Certification
 ---
 
 # 00 - Certified Solutions Architect - Associate

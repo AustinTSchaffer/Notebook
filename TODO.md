@@ -1,5 +1,5 @@
 ---
-tags: ["TODO"]
+tags: TODO
 ---
 
 # Notes to Take
@@ -9,10 +9,6 @@ Some quick reminders of notes that I need to write on various topics.
 * Continue with AWS Solutions Architect Associate certification [[00 - Certified Solutions Architect - Associate]]
 * Airflow seems pretty cool: https://airflow.apache.org/
 * Set up python script to generate markdown files that act as a table of contents for all of my notes files
-    * Scrape all tags from all markdown files
-    * Invert the graph so that each tag points to all files that contain the tag
-    * Generate files for each tag, with the name of the file being the tag name. Each file will contain links to each file that has that tag.
-    * Verify that the knowledge graphs look cooler.
     * Set up a Github pipeline to do this for me auto-magically
 * Fireship
     * ["7 fancy programming words"](https://www.youtube.com/watch?v=4Zc9ci9L5wY)

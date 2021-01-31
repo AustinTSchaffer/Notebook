@@ -1,5 +1,5 @@
 ---
-tags: [Workshop, AWS]
+tags: Workshop, AWS
 ---
 
 # AWS Workshop Day 2

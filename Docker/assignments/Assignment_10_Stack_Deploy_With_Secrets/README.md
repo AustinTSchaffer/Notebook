@@ -1,5 +1,5 @@
 ---
-tags: [Docker, Docker-Swarm, Secrets, Assignment]
+tags: Docker, Docker-Swarm, Secrets, Assignment
 ---
 
 # Assignment 10 - Create Stack with Secrets

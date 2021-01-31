@@ -1,5 +1,5 @@
 ---
-tags: [Docker, Docker-Swarm, Assignment]
+tags: Docker, Docker-Swarm, Assignment
 ---
 
 # Assignment 9 - Create a MultiService App

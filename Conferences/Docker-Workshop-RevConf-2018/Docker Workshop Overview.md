@@ -1,8 +1,8 @@
 ---
-tags: [Docker, Containers, Workshop]
+tags: Docker, Containers, Workshop
 ---
 
-# Docker Examples
+# Docker Workshop Overview
 
 The following Docker examples were worked on and played with at Bret Fisher's **Introduction to Docker and Containers Workshop** at Revolution Conf 2018.
 

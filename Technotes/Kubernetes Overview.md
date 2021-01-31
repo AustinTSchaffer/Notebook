@@ -1,5 +1,5 @@
 ---
-tags: [Infrastructure, Kubernetes, Containers]
+tags: Infrastructure, Kubernetes, Containers
 ---
 
 # Kubernetes Overview

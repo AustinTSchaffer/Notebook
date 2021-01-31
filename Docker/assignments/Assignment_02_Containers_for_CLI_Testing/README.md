@@ -1,5 +1,5 @@
 ---
-tags: [Docker, Assignment]
+tags: Docker, Assignment
 ---
 
 # Assignment 2 - CLI App Testing

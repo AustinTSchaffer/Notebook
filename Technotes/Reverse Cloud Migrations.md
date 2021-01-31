@@ -1,5 +1,5 @@
 ---
-tags: ["Linux", "Hosting", "Networking", "DNS"]
+tags: Linux, Hosting, Networking, DNS
 ---
 
 # Reverse Cloud Migrations from AWS to RPi

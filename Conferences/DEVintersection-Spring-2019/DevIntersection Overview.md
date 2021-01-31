@@ -1,5 +1,5 @@
 ---
-tags: [Conference, dotnet, CSharp]
+tags: Conference, dotnet, CSharp
 ---
 
 # DEVintersection Spring 2019

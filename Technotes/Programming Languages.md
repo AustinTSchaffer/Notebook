@@ -1,5 +1,5 @@
 ---
-tags: [Gripes, Programming]
+tags: Gripes, Programming
 ---
 
 # Assorted Notes on Programming Languages

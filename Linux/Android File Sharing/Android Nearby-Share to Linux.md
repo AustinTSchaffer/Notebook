@@ -1,5 +1,5 @@
 ---
-tags: [Linux, Android, Bluetooth, FileSharing]
+tags: Linux, Android, Bluetooth, FileSharing
 ---
 
 # Android Nearby Share to Linux

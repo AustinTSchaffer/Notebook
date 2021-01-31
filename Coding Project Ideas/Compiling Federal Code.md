@@ -1,5 +1,5 @@
 ---
-tags: [Ideas, Programming, Laws, TODO]
+tags: Ideas, Programming, Laws, TODO
 ---
 
 # Compiling Federal Code

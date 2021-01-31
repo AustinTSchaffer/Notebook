@@ -1,5 +1,5 @@
 ---
-tags: [Linux, Debian, Ubuntu, Raspbian]
+tags: Linux, Debian, Ubuntu, Raspbian
 ---
 
 # Linux Kiosks

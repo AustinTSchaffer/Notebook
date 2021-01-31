@@ -1,5 +1,5 @@
 ---
-tags: [Docker, Assignment, DNS, Networking]
+tags: Docker, Assignment, DNS, Networking
 ---
 
 # Assignment 3 - Containers and DNS

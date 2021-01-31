@@ -1,5 +1,5 @@
 ---
-tags: [AWS, Certification, Infrastructure, PracticeTest]
+tags: AWS, Certification, Infrastructure, PracticeTest
 ---
 
 # Practice Test 1

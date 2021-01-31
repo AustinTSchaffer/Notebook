@@ -1,5 +1,5 @@
 ---
-tags: [AWS, Certification]
+tags: AWS, Certification
 ---
 
 # 01 - Preparing for Associate-Level Solutions Architect Exam

@@ -1,5 +1,5 @@
 ---
-tags: [Ideas, Programming, Architecture]
+tags: Ideas, Programming, Architecture
 ---
 
 # Coming up with ideas for a side project

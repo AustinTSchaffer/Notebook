@@ -1,5 +1,5 @@
 ---
-tags: [Docker, Docker-Compose, Assignment]
+tags: Docker, Docker-Compose, Assignment
 ---
 
 # Assignment 8 - Building a Docker-Compose File

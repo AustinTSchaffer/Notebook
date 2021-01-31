@@ -1,5 +1,5 @@
 ---
-tags: [Ideas, Programming]
+tags: Ideas, Programming
 ---
 
 # Games List

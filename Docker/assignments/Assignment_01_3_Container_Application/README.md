@@ -1,5 +1,5 @@
 ---
-tags: [Docker, Assignment]
+tags: Docker, Assignment
 ---
 
 # Assignment 1 - 3 Container Application

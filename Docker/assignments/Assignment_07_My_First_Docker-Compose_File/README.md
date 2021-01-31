@@ -1,5 +1,5 @@
 ---
-tags: [Docker, Docker-Compose, Assignment]
+tags: Docker, Docker-Compose, Assignment
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-tags: [Foam, Markdown]
+tags: Foam, Markdown
 ---
 
 # Getting Started

@@ -1,5 +1,5 @@
 ---
-tags: [Foam]
+tags: Foam
 ---
 
 # Foam

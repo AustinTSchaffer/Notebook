@@ -1,5 +1,5 @@
 ---
-tags: [Linux, Kernel, Nvidia]
+tags: Linux, Kernel, Nvidia
 ---
 
 # Update Kernel Notes
