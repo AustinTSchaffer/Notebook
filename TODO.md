@@ -2,7 +2,13 @@
 tags: TODO
 ---
 
-# Notes to Take
+# TODO
+
+## Things to Do
+
+- Set up Nextcloud on an RPi for backups, etc
+
+## Notes to Take
 
 Some quick reminders of notes that I need to write on various topics.
 
