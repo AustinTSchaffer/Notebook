@@ -15,4 +15,8 @@ lsblk
 # using -h to show the size info in a human-readable format.
 # This also shows mount points.
 df -h
+
+# Gets the disk usage summary of all objects in the current directory,
+# human readable output, and sorts the output based on size.
+du -sh * | sort -hr
 ```
