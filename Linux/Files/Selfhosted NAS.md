@@ -36,4 +36,6 @@ In the future I may try to use BorgBackup (https://www.borgbackup.org/), which i
 
 ### ZFS
 
-If and when I want to make a NAS without just going out and buying a Synology all-in-one NAS, ZFS could be a good choice for the drive/volume manager.
+If and when I want to make a NAS without just going out and buying a Synology all-in-one NAS, ZFS could be a good choice for the drive/volume manager. It's supported by Ubuntu now, so it's mainstream.
+
+https://ubuntu.com/tutorials/setup-zfs-storage-pool#1-overview
