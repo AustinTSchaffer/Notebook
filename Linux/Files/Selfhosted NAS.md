@@ -34,6 +34,8 @@ Some implementation details, `duplicity` generates and uploads `.difftar.gz` vol
 
 In the future I may try to use BorgBackup (https://www.borgbackup.org/), which is a file de-duplicating backup program which could theoretically reduce the overall backup size if you have duplicate videos/photos. I didn't try it with this first iteration, since it doesn't look like it supports backing up directly to B2. You have to have an intermediate step where data is backed up to a secondary on-prem location.
 
+Turns out I'm also backing up a lot of venv/pipenv virtual environments, so there's a ton of Python3* `site-packages` directories in my laptop backup. Going with a deduping backup as an intermediate stage would probably help reduce the amount of trash that I'm inadvertently backing up, but cleaning up my laptop backup would probably help too.
+
 ### ZFS
 
 If and when I want to make a NAS without just going out and buying a Synology all-in-one NAS, ZFS could be a good choice for the drive/volume manager. It's supported by Ubuntu now, so it's mainstream.
