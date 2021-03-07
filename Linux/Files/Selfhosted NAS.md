@@ -30,4 +30,10 @@ Some implementation details, `duplicity` generates and uploads `.difftar.gz` vol
 
 ## Future Ideas
 
+### BorgBackup
+
 In the future I may try to use BorgBackup (https://www.borgbackup.org/), which is a file de-duplicating backup program which could theoretically reduce the overall backup size if you have duplicate videos/photos. I didn't try it with this first iteration, since it doesn't look like it supports backing up directly to B2. You have to have an intermediate step where data is backed up to a secondary on-prem location.
+
+### ZFS
+
+If and when I want to make a NAS without just going out and buying a Synology all-in-one NAS, ZFS could be a good choice for the drive/volume manager.
