@@ -19,4 +19,10 @@ df -h
 # Gets the disk usage summary of all objects in the current directory,
 # human readable output, and sorts the output based on size.
 du -sh * | sort -hr
+
+# Finds the size of all directories named "site-packages" or "venv" or "node_modules"
+du -h | egrep '/site-packages$'
+du -h | egrep '/venv$'
+du -h | egrep '/node_modules$'
+du -h | egrep '/(venv|node_modules)$'
 ```

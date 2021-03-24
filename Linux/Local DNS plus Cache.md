@@ -10,7 +10,7 @@ tags: Linux, Networking, DNS
 Any of the following might work.
 
 ```bash
-# Saw this one 
+# Saw this one, doesn't work for Ubuntu
 sudo /etc/init.d/networking restart
 
 # NCSD
