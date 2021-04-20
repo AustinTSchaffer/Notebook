@@ -11,3 +11,9 @@ So essentially, what if you could generate a graph database of all package/versi
 So many questions.
 
 I think I'll have another drink.
+
+## Related
+
+In this same vein, Python's most popular package installation systems are essentially arbitrary code execution. We've already seen that pypi.org doesn't have to explicitly (and in many cases doesn't) list the packages that a package requires before you download it. Any benefits of having a system that makes dependency chains easier to navigate can be completely undone by aggressively poorly behaved packages.
+
+So what would an aggressively poorly behaved package look like? Mine dogecoin while you wait? Send hardware info off to a random IP address? Random version ranges of random packages? Always installs incompatible versions of requests and urllib3?
