@@ -45,11 +45,4 @@ Games where you need to make everything the same color.
   - The only controls are to tap on blocks on the screen.
   - Most block types have actions that affect themselves and/or the world around them.
 - Logic Grid Puzzle
-- Ball Sort, Water Sort, etc.
-  - Games where tube-like containers are filled with colored segments
-  - You need to sort the colored segments until all segments of the same color are stacked together and no segments of differing colors are touching.
-  - You're provided with at least 1 empty tube, typically 2.
-  - You can pour out tubes into each other, only transferring the color on top from one tube to another. Variants of the game include
-    - Water: You pour out water of a single color from one tube until either (a) the color on top has been drained from the source container or (b) the receiving container cannot hold any more segments.
-    - Objects: You move only one segment at a time.
-  - You can only move segments from one tube to another if the top colors match and there's space in the receiving tube. You can move segments to an empty tube.
+
