@@ -90,3 +90,7 @@ johnnydep botocore[crt] -o json --fields name requires --no-deps
 #   }
 # ]
 ```
+
+## Note on `manylinux`
+
+`manylinux` seems to be an infix that controls what version of `pip` is supported by the package's distribution.
