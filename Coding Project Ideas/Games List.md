@@ -36,6 +36,14 @@ Games where you need to make everything the same color.
 - Kami, Kami 2 (Google Play Store)
 - Randomly colored MS Paint canvas + fill tool
 
+## Income/Spending Optimization
+
+This refers mostly to simple idle games, where you need to constantly make decisions on what to purchase and when. Do you spend now, or do you save?
+
+- AdVenture (Blank) games
+- Cookie Clicker
+- Etc
+
 ## Uncategorized
 
 - Grabblocks (Can't find it anymore)
@@ -45,4 +53,5 @@ Games where you need to make everything the same color.
   - The only controls are to tap on blocks on the screen.
   - Most block types have actions that affect themselves and/or the world around them.
 - Logic Grid Puzzle
+
 
