@@ -1,0 +1,94 @@
+{
+  "main": {
+    "id": "280596c347d4a7e0",
+    "type": "split",
+    "children": [
+      {
+        "id": "17f21bf5c1bf08ca",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "OMSCS/OMSCS Courses and Specializations.md",
+            "mode": "preview"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "751fb3267074d65c",
+    "type": "split",
+    "children": [
+      {
+        "id": "bee24ceb6f5e796b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "25e4fd02dd462c92",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "0d02e8ca6f748610",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "omscs",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f80a94eea200353a",
+    "type": "split",
+    "children": [
+      {
+        "id": "c722388ab18b856c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7a3b6d833ef9bda8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "OMSCS/OMSCS Courses and Specializations.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "17f21bf5c1bf08ca",
+  "lastOpenFiles": [
+    "OMSCS/OMSCS Courses and Specializations.md"
+  ]
+}
