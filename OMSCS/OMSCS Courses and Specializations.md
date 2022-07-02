@@ -14,7 +14,7 @@ I am currently looking at the "**Computing Systems**" specialization, which cove
 
 - Core Courses. You need to pick pick at least 3. Any Core Courses in excess of the 9 hour (3 course) requirement may be counted toward the electives requirement.
 	- [ ] [CS 6515 Introduction to Graduate Algorithms](https://omscs.gatech.edu/cs-6515-intro-graduate-algorithms)
-		- This one is required, non negotiable. There is also CS 6505, but it's not currently being offered it seems.
+		- This one is required, non negotiable. There is also CS 6505, but it's not currently being offered through OMSCS, it seems.
 		- This one is also a core course for the Interactive Intelligence (`II`) specialization.
 	- [ ] [CS 6400 Database Systems Concepts and Design](https://omscs.gatech.edu/cs-6400-database-systems-concepts-and-design)
 	- [ ] [CS 6250 Computer Networks](https://omscs.gatech.edu/cs-6250-computer-networks)
@@ -41,12 +41,12 @@ My 2nd choice would be the **Interactive Intelligence** specialization. This spe
 
 - Core Courses (at least 3)
 	- [ ] [CS 6515 Introduction to Graduate Algorithms](https://omscs.gatech.edu/cs-6515-intro-graduate-algorithms)
-		- This one is required, non negotiable. There is also CS 6505, but it's not currently being offered it seems.
-		- This one is also a core course for the Interactive Intelligence (`II`) specialization.
+		- This one is required, non negotiable. There is also CS 6505, but it's not currently being offered through OMSCS, it seems.
+		- This one is also a core course for the Computing Systems specialization.
 	- [ ] [CS 6601 Artificial Intelligence](https://omscs.gatech.edu/cs-6601-artificial-intelligence)
 	- [ ] [CS 7637 Knowledge-Based AI](https://omscs.gatech.edu/cs-7637-knowledge-based-artificial-intelligence-cognitive-systems)
 	- [ ] [CS 7641 Machine Learning](https://omscs.gatech.edu/cs-7641-machine-learning)
-- Electives I'm interested in taking. This is a subset of all the electives offered for this specialization, of which I'd need to select **at least 2**. I've ordered this shorter list of electives from most-most interested to least-most interested.
+- Electives I'm interested in taking. This is a subset of all the electives offered for this specialization, of which I'd need to select **at least 2**. I've ordered this shorter list of electives from most-most interested to least-most interested. Turns out I;m really only interested in the Core courses for this specialization.
 	- [ ] [CS 7632 Game AI](https://omscs.gatech.edu/cs-7632-game-ai)
 	- [ ] [CS 6440 Introduction to Health Informatics](https://omscs.gatech.edu/cs-6440-intro-health-informatics)
-- Please refer to the Computing Systems Specialization section for more
+- Please refer to the Computing Systems Specialization section for all other courses that I'll be using to complete this degree/specialization.
