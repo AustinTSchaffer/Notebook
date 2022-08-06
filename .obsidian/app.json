@@ -1,1 +1,6 @@
-{}
+{
+  "spellcheck": true,
+  "spellcheckDictionary": [
+    "syllabi"
+  ]
+}
