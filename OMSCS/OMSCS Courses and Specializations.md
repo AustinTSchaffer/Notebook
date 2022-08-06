@@ -6,6 +6,7 @@
 	- [Computational Perception and Robotics](https://omscs.gatech.edu/specialization-computational-perception-robotics)
 	- [Machine Learning](https://omscs.gatech.edu/specialization-machine-learning)
 - [Current Courses](https://omscs.gatech.edu/current-courses)
+- [Unofficial Course Review Site (OMS Central)](https://omscentral.com)
 - Notes that [it's possible to take more than 10 courses](https://www.reddit.com/r/OMSCS/comments/bl2rmo/taking_more_than_10_courses_selecting_credits/), so I don't have to stop at 10. You need to let your advisor know.
 
 ## [Computing Systems Specialization](https://omscs.gatech.edu/specialization-computing-systems)
