@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "OMSCS/Orientation/OMSCS Orientation.md",
+            "file": "OMSCS/Courses/OMSCS Course Registration.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "omscs",
+                "query": "registration",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OMSCS/Orientation/OMSCS Orientation.md",
+                "file": "OMSCS/Courses/OMSCS Course Registration.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,10 +88,11 @@
   },
   "active": "ddbd8dbd6f7b3449",
   "lastOpenFiles": [
+    "OMSCS/Courses/OMSCS Course Registration.md",
+    "OMSCS/Courses/OMSCS Courses and Specializations.md",
     "OMSCS/Orientation/OMSCS Orientation.md",
-    "OMSCS/OMSCS Courses and Specializations.md",
-    "OMSCS/Orientation/Orientation Video Playlist.md",
     "OMSCS/Orientation/fall_2022_orientation_document.pdf",
+    "OMSCS/Orientation/Orientation Video Playlist.md",
     "Linux/Files/Disk Info.md",
     "Tags/Linux.md",
     "Music/More Than a Dream Bill Wurtz/Time Signature Notes.md"
