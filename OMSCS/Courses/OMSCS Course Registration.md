@@ -1,8 +1,6 @@
 # OMSCS Course Registration
 
-This file contains exported tables of courses from OSCAR with CRNs, titles, and course numbers.
-
-## Currently Desired Courses
+This table contains the list of courses from OSCAR with CRNs, titles, course numbers, etc
 
 | Taken? | CRN                 | Subj | Crse | Fnd? | Title                    |
 | ------ | ------------------- | ---- | ---- | ---- | ------------------------ |
@@ -26,7 +24,7 @@ This file contains exported tables of courses from OSCAR with CRNs, titles, and 
 |        | 91854               | CS   | 7632 | Yes  | Game AI                  |
 |        | 85227               | CS   | 6440 | Yes  | Intro Health Informatics |
 
-## Other Courses
+This table contains other courses that are also offered by OMSCS. I'm not currently interesting in taking any of these, but I could be persuaded. I'm sure a lot of these are great, I just haven't yet taken the time to read their syllabuses or course pages.
 
 | Taken? | CRNs         | Subj | Crse | Fnd?   | Title                      |
 | ------ | ------------ | ---- | ---- | ------ | -------------------------- |
