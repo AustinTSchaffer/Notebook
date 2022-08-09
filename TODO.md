@@ -6,13 +6,12 @@ tags: TODO
 
 ## Things to Do
 
-- Set up Nextcloud on an RPi for backups, etc
-
 ## Notes to Take
 
 Some quick reminders of notes that I need to write on various topics.
 
-* Continue with AWS Solutions Architect Associate certification [[00 - Certified Solutions Architect - Associate]]
+- [Notes on this video describing TSP algorithms](https://www.youtube.com/watch?v=GiDsjIBOVoA)
+	- Implement described algorithms in Python
 * Airflow seems pretty cool: https://airflow.apache.org/
 * Fireship
     * [7 features of the web that I probably don't know about](https://www.youtube.com/watch?v=ppwagkhrZJs)
@@ -32,3 +31,4 @@ Some quick reminders of notes that I need to write on various topics.
     * Clarity Coders makes good stuff. Generally good content, well paced.
     * [Introduction to PyTorch](https://www.youtube.com/watch?v=Rtmi-H-mlKw). The code for this should be under Daily Programmer, but I can take notes here.
     * [Python and OpenCV Tutorial](https://www.youtube.com/watch?v=fmThsnqUCF0)
+- 
