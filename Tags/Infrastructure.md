@@ -5,5 +5,5 @@ type: tag
 
 - [[../Technotes/Database Paradigms.md]]
 - [[../Technotes/Kubernetes Overview.md]]
-- [[../AWS Certs/solutions-architect-associate/Practice Test 2.md]]
-- [[../AWS Certs/solutions-architect-associate/Practice Test 1.md]]
+- [[AWS SA - Practice Test 2]]
+- [[AWS SA - Practice Test 1]]
