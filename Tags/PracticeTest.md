@@ -3,5 +3,5 @@ type: tag
 ---
 # PracticeTest
 
-- [[AWS SA - Practice Test 2]]
-- [[AWS SA - Practice Test 1]]
+- [[../AWS Certs/solutions-architect-associate/AWS SA - Practice Test 2.md]]
+- [[../AWS Certs/solutions-architect-associate/AWS SA - Practice Test 1.md]]

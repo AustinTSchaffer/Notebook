@@ -7,12 +7,8 @@
         "id": "c8702daf633ac95a",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "AWS Certs/solutions-architect-associate/AWS SA - Practice Test 1.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "AWS Certs/solutions-architect-associate/AWS SA - Practice Test 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +84,15 @@
   },
   "active": "c8702daf633ac95a",
   "lastOpenFiles": [
+    "noip.com.md",
+    "AWS Certs/solutions-architect-associate/AWS SA - Practice Test 1.md",
     "AWS Certs/solutions-architect-associate/01 - Preparing for Associate-Level Solutions Architect Exam.md",
     "AWS Certs/solutions-architect-associate/00 - Certified Solutions Architect - Associate.md",
     "AWS Certs/solutions-architect-associate/AWS SA - Practice Test 2.md",
-    "AWS Certs/solutions-architect-associate/AWS SA - Practice Test 1.md",
     "Conferences/2020 Jan - AWS Workshop/AWS Workshop Day 2.md",
     "Conferences/2018 RevConf - Docker Workshop/Docker Workshop Overview.md",
     "Conferences/2018 RevConf - Docker Workshop/namer/Enterprise-grade company name generator.md",
     "Docker/Docker Certification Overview.md",
-    "Graph Algorithms/Graph Algorithms.md",
-    "Docker/notes/Compose/build-images-sample/html/README.md"
+    "Graph Algorithms/Graph Algorithms.md"
   ]
 }
