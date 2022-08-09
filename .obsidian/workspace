@@ -9,8 +9,9 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "OMSCS/Orientation/OMSCS Orientation.md",
-            "mode": "source"
+            "file": "TODO.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -48,13 +49,11 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 156.0036334991455,
-    "collapsed": true
+    "width": 354.5
   },
   "right": {
     "id": "f80a94eea200353a",
@@ -70,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OMSCS/Orientation/OMSCS Orientation.md",
+                "file": "TODO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -90,6 +89,7 @@
   },
   "active": "c8702daf633ac95a",
   "lastOpenFiles": [
+    "Conferences/CVJS Meetup - Monorepos (July 2022).md",
     "OMSCS/Orientation/OMSCS Orientation.md",
     "OMSCS/Orientation/OMSCS Orientation Doc.md",
     "OMSCS/Orientation/Orientation Video Playlist.md",
