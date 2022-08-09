@@ -5,10 +5,9 @@ type: tag
 
 - [[../Graph Algorithms/Graph Algorithms.md]]
 - [[../Docker/assignments/Assignment_09_Multi-Service_App/swarm-app-1/README.md]]
-- [[../Docker/assignments/Assignment_08_Docker-Compose_Image_Build/README from compose-assignment-2.md]]
+- [[../Docker/assignments/Assignment_08_Docker-Compose_Image_Build/Docker Assignment - Compose and Images.md]]
 - [[../Docker/assignments/Assignment_06_Bind_Mounts_and_Running_Containers/bindmount-sample-1/index.md]]
 - [[../Docker/assignments/Assignment_06_Bind_Mounts_and_Running_Containers/bindmount-sample-1/about.md]]
-- [[../Docker/assignments/README.md]]
 - [[../Docker/README.md]]
 - [[../Docker/notes/Swarm/Setting up a Multi-Node Swarm.md]]
 - [[../Docker/notes/Swarm/Multi-Host Networking.md]]

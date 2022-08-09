@@ -3,5 +3,6 @@
   "spellcheckDictionary": [
     "syllabi",
     "Analytics"
-  ]
+  ],
+  "alwaysUpdateLinks": true
 }

@@ -7,12 +7,8 @@
         "id": "c8702daf633ac95a",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "TODO.md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -53,7 +49,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 354.5
+    "width": 516.5
   },
   "right": {
     "id": "f80a94eea200353a",
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TODO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +84,15 @@
   },
   "active": "c8702daf633ac95a",
   "lastOpenFiles": [
-    "Conferences/CVJS Meetup - Monorepos (July 2022).md",
-    "OMSCS/Orientation/OMSCS Orientation.md",
-    "OMSCS/Orientation/OMSCS Orientation Doc.md",
-    "OMSCS/Orientation/Orientation Video Playlist.md",
-    "OMSCS/Courses/OMSCS Course Registration.md",
-    "OMSCS/Orientation/fall_2022_orientation_document.pdf",
-    "OMSCS/Courses/OMSCS Courses and Specializations.md",
-    "Linux/Files/Disk Info.md",
-    "Tags/Linux.md",
-    "Music/More Than a Dream Bill Wurtz/Time Signature Notes.md"
+    "Docker/assignments/README.md",
+    "Docker/assignments/Assignment_10_Stack_Deploy_With_Secrets/Docker Assignment - Swarm Secrets.md",
+    "Docker/assignments/Assignment_09_Multi-Service_App/Docker Assignment - Docker Swarm.md",
+    "Docker/assignments/Assignment_08_Docker-Compose_Image_Build/Docker Assignment - Another Compose Assignment.md",
+    "Docker/assignments/Assignment_08_Docker-Compose_Image_Build/Docker Assignment - Compose and Images.md",
+    "Docker/assignments/Assignment_07_My_First_Docker-Compose_File/Docker Assignment - Docker-Compose.md",
+    "Docker/assignments/Assignment_06_Bind_Mounts_and_Running_Containers/Docker Assigment - Bind Mounts and Jekyll.md",
+    "Docker/assignments/Assignment_05_Performing_Database_Updates/Docker Assignment - DB Upgrades and Volumes.md",
+    "Docker/assignments/Assignment_04_Create_An_Image_From_A_Dockerfile/Docker Assignment - Create Your Own Image.md",
+    "Docker/assignments/Assignment_03_DNS_Round_Robin/Docker Assignment - Containers and DNS.md"
   ]
 }
