@@ -3,4 +3,4 @@ type: tag
 ---
 # Snowflake
 
-- [[../Conferences/Snowflake-Workshop-August2020/Snowflake Security and RBAC.md]]
+- [[../Conferences/2020 Aug - Snowflake Workshop/Snowflake Security and RBAC.md]]

@@ -3,4 +3,4 @@ type: tag
 ---
 # Conference
 
-- [[../Conferences/DEVintersection-Spring-2019/DevIntersection Overview.md]]
+- [[../Conferences/2019 Spring DEVintersection/DevIntersection Overview.md]]
