@@ -15,5 +15,5 @@ type: tag
 - [[../Docker/assignments/Assignment_03_DNS_Round_Robin/Docker Assignment - Containers and DNS.md]]
 - [[../Docker/notes/Compose/Building Images with Docker Compose.md]]
 - [[../Linux/Files/Selfhosted NAS.md]]
-- [[../Conferences/2018 RevConf - Docker Workshop/namer/README.md]]
+- [[../Conferences/2018 RevConf - Docker Workshop/namer/Enterprise-grade company name generator.md]]
 - [[../Conferences/2018 RevConf - Docker Workshop/Docker Workshop Overview.md]]

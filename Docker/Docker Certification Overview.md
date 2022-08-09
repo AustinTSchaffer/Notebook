@@ -14,7 +14,7 @@ Good luck out there.
 
 ## Help
 
-If you are having touble running any of these demos, make sure you have root
+If you are having trouble running any of these demos, make sure you have root
 permissions. You may also want to check the output of your docker version
 against the version that I was using.
 
