@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "ddbd8dbd6f7b3449",
+        "id": "c8702daf633ac95a",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "OMSCS/Courses/OMSCS Course Registration.md",
+            "file": "OMSCS/Orientation/OMSCS Orientation.md",
             "mode": "source"
           }
         }
@@ -39,7 +39,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "registration",
+                "query": "concentration",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -48,11 +48,13 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 338.0036334991455
+    "width": 156.0036334991455,
+    "collapsed": true
   },
   "right": {
     "id": "f80a94eea200353a",
@@ -68,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OMSCS/Courses/OMSCS Course Registration.md",
+                "file": "OMSCS/Orientation/OMSCS Orientation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,13 +88,14 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "ddbd8dbd6f7b3449",
+  "active": "c8702daf633ac95a",
   "lastOpenFiles": [
-    "OMSCS/Courses/OMSCS Course Registration.md",
-    "OMSCS/Courses/OMSCS Courses and Specializations.md",
     "OMSCS/Orientation/OMSCS Orientation.md",
-    "OMSCS/Orientation/fall_2022_orientation_document.pdf",
+    "OMSCS/Orientation/OMSCS Orientation Doc.md",
     "OMSCS/Orientation/Orientation Video Playlist.md",
+    "OMSCS/Courses/OMSCS Course Registration.md",
+    "OMSCS/Orientation/fall_2022_orientation_document.pdf",
+    "OMSCS/Courses/OMSCS Courses and Specializations.md",
     "Linux/Files/Disk Info.md",
     "Tags/Linux.md",
     "Music/More Than a Dream Bill Wurtz/Time Signature Notes.md"

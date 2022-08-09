@@ -4,7 +4,7 @@
 
 ### Before Registration
 
-- [ ] 40-page orientation PDF [[fall_2022_orientation_document.pdf]]
+- [x] 40-page orientation PDF [[fall_2022_orientation_document.pdf]]
 - [x] [[Orientation Video Playlist]]
 - [x] Check [Application Status portal](https://gradapp.gatech.edu/account/login) one last\* time
 - [x] Activate my [GT email account](https://oit.gatech.edu/email). Once my status has been updated from "applicant" to "student", check this email account every day.
@@ -12,7 +12,7 @@
 - [ ] Check for my [time ticket assignment](https://registrar.gatech.edu/registration/time-tickets) in OSCAR. Time tickets will be released on August 12, 2022 by 6:00pm ET.
 - [x] Check for [holds](https://registrar.gatech.edu/registration/holds) on my account in OSCAR.
 - [x] Sign up for the omscs-announce email list by visiting [https://mailman.cc.gatech.edu/mailman/listinfo/omscs-announce](https://mailman.cc.gatech.edu/mailman/listinfo/omscs-announce) and entering my GT email account information.
-- [ ] Order a BuzzCard (https://buzzcard.gatech.edu/photoupload)
+- [ ] Order a BuzzCard (optional) (https://buzzcard.gatech.edu/photoupload)
 
 ### During Registration
 
@@ -24,9 +24,9 @@
 ### After Registration
 
 - [ ] Pay my Fall 2022 [tuition and fees](http://www.bursar.gatech.edu/) by the fee payment deadline of August 29, 2022 at 4:00pm ET.
-- [ ] Declare my specialization in [DegreeWorks](https://oscar.gatech.edu/) after Phase II registration has ended (or whenever you are ready to do so after that timeframe).
+- [x] Declare my specialization in [DegreeWorks](https://oscar.gatech.edu/) after Phase II registration has ended (or whenever you are ready to do so after that timeframe).
 -   REMINDER: OMSCS students may change their specialization at any time, as long as it is not during an active period of registration.
-- [ ] Continue to check my [GT email account](https://mail.gatech.edu/) on a daily basis.
+- [x] Continue to check my [GT email account](https://mail.gatech.edu/) on a daily basis.
 
 
 ## Advising
