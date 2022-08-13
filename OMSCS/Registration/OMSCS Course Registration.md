@@ -4,11 +4,11 @@ This table contains the list of courses from OSCAR with CRNs, titles, course num
 
 | Taken? | CRN   | Subj | Crse | Fnd? | Title                    |
 | ------ | ----- | ---- | ---- | ---- | ------------------------ |
-|        | 86153 | CS   | 6601 | Yes  | Artificial Intelligence  |
 |        | 85228 | CS   | 7637 | Yes  | Knowledge-Based AI       |
 |        | 86152 | CS   | 6400 | Yes  | DB Sys Concepts & Design |
 |        | 91853 | CS   | 7280 | Yes  | Network Science          |
-|        | 85222 | `CS   | 6250 | Yes  | Computer Networks        |
+|        | 86153 | CS   | 6601 | Yes  | Artificial Intelligence  |
+|        | 85222 | CS   | 6250 | Yes  | Computer Networks        |
 |        | 88294 | CS   | 6515 | Yes  | Intro to Grad Algorithms |
 |        | 91852 | CS   | 7210 | Yes  | Distributed Computing    |
 |        | 90255 | CSE  | 6220 | Yes  | High Perform Computing   |
