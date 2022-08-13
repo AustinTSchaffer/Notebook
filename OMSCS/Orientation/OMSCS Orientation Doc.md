@@ -1,3 +1,7 @@
+---
+tags: OMSCS, OMSCS Orientation
+---
+
 # OMSCS Orientation Doc
 
 - As a Georgia Tech student, you are responsible for knowing these academic policies and information:

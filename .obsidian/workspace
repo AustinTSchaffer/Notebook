@@ -4,11 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "c8702daf633ac95a",
+        "id": "f57e8b023681bd6a",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "OMSCS/Courses/Network Science/Network Science Prerequisite Test.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -36,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "concentration",
+                "query": "tag:#OMSCS",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "OMSCS/Courses/Network Science/Network Science Prerequisite Test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -82,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c8702daf633ac95a",
+  "active": "25e4fd02dd462c92",
   "lastOpenFiles": [
-    "noip.com.md",
-    "AWS Certs/solutions-architect-associate/AWS SA - Practice Test 1.md",
+    "OMSCS/Courses/Network Science/cs_7280_readiness_survey.pdf",
+    "OMSCS/Courses/Network Science/Network Science Prerequisite Test.md",
     "AWS Certs/solutions-architect-associate/01 - Preparing for Associate-Level Solutions Architect Exam.md",
     "AWS Certs/solutions-architect-associate/00 - Certified Solutions Architect - Associate.md",
-    "AWS Certs/solutions-architect-associate/AWS SA - Practice Test 2.md",
-    "Conferences/2020 Jan - AWS Workshop/AWS Workshop Day 2.md",
-    "Conferences/2018 RevConf - Docker Workshop/Docker Workshop Overview.md",
-    "Conferences/2018 RevConf - Docker Workshop/namer/Enterprise-grade company name generator.md",
-    "Docker/Docker Certification Overview.md",
-    "Graph Algorithms/Graph Algorithms.md"
+    "OMSCS/Orientation/OMSCS Orientation.md",
+    "OMSCS/Orientation/OMSCS Orientation Doc.md",
+    "OMSCS/Orientation/Orientation Video Playlist.md",
+    "OMSCS/Registration/OMSCS Courses and Specializations.md",
+    "OMSCS/Registration/OMSCS Course Registration.md",
+    "OMSCS/Courses/OMSCS Courses and Specializations.md"
   ]
 }

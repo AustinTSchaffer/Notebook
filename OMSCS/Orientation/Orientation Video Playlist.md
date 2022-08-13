@@ -1,3 +1,7 @@
+---
+tags: OMSCS, OMSCS Orientation
+---
+
 # Orientation Video Playlist
 https://www.youtube.com/playlist?list=PLl2dezBNo_Bme8RliCeBnjeK5_KnElfNU
 

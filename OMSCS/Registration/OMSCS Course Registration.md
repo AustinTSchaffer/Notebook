@@ -1,3 +1,7 @@
+---
+tags: OMSCS
+---
+
 # OMSCS Course Registration
 
 This table contains the list of courses from OSCAR with CRNs, titles, course numbers, etc

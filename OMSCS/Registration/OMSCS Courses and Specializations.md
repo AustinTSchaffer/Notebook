@@ -1,3 +1,7 @@
+---
+tags: OMSCS
+---
+
 # OMSCS Courses and Specializations
 
 - [Specializations](https://omscs.gatech.edu/program-info/specializations)

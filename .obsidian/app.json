@@ -4,5 +4,8 @@
     "syllabi",
     "Analytics"
   ],
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current",
+  "newFileFolderPath": "attachments",
+  "newLinkFormat": "shortest"
 }

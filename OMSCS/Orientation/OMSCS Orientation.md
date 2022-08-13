@@ -1,3 +1,7 @@
+---
+tags: OMSCS, OMSCS Orientation
+---
+
 # OMSCS Orientation
 
 ## Checklists
