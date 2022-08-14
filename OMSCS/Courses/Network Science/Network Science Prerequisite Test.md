@@ -196,4 +196,95 @@ $x=\frac{C_4}{5}e^{5t}+\frac{3}{5}$
 $$x=C_5e^{5t}+\frac{3}{5}$$
 Oh thank fuck, that's one of the answers.
 
-## Q10: 
+## Q10: Eigenvalues
+
+![[./images/Pasted image 20220814173048.png]]
+
+$A=\begin{bmatrix}-2&1\\12&-3\end{bmatrix}; \lambda=?$
+
+$\lambda$ means "eigenvalue". You can get the eigenvalue by doing $|A-\lambda{I}|=0$. The vertical bars is the same as $\det(A-\lambda{I})$, which means to find the determinate of the matrix.
+
+$\det(A-\lambda{I_2})=0$
+$\det({\begin{bmatrix}-2&1\\12&-3\end{bmatrix}-\begin{bmatrix}\lambda&0\\0&\lambda\end{bmatrix})}=0$
+
+So now I need to remember how to multiply 2 matrices together.
+
+$\begin{bmatrix}a&s\\ d&f\end{bmatrix}*\begin{bmatrix}q&w\\ e&r\end{bmatrix}=\begin{bmatrix}{aq+se}&{aw+sr}\\ {dq+fe}&{dw+fr}\end{bmatrix}$
+
+$\begin{vmatrix}-2&1\\12&-3\end{vmatrix}*\begin{vmatrix}\lambda&0\\0&\lambda\end{vmatrix}=\begin{vmatrix}{-2\lambda+0}&{0+\lambda}\\ {12\lambda+0}&{0-3\lambda}\end{vmatrix}=\begin{vmatrix}{-2\lambda}&{\lambda}\\ {12\lambda}&{-3\lambda}\end{vmatrix}=0$
+
+The determinate of a 2x2 matrix looks like:
+
+$\begin{vmatrix}a&s\\ d&f\end{vmatrix}=af-sd$
+
+Putting it together and calling it bad weather:
+
+$\det({\begin{bmatrix}-2&1\\12&-3\end{bmatrix}-\begin{bmatrix}\lambda&0\\0&\lambda\end{bmatrix})}=0$
+
+$\det({\begin{bmatrix}{-2-\lambda}&1\\12&-{3-\lambda}\end{bmatrix})}=0$
+
+$(-2-\lambda)(-3-\lambda)-(1)(12)=0$
+$6+{2\lambda}+{3\lambda}+{\lambda^2}-12=0$
+${\lambda^2}+{5\lambda}-6=0$
+
+$\lambda=\frac{-5\pm\sqrt{5^2-(4)(1)(-6)}}{2(1)}$
+$=\frac{-5\pm\sqrt{25+24}}{2}$
+$=\frac{-5\pm\sqrt{49}}{2}$
+$=\frac{-5\pm7}{2}$
+$$= -6, 1$$
+
+## Q11: Matrix Mult Rules
+
+![[./images/Pasted image 20220814181718.png]]
+
+$A^T$ and $B^T$ refer to the transpositions of the matrices, which basically means to rotate them about their diagonal, starting from the top left. $(A^T)^T=A$. Also this means their dimensions swap. P.S. a QxW matrix has Q rows and W columns.
+
+- $A$ is a 3x4 matrix
+- $A^T$ is a 4x3 matrix
+- $B$ is a 4x5 matrix
+- $B^T$ is a 5x4 matrix
+- ${B^T}{A^T}$ is multiplying a 5x4 matrix to a 4x3 matrix. The rule of thumb here is to make sure the inner numbers match (they do). If they do, the matrix's resulting size is the outer numbers (5x3).
+
+## Q12: Eigenvalue Decomp.
+
+![[./images/Pasted image 20220814182527.png]]
+
+A symmetric matrix is always a square matrix, such that $A=A^T$. If $A$ is a symmetric matrix, then $A^n$ is always symmetric, for $n\ge0$ ($A^0$ is an identity matrix). Eigenvalues and eigenvectors of a symmetric matrix have important special properties:
+
+- all the eigenvalues are real  
+- the eigenvectors corresponding to different eigenvalues are orthogonal.
+	- In [linear algebra](https://en.wikipedia.org/wiki/Linear_algebra "Linear algebra"), an **orthogonal matrix**, or **orthonormal matrix**, is a real [square matrix](https://en.wikipedia.org/wiki/Square_matrix "Square matrix") whose columns and rows are [orthonormal](https://en.wikipedia.org/wiki/Orthonormality "Orthonormality") [vectors](https://en.wikipedia.org/wiki/Vector_(mathematics_and_physics) "Vector (mathematics and physics)").
+	- $Q^TQ=QQ^T=I$
+	- This leads to the equivalent characterization: a matrix Q is orthogonal if its transpose is equal to its [inverse](https://en.wikipedia.org/wiki/Invertible_matrix "Invertible matrix"):
+	- $Q^T=Q^{-1}$
+- a symmetrix matrix is diagonalizable by an orthogonal similarity transformation:
+$${Q^T}{A}{Q}=\Lambda\space;\space{Q^T}{Q}=I$$
+every real symmetric n × n matrix A can be factored as
+$$A=Q{\Lambda}{Q^T}$$
+- Q is orthogonal 
+- $\Lambda = diag(λ1, . . . , λn)$ is diagonal, with real diagonal elements  
+- A is diagonalizable by an orthogonal similarity transformation: ${Q^T}{A}{Q}= \Lambda$ 
+- the columns of Q are an orthonormal set of n eigenvectors: $AQ = QΛ$
+- A vector is a list of numbers, either just a row or just a column.
+- If the linear transformation is expressed in the form of an _n_ by _n_ matrix _A_, then the eigenvalue equation for a linear transformation above can be rewritten as the matrix multiplication $Av=λv$, where the eigenvector _v_ is an _n_ by 1 matrix. For a matrix, eigenvalues and eigenvectors can be used to [decompose the matrix](https://en.wikipedia.org/wiki/Matrix_decomposition)—for example by [diagonalizing](https://en.wikipedia.org/wiki/Diagonalizable_matrix "Diagonalizable matrix") it.
+- A symmetric matrix is invertible if and only if all its eigenvalues are nonzero.
+
+So basically the answer to this is probably "all of the above", because matrices are usually decomposed as $A=Q{\Lambda}{Q^T}$, and there's something of a proof for eigendecomposition such that $A^n=Q{\Lambda^n}{Q^T}$. This question however has the $Q^T$ first: $A={U^T}{Y}{U}$. This leads me to believe that (a) either the prof that put this together uses nonstandard symbols, or I'm woefully underequipped for this question, and (b) $U$ is also symmetric, which would make both B and C correct. Since there's no "both B and C" option, other than "all", A must also be correct, I guess.
+
+## Q13: Matrices and Definitions
+
+![[./images/Pasted image 20220814182647.png]]
+
+A singular matrix is a [square matrix](https://mathworld.wolfram.com/SquareMatrix.html) that does not have a [matrix inverse](https://mathworld.wolfram.com/MatrixInverse.html). A matrix is singular [iff](https://mathworld.wolfram.com/Iff.html) its [determinant](https://mathworld.wolfram.com/Determinant.html) is 0. For example, there are 10 singular 2x2 matrices.
+
+Therefore, `A` is super false. It's the exact opposite of true.
+
+A matrix has an inverse if the determinant is non-zero. That means `D` is not true. A 0 determinant is not negative.
+
+`B` is also not true. A matrix being symmetric doesn't have any bearing on whether it has an inverse. There do exist symmetric matrices that have determinants of 0. Check out this example
+
+$\det({\begin{bmatrix}1&1\\ 1&1\end{bmatrix}})=0$
+
+This leaves `C`. If $A$ is $m*n$ and $n{\le}m$, then the max possible rank of the matrix is $n$. In [linear algebra](https://en.wikipedia.org/wiki/Linear_algebra "Linear algebra"), the **rank** of a [matrix](https://en.wikipedia.org/wiki/Matrix_(mathematics) "Matrix (mathematics)") A is the [dimension](https://en.wikipedia.org/wiki/Dimension_(vector_space) "Dimension (vector space)") of the [vector space](https://en.wikipedia.org/wiki/Vector_space "Vector space") generated (or [spanned](https://en.wikipedia.org/wiki/Linear_span "Linear span")) by its columns.
+
+Therefore the answer makes sense. A matrix's max rank is bounded by the number of columns. If the number of the columns is fewer than the number of rows, that's doubly the case.
