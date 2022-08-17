@@ -6,7 +6,7 @@ tags: OMSCS, Network Science, CS7280, Calculus, DiffEQ
 
 ## Q1: 2 Node System 1
 
-![[./images/Pasted image 20220812235905.png]]
+![[Pasted image 20220812235905.png]]
 
 - 2 node system, connected in series
 - Probability of the system working is the multiplication of those 2 probabilities
@@ -15,7 +15,7 @@ tags: OMSCS, Network Science, CS7280, Calculus, DiffEQ
 
 ## Q2: 2 Node System 2
 
-![[./images/Pasted image 20220813000218.png]]
+![[Pasted image 20220813000218.png]]
 
 - 2 node system, connected in parallel
 - Probability that the system _doesn't_ work is the multiplication of 1 minus each probability
@@ -38,7 +38,7 @@ Alternatively, you can use a decision tree to determine the probability that it 
 
 ## Q3: Take X from Y, no replacements
 
-![[images/Pasted image 20220813001855.png]]
+![[Pasted image 20220813001855.png]]
 
 The logic follows that the likelihood of getting one "A" part is 100 in 300 ($100 As + 200 Bs$). If you don't replace it, the likelihood of getting a 2nd "A" part is 99 in 299 ($99As + 200Bs$). These events are dependent, since the action taken in the first event decreases the sample space available for the 2nd event.
 
@@ -46,13 +46,13 @@ $P = \prod_{x=0}^3 \frac{100-x}{300-x} = 0.01185408$
 
 ## Q4: Taxe X from Y, with replacements
 
-![[./images/Pasted image 20220813000337.png]]
+![[Pasted image 20220813000337.png]]
 
 This is actually easier than Q3. Just do $(1/3)^4=0.012345679$. Replacing the part in the sample sizes means the events are all independent.
 
 ## Q5: Standard Deviations, Variance, Z-Tables
 
-![[./images/Pasted image 20220813002247.png]]
+![[Pasted image 20220813002247.png]]
 
 Things to note
 
@@ -69,7 +69,7 @@ Things to note
 
 ## Q6: Limits and Small Hospitals
 
-![[./images/Pasted image 20220813003324.png]]
+![[Pasted image 20220813003324.png]]
 
 Derivative Rules: https://www.mathsisfun.com/calculus/derivatives-rules.html
 
@@ -92,7 +92,7 @@ Googled how to do limits. This is an indeterminate form, which means we can use 
 
 ## Q7: More Derivatives 
 
-![[./images/Pasted image 20220813004749.png]]
+![[Pasted image 20220813004749.png]]
 
 The derivative of $ln(x)$ is $1/x$. I don't think there's a clever way to arrive at that answer, you just have to memorize it.
 
@@ -106,7 +106,7 @@ Therefore
 
 ## Q8: Integrals
 
-![[./images/Pasted image 20220813005328.png]]
+![[Pasted image 20220813005328.png]]
 
 Integration Rules: https://www.mathsisfun.com/calculus/integration-rules.html
 
@@ -125,7 +125,7 @@ The answer is C. Again, this is something that is memorize-able. Doing the deriv
 	- I'm not an insane person, and I don't really feel like simplifying this right now. I plugged it into an online calculator, which found that the simplification is indeed not $a^x$
 
 ## Q9: Diff-EQ
-![[./images/Pasted image 20220814155827.png]]
+![[Pasted image 20220814155827.png]]
 
 Integration Rules: https://www.mathsisfun.com/calculus/integration-rules.html
 
@@ -198,7 +198,7 @@ Oh thank fuck, that's one of the answers.
 
 ## Q10: Eigenvalues
 
-![[./images/Pasted image 20220814173048.png]]
+![[Pasted image 20220814173048.png]]
 
 $A=\begin{bmatrix}-2&1\\12&-3\end{bmatrix}; \lambda=?$
 
@@ -235,7 +235,7 @@ $$= -6, 1$$
 
 ## Q11: Matrix Mult Rules
 
-![[./images/Pasted image 20220814181718.png]]
+![[Pasted image 20220814181718.png]]
 
 $A^T$ and $B^T$ refer to the transpositions of the matrices, which basically means to rotate them about their diagonal, starting from the top left. $(A^T)^T=A$. Also this means their dimensions swap. P.S. a QxW matrix has Q rows and W columns.
 
@@ -247,7 +247,7 @@ $A^T$ and $B^T$ refer to the transpositions of the matrices, which basically mea
 
 ## Q12: Eigenvalue Decomp.
 
-![[./images/Pasted image 20220814182527.png]]
+![[Pasted image 20220814182527.png]]
 
 A symmetric matrix is always a square matrix, such that $A=A^T$. If $A$ is a symmetric matrix, then $A^n$ is always symmetric, for $n\ge0$ ($A^0$ is an identity matrix). Eigenvalues and eigenvectors of a symmetric matrix have important special properties:
 
@@ -273,7 +273,7 @@ So basically the answer to this is probably "all of the above", because matrices
 
 ## Q13: Matrices and Definitions
 
-![[./images/Pasted image 20220814182647.png]]
+![[Pasted image 20220814182647.png]]
 
 A singular matrix is a [square matrix](https://mathworld.wolfram.com/SquareMatrix.html) that does not have a [matrix inverse](https://mathworld.wolfram.com/MatrixInverse.html). A matrix is singular [iff](https://mathworld.wolfram.com/Iff.html) its [determinant](https://mathworld.wolfram.com/Determinant.html) is 0. For example, there are 10 singular 2x2 matrices.
 
