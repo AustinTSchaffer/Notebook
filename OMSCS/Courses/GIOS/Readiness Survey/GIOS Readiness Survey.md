@@ -30,7 +30,7 @@ I do.
 - device driver
 	- I use Linux. I understand device drivers pretty well.
 - scheduling
-	- 
+	- It's in the name. You usually have more processes than CPU cores. Don't starve your processes _c'mon_.
 - virtual memory management
 	- Virtual memory is a combination of hardware and software that maps memory address used by a program, called "virtual addresses", to the physical addresses in a computer's memory/storage systems. This is completely opaque to the process. The process thinks it has a contiguous address space or a collection of contiguous memory segments. This is useful for process isolation, and to make use of the OS's page file, which is when memory is mapped to a storage drive due to low memory.
 	- From Wikipedia: "Virtual memory makes application programming easier by hiding [fragmentation](https://en.wikipedia.org/wiki/Fragmentation_(computer) "Fragmentation (computer)") of physical memory; by delegating to the kernel the burden of managing the [memory hierarchy](https://en.wikipedia.org/wiki/Computer_data_storage#Hierarchy_of_storage "Computer data storage") (eliminating the need for the program to handle [overlays](https://en.wikipedia.org/wiki/Overlay_(programming) "Overlay (programming)") explicitly); and, when each process is run in its own dedicated address space, by obviating the need [to relocate](https://en.wikipedia.org/wiki/Relocation_(computer_science) "Relocation (computer science)") program code or to access memory with [relative addressing](https://en.wikipedia.org/wiki/Addressing_mode#PC-relative "Addressing mode")."
