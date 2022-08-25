@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "be64f05d8190911e",
+        "id": "610615306653d68e",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "OMSCS/Courses/GIOS/Readiness Survey/GIOS Readiness Survey.md",
+            "file": "OMSCS/Courses/GIOS/Readiness Survey/C and C++ Readiness.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#OMSCS",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OMSCS/Courses/GIOS/Readiness Survey/GIOS Readiness Survey.md",
+                "file": "OMSCS/Courses/GIOS/Readiness Survey/C and C++ Readiness.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "25e4fd02dd462c92",
   "lastOpenFiles": [
-    "Coding Project Ideas/Automatic Semantic Versioning.md",
-    "OMSCS/Courses/GIOS/Readiness Survey/GIOS Readiness Survey.md",
-    "OMSCS/Courses/GIOS/Readiness Survey/cs_6200_readiness_survey_2021-2.pdf",
-    "OMSCS/Courses/GIOS/Untitled.md",
-    "OMSCS/Courses/Network Science/Readiness Survey/Network Science Readiness Survey.md",
-    "OMSCS/Courses/Network Science/Readiness Survey/symmetric matrixes and eigendecomposition.pdf",
-    "OMSCS/Courses/Network Science/Readiness Survey/images/Pasted image 20220814181718.png",
-    "Math/Useful Derivatives and Integrals.md",
-    "OMSCS/Courses/Network Science/Readiness Survey/cs_7280_readiness_survey.pdf",
-    "AWS Certs/solutions-architect-associate/01 - Preparing for Associate-Level Solutions Architect Exam.md"
+    "OMSCS/Courses/GIOS/Schedule.pdf",
+    "OMSCS/Courses/GIOS/Course Overview.md",
+    "OMSCS/Courses/GIOS/P1L1/Untitled.md",
+    "OMSCS/Courses/GIOS/Readiness Survey/C and C++ Readiness.md",
+    "OMSCS/Courses/GIOS/Readiness Survey/Readiness Survey.md",
+    "OMSCS/Courses/GIOS/GIOS - Fall 2022 - Schedule.md",
+    "OMSCS/Orientation/Orientation Video Playlist.md",
+    "Linux/The Linux Programming Interface/TLPI Chapter 2 - Fundamental Concepts.md",
+    "Linux/The Linux Programming Interface/TLPI Bibliographic Information.md",
+    "OMSCS/Courses/GIOS/Linux Programming Interface/Untitled.md"
   ]
 }
