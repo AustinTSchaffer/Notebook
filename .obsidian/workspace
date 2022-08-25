@@ -7,11 +7,9 @@
         "id": "610615306653d68e",
         "type": "leaf",
         "state": {
-          "type": "markdown",
+          "type": "pdf",
           "state": {
-            "file": "OMSCS/Courses/GIOS/Readiness Survey/C and C++ Readiness.md",
-            "mode": "source",
-            "source": false
+            "file": "OMSCS/Courses/GIOS/Schedule.pdf"
           }
         }
       }
@@ -69,7 +67,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OMSCS/Courses/GIOS/Readiness Survey/C and C++ Readiness.md",
+                "file": "OMSCS/Courses/GIOS/Schedule.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,12 +85,12 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "25e4fd02dd462c92",
+  "active": "610615306653d68e",
   "lastOpenFiles": [
+    "OMSCS/Courses/GIOS/Readiness Survey/C and C++ Readiness.md",
     "OMSCS/Courses/GIOS/Schedule.pdf",
     "OMSCS/Courses/GIOS/Course Overview.md",
     "OMSCS/Courses/GIOS/P1L1/Untitled.md",
-    "OMSCS/Courses/GIOS/Readiness Survey/C and C++ Readiness.md",
     "OMSCS/Courses/GIOS/Readiness Survey/Readiness Survey.md",
     "OMSCS/Courses/GIOS/GIOS - Fall 2022 - Schedule.md",
     "OMSCS/Orientation/Orientation Video Playlist.md",
