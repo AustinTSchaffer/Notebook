@@ -4,12 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "610615306653d68e",
+        "id": "72d9de45a19e4edc",
         "type": "leaf",
         "state": {
-          "type": "pdf",
+          "type": "markdown",
           "state": {
-            "file": "OMSCS/Courses/GIOS/Schedule.pdf"
+            "file": "OMSCS/Courses/GIOS/Course Overview.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -67,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OMSCS/Courses/GIOS/Schedule.pdf",
+                "file": "OMSCS/Courses/GIOS/Course Overview.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,10 +87,10 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "610615306653d68e",
+  "active": "72d9de45a19e4edc",
   "lastOpenFiles": [
-    "OMSCS/Courses/GIOS/Readiness Survey/C and C++ Readiness.md",
     "OMSCS/Courses/GIOS/Schedule.pdf",
+    "OMSCS/Courses/GIOS/Readiness Survey/C and C++ Readiness.md",
     "OMSCS/Courses/GIOS/Course Overview.md",
     "OMSCS/Courses/GIOS/P1L1/Untitled.md",
     "OMSCS/Courses/GIOS/Readiness Survey/Readiness Survey.md",

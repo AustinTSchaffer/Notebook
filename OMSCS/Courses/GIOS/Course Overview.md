@@ -3,6 +3,8 @@ tags: OMSCS, GIOS, AOS
 ---
 
 # Course Overview
+-   [Ada Gavrilovska](http://www.cc.gatech.edu/home/ada/) (Professor)
+-   [Jarrod Parkes](https://plus.google.com/+JarrodParkesUdacity/about) (Course Developer)
 
 ## Why Should You Take This Course
 
@@ -75,11 +77,9 @@ Collaboration
 - Teams are allowed to have high-level discussions across teams
 - code and results sharing is ***PROHIBITED***
 - Use piazza
+- ***DO NOT*** post quizzes/tests/exams/assignments on GitHub.
 
 Links
 -   [Introduction to Operating Systems: Course Wiki](https://www.udacity.com/wiki/ud923)
 -   [Canvas](https://canvas.gatech.edu/)(check grades here)
 -   [Piazza](http://piazza.com/) (class forum)
-
-## Visual Metaphor
-
