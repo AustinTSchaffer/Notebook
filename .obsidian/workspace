@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "72d9de45a19e4edc",
+        "id": "ea07009b76fca07c",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "OMSCS/Courses/GIOS/Intro to Operating Systems.md",
+            "file": "OMSCS/Courses/GIOS/C and PThreads.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 242.5036334991455
+    "width": 295.5036334991455,
+    "collapsed": true
   },
   "right": {
     "id": "f80a94eea200353a",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OMSCS/Courses/GIOS/Intro to Operating Systems.md",
+                "file": "OMSCS/Courses/GIOS/C and PThreads.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +88,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "72d9de45a19e4edc",
+  "active": "ea07009b76fca07c",
   "lastOpenFiles": [
-    "OMSCS/Courses/GIOS/Course Overview.md",
-    "OMSCS/Courses/GIOS/Schedule.pdf",
-    "OMSCS/Courses/GIOS/Readiness Survey/C and C++ Readiness.md",
-    "OMSCS/Courses/GIOS/P1L1/Untitled.md",
+    "OMSCS/Courses/GIOS/images/Pasted image 20220911143819.png",
+    "OMSCS/Courses/GIOS/images/Pasted image 20220827154904.png",
+    "OMSCS/Courses/GIOS/images/Pasted image 20220827154304.png",
+    "OMSCS/Courses/GIOS/images/Pasted image 20220827154138.png",
+    "OMSCS/Courses/GIOS/images/Pasted image 20220827152200.png",
+    "OMSCS/Courses/GIOS/C and PThreads.md",
+    "OMSCS/Courses/GIOS/C and Sockets.md",
+    "OMSCS/Courses/GIOS/C and Files.md",
     "OMSCS/Courses/GIOS/Readiness Survey/Readiness Survey.md",
-    "OMSCS/Courses/GIOS/GIOS - Fall 2022 - Schedule.md",
-    "OMSCS/Orientation/Orientation Video Playlist.md",
-    "Linux/The Linux Programming Interface/TLPI Chapter 2 - Fundamental Concepts.md",
-    "Linux/The Linux Programming Interface/TLPI Bibliographic Information.md",
-    "OMSCS/Courses/GIOS/Linux Programming Interface/Untitled.md"
+    "OMSCS/Registration/Registration.md"
   ]
 }

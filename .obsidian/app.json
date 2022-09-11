@@ -7,5 +7,11 @@
   "alwaysUpdateLinks": true,
   "newFileLocation": "current",
   "newFileFolderPath": "attachments",
-  "newLinkFormat": "shortest"
+  "newLinkFormat": "shortest",
+  "attachmentFolderPath": "./images",
+  "strictLineBreaks": true,
+  "showLineNumber": false,
+  "rightToLeft": false,
+  "showUnsupportedFiles": true,
+  "useMarkdownLinks": false
 }
