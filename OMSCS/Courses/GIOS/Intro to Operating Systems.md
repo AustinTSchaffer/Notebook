@@ -4,11 +4,13 @@ tags: GIOS, OMSCS
 
 # Introduction to OSes
 
-## Simplest OS Definition
+## Summary
 
 An OS is a piece of software that
 - **abstracts** the use of a computer system
 - **arbitrates** the use of that computer system
+- has **policies** which governs how the OS performs those 2 things
+- exposes **system calls** that applications can use to access the hardware of a computer
 
 ## Visual Metaphor
 
@@ -119,4 +121,138 @@ Separation of mechanisms and policy
 
 ## OS Protection Boundary
 
-[(Continue on P1L2: video 11)](https://gatech.instructure.com/courses/270294/pages/11-os-protection-boundary?module_item_id=2665738)
+Generally, OSes have 2 different execution modes, "user-level" and "kernel-level". These may also be called "unprivileged" and "privileged" modes.
+
+- user-level
+	- applications
+- kernel-level
+	- OS
+	- access to hardware
+
+The hardware should support user-kernel permissions switching.
+- There typically will be a "bit" that the Kernel can use to switch between these modes. This is called a "user-kernel switch".
+- If an unprivileged application (i.e. a non-Kernel application) attempts to use a privileged kernel-mode instruction, the CPU should "**trap**" the instruction and interrupt the program. The Kernel will then have to essentially approve or deny that application's request to execute that instruction.
+- The "**system call**" interface allows applications to allow the Kernel to execute privileged instructions on their behalf.
+	- open (file)
+	- send (socket)
+	- malloc (memory)
+- "**signals**" allow the OS to pass notifications into applications
+
+## System Calls are Pretty Complicated
+
+- Application running along when suddenly it needs a file, network resource, new memory, etc
+- The application makes a system call for one of these resources, passing whatever arguments are relevant.
+- This **traps** the application, the "**mode bit**" is set to `0`.
+- The Kernel then steals the execution context from the application and performs the necessary operations
+- Then the Kernel returns the result back to the application, setting "mode bit" to `1`.
+- Control is returned to the application, which accepts the result from the operating system.
+- To make a system call, an application must
+	- Write arguments
+	- save relevant data at a well-defined location. This is so the OS knows where to retrieve the system call arguments from.
+	- make the system call using the specific sys call number
+- The application can pass args to the system call by
+	- passing the args to the OS (directly)
+	- Setting the args in registers and passing the addresses to the system call (indirectly)
+	- Combinations of these 2 are allowed
+- System call modes
+	- synchronous mode, where the application/process waits until the system call completes.
+	- There's also an asynchronous mode, covered later.
+
+## Crossing the User/Kernel Protection Boundary
+
+**User/Kernel Transitions** are a necessary step during application execution. There is basically no point to applications without system calls. Don't forget that even just creating a C `struct` REQUIRES a `malloc`, which is a system call.
+
+The underlying system hardware must support these **User/Kernel Transitions**. The hardware should **trap** instructions that applications are not allowed to execute, and trap requests to access memory that the applications don't own. The hardware should pass control to the Kernel/OS, who will then validate and approve/deny those requests.
+
+This involves a number of instructions, which can take 50-100 nanoseconds on a 2GHz Linux machine. This also affects the hardware's ability to use the CPU cache, because the operations "switch the locality" of the instructions being executed.
+
+These operations are _not cheap_.
+
+> Instructor Note:
+>
+> Because context switches will swap the data/addresses currently in **cache**, the performance of applications can benefit or suffer based on how a context switch changes what is in **cache** at the time they are accessing it.
+>
+> A **cache** would be considered **hot** (fire) if an application is accessing the **cache** when it contains the data/addresses it needs.
+>
+> Likewise, a **cache** would be considered **cold** (ice) if an application is accessing the **cache** when it does not contain the data/addresses it needs -- forcing it to retrieve data/addresses from main memory.
+
+
+## OS Services
+
+An OS provides applications with access to underlying hardware. It does so by exposing services.
+- scheduler, controls CPU access
+- mem manager, self explanatory, handles memory address translation, isolation
+- block device driver, handles storage devices
+- file system
+- etc
+
+Windows and Unix have very different system call interfaces, but there are parallels between both as far as what functionality is supported.
+
+![[./images/Pasted image 20220827152200.png]]
+
+## Linux System Calls
+
+- Reference: https://man7.org/linux/man-pages/man2/syscalls.2.html
+- Also `man syscalls`
+
+## OS Design
+
+### Monolithic OS
+
+- Every service that an OS could provide was part of the OS
+- pros
+	- everything included
+	- compile time optimizations
+- cons
+	- customization
+	- portability
+	- manageability
+	- maintainability
+	- it's just software, all pains apply
+
+### Modular OS
+
+This is the more common/sensible approach today.
+
+- The OS has basic services/APIs included by default.
+- The OS specifies module interfaces
+- modules then implement those interfaces, and then plug-in to those interfaces.
+- You can dynamically install new modules.
+- pros
+	- maintainability
+	- smaller footprint
+	- less resource needs
+- cons
+	- indirection impacts performance
+	- the OS has to offload work onto a separate module, which has overhead
+	- maintenance is still an issue
+
+### Microkernel
+
+- The kernel does a little as possible
+	- basic sys calls
+	- address space mgmt
+	- thread mgmt
+- Other OS services are run as applications on top of the minimal kernel
+- The Kernel brokers communication between those applications "inter process communications (IPC)"
+- pros
+	- super small size
+	- easier to verify the OS code
+	- useful for embedded
+- cons
+	- questionably portable
+	- limited inherent code sharing between different OS services
+	- increased frequency of user/kernel crossings, which impacts performance
+	- Not a great model for a general purpose operating system
+
+## Linux Architecture
+
+![[Pasted image 20220827154138.png]]
+
+![[Pasted image 20220827154304.png]]
+
+## MacOS Architecture
+
+MacOS uses more of a microkernel approach, apparently. It runs BSD, but as a user-application.
+
+![[Pasted image 20220827154904.png]]
