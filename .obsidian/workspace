@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "bcb7eab31158119f",
+        "id": "832a9f07c991599c",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -88,24 +88,23 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
-  "active": "bcb7eab31158119f",
+  "active": "832a9f07c991599c",
   "lastOpenFiles": [
+    "OMSCS/Courses/GIOS/P2LX Midterm Preparation.md",
+    "OMSCS/Courses/GIOS/P2L1 Process and Thread Management.md",
+    "OMSCS/Courses/GIOS/images/Pasted image 20220924215842.png",
     "OMSCS/Courses/GIOS/P1L1 Course Overview.md",
     "OMSCS/Courses/GIOS/C and Sockets.md",
     "OMSCS/Courses/GIOS/C and Files.md",
     "OMSCS/Courses/GIOS/P1L2 Intro to Operating Systems.md",
-    "OMSCS/Courses/GIOS/P2L1 Process and Thread Management.md",
-    "OMSCS/Courses/GIOS/Midterm Preparation.md",
     "OMSCS/Courses/GIOS/Schedule.pdf",
     "OMSCS/Courses/GIOS/Midterm Prep/Untitled.md",
-    "OMSCS/Courses/GIOS/PThreads/Compiling Threaded C Programs.md",
-    "OMSCS/Courses/GIOS/PThreads/Thread Management.md"
+    "OMSCS/Courses/GIOS/PThreads/Compiling Threaded C Programs.md"
   ]
 }

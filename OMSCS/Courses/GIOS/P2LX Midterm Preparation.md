@@ -2,14 +2,16 @@
 ## Prompts and Responses
 > How is a new process created? Select all that apply.
 
--   Via fork
--   Via exec
--   Via fork followed by exec
--   Via exec followed by fork
--   Via exec or fork followed by exec
--   Via fork or fork followed by exec
--   None of the above
--   All of the above
+- **Via fork**
+- ~~Via exec~~
+- **Via fork followed by exec**
+- ~~Via exec followed by fork~~
+- ~~Via exec or fork followed by exec~~
+- **Via fork or fork followed by exec**
+- ~~None of the above~~
+- ~~All of the above~~
+
+**exec** **_replaces_** the currently running process.
 
 > Is there a benefit to multi-threading on 1 CPU? Y/N. Give 1 reason to support your answer.
 
