@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "832a9f07c991599c",
+        "id": "b00ddc7315975cad",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "OMSCS/Courses/GIOS/P2L1 Process and Thread Management.md",
+            "file": "OMSCS/Courses/GIOS/P2L2 Threads and Concurrency.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "TODO",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -53,7 +53,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 358.0036334991455
+    "width": 358.0036334991455,
+    "collapsed": true
   },
   "right": {
     "id": "f80a94eea200353a",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OMSCS/Courses/GIOS/P2L1 Process and Thread Management.md",
+                "file": "OMSCS/Courses/GIOS/P2L2 Threads and Concurrency.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,24 +88,33 @@
               "type": "advanced-tables-toolbar",
               "state": {}
             }
+          },
+          {
+            "id": "e647f432363bad47",
+            "type": "leaf",
+            "state": {
+              "type": "stats-tracker",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
-  "active": "832a9f07c991599c",
+  "active": "b00ddc7315975cad",
   "lastOpenFiles": [
+    "OMSCS/Courses/GIOS/P2L2 Threads and Concurrency.md",
+    "OMSCS/Courses/GIOS/images/Pasted image 20220925143032.png",
+    "OMSCS/Courses/GIOS/images/Pasted image 20220925143016.png",
+    "OMSCS/Courses/GIOS/papers/Birrell Paper.pdf",
     "OMSCS/Courses/GIOS/P2LX Midterm Preparation.md",
-    "OMSCS/Courses/GIOS/P2L1 Process and Thread Management.md",
-    "OMSCS/Courses/GIOS/images/Pasted image 20220924215842.png",
-    "OMSCS/Courses/GIOS/P1L1 Course Overview.md",
-    "OMSCS/Courses/GIOS/C and Sockets.md",
-    "OMSCS/Courses/GIOS/C and Files.md",
-    "OMSCS/Courses/GIOS/P1L2 Intro to Operating Systems.md",
-    "OMSCS/Courses/GIOS/Schedule.pdf",
-    "OMSCS/Courses/GIOS/Midterm Prep/Untitled.md",
-    "OMSCS/Courses/GIOS/PThreads/Compiling Threaded C Programs.md"
+    "OMSCS/Courses/GIOS/Birrell.md",
+    "TODO.md",
+    "AWS Certs/solutions-architect-associate/AWS SA - Practice Test 1.md",
+    "OMSCS/Courses/GIOS/PThreads/Thread Management.md",
+    "OMSCS/Courses/GIOS/P2L1 Process and Thread Management.md"
   ]
 }

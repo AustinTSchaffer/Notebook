@@ -12,12 +12,10 @@ Some quick reminders of notes that I need to write on various topics.
 
 - [Notes on this video describing TSP algorithms](https://www.youtube.com/watch?v=GiDsjIBOVoA)
 	- Implement described algorithms in Python
-* Airflow seems pretty cool: https://airflow.apache.org/
 * Fireship
     * [7 features of the web that I probably don't know about](https://www.youtube.com/watch?v=ppwagkhrZJs)
     * [WASM](https://www.youtube.com/watch?v=ucmbO2lWC2A). Might be interesting to hear another take on WASM and maybe get some notes written on it.
     * [Web Sockets](https://www.youtube.com/watch?v=1BfCnjr_Vjg). Relate this note to the notes on transferring files from Android to Linux, since Snapdrop uses websockets to perform P2P file transfer.
-    * [Session vs Token Auth](https://www.youtube.com/watch?v=UBUNrFtufWo)
 * Numbers and Stuff
     * Probably need a new section of notes for Fundamental Computer Science and Mathematics.
     * [Keepsack Problem](https://www.youtube.com/watch?v=MacVqujSXWE), no idea if this video is at all relevant to anything I'm interested in. It's ok if I watch it once and drop it.
@@ -31,4 +29,3 @@ Some quick reminders of notes that I need to write on various topics.
     * Clarity Coders makes good stuff. Generally good content, well paced.
     * [Introduction to PyTorch](https://www.youtube.com/watch?v=Rtmi-H-mlKw). The code for this should be under Daily Programmer, but I can take notes here.
     * [Python and OpenCV Tutorial](https://www.youtube.com/watch?v=fmThsnqUCF0)
-- 

@@ -204,7 +204,145 @@ A common Condition Variable API has the following features
 	- notifies all **waiting** threads (important that it only notifies threads that _are_ waiting)
 	- the library will still ensure that only one thread acquires the mutex
 
-## Reader / Writer Problem
-TODO: Continue from P2L2 section 19 of 42.
+## Readers / Writer Problem
+### Naive Approach
+![[Pasted image 20220925170838.png]]
 
-https://gatech.instructure.com/courses/270294/pages/19-reader-slash-writer-problem?module_item_id=2665896
+This is too restrictive. Perfectly fine for writers, but multiple readers can/should be able to access the shared resource at the same time. We should keep track of how many readers and writers are accessing the shared resource.
+
+| Num Readers | Num Writers | Read OK | Write OK |
+| ----------- | ----------- | ------- | -------- |
+| 0           | 0           | ✅      | ✅       |
+| >= 1        | 0           | ✅      | ❌       |
+| 0           | == 1        | ❌      | ❌       |
+
+State of shared resource:
+- free: `resource_counter = 0`, indicates there's no activity
+- reading: `resource_counter > 0`, indicates there's one or more reader accessing the file
+- writing: `resource_counter = -1`, indicates that a writer is accessing the file.
+
+| `resource_counter` | Read OK | Write OK |
+| ------------------ | ------- | -------- |
+| 0                  | ✅      | ✅       |
+| > 0                | ✅      | ❌       |
+| < 0                | ❌      | ❌       |
+
+> There's a saying in computer science that all problems can be solved with one level of indirection.
+
+In this case we've produced another shared resource, a proxy-resource, a helper variable, which reflects the current state of another shared resource.
+
+```C
+// READER
+Lock (counter_mutex) {
+	while (resource_counter < 0)
+		Wait(counter_mutex, read_phase);
+	resource_counter++;
+} // unlock;
+
+// read data ...
+
+// signal
+Lock (counter_mutex) {
+	resource_counter--;
+	// Last reader to touch the file should signal to the writer.
+	if (readers == 0) signal(write_phase);
+}
+```
+
+```C
+// WRITER
+Lock (counter_mutex) {
+	while (resource_counter != 0)
+		Wait(counter_mutex, write_phase);
+	resource_counter = -1;
+} // unlock;
+
+// write data...
+
+// signal
+Lock (counter_mutex) {
+	resource_counter = 0;
+	// wake up all waiting readers
+	Broadcast(read_phase);
+	// wake up any pending writers
+	Signal(write_phase);
+}
+
+
+```
+
+More generally, how to structure a critical section with a proxy variable:
+
+![[Pasted image 20220925172225.png]]
+
+Mutexes are too simple to be able to fully handle complex locking cases like what we've described here. Using a proxy variable allows us to get around this limitation to build more complex mutual exclusion policies.
+
+## Common Pitfalls with Multi-Threaded Apps
+- keep track of mutex/cond variables used with a resource
+	- e.g. `mutex_type m1; // mutex for file1`
+- check that you are always (and correctly) using lock and unlock on a shared variable.
+	- e.g. common mistake, forget to lock/unlock
+	- sometimes compilers catch dangerous situations like this
+- Use a single mutex to access a single resource!
+	- Lock(m1) on read and Lock(m2) on write doesn't solve anything
+	- Reads and writes can happen concurrently!
+- Check that you're signalling correct conditions
+	- only way to ensure that the correct set of threads are going to be notified.
+	- Code comments are helpful
+- Check that you're choosing the right notification type (signal vs broadcast)
+	- signal: only 1 thread will proceed. Remaining threads will continue to wait. Could cause deadlocks.
+	- broadcast: might lead to code inefficiency
+- Do you need priority guarantees?
+	- thread execution order not controlled by signals to condition variables
+- **spurious wake ups**
+- **dead locks**
+
+### Spurious Wake-Ups
+Spurious = unnecessary. Leads to potential performance issues. Get rekt, CPU cache
+
+- This happens when a thread signals/broadcasts to a waiting thread or threads, but a lock is still being held which results in threads being woken up, only to be blocked a few lines of code later.
+- To solve, try to find cases where you can unlock the mutex before calling broadcast/signal. Don't optimize prematurely though, because sometimes you have to hold the lock all the way through the signal/broadcast operation.
+
+```C
+// Signalling code from the producer example. Causes reader
+// threads to wake up on wait(read_phase), but get locked when
+// they try to lock the counter_mutex.
+Lock (counter_mutex) {
+	resource_counter = 0;
+	// wake up all waiting readers
+	Broadcast(read_phase);
+	// wake up any pending writers
+	Signal(write_phase);
+}
+
+// Signalling code fixed, reader threads no longer being woken up
+// too early.
+Lock (counter_mutex) {
+	resource_counter = 0;
+}
+// wake up all waiting readers
+Broadcast(read_phase);
+// wake up any pending writers
+Signal(write_phase);
+```
+
+### Deadlocks
+> Definition: Two or more competing threads are waiting on each other to complete, but none of them ever do.
+
+- To solve, be a better programmer.
+- Unlock one mutex before locking another. This is called **fine-grained locking**. Sometimes a thread needs more than one lock though!
+- Maybe get all of the locks upfront, and then release them all at the end.
+- Lock mutexes in the same order every time, if possible. This is called **maintaining the lock order**. This will prevent cycles in the "wait graph".
+- Maybe try to consolidate mutexes into one MEGA mutex, though that reduces the flexibility of the system.
+
+A cycle in the wait graph is _necessary_ and _sufficient_ for a deadlock to occur. Edges from thread waiting on a resources to thread owning a resource.
+
+What can we do about it?
+- Change the code to help prevent those situations. Deadlock prevention takes a lot of time, meaning it's expensive.
+- Deadlock detection and recovery is also possible, where the wait graph is analyzed at runtime. Requires us to have the ability to rollback the execution. This is only possible if we maintain a LOT of state, allowing the program to rewind time.
+- Apply the Ostrich Algorithm, aka "Do nothing". Just reboot the program if it stops working.
+
+## Critical Section Quiz
+![[Pasted image 20220925175611.png]]
+
+TODO: Continue from P2L2 section 30 of 42: https://gatech.instructure.com/courses/270294/pages/30-critical-section-quiz-answer?module_item_id=2665922
