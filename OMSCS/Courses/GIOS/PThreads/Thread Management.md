@@ -176,8 +176,14 @@ for(t=0; t<NUM_THREADS; t++)
 ## Joining and Detaching Threads
 https://hpc-tutorials.llnl.gov/posix/joining_and_detaching/
 
+TODO:
+
 ## Stack Management
 https://hpc-tutorials.llnl.gov/posix/stack_management/
 
+TODO:
+
 ## Miscellaneous
 https://hpc-tutorials.llnl.gov/posix/misc_routines/
+
+TODO:
