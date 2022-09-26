@@ -2,7 +2,7 @@
 tags: OMSCS, GIOS, AOS
 ---
 
-# Course Overview
+# P1L1: Course Overview
 -   [Ada Gavrilovska](http://www.cc.gatech.edu/home/ada/) (Professor)
 -   [Jarrod Parkes](https://plus.google.com/+JarrodParkesUdacity/about) (Course Developer)
 

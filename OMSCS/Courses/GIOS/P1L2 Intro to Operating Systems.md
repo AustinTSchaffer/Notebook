@@ -2,7 +2,7 @@
 tags: GIOS, OMSCS
 ---
 
-# Introduction to OSes
+# P1L2: Introduction to OSes
 
 ## Summary
 

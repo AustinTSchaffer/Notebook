@@ -2,7 +2,7 @@
 tags: #OMSCS, #GIOS, #Threads, #Processes
 ---
 
-# P2L2 Threads and Concurrency
+# P2L2: Threads and Concurrency
 Processes are represented by their address space (virtual address space) and their execution context (subset of the PCB).
 - Registers
 - Stack
@@ -345,4 +345,142 @@ What can we do about it?
 ## Critical Section Quiz
 ![[Pasted image 20220925175611.png]]
 
-TODO: Continue from P2L2 section 30 of 42: https://gatech.instructure.com/courses/270294/pages/30-critical-section-quiz-answer?module_item_id=2665922
+- correct answers use `while`
+- correct answers ensure that `new_order` threads can't proceed if `new_order >= 3` and `old_order > 0`
+- Answer 3 is not correct because it prevents `new_order` threads from proceeding pretty much every time. Deadlock behavior.
+
+## Kernel-Level vs User-Level Threads
+User-level threads have to be associated with a kernel-level thread before it can be picked up by the OS scheduler. There's a few models for this.
+
+### One-to-One Model
+![[Pasted image 20220926092349.png]]
+- Each user-level thread has a kernel-level thread associated with it.
+- Pros
+	- OS sees/understands threads/sync/blocking...
+- Cons
+	- threads must cross the user/kernel boundary and go to OS for all operations
+	- OS may have limits on policies, thread count
+	- Portability, applications are limited to kernels that provide exactly the kind support they require.
+
+### Many-to-One Model
+![[Pasted image 20220926092530.png]]
+- Pros
+	- totally portable
+	- doesn't depend on OS limits/policies
+	- limits/policies are determined by user-level configurations
+- Cons
+	- OS has no insights into application needs, doesn't even know if an application is multithreaded
+	- OS may block entire process if one user-level thread blocks on I/O
+
+### Many-to-Many Model
+![[Pasted image 20220926093027.png]]
+- Best of Both Worlds™
+- Processes can have bound or unbound threads
+- Allows different threads to have different priorities
+- requires coordination be user- and kernel-level thread managers. Mostly in order to take advantage of performance opportunities.
+
+### Scope of Multi-threading
+- **System Scope**: System-wide thread management by OS-level thread managers (e.g. CPU scheduler)
+- **Process Scope**: User-level library manages threads within a single process.
+
+What happens when one application has twice as many user-level threads as another application?
+- Under Process-Scope, the OS doesn't know how many threads each application has. User-level threads will be granted an unequal share of the CPU. Threads in applications with fewer threads will run more often.
+- Under System-Scope, the OS is able to grant equal share of the CPU to each user-level thread.
+
+## Multi-threading Patterns
+### Boss-Workers Pattern
+- 1 main thread
+	- Assigns work in units that could be called "tasks"
+- some number of worker threads
+	- Performs the "tasks"
+
+Throughput of the system is limited by the boss thread. The boss thread must be kept as efficient as possible.
+
+$T_{order} = {T_{boss,order} + T_{worker,order}}$
+
+$Throughput_{order} = \frac{1}{T_{boss,order}}$
+
+$T_{total} = T_{worker,order} * ceiling(\frac{num\_orders}{num\_threads})$
+
+**Methods by which the Boss assigns work**
+- directly signalling specific workers.
+	- workers don't need to synchronize
+	- boss must track what each worker is doing
+	- lower throughput
+- establish a work/task queue between boss and workers
+	- this is a 1 producer, N consumer pattern
+	- boss doesn't need to know details about the workers, such as who's busy and who's free, or even how many worker threads there are.
+	- requires careful synchronization, and a fully-featured and expressive queue library.
+
+**Variants**
+- all workers created equal
+	- one queue to rule them all
+- workers specialized for certain tasks
+	- multiple queues
+	- boss must do more work to route tasks to specific queues. Harder to do load balancing.
+	- better **locality**, meaning: threads do less, more likely that the cache will remain hot
+	- better Quality of Service management
+
+### Pipeline Pattern
+- threads assigned one subtask in the system
+- entire tasks == pipeline of threads
+- multiple tasks concurrently in the system, in different pipeline stages
+- throughput bounded by the weakest link
+- pipeline stages that take longer can/should be allocated multiple threads
+- sequence of stages. Each stage is a subtask. Each stage should be executable by more than one thread.
+- Passing partial work products should be done by shared buffer-based communication between stages.
+- Better thread specialization and locality
+- Maintaining pipeline balance is more challenging
+- Significant synchronization overheads
+
+$T_{total} = T_{first\_order} + ((order\_count - 1) * T_{last\_stage})$
+
+### Layered Pattern
+![[Pasted image 20220926095717.png]]
+- each layer is assigned a group of related subtasks
+- end-to-end task must pass up and down through all layers
+- better thread specialization and locality
+- less fine-grained than pipeline model
+- not suitable for all applications
+- requires a lot of synchronization. Every layer needs to coordinate with layers above and below.
+- less clarity in where each step of a process happens.
+
+### Throughput Example
+6-step toy order application. 2 solutions.
+
+- Boss-worker solution
+	- 6 threads
+	- worker threads process toy order in 120ms
+- Pipeline solution
+	- 6 threads
+	- 6 pipeline stages
+	- each stage takes 20ms
+
+10 orders boss-worker
+- $T_{total} = T_{worker,order} * ceiling(\frac{num\_orders}{num\_threads_{worker}})$
+- $num\_threads_{worker} = 5$ because there's one thread allocated to the boss thread
+- $T_{total} = 120ms * ceiling(\frac{10}{5})$
+- $= 120ms * 2$
+- $=240ms$
+
+11 orders boss worker
+- $T_{total} = T_{worker,order} * ceiling(\frac{num\_orders}{num\_threads})$
+- $T_{total} = 120ms * ceiling(\frac{11}{5})$
+- $= 120ms * 3$
+- $=360ms$
+
+10 orders pipeline
+- $T_{total} = T_{first\_order} + ((order\_count - 1) * T_{last\_stage})$
+- $T_{first\_order} = 6stages * 20\frac{ms}{stage} = 120ms$
+- $T_{total} = 120ms + ((10 - 1) * 20ms)$
+- $= 120ms + (9 * 20ms)$
+- $= 120ms + 180ms$
+- $=300ms$
+
+11 orders pipeline
+- $T_{total} = T_{first\_order} + ((order\_count - 1) * T_{last\_stage})$
+- $T_{first\_order} = 6stages * 20\frac{ms}{stage} = 120ms$
+- $T_{total} = 120ms + ((11 - 1) * 20ms)$
+- $= 120ms + (10 * 20ms)$
+- $= 120ms + 200ms$
+- $=320ms$
