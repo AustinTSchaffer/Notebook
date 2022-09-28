@@ -204,7 +204,9 @@ A common Condition Variable API has the following features
 	- notifies all **waiting** threads (important that it only notifies threads that _are_ waiting)
 	- the library will still ensure that only one thread acquires the mutex
 
-## Readers / Writer Problem
+## Readers / Writer Problem 
+#ReaderWriterProblem
+
 ### Naive Approach
 ![[Pasted image 20220925170838.png]]
 
