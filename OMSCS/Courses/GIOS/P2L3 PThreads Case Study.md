@@ -8,7 +8,9 @@ Callback to Birrell's paper, which talks about threads in a fairly universal and
 
 PThreads describes the threading API that OSes need to support. Specifies syntax and semantics of the operations.
 
-Supplemental materials for this lecture include Birrell's paper, [Lawrence Livermore National Laboratory's series on PThreads](https://hpc-tutorials.llnl.gov/posix/), and 
+Supplemental materials for this lecture
+- [[Birrell Paper.pdf]] ([[Birrell Paper Notes]])
+- [Lawrence Livermore National Laboratory's series on PThreads](https://hpc-tutorials.llnl.gov/posix/)
 
 ## PThread Creation
 | Birrell's Abstractions | PThreads                                        |

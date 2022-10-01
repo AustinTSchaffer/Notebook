@@ -15,7 +15,7 @@
 
 > Is there a benefit to multi-threading on 1 CPU? Y/N. Give 1 reason to support your answer.
 
-TODO:
+Yes. Even if you only have 1 CPU, you can use multithreading to hide the latency associated with I/O requests. Having multiple threads in a thread pool handling I/O requests allows you to maintain at least one thread that isn't blocked waiting on the completion of an I/O request.
 
 >In the (pseudo) code segments for the **producer code** and **consumer code**, mark and explain all the lines where there are errors.
 
@@ -39,7 +39,12 @@ TODO:
 
 > If the kernel cannot see user-level signal masks, then how is a signal delivered to a user-level thread (where the signal can be handled)?
 
-TODO:
+- The OS kernel maintains a per-process table that correlates signal IDs to the memory address that contains the starting instruction for the handler that should handle signals of that type.
+- When a signal is handled, the instructions for that signal's handler runs in the execution context of a particular thread.
+- Threads can independently set their per-thread signal mask, which enables/disables signal handling for specific signal types for the particular thread.
+- If a signal is disabled by a ULT, the ULT library can check to see if there's another ULT that has the signal enabled. In that case, the ULT library will route the signal to another thread or another CPU, so it can be handled on other thread.
+- If no ULTs have the mask set to 1, the threading library will make a system call to set the kernel-level mask to 0. The ULT library will then reissue the signal to another thread, which will cascade and cause all of the LWP masks to be set 0.
+- Once a thread enables the mask, the ULT library will make a system call to enable the mask on one of the KLTs/LWPs.
 
 > The implementation of Solaris threads described in the paper ["Beyond Multiprocessing: Multithreading the Sun OS Kernel" (Links to an external site.)](https://s3.amazonaws.com/content.udacity-data.com/courses/ud923/references/ud923-eykholt-paper.pdf), describes four key data structures used by the OS to support threads.
 > 
@@ -50,7 +55,26 @@ TODO:
 > 3. Kernel-threads
 > 4. CPU
 
-TODO: 
+- The process data structure must contain
+	- A list of kernel-level threads
+	- The virtual address space
+	- User credentials
+	- Signal handlers
+- A light-weigh process (LWP) data structure must contain
+	- user-level registers
+	- system call arguments
+	- resource usage info
+	- a signal mask
+- The data structure for a Kernel Level Thread (KLT) must contain
+	- kernel-level registers
+	- stack pointers
+	- scheduling information
+	- pointers to associated LWP, process, and CPU data structures
+	- Essentially it must contain information that is needed even when a process is not running.
+- The in-memory data structure that models the CPU must contain
+	- A pointer to the currently running thread
+	- A list of kernel-level threads
+	- information for dispatching and interrupt handling.
 
 > An image web server has three stages with average execution times as follows:
 >
@@ -63,8 +87,6 @@ TODO:
 > 1.  How many threads will you allocate to each pipeline stage?
 > 2.  What is the expected execution time for 100 requests (in sec)?
 > 3.  What is the average throughput of the system in Question 2 (in req/sec)? Assume there are infinite processing resources (CPU's, memory, etc.).
-
-TODO: Look up the multithreaded pipeline model more in depth.
 
 1. I would allocate the following thread counts for each stage, or some multiple of these thread counts. This would be the base, the next increment would be "2, 6, and 4".
 	- 1 thread for stage 1
