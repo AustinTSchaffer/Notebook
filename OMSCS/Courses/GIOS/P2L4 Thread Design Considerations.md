@@ -2,13 +2,49 @@
 tags: OMSCS, GIOS, Threads, PThreads
 ---
 # P2L4: Thread Design Considerations
+- [[#Kernel vs User Level Threads|Kernel vs User Level Threads]]
+- [[#Thread-related Data Structures|Thread-related Data Structures]]
+- [[#Rationale for Multiple Datastructures|Rationale for Multiple Datastructures]]
+- [[#Quiz: Linux KThread Structures|Quiz: Linux KThread Structures]]
+- [[#User Level Structures in Solaris 2.0|User Level Structures in Solaris 2.0]]
+- [[#Kernel Level Structures in Solaris 2.0|Kernel Level Structures in Solaris 2.0]]
+- [[#Basic Thread Management Interactions|Basic Thread Management Interactions]]
+- [[#Quiz: PThread Concurrency|Quiz: PThread Concurrency]]
+- [[#Thread Management Visibility and Design|Thread Management Visibility and Design]]
+- [[#How/When does the UL Library run?|How/When does the UL Library run?]]
+- [[#Issues on Multiple CPUs|Issues on Multiple CPUs]]
+	- [[#Issues on Multiple CPUs#Thread Mutexes and Priority|Thread Mutexes and Priority]]
+	- [[#Issues on Multiple CPUs#Synchronization-Related Issues|Synchronization-Related Issues]]
+	- [[#Issues on Multiple CPUs#Destroying Threads|Destroying Threads]]
+- [[#Quiz: Number of Threads|Quiz: Number of Threads]]
+- [[#Interrupts and Signals|Interrupts and Signals]]
+	- [[#Interrupts and Signals#Interrupt Handling|Interrupt Handling]]
+	- [[#Interrupts and Signals#Signal Handling|Signal Handling]]
+	- [[#Interrupts and Signals#Why Disable Interrupts or Signals?|Why Disable Interrupts or Signals?]]
+	- [[#Interrupts and Signals#More on Signal Masks|More on Signal Masks]]
+	- [[#Interrupts and Signals#Interrupts in Multicore Systems|Interrupts in Multicore Systems]]
+	- [[#Interrupts and Signals#Types of Signals|Types of Signals]]
+	- [[#Interrupts and Signals#Quiz: Signal Names|Quiz: Signal Names]]
+	- [[#Interrupts and Signals#Handling Interrupts as Threads|Handling Interrupts as Threads]]
+	- [[#Interrupts and Signals#Interrupts: Top vs Bottom Half|Interrupts: Top vs Bottom Half]]
+	- [[#Interrupts and Signals#Performance of Threads as Interrupts|Performance of Threads as Interrupts]]
+	- [[#Interrupts and Signals#Threads and Signal Handling|Threads and Signal Handling]]
+		- [[#Threads and Signal Handling#Case 1|Case 1]]
+		- [[#Threads and Signal Handling#Case 2|Case 2]]
+		- [[#Threads and Signal Handling#Case 3|Case 3]]
+		- [[#Threads and Signal Handling#Case 4|Case 4]]
+- [[#Tasks in Linux|Tasks in Linux]]
+	- [[#Tasks in Linux#Linux Task Creation|Linux Task Creation]]
+	- [[#Tasks in Linux#Linux Threads Model|Linux Threads Model]]
+
+## Overview
 - Threads can be implemented at the Kernel level and at the user level.
 - Threads and interrupts
 - Threads and signal handling
 
 Supplemental Materials
-- [[Eykholt Paper.pdf]] "Beyond Multiprocessing: Multithreading the Sun OS Kernel"
-- [[Stein Shah Paper.pdf]] "Implementing Lightweight Threads"
+- [[P2 Eykholt Paper.pdf]] "Beyond Multiprocessing: Multithreading the Sun OS Kernel"
+- [[P2 Stein Shah Paper.pdf]] "Implementing Lightweight Threads"
 
 ## Kernel vs User Level Threads
 OS kernel maintains
@@ -403,7 +439,7 @@ Optimize for the common case! The common case is usually the mutex lock/unlock p
 - The other KLT mask = 1
 - Library handling routing will kick in, it knows that there's another thread that can handle the signal
 - It sees that the thread is associated with a LWP managed by the library
-- The library will generate a directed signal to the other LWP.
+- The library will generate a **directed signal** to the other LWP.
 - When the OS delivers the signal, it will see that the signal mask is enabled, and the OS will route the signal, and the library handling routine will re-process the signal.
 
 ![[Pasted image 20221001145646.png]]
