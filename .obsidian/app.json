@@ -13,5 +13,6 @@
   "showLineNumber": false,
   "rightToLeft": false,
   "showUnsupportedFiles": true,
-  "useMarkdownLinks": false
+  "useMarkdownLinks": false,
+  "promptDelete": false
 }
