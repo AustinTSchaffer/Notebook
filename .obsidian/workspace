@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "OMSCS/Courses/GIOS/P2LX2 Midterm Exam Prep 2.md",
+            "file": "OMSCS/Courses/GIOS/P2L5 Thread Performance Considerations.md",
             "mode": "source",
             "source": false
           }
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "handler",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -66,8 +66,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 358.0036334991455,
-    "collapsed": true
+    "width": 358.0036334991455
   },
   "right": {
     "id": "f80a94eea200353a",
@@ -83,7 +82,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OMSCS/Courses/GIOS/P2LX2 Midterm Exam Prep 2.md",
+                "file": "OMSCS/Courses/GIOS/P2L5 Thread Performance Considerations.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,15 +119,15 @@
   },
   "active": "e254fe1cd6be11a9",
   "lastOpenFiles": [
+    "OMSCS/Courses/GIOS/C and Sockets.md",
+    "OMSCS/Courses/GIOS/P2LX2 Midterm Exam Prep 2.md",
     "OMSCS/Courses/GIOS/P2L5 Thread Performance Considerations.md",
     "OMSCS/Courses/GIOS/P2L2 Threads and Concurrency.md",
-    "OMSCS/Courses/GIOS/P2LX2 Midterm Exam Prep 2.md",
     "OMSCS/Courses/GIOS/P2L4 Thread Design Considerations.md",
     "OMSCS/Courses/GIOS/P2L3 PThreads Case Study.md",
     "OMSCS/Courses/GIOS/P2L1 Process and Thread Management.md",
     "OMSCS/Courses/GIOS/P1L1 Course Overview.md",
     "OMSCS/Courses/GIOS/P1L2 Intro to Operating Systems.md",
-    "Technotes/Fancy Programming Words.md",
-    "Linux/The Linux Programming Interface/TLPI Chapter 2 - Fundamental Concepts.md"
+    "Technotes/Fancy Programming Words.md"
   ]
 }

@@ -208,7 +208,7 @@ Benefits
 ### Problems with Event-Driven Model
 If any handler issues a blocking request/handler, this will block the entire process from being to begin working on a different task while the operation completes.
 
-You need to ensure that all of the I/O operations are performed by the process are using asynchronous I/O operations. Async calls happen by:
+You need to ensure that all of the I/O operations performed by the process are using asynchronous I/O operations. Async calls happen by:
 - Process/thread makes system call
 - OS obtains all relevant info from stack, and either learns where to return results, or tells caller where to get results later.
 - process/thread can then continue
@@ -216,7 +216,7 @@ You need to ensure that all of the I/O operations are performed by the process a
 Requires support from kernel (e.g. threads) and/or device (e.g. DMA)
 
 ### Helper Threads
-- If a blocking I/O operation doesn't have an `async` operation, we can return to using threads for hiding I/O latency.
+- If a blocking I/O operation doesn't have an `async` variant, we can return to using threads for hiding I/O latency.
 - The event dispatcher communicates with these helper threads using pipe/socket based communication.
 	- `select()` and `poll()` can be used here
 - The helper thread will be blocked, but the main event loop (i.e. the process) will not be blocked.
