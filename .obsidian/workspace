@@ -4,24 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "e254fe1cd6be11a9",
+        "id": "b205946bf1ac28d8",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "OMSCS/Courses/GIOS/P2L5 Thread Performance Considerations.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "b885b403d3d20bf2",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "OMSCS/Courses/GIOS/P2L5 Thread Performance Considerations.md",
+            "file": "OMSCS/Courses/GIOS/P3L1 Scheduling.md",
             "mode": "source",
             "source": false
           }
@@ -66,7 +54,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 358.0036334991455
+    "width": 358.0036334991455,
+    "collapsed": true
   },
   "right": {
     "id": "f80a94eea200353a",
@@ -82,7 +71,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OMSCS/Courses/GIOS/P2L5 Thread Performance Considerations.md",
+                "file": "OMSCS/Courses/GIOS/P3L1 Scheduling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -117,11 +106,11 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e254fe1cd6be11a9",
+  "active": "b205946bf1ac28d8",
   "lastOpenFiles": [
+    "OMSCS/Courses/GIOS/P2L5 Thread Performance Considerations.md",
     "OMSCS/Courses/GIOS/C and Sockets.md",
     "OMSCS/Courses/GIOS/P2LX2 Midterm Exam Prep 2.md",
-    "OMSCS/Courses/GIOS/P2L5 Thread Performance Considerations.md",
     "OMSCS/Courses/GIOS/P2L2 Threads and Concurrency.md",
     "OMSCS/Courses/GIOS/P2L4 Thread Design Considerations.md",
     "OMSCS/Courses/GIOS/P2L3 PThreads Case Study.md",

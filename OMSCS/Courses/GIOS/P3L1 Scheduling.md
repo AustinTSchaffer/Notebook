@@ -2,6 +2,37 @@
 tags: OMSCS, GIOS, Scheduling
 ---
 # P3L1: Scheduling
+- [[#Overview|Overview]]
+- [[#CPU Scheduling|CPU Scheduling]]
+- [[#"Run-to-Completion" Scheduling|"Run-to-Completion" Scheduling]]
+- [[#Preemptive Scheduling|Preemptive Scheduling]]
+	- [[#Preemptive Scheduling#SJF + Preempt|SJF + Preempt]]
+	- [[#Preemptive Scheduling#Priority + Preempt|Priority + Preempt]]
+		- [[#Priority + Preempt#Example|Example]]
+	- [[#Preemptive Scheduling#Priority Inversion|Priority Inversion]]
+	- [[#Preemptive Scheduling#Round-Robin Scheduling|Round-Robin Scheduling]]
+- [[#Timesharing and Timesclices|Timesharing and Timesclices]]
+	- [[#Timesharing and Timesclices#How Long should TimeSlices Be?|How Long should TimeSlices Be?]]
+		- [[#How Long should TimeSlices Be?#Summary|Summary]]
+		- [[#How Long should TimeSlices Be?#CPU bound tasks|CPU bound tasks]]
+		- [[#How Long should TimeSlices Be?#I/O-bound tasks|I/O-bound tasks]]
+		- [[#How Long should TimeSlices Be?#Quiz|Quiz]]
+			- [[#Quiz#1ms timeslice|1ms timeslice]]
+			- [[#Quiz#10ms timeslice|10ms timeslice]]
+- [[#Runqueue Data Structure|Runqueue Data Structure]]
+	- [[#Runqueue Data Structure#Multi-Level Feedback Queue (MLFQ)|Multi-Level Feedback Queue (MLFQ)]]
+		- [[#Multi-Level Feedback Queue (MLFQ)#Considerations|Considerations]]
+		- [[#Multi-Level Feedback Queue (MLFQ)#Dealing with different timeslice values|Dealing with different timeslice values]]
+		- [[#Multi-Level Feedback Queue (MLFQ)#Linux O(1) Scheduler|Linux O(1) Scheduler]]
+	- [[#Runqueue Data Structure#Linux's Completely Fair Scheduler (CFS)|Linux's Completely Fair Scheduler (CFS)]]
+- [[#Scheduling on Multi-CPU Systems|Scheduling on Multi-CPU Systems]]
+	- [[#Scheduling on Multi-CPU Systems#Shared memory multiprocessors (SMP)|Shared memory multiprocessors (SMP)]]
+	- [[#Scheduling on Multi-CPU Systems#Multicore CPUs|Multicore CPUs]]
+	- [[#Scheduling on Multi-CPU Systems#Scheduling on Multi-CPU Systems|Scheduling on Multi-CPU Systems]]
+- [[#Hyperthreading (aka SMT or CMT)|Hyperthreading (aka SMT or CMT)]]
+	- [[#Hyperthreading (aka SMT or CMT)#Scheduling for Hyperthreaded Platforms|Scheduling for Hyperthreaded Platforms]]
+- [[#Is a thread CPU-bound or memory-bound?|Is a thread CPU-bound or memory-bound?]]
+- [[#Scheduling with Hardware Counters|Scheduling with Hardware Counters]]
 
 ## Overview
 - Scheduling mechanisms, algorithms, data structures
@@ -170,3 +201,249 @@ When you have a mix of I/O and CPU -bound tasks, longer timeslicing can appear b
 #### Quiz
 ![[Pasted image 20221010122458.png]]
 
+> **Helpful Steps to Solve:**
+> 1. Determine a consistent, recurring interval
+> 2. In the interval, each task should be given an opportunity to run
+> 3. During that interval, how much time is spent computing? This is the **cpu_running_time**
+> 4. During that interval, how much time is spent context switching? This is the **context_switching_overheads**
+
+- 10 I/O bound tasks
+	- Every 1ms, each issues a 10ms blocking instruction, forcing a context switch.
+	- If the timeslice interval is greater than 1ms, it's essentially ignored for these tasks.
+
+##### 1ms timeslice
+
+Recurring Interval would be:
+- multiply by 10
+	- 1ms of running time for an I/O bound-task
+	- 0.1ms context switch
+- 1ms running time for the CPU-bound task
+- 0.1ms context switch
+
+- $t_{running} = 10(1ms) + 1ms = 11ms$
+- $t_{overhead} = 10(0.1ms) + 0.1ms = 1.1ms$
+- $util = \frac{t_{running}}{t_{running} + t_{overhead}} = \frac{11}{12.1} \approx 0.91 = 91\%$
+
+##### 10ms timeslice
+
+Recurring Interval would be:
+- multiply by 10
+	- 1ms of running time for an I/O bound-task
+	- 0.1ms context switch
+- 10ms running time for the CPU-bound task
+- 0.1ms context switch
+
+- $t_{running} = 10(1ms) + 10ms = 20ms$
+- $t_{overhead} = 10(0.1ms) + 0.1ms = 1.1ms$
+- $util = \frac{t_{running}}{t_{running} + t_{overhead}} = \frac{20}{21.1} \approx 0.95 = 95\%$
+
+## Runqueue Data Structure
+- Runqueues are only logically a queue
+- They could be a list of queues or even a tree.
+- If we want I/O and CPU bound tasks to have different timeslices, then
+	- same runqueue, check type
+	- separate runqueue into different runqueues with differing timeslicing values
+	- store timeslice as part of runqueue task struct
+
+### Multi-Level Feedback Queue (MLFQ)
+- Put most I/O intensive tasks into a $ts=8ms$ queue, with tasks in that queue assumed to have the highest priority.
+- Put medium I/O intensive tasks (mix of I/O and CPU processing) into a $ts=16ms$ queue, with tasks in that queue having lower priority.
+- Put CPU intensive tasks into the lowest priority queue, with $ts\rightarrow\infty$ (FCFS). These tasks will be preempted when I/O tasks enter the runqueue
+- Pros
+	- shorter timeslicing provides benefits for I/O bound tasks
+	- longer timeslicing avoids overheads for CPU bound tasks
+
+#### Considerations
+- How do we know if a task is CPU or I/O intensive?
+- How do we know how I/O intensive a task is?
+- Have to use history-based statistics
+	- What about new tasks?
+	- what about tasks that dynamically change behavior during different execution phases?
+
+#### Dealing with different timeslice values
+![[Pasted image 20221010195444.png]]
+
+1. tasks enter topmost queue
+2. if task yields voluntarily before 8ms timeslice expires
+	- good choice! Keep task at this level
+3. If task uses entire timeslice
+	- push the task down to a more CPU intensive queue
+4. Task in lower queue are pushed upward when they release the CPU due to I/O waits
+
+MLFQ != Priority Queues
+- different treatment of threads at each level
+- feedback mechanism
+
+Solaris used a variant of this mechanism that incorporates 60 levels.
+
+#### Linux O(1) Scheduler
+> Oh of one.
+
+- O(1) means "constant time" to add and select tasks
+- Preemptive, priority-based
+	- real time priority levels (0-99)
+	- timesharing priority levels (100-129)
+
+User processes
+- default 120
+- nice value (-20 to 19)
+
+Timeslice value
+- depends on priority
+- smallest for low priority
+- highest for high priority
+
+Feedback
+- sleep time: waiting/idling
+- longer sleep times imply that the task is interactive
+	- priority -= 5 (boost)
+- shorter sleep times imply that the task is compute intensive
+	- priority += 5 (lowered)
+
+Runqueue is 2 arrays of tasks
+- **Active**
+	- used to pick next task to run
+	- constant time to add/select
+	- Uses a bit mask to determine the lowest priority level that contains tasks that are available to run
+	- Takes a constant time to index the specific run queue and select the first task from the list.
+	- tasks remain in queue in active array until timeslice expires
+	- once expired, tasks will be moved to "expired" task queue array
+- **Expired**
+	- inactive list
+	- when no more tasks in active array, active and expired arrays are swapped.
+
+Introduced in 2.5 by Ingo Molnar, but workloads changed. Introduced jitter in realtime streaming applications.
+
+Problems
+- poor performance of interactive tasks, due to unpredictable amounts of time waiting to be scheduled.
+- hard to make claims of fairness guarantees.
+
+Eventually replaced by the Completely Fair Scheduler (CFS) in 2.6.23 by Ingo Molnar.
+
+### Linux's Completely Fair Scheduler (CFS)
+- Addresses problems of O(1) scheduler.
+- Default scheduler for all non-realtime tasks. Realtime tasks are scheduled by a realtime scheduler.
+- Uses a [Red-Black tree](https://algs4.cs.princeton.edu/33balanced/) for its data structure
+	- As nodes are added/removed, the tree self-balances
+	- Ordered by virtual runtime (`vruntime`), tracked by nanosecond
+	- `vruntime` is the time spent on the CPU
+
+CFS scheduling alg
+- Always picks the left-most node (least amount of time on the CPU)
+- periodically adjusts `vruntime` 
+- compares the runtime of the task to the leftmost `vruntime`
+	- if smaller, continues running
+	- if larger, task is preempted and placed accordingly in the tree
+- `vruntime` process rate depends on priority and niceness
+	- rate progresses faster for low-priority tasks
+	- rate progresses slower for high-priority tasks
+- Uses one runqueue tree for tasks of all priorities
+- Performance
+	- $O(1)$ for task selection
+	- $O(\log{n})$ for adding tasks
+
+## Scheduling on Multi-CPU Systems
+
+### Shared memory multiprocessors (SMP)
+![[Pasted image 20221010203053.png]]
+
+- CPUs each have private on-chip caches (L1, L2, ...)
+- Shared last-level cache (LLC)
+- Shared memory (DRAM)
+
+### Multicore CPUs
+![[Pasted image 20221010203207.png]]
+
+- CPUs contain multiple cores
+- cores have private caches (L1, L2, ...)
+- Shared LLC
+- Shared memory
+
+### Scheduling on Multi-CPU Systems
+**cache-affinity**: Something we want to achieve is to schedule threads on CPUs on which the thread had been scheduled previously. This is to increase the likelihood that a thread is working with a cache that is populated with data that it needs (HOT! cache)
+
+- keep tasks on same CPU as much as possible
+- **hierarchical** scheduler architecture
+
+![[Pasted image 20221010203838.png]]
+
+**per-CPU run queues**
+- load balance tasks across CPUs
+- based on queue length
+- or when CPU is idle
+
+**Non-Uniform Memory Access (NUMA)**: Possible to have multiple memory nodes where one memory node is closer to one processor than another. Processor nodes can access memory that is further away, but with higher latency.
+
+- Access to local memory node is faster than access to a remote memory node.
+- Keep tasks on CPU closer to memory node where their data is stored
+- Referred to as "NUMA-aware" scheduling.
+
+## Hyperthreading (aka SMT or CMT)
+- CPUs have a set of registers to keep track of the execution state of a program, including the stack pointer and the program counter.
+- Over time, hardware added more sets of registers for storing multiple execution contexts simultaneously.
+- Still one CPU, but with ultra-fast context switching.
+
+Referred to by many names
+- hardware multithreading
+- hyperthreading
+- chip multithreading (CMT)
+- simultaneous multithreading (SMT)
+
+- hardware known to have up to 8 sets of registers per CPU
+- Exposed to OS as additional CPUs
+- Can typically be enabled/disabled at boot time.
+
+- SMT context switch (`0`-ish cycles)
+- compared to a memory load (100+ cycles)
+
+What kinds of threads should we co-schedule on hardware threads?
+
+### Scheduling for Hyperthreaded Platforms
+Refer to [[P3 Fedorova Paper.pdf]] and [[P3 Ferdorva Paper Notes]].
+
+TLDR: Schedule a mix of memory-bound and CPU-bound tasks on different hyper-threads on the same CPU.
+- avoid/limit contention on processor pipeine
+- all components (CPU and memory) have good utilization
+- still leads to interference and degradation, but minimal compared to alternatives.
+
+## Is a thread CPU-bound or memory-bound?
+- use historic information
+- "sleep time" won't work. memory-bound =/= I/O bound
+- need hardware information
+
+Execution context registers includes hardware counters
+- L1, L2, ... LLC misses
+- IPC
+- power and energy data
+
+Software interface and tools
+- e.g. `oprofile`, Linux `perf` tool
+- `oprofile` website lists available hardware counters on different architectures
+
+From hardware counters, a scheduler can...
+- estimate (guesstimate) what kind of resources a thread needs.
+- determine if/when something changed in the execution of a thread
+- make informed decisions
+	- typically make use of multiple counters
+	- models with per-architecture thresholds
+	- based on well-understood workloads
+
+Advanced research problem. Out of scope of this course.
+
+## Scheduling with Hardware Counters
+> Is cycles-per-instruction (CPI) useful?
+
+- 1 cycle per instruction (low CPI) means CPU-bound
+- high CPI implies a memory-bound instruction
+- Is CPI a good metric?
+
+This section also refers to the Ferdorva paper.
+
+- In theory, using CPI is a great metric for making scheduling decisions.
+- In practice, CPI is between 2 and 5 for most applications, meaning real workloads don't vary a lot in terms of CPI.
+
+Takeaways
+- resource contention on SMTs is important
+- hardware counters can be used to characterize workloads
+- schedulers should be aware of resource contention, not just load balancing tasks onto different CPUs
+- The best optimization that can be made in this space is making sure that threads don't compete for space in the last-level cache (LLC).
