@@ -14,5 +14,7 @@
   "rightToLeft": false,
   "showUnsupportedFiles": true,
   "useMarkdownLinks": false,
-  "promptDelete": false
+  "promptDelete": false,
+  "showFrontmatter": false,
+  "showInlineTitle": false
 }
