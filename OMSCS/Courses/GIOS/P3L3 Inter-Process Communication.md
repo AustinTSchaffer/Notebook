@@ -1,29 +1,7 @@
 ---
 tags: OMSCS, GIOS, IPC
 ---
-
 # P3L3: Inter-Process Communication
-- [[#Overview|Overview]]
-- [[#Message-Based IPC (Message-Passing)|Message-Based IPC (Message-Passing)]]
-	- [[#Message-Based IPC (Message-Passing)#Pipes|Pipes]]
-	- [[#Message-Based IPC (Message-Passing)#Queues|Queues]]
-	- [[#Message-Based IPC (Message-Passing)#Sockets|Sockets]]
-- [[#Shared Memory IPC|Shared Memory IPC]]
-- [[#Copy vs Map|Copy vs Map]]
-- [[#Shared Memory Lifecycle|Shared Memory Lifecycle]]
-	- [[#Shared Memory Lifecycle#SysV Shared Memory API|SysV Shared Memory API]]
-	- [[#Shared Memory Lifecycle#POSIX Shared Memory API|POSIX Shared Memory API]]
-- [[#Shared Memory and Synchronization|Shared Memory and Synchronization]]
-	- [[#Shared Memory and Synchronization#Pthreads for IPC Sync|Pthreads for IPC Sync]]
-- [[#Other IPC Sync|Other IPC Sync]]
-	- [[#Other IPC Sync#Message Queues|Message Queues]]
-	- [[#Other IPC Sync#Semaphores|Semaphores]]
-	- [[#Other IPC Sync#External Resources|External Resources]]
-- [[#IPC CLI Tools|IPC CLI Tools]]
-- [[#Shared Mem Design Considerations|Shared Mem Design Considerations]]
-	- [[#Shared Mem Design Considerations#How Many Segments?|How Many Segments?]]
-	- [[#Shared Mem Design Considerations#What size segments?|What size segments?]]
-- [[#Summary|Summary]]
 
 ## Overview
 - Inter-process Communication (IPC)

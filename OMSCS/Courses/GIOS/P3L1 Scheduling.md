@@ -2,37 +2,6 @@
 tags: OMSCS, GIOS, Scheduling
 ---
 # P3L1: Scheduling
-- [[#Overview|Overview]]
-- [[#CPU Scheduling|CPU Scheduling]]
-- [[#"Run-to-Completion" Scheduling|"Run-to-Completion" Scheduling]]
-- [[#Preemptive Scheduling|Preemptive Scheduling]]
-	- [[#Preemptive Scheduling#SJF + Preempt|SJF + Preempt]]
-	- [[#Preemptive Scheduling#Priority + Preempt|Priority + Preempt]]
-		- [[#Priority + Preempt#Example|Example]]
-	- [[#Preemptive Scheduling#Priority Inversion|Priority Inversion]]
-	- [[#Preemptive Scheduling#Round-Robin Scheduling|Round-Robin Scheduling]]
-- [[#Timesharing and Timesclices|Timesharing and Timesclices]]
-	- [[#Timesharing and Timesclices#How Long should TimeSlices Be?|How Long should TimeSlices Be?]]
-		- [[#How Long should TimeSlices Be?#Summary|Summary]]
-		- [[#How Long should TimeSlices Be?#CPU bound tasks|CPU bound tasks]]
-		- [[#How Long should TimeSlices Be?#I/O-bound tasks|I/O-bound tasks]]
-		- [[#How Long should TimeSlices Be?#Quiz|Quiz]]
-			- [[#Quiz#1ms timeslice|1ms timeslice]]
-			- [[#Quiz#10ms timeslice|10ms timeslice]]
-- [[#Runqueue Data Structure|Runqueue Data Structure]]
-	- [[#Runqueue Data Structure#Multi-Level Feedback Queue (MLFQ)|Multi-Level Feedback Queue (MLFQ)]]
-		- [[#Multi-Level Feedback Queue (MLFQ)#Considerations|Considerations]]
-		- [[#Multi-Level Feedback Queue (MLFQ)#Dealing with different timeslice values|Dealing with different timeslice values]]
-		- [[#Multi-Level Feedback Queue (MLFQ)#Linux O(1) Scheduler|Linux O(1) Scheduler]]
-	- [[#Runqueue Data Structure#Linux's Completely Fair Scheduler (CFS)|Linux's Completely Fair Scheduler (CFS)]]
-- [[#Scheduling on Multi-CPU Systems|Scheduling on Multi-CPU Systems]]
-	- [[#Scheduling on Multi-CPU Systems#Shared memory multiprocessors (SMP)|Shared memory multiprocessors (SMP)]]
-	- [[#Scheduling on Multi-CPU Systems#Multicore CPUs|Multicore CPUs]]
-	- [[#Scheduling on Multi-CPU Systems#Scheduling on Multi-CPU Systems|Scheduling on Multi-CPU Systems]]
-- [[#Hyperthreading (aka SMT or CMT)|Hyperthreading (aka SMT or CMT)]]
-	- [[#Hyperthreading (aka SMT or CMT)#Scheduling for Hyperthreaded Platforms|Scheduling for Hyperthreaded Platforms]]
-- [[#Is a thread CPU-bound or memory-bound?|Is a thread CPU-bound or memory-bound?]]
-- [[#Scheduling with Hardware Counters|Scheduling with Hardware Counters]]
 
 ## Overview
 - Scheduling mechanisms, algorithms, data structures

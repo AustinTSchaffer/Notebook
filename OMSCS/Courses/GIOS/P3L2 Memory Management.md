@@ -2,35 +2,6 @@
 tags: OMSCS, GIOS, Memory
 ---
 # P3L2: Memory Management
-- [[#Overview|Overview]]
-- [[#Memory Management|Memory Management]]
-	- [[#Memory Management#Page-based memory management|Page-based memory management]]
-	- [[#Memory Management#Segment-based memory management|Segment-based memory management]]
-- [[#Hardware Support for Memory Management|Hardware Support for Memory Management]]
-- [[#Page Tables|Page Tables]]
-	- [[#Page Tables#Page Table Entry|Page Table Entry]]
-	- [[#Page Tables#Page Table Size|Page Table Size]]
-- [[#Multi-Level Page Tables|Multi-Level Page Tables]]
-	- [[#Multi-Level Page Tables#Multi-level PT tradeoffs|Multi-level PT tradeoffs]]
-	- [[#Multi-Level Page Tables#Quiz|Quiz]]
-		- [[#Quiz#Address Format 1|Address Format 1]]
-		- [[#Quiz#Address Format 2|Address Format 2]]
-- [[#Speeding Up Address Translation: TLB|Speeding Up Address Translation: TLB]]
-- [[#Inverted Page Tables|Inverted Page Tables]]
-- [[#Segmentation|Segmentation]]
-- [[#Page Size|Page Size]]
-	- [[#Page Size#Quiz|Quiz]]
-- [[#Memory Allocation|Memory Allocation]]
-- [[#Memory Allocation Challenges|Memory Allocation Challenges]]
-- [[#Linux Kernel Allocators|Linux Kernel Allocators]]
-	- [[#Linux Kernel Allocators#Buddy Allocator|Buddy Allocator]]
-	- [[#Linux Kernel Allocators#Slab Allocator|Slab Allocator]]
-- [[#Demand Paging|Demand Paging]]
-- [[#Page Replacement|Page Replacement]]
-- [[#Copy on Write (COW)|Copy on Write (COW)]]
-- [[#Failure Management|Failure Management]]
-	- [[#Failure Management#Checkpointing|Checkpointing]]
-- [[#Summary|Summary]]
 
 ## Overview
 - How an OS manages virtual and physical memory

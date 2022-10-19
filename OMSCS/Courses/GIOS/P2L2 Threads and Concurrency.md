@@ -1,33 +1,7 @@
 ---
-tags: #OMSCS, #GIOS, #Threads, #Processes
+tags: OMSCS, GIOS, Threads, Processes
 ---
-
 # P2L2: Threads and Concurrency
-- [[#Overview|Overview]]
-- [[#Visual Metaphor|Visual Metaphor]]
-- [[#Process vs Thread|Process vs Thread]]
-- [[#Benefits of Multi-Threading|Benefits of Multi-Threading]]
-- [[#How to support threads|How to support threads]]
-- [[#Thread Creation|Thread Creation]]
-	- [[#Thread Creation#Example|Example]]
-- [[#Mutual Exclusion|Mutual Exclusion]]
-- [[#Condition Variables|Condition Variables]]
-- [[#Readers / Writer Problem|Readers / Writer Problem]]
-	- [[#Readers / Writer Problem#Naive Approach|Naive Approach]]
-- [[#Common Pitfalls with Multi-Threaded Apps|Common Pitfalls with Multi-Threaded Apps]]
-	- [[#Common Pitfalls with Multi-Threaded Apps#Spurious Wake-Ups|Spurious Wake-Ups]]
-	- [[#Common Pitfalls with Multi-Threaded Apps#Deadlocks|Deadlocks]]
-- [[#Critical Section Quiz|Critical Section Quiz]]
-- [[#Kernel-Level vs User-Level Threads|Kernel-Level vs User-Level Threads]]
-	- [[#Kernel-Level vs User-Level Threads#One-to-One Model|One-to-One Model]]
-	- [[#Kernel-Level vs User-Level Threads#Many-to-One Model|Many-to-One Model]]
-	- [[#Kernel-Level vs User-Level Threads#Many-to-Many Model|Many-to-Many Model]]
-	- [[#Kernel-Level vs User-Level Threads#Scope of Multi-threading|Scope of Multi-threading]]
-- [[#Multi-threading Patterns|Multi-threading Patterns]]
-	- [[#Multi-threading Patterns#Boss-Workers Pattern|Boss-Workers Pattern]]
-	- [[#Multi-threading Patterns#Pipeline Pattern|Pipeline Pattern]]
-	- [[#Multi-threading Patterns#Layered Pattern|Layered Pattern]]
-	- [[#Multi-threading Patterns#Throughput Example|Throughput Example]]
 
 ## Overview
 Processes are represented by their address space (virtual address space) and their execution context (subset of the PCB).

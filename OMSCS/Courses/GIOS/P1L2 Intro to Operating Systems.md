@@ -1,25 +1,7 @@
 ---
 tags: GIOS, OMSCS
 ---
-
 # P1L2: Introduction to OSes
-- [[#Overview|Overview]]
-- [[#Visual Metaphor|Visual Metaphor]]
-- [[#What is an Operating System|What is an Operating System]]
-- [[#Examples of Operating Systems|Examples of Operating Systems]]
-- [[#OS Elements|OS Elements]]
-- [[#OS Design Principles|OS Design Principles]]
-- [[#OS Protection Boundary|OS Protection Boundary]]
-- [[#System Calls are Pretty Complicated|System Calls are Pretty Complicated]]
-- [[#Crossing the User/Kernel Protection Boundary|Crossing the User/Kernel Protection Boundary]]
-- [[#OS Services|OS Services]]
-- [[#Linux System Calls|Linux System Calls]]
-- [[#OS Design|OS Design]]
-	- [[#OS Design#Monolithic OS|Monolithic OS]]
-	- [[#OS Design#Modular OS|Modular OS]]
-	- [[#OS Design#Microkernel|Microkernel]]
-- [[#Linux Architecture|Linux Architecture]]
-- [[#MacOS Architecture|MacOS Architecture]]
 
 ## Overview
 An OS is a piece of software that

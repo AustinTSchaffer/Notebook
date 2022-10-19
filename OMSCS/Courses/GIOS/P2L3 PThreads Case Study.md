@@ -2,19 +2,6 @@
 tags: OMSCS, GIOS, PThreads
 ---
 # P2L3: PThreads Case Study
-- [[#PThread Creation|PThread Creation]]
-	- [[#PThread Creation#Detaching PThreads|Detaching PThreads]]
-- [[#Compiling PThreads|Compiling PThreads]]
-- [[#PThread Gotchas|PThread Gotchas]]
-- [[#PThread Mutexes|PThread Mutexes]]
-	- [[#PThread Mutexes#Other Mutex Operations|Other Mutex Operations]]
-	- [[#PThread Mutexes#Safety Tips|Safety Tips]]
-- [[#PThread Condition Variables|PThread Condition Variables]]
-	- [[#PThread Condition Variables#Other Condition Variable Operations|Other Condition Variable Operations]]
-	- [[#PThread Condition Variables#Safety Tips|Safety Tips]]
-- [[#Producer-Consumer Example in PThreads|Producer-Consumer Example in PThreads]]
-	- [[#Producer-Consumer Example in PThreads#Producer Code|Producer Code]]
-	- [[#Producer-Consumer Example in PThreads#Consumer Code|Consumer Code]]
 
 ## Overview
 Callback to Birrell's paper, which talks about threads in a fairly universal and generic way. This lecture talks about #PThreads (POSIX Threads) which is a concrete multithreading standard.
