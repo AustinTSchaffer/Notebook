@@ -16,5 +16,11 @@
   "useMarkdownLinks": false,
   "promptDelete": false,
   "showFrontmatter": false,
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "pdfExportSettings": {
+    "pageSize": "Letter",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 75
+  }
 }

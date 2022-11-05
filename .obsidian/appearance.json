@@ -3,5 +3,8 @@
   "theme": "obsidian",
   "accentColor": "#2e8a3d",
   "showViewHeader": true,
-  "nativeMenus": false
+  "nativeMenus": true,
+  "enabledCssSnippets": [
+    "centeredimages"
+  ]
 }
