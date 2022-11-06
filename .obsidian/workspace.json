@@ -11,8 +11,10 @@
             "id": "b83da84716af7ab4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "pdf",
+              "state": {
+                "file": "OMSCS/Courses/GIOS/Schedule.pdf"
+              }
             }
           }
         ]
@@ -57,8 +59,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 358.0036334991455,
-    "collapsed": true
+    "width": 358.0036334991455
   },
   "right": {
     "id": "f80a94eea200353a",
@@ -74,6 +75,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "OMSCS/Courses/GIOS/Schedule.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,7 +99,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "OMSCS/Courses/GIOS/Schedule.pdf"
+              }
             }
           }
         ],

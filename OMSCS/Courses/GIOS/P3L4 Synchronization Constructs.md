@@ -7,7 +7,7 @@ tags: OMSCS, GIOS, Synchronization
 - more synchronization constructs
 - hardware supported synchronization
 
-Supplemental paper: [[P3 Anderson Paper.pdf]]
+Supplemental paper: [[P3L4 Anderson Paper.pdf]]
 - efficient implementation of spinlock (sync) alternative
 
 ## More About Synchronization
