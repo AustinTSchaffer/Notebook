@@ -186,7 +186,7 @@ An OS provides applications with access to underlying hardware. It does so by ex
 
 Windows and Unix have very different system call interfaces, but there are parallels between both as far as what functionality is supported.
 
-![[./images/Pasted image 20220827152200.png]]
+![[Pasted image 20220827152200.png]]
 
 ## Linux System Calls
 
