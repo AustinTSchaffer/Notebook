@@ -4,47 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "1cd606f11028598a",
+        "id": "62cb2bdebcbe300b",
         "type": "tabs",
         "children": [
           {
-            "id": "55b83e086b78add0",
+            "id": "b83da84716af7ab4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OMSCS/Registration/Registration.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6bcd7053d318dee1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OMSCS/Courses/GIOS/P3L4 Synchronization Constructs.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ea13f33ff637bc83",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OMSCS/Registration/Registration.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,7 +44,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "handler",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -103,7 +74,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OMSCS/Courses/GIOS/P3L4 Synchronization Constructs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,9 +97,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "OMSCS/Courses/GIOS/P3L4 Synchronization Constructs.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -140,17 +108,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "6bcd7053d318dee1",
+  "active": "b83da84716af7ab4",
   "lastOpenFiles": [
-    "OMSCS/Courses/GIOS/Schedule.pdf",
-    "OMSCS/Courses/GIOS/P3L4 Synchronization Constructs.md",
-    "OMSCS/Registration/Registration.md",
-    "OMSCS/Courses/GIOS/papers/P3 Anderson Paper Notes.md",
-    "OMSCS/Courses/GIOS/papers/P3 Anderson Paper.pdf",
+    "OMSCS/Courses/GIOS/P3L5 IO Management.md",
+    "Linux/Ram Disk.md",
+    "Linux/OMSCS/Courses/GIOS/P3L5 IO Management.md",
+    "Linux/OMSCS/Courses/GIOS/P3L4 Synchronization Constructs.md",
+    "Linux/OMSCS/Courses/GIOS/Schedule.pdf",
+    "Linux/OMSCS/Registration/Registration.md",
+    "Linux/OMSCS/Courses/GIOS/papers/P3 Anderson Paper Notes.md",
+    "Linux/OMSCS/Courses/GIOS/papers/P3 Anderson Paper.pdf",
     "pr3/Austin T Schaffer - PR3.md",
-    "pr3/readme-student-template.pdf",
-    "pr3/readme-student-template.md",
-    "pr3/Readme.md",
-    "pr3/readme-images/Pasted image 20221103204725.png"
+    "pr3/readme-student-template.pdf"
   ]
 }
