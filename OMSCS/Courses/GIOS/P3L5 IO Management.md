@@ -146,8 +146,6 @@ z.read1(12)
 	- This is how USB works, it's a "host-initiated" communication protocol
 
 ## Device Access Options
-- 
-
 ### Programmed I/O (PIO)
 - no additional hardware support required
 - CPU "programs" the device
@@ -260,13 +258,183 @@ int ioctl(int fd, unsigned long request, ...);
 - typical 3rd argument is a pointer to define where the call should place results
 
 ## Virtual File System
-> RAMDISK!!!!!!!!!!!!!!!
-> People like \[ramdisk\].
-
 - What if files are one more than one device?
 - What if device(s) work better with different FS implementations?
 - What if files are not even on a disk? (Network or RAMDISK)
-- RAMDISK is so silly anyway.
+	- RAMDISK is so silly anyway.
+	- The OS caches files when it has free memory.
+	- Configuring your own ramdisk is reinventing the wheel
 
 ![[Pasted image 20221106112720.png]]
 
+### VFS Abstractions
+- file: elements on which the VFS operates
+- file descriptors: OS representation of file
+	- open, read, write, sendfile, lock, close
+- inode: persistent representation of file "index"
+	- "inode" == "index node"
+	- list of all data blocks belonging to file
+	- device, permissions, size
+- dentry: "directory entry"
+	- corresponds to single path component
+	- Ex: `/users/austin`
+		- `/`
+		- `/users`
+		- `/users/data`
+		- All 3 of these are a "dentry"
+	- OS/FS maintains a dentry cache
+	- This is fully in memory, the disk doesn't maintain a list of dentrys. It's inferred from the files
+- superblock: filesystem-specific information regarding the FS layout
+	- filesystem metadata store
+	- size & structure differ from FS implementation to FS implementation
+
+### VFS on Disk
+- file: data blocks on disk
+- inode: tracks blocks belonging to the file
+- superblock: overall map of disk blocks
+	- inode blocks
+	- data blocks
+	- free blocks
+
+## ext2: Second Extended Filesystem
+- 2nd iteration of the `ext` file system.
+- We're up to `ext4` these days
+- partitioned into "block groups"
+- The first block group (preceding block group 0) often contains the "boot" block, code that runs on computer startup
+- Each block group contains
+	- superblock
+		- number of inodes
+		- number of disk blocks
+		- start of free blocks
+	- group descriptor
+		- bitmaps
+		- number of free nodes
+		- number of directories
+	- bitmaps
+		- track free blocks and inodes
+	- inodes
+		- indexed starting with 1
+		- 1 per file
+	- data blocks
+		- contain the file data
+
+![[Pasted image 20221106114818.png]]
+
+## inodes
+> index of all blocks corresponding to a single file
+
+- files are identifed by an inode
+- inode, lists all blocks plus other metadata
+- file can be fragmented, not a problem on modern storage devices
+- file is stitched together from each block
+- last block doesn't contain an EOF. That's not necessary, the inode knows how long the file is.
+- file system allocates free blocks to the file as it grows
+- pros of this implementation
+	- easy to perform sequential/random access
+- cons
+	- limits file size
+	- Ex: 128B inode, 4B block pointer
+		- 32 addressable blocks
+		- 1kB block size
+		- 32kB max file size
+
+![[Pasted image 20221106114934.png]]
+
+### Indirect inode pointers
+- inodes with indirect pointers are an index of all disk blocks corresponding to a file
+- inodes contain
+	- metadata
+	- pointers to blocks
+		- direct block pointers, each pointer points to a block of data
+		- indirect pointers, each pointer points to a block of pointers
+		- double indirect pointers, each pointer points to a block of pointers to blocks
+		- triple indirect, etc.
+- example
+	- 4B block pointer
+	- 1kB blocks
+	- Direct pointers
+		- each entry can encode 1kB of file data.
+	- Indirect pointers
+		- each entry points to a 1kB block of block pointers
+		- each block of block pointers encodes 1kB of 4B block pointers
+		- each block contains 256 block pointers
+		- $256*1kB=256kB$
+		- each indirect block pointer points to 256kB of file data
+	- Double indirect pointers
+		- each entry points to a 1kB block of pointers to block pointers
+		- 256 block pointers per block, means we just multiply the "indirect pointers" by the same amount
+		- 256 pointers per dip block, 256 pointers per ip block, 1kB per data block
+		- $256*256*1kB=64MB$
+
+![[Pasted image 20221106132408.png]]
+
+- Advantage of indirect pointers, small inodes can encode large file sizes
+- Disadvantage, file access slowdown
+	- assembling the entirety of a file results in multiple file reads
+	- direct pointers, 2 disk accesses to retrieve a file block
+	- indirect pointers, 3 disk accesses to retrieve a file block
+	- double indirect pointers, 4 disk accesses to retrieve a file block
+	- triple? 5 disk accesses
+
+### Inode Quiz A
+- block pointers are 4B
+- disk block size is 1kB (1024 bytes)
+- inode has following structure
+	- 12 direct pointers
+	- 1 single indirect pointer
+	- 1 double indirect pointer
+	- 1 triple indirect pointer
+- pointers block per block = $\frac{1\frac{kB}{block}}{4\frac{B}{pointer}}=\frac{1024\frac{B}{block}}{4\frac{B}{pointer}}=256$ pointers per block
+- 12 direct pointers
+	- $12*1kB=12kB$ of file data referenced
+- 1 single indirect pointer
+	- $256*1kB=256kB$ of file data referenced
+- 1 double indirect pointer
+	- $256*256*1kB=64MB$ of file data referenced
+- 1 triple indirect pointer
+	- $256*64MB=16GB$ of file data referenced
+- Total: $16GB+64MB+256kB+12kB\approx16GB$
+
+**Note:** the units used here are actually in terms of $iB$, not $B$. Each scale change is in terms of 1024, not 1000.
+
+### Inode Quiz B
+- block pointers are 4B
+- disk block size is 8kB (8192 bytes)
+- inode has following structure
+	- 12 direct pointers
+	- 1 single indirect pointer
+	- 1 double indirect pointer
+	- 1 triple indirect pointer
+- pointers block per block = $\frac{8\frac{kB}{block}}{4\frac{B}{pointer}}=\frac{8192\frac{B}{block}}{4\frac{B}{pointer}}=2048$ pointers per block
+- 12 direct pointers
+	- $12*8kB=96kB$ of file data referenced
+- 1 single indirect pointer
+	- $2048*8192B=16777216B=16384kB=16MB$ of file data referenced
+- 1 double indirect pointer
+	- $2048*16MB=32GB$ of file data referenced
+- 1 triple indirect pointer
+	- $2048*32GB=64TB$ of file data referenced
+- Total: $\approx64TB$
+
+**Note:** the units used here are actually in terms of $iB$, not $B$. Each scale change is in terms of 1024, not 1000.
+
+## Disk Access Optimizations
+- **caching/buffering**
+	- used to reduce the number of disk accesses
+	- files are cached in main memory
+	- read/write are targeted against the cache
+	- OS periodically flushes the file to the disk using `fsync()`
+- **I/O scheduling**
+	- reduces disk head movement
+	- maximizes sequential vs random access
+	- example: write block 25, write block 17, OS reorders instructions to write 17 first.
+	- Not 
+- **prefetching**
+	- increases cache hits
+	- leverages locality
+	- example: read block 17 => also reads 18 and 19
+- **journaling/logging**
+	- reduce random access
+	- "describe" write to I/O log: block, offset, value, etc
+	- periodically applies updates to proper disk locations
+	- `ext3` and `ext4` use journaling
