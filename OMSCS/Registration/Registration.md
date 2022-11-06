@@ -49,7 +49,7 @@ This second table contains other courses that are also offered by OMSCS. I'm not
 |        | 87239 | CS   | 6291 | Yes  |          |            | Embedded Software Opt.     |
 |        | 90799 | CS   | 6457 | No   |          |            | Video Game Design          |
 |        | 85794 | CS   | 6460 | Yes  |          |            | Educ Tech-Foundations      |
-|        | 91851 | CS   | 6603 | Yes  |          |            | AI Ethics Society          |
+|        | 91851 | CS   | 6603 | Yes  | AIES     |            | AI Ethics Society          |
 |        | 91849 | CS   | 6747 | No   |          |            | ADV Malware Analysis       |
 |        | 86347 | CS   | 6750 | Yes  |          |            | Human-Computer Interact    |
 |        | 93646 | CS   | 6795 | Yes  |          |            | Intro-Cognitive Science    |
