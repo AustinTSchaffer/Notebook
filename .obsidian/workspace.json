@@ -4,20 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "62cb2bdebcbe300b",
+        "id": "fa6e4dda8dc06699",
         "type": "tabs",
         "children": [
           {
-            "id": "b83da84716af7ab4",
+            "id": "b3b69ba18d3aa73e",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "OMSCS/Courses/GIOS/Schedule.pdf"
+                "file": "OMSCS/Courses/GIOS/Key Terms and Acronyms.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "582a12e7def882ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OMSCS/Courses/GIOS/P4L1 RPC.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -46,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "ISA",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -59,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 358.0036334991455
+    "width": 252.5086555480957
   },
   "right": {
     "id": "f80a94eea200353a",
@@ -75,7 +90,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OMSCS/Courses/GIOS/Schedule.pdf",
+                "file": "OMSCS/Courses/GIOS/P4L1 RPC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,7 +115,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OMSCS/Courses/GIOS/Schedule.pdf"
+                "file": "OMSCS/Courses/GIOS/P4L1 RPC.md"
               }
             }
           }
@@ -112,17 +127,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b83da84716af7ab4",
+  "active": "582a12e7def882ae",
   "lastOpenFiles": [
+    "OMSCS/Courses/GIOS/Key Terms and Acronyms.md",
+    "OMSCS/Courses/GIOS/P3L6 Virtualization.md",
+    "OMSCS/Courses/GIOS/P4L1 RPC.md",
+    "OMSCS/Registration/Registration.md",
+    "OMSCS/Courses/GIOS/P2L4 Thread Design Considerations.md",
+    "OMSCS/Courses/GIOS/Schedule.pdf",
     "OMSCS/Courses/GIOS/P3L5 IO Management.md",
     "Linux/Ram Disk.md",
     "Linux/OMSCS/Courses/GIOS/P3L5 IO Management.md",
-    "Linux/OMSCS/Courses/GIOS/P3L4 Synchronization Constructs.md",
-    "Linux/OMSCS/Courses/GIOS/Schedule.pdf",
-    "Linux/OMSCS/Registration/Registration.md",
-    "Linux/OMSCS/Courses/GIOS/papers/P3 Anderson Paper Notes.md",
-    "Linux/OMSCS/Courses/GIOS/papers/P3 Anderson Paper.pdf",
-    "pr3/Austin T Schaffer - PR3.md",
-    "pr3/readme-student-template.pdf"
+    "Linux/OMSCS/Courses/GIOS/P3L4 Synchronization Constructs.md"
   ]
 }
