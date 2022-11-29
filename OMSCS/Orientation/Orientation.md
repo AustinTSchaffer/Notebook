@@ -55,3 +55,29 @@ From the initial orientation email:
 > There are no official prerequisites for the OMSCS courses, so new students are able to enroll in any of the available foundational courses (denoted with an asterisk (*) online at [https://omscs.gatech.edu/current-courses](https://omscs.gatech.edu/current-courses)).  We encourage you to review the “Current Courses” page, as you will find detailed descriptions of each of our courses as you are making your selections for the upcoming semester.
 >
 > Overall, please try to be flexible with the order in which you plan to take your courses, especially with your first semester in the OMSCS program.  Keep in mind that you must complete ten courses to complete your degree, so there will be opportunities to take many different courses in future semesters.
+
+## Spring 2023 Updates
+
+### "Free for All" Registration Period
+
+> On the last day of Phase II registration, all of the wait lists are cleared, and students are able to enroll in any open course without needing to go through the wait list first. This is referred to as the "free for all" registration period. Information will be sent to students regarding this once we approach that time frame.
+
+This "last day" refers to Friday, January 13th, 2023.
+
+### Taking Time Off
+
+OMSCS students may now take up to 2 consecutive semesters off at a time after they have matriculated into the OMSCS program. If you take 3 or more consecutive semester off, you must apply for readmission.
+
+These parameters used to be 1 semester and 2 semesters.
+
+### Grade Substitution
+
+A lot of content related to Grade Substitution was removed, but the rule still seems to be in effect, and unchanged.
+
+See: https://catalog.gatech.edu/rules/5/
+
+### Satisfactory Academic Progress
+
+A lot of content related to the Satisfactory Academic Progress policy was removed, but the content remains on the catalog's list of rules on the website.
+
+See: https://catalog.gatech.edu/rules/6/
