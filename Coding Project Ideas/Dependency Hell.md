@@ -12,8 +12,12 @@ So many questions.
 
 I think I'll have another drink.
 
-## Related
+## ACE is bad
 
-In this same vein, Python's most popular package installation systems are essentially arbitrary code execution. We've already seen that pypi.org doesn't have to explicitly (and in many cases doesn't) list the packages that a package requires before you download it. Any benefits of having a system that makes dependency chains easier to navigate can be completely undone by aggressively poorly behaved packages.
+In this same vein, Python's most popular package installation systems are essentially arbitrary code execution (ACE). We've already seen that pypi.org doesn't have to explicitly (and in many cases doesn't) list the packages that a package requires before you download it. Any benefits of having a system that makes dependency chains easier to navigate can be undone by aggressively poorly behaving packages.
 
-So what would an aggressively poorly behaved package look like? Mine dogecoin while you wait? Send hardware info off to a random IP address? Specify random version ranges of random packages? Always installs incompatible versions of different packages?
+So what would an aggressively poorly behaved package look like?
+- Mine dogecoin while you wait?
+- Send hardware info off to a random IP address? Or the contents of your `~/.aws` folder?
+- Specify random version ranges of random packages?
+- Always installs incompatible versions of different packages?
