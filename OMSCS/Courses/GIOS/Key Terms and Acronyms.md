@@ -8,6 +8,13 @@ tags: OMSCS, GIOS
 - RPC: Remote Procedure Calls
 - IDL: Interface Definition Language
 
+## Distributed Computing
+- RDMA: remote direct memory access
+- DSM: Distributed State Management
+- SRSW: single reader / single writer
+- MRSW: multiple readers / single writer
+- MRMW: multiple readers / multiple writers
+
 ## Hardware
 - MMU: Memory Management Unit
 - TLB: Translation Lookaside Buffer
