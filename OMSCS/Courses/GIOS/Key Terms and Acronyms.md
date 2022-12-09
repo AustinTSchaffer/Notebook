@@ -19,6 +19,7 @@ tags: OMSCS, GIOS
 - MMU: Memory Management Unit
 - TLB: Translation Lookaside Buffer
 - ISA: Instruction Set Architecture
+- IPC: Instructions per cycle
 
 ## Virtualization
 - VMM: Virtual Machine Monitor

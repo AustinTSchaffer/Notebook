@@ -382,7 +382,7 @@ TLDR: Schedule a mix of memory-bound and CPU-bound tasks on different hyper-thre
 
 Execution context registers includes hardware counters
 - L1, L2, ... LLC misses
-- IPC
+- IPC (Instructions per Cycle)
 - power and energy data
 
 Software interface and tools
