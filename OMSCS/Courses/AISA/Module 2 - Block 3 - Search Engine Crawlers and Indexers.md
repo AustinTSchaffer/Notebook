@@ -178,7 +178,7 @@ The web is
 	- How much traffic can each site handle? How do we make sure our robots don't exceed it?
 - To quantify the amount of work performed in building a web crawler or a search indexer, how many URLs are in the intranet of a website such as `cc.gatech.edu` or `intel.com`?
 
-### PULSE Crawler Project
+### `PULSE` Crawler Project
 - key components
 	- Visual Basic 5.0 + MS Access + HTML/ASP
 	- semi-configurable
