@@ -4,43 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "c2be3e5f83a2aab0",
+        "id": "d6f689cf43ac9208",
         "type": "tabs",
         "children": [
           {
-            "id": "97b589f041c2bacb",
+            "id": "b48357880f60041e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "40737cd177cb74aa",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "8faa72513bf29f07",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "bf27b72f57911419",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "OMSCS/Courses/AISA/Module 3 - Block 6 - P2P Overlay Networks.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -69,8 +48,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "PIO",
-                "matchingCase": true,
+                "query": "pulse",
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -82,8 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 343.5026054382324,
-    "collapsed": true
+    "width": 247.50260543823242
   },
   "right": {
     "id": "f80a94eea200353a",
@@ -99,6 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "OMSCS/Courses/AISA/Module 3 - Block 6 - P2P Overlay Networks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,11 +101,12 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "OMSCS/Courses/AISA/Module 3 - Block 6 - P2P Overlay Networks.md"
+              }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
@@ -145,17 +125,17 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "bf27b72f57911419",
+  "active": "b48357880f60041e",
   "lastOpenFiles": [
+    "OMSCS/Courses/AISA/Course Review.md",
+    "OMSCS/Courses/AISA/Course Overview.md",
+    "OMSCS/Courses/AISA/Module 3 - Block 6 - P2P Overlay Networks.md",
+    "OMSCS/Courses/AISA/Module 3 - Block 5 - P2P Computing.md",
+    "OMSCS/Courses/AISA/Module 2 - Block 4 - Search Engines - Retrieval and Ranking.md",
+    "OMSCS/Courses/AISA/Syllabus.md",
+    "OMSCS/Courses/AISA/Module 2 - Block 3 - Search Engine Crawlers and Indexers.md",
+    "OMSCS/Courses/AISA/Module 1 - Internet Computing Evolution.md",
     "OMSCS/Courses/AICS or AISA/Module 2 - Block 4 - Search Engines - Retrieval and Ranking.md",
-    "OMSCS/Courses/AICS or AISA/Module 2 - Block 3 - Search Engine Crawlers and Indexers.md",
-    "OMSCS/Courses/AICS or AISA/Syllabus.md",
-    "OMSCS/Courses/AICS or AISA/Course Overview.md",
-    "OMSCS/Courses/AICS or AISA/Module 1 - Internet Computing Evolution.md",
-    "OMSCS/Courses/GIOS/P4LX Final Preparation.md",
-    "OMSCS/Courses/GIOS/P4LX2 Final Exam Review Questions.md",
-    "OMSCS/Courses/GIOS/P4L3 Distributed Shared Memory.md",
-    "OMSCS/Courses/GIOS/P3L5 IO Management.md",
-    "OMSCS/Courses/GIOS/P3L6 Virtualization.md"
+    "OMSCS/Courses/AICS or AISA/Module 2 - Block 3 - Search Engine Crawlers and Indexers.md"
   ]
 }
