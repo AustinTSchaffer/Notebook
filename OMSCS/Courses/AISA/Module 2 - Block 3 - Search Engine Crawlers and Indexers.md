@@ -1,4 +1,7 @@
-# M2B1: Search Engines
+---
+tags: OMSCS, AISA
+---
+# Module 2 - Block 3 - Search Engine Crawlers and Indexers
 > Crawlers and Indexers
 
 - Deep search

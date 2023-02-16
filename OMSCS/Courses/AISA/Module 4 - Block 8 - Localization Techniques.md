@@ -1,4 +1,7 @@
-# M4B8: Localization Techniques
+---
+tags: OMSCS, AISA
+---
+# Module 4 - Block 8 - Localization Techniques
 
 | Triangulation                 | Trilateration                   |
 | ----------------------------- | ------------------------------- |

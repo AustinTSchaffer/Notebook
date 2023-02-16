@@ -1,4 +1,8 @@
-# M2B4: Search Engines
+
+---
+tags: OMSCS, AISA
+---
+# Module 2 - Block 4 - Search Engines - Retrieval and Ranking
 > Ranking and retrieval
 
 Continuation of [[Module 2 - Block 3 - Search Engine Crawlers and Indexers]]

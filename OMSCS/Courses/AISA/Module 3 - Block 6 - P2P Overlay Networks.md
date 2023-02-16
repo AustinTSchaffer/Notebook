@@ -1,4 +1,7 @@
-# M3B5: Structured P2P Overlay Networks
+---
+tags: OMSCS, AISA
+---
+# Module 3 - Block 6 - P2P Overlay Networks
 
 ![[Pasted image 20230129191453.png]]
 

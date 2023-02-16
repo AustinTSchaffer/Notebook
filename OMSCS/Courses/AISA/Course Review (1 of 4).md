@@ -1,4 +1,8 @@
-# Course Review
+---
+tags: OMSCS, AISA
+---
+# Course Review (1 of 4)
+
 - The lectures could/should discuss technologies that were invented < 20 years ago.
 	- Chord? Last update of Chord was in 2013 and
 	- Lecture notes refer to Pastry, "a substrate for peer-to-peer applications". The last release of this software was in 2009. It used Java 5. Current version of Java is Java 19. Even the framework that this software depends on was EOL over a decade ago.

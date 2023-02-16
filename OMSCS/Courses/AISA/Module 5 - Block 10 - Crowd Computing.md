@@ -1,4 +1,7 @@
-# M5B10: Crowd Computing
+---
+tags: OMSCS, AISA
+---
+# Module 5 - Block 10 - Crowd Computing
 
 AKA
 - Crowd sourcing

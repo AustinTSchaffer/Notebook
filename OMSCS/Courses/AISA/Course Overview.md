@@ -1,4 +1,7 @@
-# Advanced Internet Computing Systems Course Overview
+---
+tags: OMSCS, AISA
+---
+# Course Overview
 
 ## Overview
 - internet scale search

@@ -1,4 +1,7 @@
-# M3B5: Peer-to-Peer (P2P) Computing
+---
+tags: OMSCS, AISA
+---
+# Module 3 - Block 5 - P2P Computing
 
 - Arpanet
 - Usenet

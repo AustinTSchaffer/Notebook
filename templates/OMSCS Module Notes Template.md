@@ -1,7 +1,0 @@
----
-tags: OMSCS,
----
-# {{title}}
-
-## Overview
-

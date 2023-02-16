@@ -1,4 +1,7 @@
-# M4B7: Overview of Mobile Cell Networks
+---
+tags: OMSCS, AISA
+---
+# Module 4 - Block 7 - Overview of Mobile Cellular Networks
 
 ## Location based services
 - Location-based traffic monitoring and emergency services

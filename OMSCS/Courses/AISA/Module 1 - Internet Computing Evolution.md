@@ -1,4 +1,7 @@
-# Internet Computing Evolution
+---
+tags: OMSCS, AISA
+---
+# Module 1 - Internet Computing Evolution
 
 What is the internet?
 - publicly available global network of computers

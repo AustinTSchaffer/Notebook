@@ -1,4 +1,7 @@
-# M5B9: Location-Based Services
+---
+tags: OMSCS, AISA
+---
+# Module 5 - Block 9 - Location-Based Services
 
 ## Spatial Alarms
 - Location query use request/response paradigm
