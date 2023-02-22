@@ -15,7 +15,7 @@ Objective
 
 Prediction
 - Predict the rating score that a user is likely to give an item that they have not seen or used before
-- Rating on unseen movie for example
+- Rating an unseen movie for example
 - Predict a ranked list of items the user might rate highly
 
 2 types of CF recommendation systems
