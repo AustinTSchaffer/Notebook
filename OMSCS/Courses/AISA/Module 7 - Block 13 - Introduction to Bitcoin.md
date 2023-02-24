@@ -124,3 +124,4 @@ tags: OMSCS, AISA
 
 ![[Pasted image 20230220175130.png]]
 
+	
