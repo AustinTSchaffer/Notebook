@@ -58,5 +58,70 @@ Reputation trust is also called social trust.
 
 ![](./images/Pasted%20image%2020230304150815.png)
 
-![](Pasted%20image%2020230304150940.png)
+![](./images/Pasted%20image%2020230304150940.png)
+
+![[Pasted image 20230304151214.png]]
+
+![[Pasted image 20230304151328.png]]
+
+![[Pasted image 20230304151626.png]]
+
+![[Pasted image 20230304151733.png]]
+
+![[Pasted image 20230304152502.png]]
+
+![[Pasted image 20230304152511.png]]
+
+![[Pasted image 20230304152546.png]]
+
+![[Pasted image 20230304152623.png]]
+
+![[Pasted image 20230304152644.png]]
+
+![[Pasted image 20230304152656.png]]
+
+## EigenTrust Algorithm
+We want each peer to 
+- know all peers
+- perform minimal computation and storage
+
+- Comprehensive
+	- iterative friend-friend reference
+	- ![[Pasted image 20230304152843.png]]
+- When the number of round n is large, converge to the same vector for every peer i (the of C) eigen vector
+	- Peers can coorperate to compute and store `t_i`
+
+![[Pasted image 20230304152941.png]]
+
+![[Pasted image 20230304153012.png]]
+
+![[Pasted image 20230304153040.png]]
+
+![[Pasted image 20230304153046.png]]
+
+## Pretrusted Peers in EigenTrust
+![[Pasted image 20230304153124.png]]
+
+![[Pasted image 20230304153145.png]]
+
+![[Pasted image 20230304153225.png]]
+
+![[Pasted image 20230304153326.png]]
+
+![[Pasted image 20230304153504.png]]
+
+![[Pasted image 20230304153544.png]]
+
+![[Pasted image 20230304154450.png]]
+
+## Secure EigenTrust: Strategies to Handle Dishonest Peers
+![[Pasted image 20230304154622.png]]
+
+![[Pasted image 20230304154645.png]]
+
+![[Pasted image 20230304154734.png]]
+
+![[Pasted image 20230304155044.png]]
+
+![[Pasted image 20230304155102.png]]
 
