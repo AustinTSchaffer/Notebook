@@ -36,8 +36,6 @@ One of the problems of data-driven apps is access to high-quality data. Google/F
 - Find a way to use the data for something productive, like visualizing the increasing frequency of events that might be related to global warming
 - Find a way to process/store the data in a format that better suits the application
 
-You can also join data competitions on [Kaggle](https://kaggle.com/) and [DrivenData](https://www.drivendata.org/competitions/), some with cash prizes.
-
 Other data sources / programming competition sites:
 
 - https://data.worldbank.org/
@@ -46,6 +44,12 @@ Other data sources / programming competition sites:
 - https://www.topcoder.com/challenges
 - https://www.hackerrank.com/dashboard
 - https://hdsc.nws.noaa.gov/hdsc/pfds/pfds_map_cont.html
+- https://github.com/awesomedata/awesome-public-datasets
+- https://guides.loc.gov/datasets/repositories#s-lib-ctab-22713457-7
+- https://datasetsearch.research.google.com/
+- https://archive.ics.uci.edu/ml/index.php
+
+You can also join data competitions on [Kaggle](https://kaggle.com/) and [DrivenData](https://www.drivendata.org/competitions/), some with cash prizes.
 
 ## ASCII Images from Photos
 
