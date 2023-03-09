@@ -1,7 +1,11 @@
 ---
 tags: OMSCS, AISA
 ---
-# Module 8 - Block 15 - Bitcoin and Blockchain
+# M08B15 - Bitcoin and Blockchain
+
+Required reading: 
+- [[The Bitcoin Paper by Satoshi Nakamoto.pdf]]
+- [[Implementing a blockchain from scratch.pdf]]
 
 ## All virtual currency must address following challenges
 - Creation of a virtual coin/note/token

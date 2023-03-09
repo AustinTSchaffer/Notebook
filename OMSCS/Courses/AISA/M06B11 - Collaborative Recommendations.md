@@ -1,7 +1,9 @@
 ---
 tags: OMSCS, AISA
 ---
-# Module 6 - Block 11 - Collaborative Recommendations
+# M06B11 - Collaborative Recommendations
+
+Required reading: [[Collaborative Filtering beyond the User-Item Matrix.pdf]]
 
 ## Recommendation Problem
 - Set of users $U$

@@ -1,7 +1,9 @@
 ---
 tags: OMSCS, AISA
 ---
-# Module 4 - Block 7 - Overview of Mobile Cellular Networks
+# M04B07 - Overview of Mobile Cellular Networks
+
+Required reading: [[RADAR: An In-Building RF-based User Location and Tracking System.pdf]]
 
 ## Location based services
 - Location-based traffic monitoring and emergency services

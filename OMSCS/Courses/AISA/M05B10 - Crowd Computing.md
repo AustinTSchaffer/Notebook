@@ -1,7 +1,9 @@
 ---
 tags: OMSCS, AISA
 ---
-# Module 5 - Block 10 - Crowd Computing
+# M05B10 - Crowd Computing
+
+Required reading: [[When Crowdsourcing Fails.pdf]]
 
 AKA
 - Crowd sourcing

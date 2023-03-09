@@ -1,8 +1,10 @@
 ---
 tags: OMSCS, AISA
 ---
-# Module 2 - Block 3 - Search Engine Crawlers and Indexers
+# M02B03 - Search Engine Crawlers and Indexers
 > Crawlers and Indexers
+
+Required reading: [[The Anatomy of a Large-Scale Hypertextual Web Search Engine.pdf]]
 
 - Deep search
 - Web crawlers

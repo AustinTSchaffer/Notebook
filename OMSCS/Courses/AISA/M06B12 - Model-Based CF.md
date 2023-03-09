@@ -1,7 +1,9 @@
 ---
 tags: OMSCS, AISA
 ---
-# Module 6 - Block 12 - Model-Based CF
+# M06B12 - Model-Based CF
+
+Required reading: [[Collaborative Filtering beyond the User-Item Matrix.pdf]]
 
 ## Overview of Memory-Based CF
 

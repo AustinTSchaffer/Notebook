@@ -1,7 +1,11 @@
 ---
 tags: OMSCS, AISA
 ---
-# Module 7 - Block 14 - Intro to Blockchain
+# M07B14 - Intro to Blockchain
+
+Required reading: 
+- [[The Bitcoin Paper by Satoshi Nakamoto.pdf]]
+- [[Implementing a blockchain from scratch.pdf]]
 
 ## Bitcoin v Blockchain
 - Bitcoin is a blockchain

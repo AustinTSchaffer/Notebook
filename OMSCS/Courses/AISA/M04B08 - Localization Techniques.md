@@ -1,7 +1,9 @@
 ---
 tags: OMSCS, AISA
 ---
-# Module 4 - Block 8 - Localization Techniques
+# M04B08 - Localization Techniques
+
+Required reading: [[RADAR: An In-Building RF-based User Location and Tracking System.pdf]]
 
 | Triangulation                 | Trilateration                   |
 | ----------------------------- | ------------------------------- |

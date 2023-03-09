@@ -1,7 +1,7 @@
 ---
 tags: OMSCS, AISA
 ---
-# Module 8 - Block 16 - P2P Trust and Reputation Management
+# M08B16 - P2P Trust and Reputation Management
 
 ## Decentralized Overlay Networks
 > Trust and Reputation

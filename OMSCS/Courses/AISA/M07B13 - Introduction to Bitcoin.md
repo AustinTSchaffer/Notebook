@@ -3,6 +3,10 @@ tags: OMSCS, AISA
 ---
 # M07B13 - Introduction to Bitcoin
 
+Required reading: 
+- [[The Bitcoin Paper by Satoshi Nakamoto.pdf]]
+- [[Implementing a blockchain from scratch.pdf]]
+
 ## What is Bitcoin?
 - decentralized p2p overlay network
 - crowd computing with incentives

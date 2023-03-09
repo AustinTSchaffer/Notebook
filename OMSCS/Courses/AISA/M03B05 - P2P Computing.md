@@ -1,7 +1,9 @@
 ---
 tags: OMSCS, AISA
 ---
-# Module 3 - Block 5 - P2P Computing
+# M03B05 - P2P Computing
+
+Required reading: [[Chord - A Scalable Peer-to-peer Lookup Protocol for Internet Applications.pdf]]
 
 - Arpanet
 - Usenet

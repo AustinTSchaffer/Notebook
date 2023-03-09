@@ -1,7 +1,9 @@
 ---
 tags: OMSCS, AISA
 ---
-# Module 3 - Block 6 - P2P Overlay Networks
+# M03B06 - P2P Overlay Networks
+
+Required reading: [[Chord - A Scalable Peer-to-peer Lookup Protocol for Internet Applications.pdf]]
 
 ![[Pasted image 20230129191453.png]]
 

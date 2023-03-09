@@ -2,8 +2,10 @@
 ---
 tags: OMSCS, AISA
 ---
-# Module 2 - Block 4 - Search Engines - Retrieval and Ranking
+# M02B04 - Search Engines - Retrieval and Ranking
 > Ranking and retrieval
+
+Required reading: [[The Anatomy of a Large-Scale Hypertextual Web Search Engine.pdf]]
 
 Continuation of [[Module 2 - Block 3 - Search Engine Crawlers and Indexers]]
 

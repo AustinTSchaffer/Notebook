@@ -1,7 +1,9 @@
 ---
 tags: OMSCS, AISA
 ---
-# Module 5 - Block 9 - Location-Based Services
+# M05B09 - Location-Based Services
+
+Required reading: [[RADAR: An In-Building RF-based User Location and Tracking System.pdf]]
 
 ## Spatial Alarms
 - Location query use request/response paradigm
