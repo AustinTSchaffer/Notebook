@@ -1,7 +1,7 @@
 ---
 tags: OMSCS, AISA
 ---
-# Module 7 - Block 13 - Introduction to Bitcoin
+# M07B13 - Introduction to Bitcoin
 
 ## What is Bitcoin?
 - decentralized p2p overlay network
