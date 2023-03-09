@@ -1,8 +1,10 @@
 ---
-tags: Ideas, Programming, Architecture
+tags: Ideas, Programming, Architecture, Data
 ---
 
 # Coming up with ideas for a side project
+
+Similar to: [[AISA Course Project Ideas]]
 
 https://www.youtube.com/watch?v=JTOJsU3FSD8
 
@@ -36,7 +38,7 @@ One of the problems of data-driven apps is access to high-quality data. Google/F
 - Find a way to use the data for something productive, like visualizing the increasing frequency of events that might be related to global warming
 - Find a way to process/store the data in a format that better suits the application
 
-Other data sources / programming competition sites:
+Data source and programming competition sites:
 
 - https://data.worldbank.org/
 - https://www.crowdanalytix.com/community
