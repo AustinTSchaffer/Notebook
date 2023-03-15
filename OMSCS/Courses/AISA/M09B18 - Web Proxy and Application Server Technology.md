@@ -49,5 +49,83 @@ Web proxy server uses
 
 ![[Pasted image 20230308230833.png]]
 
-Continue here: https://gatech.instructure.com/courses/303644/pages/block-18-web-proxy-and-application-server-technology?module_item_id=2938510
+![[Pasted image 20230309094551.png]]
+
+![[Pasted image 20230309094618.png]]
+
+ad-hoc
+- cache when created
+- cache-then-serve
+
+![[Pasted image 20230309094708.png]]
+
+![[Pasted image 20230309094815.png]]
+
+![[Pasted image 20230309095157.png]]
+
+![[Pasted image 20230309095427.png]]
+
+## Proxy Server Design Properties
+![[Pasted image 20230309095513.png]]
+
+![[Pasted image 20230309095538.png]]
+
+Proxy types
+- General firewall proxies
+- Departmental proxies
+- Specialized proxies
+	- proxies between clients and other proxies
+	- accelerators
+- Reverse proxies
+
+### Departmental Proxy Servers
+![[Pasted image 20230309095726.png]]
+
+### Reverse Proxy
+- inverted role of proxy server
+- primary purposes
+	- replication of content for distribution
+	- replication of content for load balancing
+
+![[Pasted image 20230309095827.png]]
+
+![[Pasted image 20230309095917.png]]
+
+![[Pasted image 20230309105602.png]]
+
+## Application Server Technology
+![[Pasted image 20230309122131.png]]
+
+![[Pasted image 20230309122151.png]]
+
+![[Pasted image 20230309122626.png]]
+
+![[Pasted image 20230309122713.png]]
+
+![[Pasted image 20230309122836.png]]
+
+![[Pasted image 20230309122823.png]]
+
+![[Pasted image 20230309123043.png]]
+
+![[Pasted image 20230309123148.png]]
+
+![[Pasted image 20230309123221.png]]
+
+![[Pasted image 20230309123229.png]]
+
+![[Pasted image 20230309123244.png]]
+
+## Cookies
+![[Pasted image 20230309123404.png]]
+
+![[Pasted image 20230309123424.png]]
+
+![[Pasted image 20230309123436.png]]
+
+![[Pasted image 20230309123503.png]]
+
+![[Pasted image 20230309123521.png]]
+
+![[Pasted image 20230309123527.png]]
 

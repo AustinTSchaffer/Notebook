@@ -8,5 +8,7 @@ Similar to: [[Coming Up With Ideas for a Side Project]]
 		- "Cannot recommend unpopular items to someone with unique tastes"
 - A content-recommendation system that uses each song's spectrogram, inspired by Riffusion
 	- [https://www.riffusion.com/about](https://www.riffusion.com/about)
+	- https://www.riffusion.com/
+	- 
 - Using crime maps to adjust the edge weightings in a navigation application
 - 
