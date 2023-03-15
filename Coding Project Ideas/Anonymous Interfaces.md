@@ -20,7 +20,7 @@ def some_method(param):
     print(x.method_b())
 ```
 
-We could new rewrite the snipped with appropriate type information. Alternatively, the compiler could also determine this type information for `param` and automatically generate type information for the `param`. You could think if this type information as an anonymous interface for `param`. Thereby any values that implicitly satisfy that interface would be an appropriate argument for this method.
+We could now rewrite the snippet with appropriate type information. Alternatively, the compiler could also determine this type information for `param` and automatically generate type information for the `param`. You could think if this type information as an anonymous interface for `param`. Thereby any values that implicitly satisfy that interface would be an appropriate argument for this method.
 
 ## Back to Java
 

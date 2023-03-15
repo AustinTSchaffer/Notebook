@@ -27,7 +27,7 @@ One common app idea is to aggregate data and add value to it. One such example w
 
 
 Monitization
-  - ADs? Depending on the content you're scraping, might not fall under fair use. Probably should check with a lawyer.
+  - Advertisements? Depending on the content you're scraping, might not fall under fair use. Probably should check with a lawyer.
   - Web Archiving as a Service. Could try to sell the service to companies to use the app for monitoring their web deployments.
 
 ## Data Analysis and Prediction
