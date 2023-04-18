@@ -5,6 +5,7 @@ Open Source Options
 	- https://github.com/Geocene/trainset
 	- https://trainset.geocene.com/
 - Label Studio
+	- https://github.com/heartexlabs/label-studio
 	- https://labelstud.io/
 - SUMSarizer by Geocene
 	- Predecessor to TRAINSET
