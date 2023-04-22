@@ -6,7 +6,6 @@ tags: OMSCS, AISA
 - rethinking of how the software defined intelligence should be learned, implemented, and delivered
 - case studies
 	- discrete optimization problems
-	- 
 
 Discrete optimization problems. Finding top `k`...
 - ...most influential people in a large social network

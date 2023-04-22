@@ -10,7 +10,7 @@ tags: OMSCS, AISA
 It's a single, consistent, and complete store of data obtained from a variety of different sources, and made available to end users in a way they can understand and use in a business context.
 
 - provides the enterprise with a consolidated and summarized memory
-- data minding provides the enterprise with prediction intelligence
+- data mining provides the enterprise with prediction intelligence
 
 ![[Pasted image 20230316220445.png]]
 
