@@ -1,5 +1,5 @@
 # Distance Learning
-*Lessons from the Remote Confines of a Simulated NASA Spacecraft by Russ Klvacek*
+*Lessons from the Remote Confines of a Simulated NASA Spacecraft by **Russ Klvacek***
 
 Over the summer of 2022, took part in a NASA simulated spacecraft. "NASA Analog Mission." Isolation and confinement for 45 days.
 
