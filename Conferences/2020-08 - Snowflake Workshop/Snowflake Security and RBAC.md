@@ -34,9 +34,9 @@ Purpose: Provide high level understanding of the capabilities and features that 
   - creates and owns DB/schema/warehouse
 - public
 
-![](attachments/system-roles.png)
+![](system-roles.png)
 
-![](attachments/system-role-responsibilities.png)
+![](system-role-responsibilities.png)
 
 ## Roles
 
@@ -54,7 +54,7 @@ use role PUBLIC;
 
 ## Object Ownership vs Grants
 
-![](attachments/object-ownership-vs-grants.png)
+![](object-ownership-vs-grants.png)
 
 ## Schema Level Control
 
@@ -77,4 +77,4 @@ simplifies the deployment of new db objects of a specific type by not requiring 
 
 ## Role Usage Guidelines
 
-![](attachments/role-usage-guidelines.png)
+![](role-usage-guidelines.png)
