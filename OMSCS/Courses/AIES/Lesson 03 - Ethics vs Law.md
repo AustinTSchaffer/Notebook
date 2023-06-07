@@ -49,17 +49,32 @@ Forms of Discrimination (or Bias)
 
 Protected Classes
 - Race
+	- Civil Rights Act of 1964, 1991
 - Color
+	- Civil Rights Act of 1964, 1991
 - Sex
+	- Equal Pay Act of 1963
+	- Civil Rights Act of 1964, 1991
 - Religion
+	- Civil Rights Act of 1964, 1991
 - National Origin
+	- Civil Rights Act of 1964, 1991
 - Citizenship
+	- Immigration Reform and Control Act
 - Age
+	- Age Discrimination in Employment Act of 1967
 - Pregnancy
+	- Pregnancy Discrimination Act
 - Familial Status
+	- Civil Rights Act of 1968
 - Disability Status
+	- Rehabilitation Act of 1973
+	- Americans with Disabilities Act of 1990
 - Veteran Status
+	- Vietnam Era Veterans' Readjustment Assistance Act of 1974
+	- Uniformed Services Employment and Reemployment Rights Act
 - Genetic Information
+	- Genetic Information Nondiscrimination Act
 
 ![[Pasted image 20230520093232.png]]
 
