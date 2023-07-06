@@ -1,5 +1,5 @@
 ---
-tags: OMSCS, AIES
+tags: OMSCS, AIES, ML, NLP
 ---
 # Lesson 12 - AI and ML Techniques - Word Embeddings
 

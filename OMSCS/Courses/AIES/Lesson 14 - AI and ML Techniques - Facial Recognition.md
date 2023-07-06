@@ -1,5 +1,5 @@
 ---
-tags: OMSCS, AIES
+tags: OMSCS, AIES, ML
 ---
 # Lesson 14 - AI and ML Techniques - Facial Recognition
 
