@@ -51,6 +51,7 @@ Data source and programming competition sites:
 - https://datasetsearch.research.google.com/
 - https://archive.ics.uci.edu/ml/index.php
 - https://hifld-geoplatform.hub.arcgis.com/
+- https://www.openstreetmap.org/
 
 You can also join data competitions on [Kaggle](https://kaggle.com/) and [DrivenData](https://www.drivendata.org/competitions/), some with cash prizes.
 
