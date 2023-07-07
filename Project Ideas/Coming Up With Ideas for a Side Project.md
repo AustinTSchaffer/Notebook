@@ -50,6 +50,7 @@ Data source and programming competition sites:
 - https://guides.loc.gov/datasets/repositories#s-lib-ctab-22713457-7
 - https://datasetsearch.research.google.com/
 - https://archive.ics.uci.edu/ml/index.php
+- https://hifld-geoplatform.hub.arcgis.com/
 
 You can also join data competitions on [Kaggle](https://kaggle.com/) and [DrivenData](https://www.drivendata.org/competitions/), some with cash prizes.
 
