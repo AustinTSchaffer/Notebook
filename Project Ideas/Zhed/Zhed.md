@@ -9,8 +9,12 @@ I'm currently playing around with this game called Zhed. Zhed is a tile-laying p
 The objective is to cover a specific cell with a tile.
 
 ## Example Levels
+### Example 1
 ![[Zhed Example Level 1.png]]
 
+In this example level, the top-most stack of 2 tiles is the only stack which is in-line with the goal cell.
+
+### Example 2
 ![[Zhed Example Level 2.png]]
 
 ## Complexity
@@ -95,14 +99,25 @@ Alternatively
 - $\sum_{x=0}^{N}\frac{N!}{(N-x)!}4^x$
 - This equation also appears to produce the same results as the OEIS equation.
 
+| Stacks | Board States (Upper Bound) | 
+| ------:| --------------------------:|
+|      0 |                          1 |
+|      1 |                          5 |
+|      2 |                         41 |
+|      3 |                        493 |
+|      4 |                      7,889 |
+|      5 |                    157,781 |
+|      6 |                  3,786,745 |
+|      7 |                106,028,861 |
+|      8 |              3,392,923,553 |
+|      9 |            122,145,247,909 |
+|     10 |          4,885,809,916,361 |
 
 Given the set of all move sequences for a board of size n, you can generate the move sequences for a board of size (n+1) using the following algorithm.
 - For each move sequence in a board of size $n$
 	- For each of the positions in the move sequence
 		- Generate 4 new move sequences using the new stack
 - Copy all of the move sequences from a board of size n.
-
-The 0th case is interesting, it implies that a board with 0 stacks has 1 possible move sequence, the "do nothing" move sequence (`[]`).
 
 ## Strategy
 This game clearly relies on strategy to reduce the search space.
@@ -111,8 +126,9 @@ This game clearly relies on strategy to reduce the search space.
 - The tile stack which will cover the goal cell will lie on one of the 4 cardinal directions from the goal cell.
 - The problem can be defined recursively.
 	- You need to move one of the stacks that on one of the cardinal directions from the goal cell. That stack will be moved in the direction toward the goal cell.
-	- If the stack is not tall enough to reach the goal, then you need to calculate the number of tiles short that it is from the goal.
-	- Pick one of the empty cells between the stack and the goal cell, designate that as a new goal, and iterate on the solving algorithm.
+	- If the stack is not tall enough to reach the goal, then it will need to calculate the number of tiles short that it is from the goal. Call this number $J$. At a minimum, $J$ tiles will need to be filled between the stack and the goal.
+	- Pick one of the $J$ empty cells between the stack and the goal cell, designate that as a new goal, rewrite a new configuration of the level using its current state, then recurse on the solving algorithm.
+	- If the stack requires that more than one tile is filled between itself and the goal, then the solver may need to play around with a few permutations of selecting $J$ tiles from the space between a stack and its goal.
+	- At least one of the $J$ tiles must be within the current toppling distance of the stack. 
 - To aid the recursive strategy, the solving algorithm needs to be able to communicate that a configuration is unsolvable.
-
-
+- If there are no tiles in any of the cardinal directions from a goal cell, that is a super simple heuristic for determining that a configuration is unsolvable.
