@@ -108,6 +108,11 @@ The 0th case is interesting, it implies that a board with 0 stacks has 1 possibl
 This game clearly relies on strategy to reduce the search space.
 
 - Moving a stack into a region where it does not have influence over another stack is not a useful move.
-- 
+- The tile stack which will cover the goal cell will lie on one of the 4 cardinal directions from the goal cell.
+- The problem can be defined recursively.
+	- You need to move one of the stacks that on one of the cardinal directions from the goal cell. That stack will be moved in the direction toward the goal cell.
+	- If the stack is not tall enough to reach the goal, then you need to calculate the number of tiles short that it is from the goal.
+	- Pick one of the empty cells between the stack and the goal cell, designate that as a new goal, and iterate on the solving algorithm.
+- To aid the recursive strategy, the solving algorithm needs to be able to communicate that a configuration is unsolvable.
 
 
