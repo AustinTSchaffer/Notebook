@@ -53,5 +53,4 @@ This refers mostly to simple idle games, where you need to constantly make decis
   - The only controls are to tap on blocks on the screen.
   - Most block types have actions that affect themselves and/or the world around them.
 - Logic Grid Puzzle
-
-
+- Zhed
