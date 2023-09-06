@@ -1,5 +1,9 @@
 ---
-tags: OMSCS, CN
+tags:
+  - OMSCS
+  - CN
+  - UDP
+  - TCP
 ---
 # Lesson 01 - Introduction, History, and Internet Architecture
 

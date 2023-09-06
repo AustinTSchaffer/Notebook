@@ -1,5 +1,8 @@
 ---
-tags: OMSCS, CN
+tags:
+  - OMSCS
+  - CN
+  - TCP
 ---
 # Lesson 02 - Transport and Application Layers
 
@@ -292,7 +295,9 @@ TCP continually increases and decreases the congestion window throughout the lif
 
 > The second kind of congestion detection is **timeout**, i.e., when no ACK is received within a specified amount of time. It is considered a more severe form of congestion, and the congestion window is reset to the initial window size.
 
-Different implementations of TCP use variations to control congestion and maximize bandwidth usage. For example, TCP Reno uses two types of loss events as a signal of congestion. The first is the **triple duplicate ACKs, which is considered** mild congestion. In this case, the congestion window is reduced to half the original.
+Different implementations of TCP use variations to control congestion and maximize bandwidth usage. For example, TCP Reno uses two types of loss events as a signal of congestion.
+- The first is the **triple duplicate ACKs, which is considered** mild congestion. In this case, the congestion window is reduced to half the original.
+- The 2nd is timeouts.
 
 ![[Pasted image 20230903123336.png]]
 
