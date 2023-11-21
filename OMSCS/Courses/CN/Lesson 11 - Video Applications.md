@@ -432,5 +432,3 @@ different signals that can serve as an **input** to a bitrate adaptation algorit
 > This figure shows the size of chunks for different bitrates. As you can see, as the bitrate becomes lower, the chunk size reduces. This further aggravates the problem. In the presence of a competing flow, a smaller chunk size would lower the probability for the video flow to get its fair share. Thus, the player ends up further underestimating the network bandwidth and picks up even a lower bitrate until it converges to 235 kbps. 
 
 > Note that this problem happens because of the ON-OFF behavior in DASH. Had it been two competing TCP-flows, they would have gotten their fair share. While we have seen this problem for DASH and a competing TCP flow, it can also happen in competing DASH players leading to an unfair allocation of network bandwidth.
-
-### 
