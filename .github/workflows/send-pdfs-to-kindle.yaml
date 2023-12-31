@@ -1,0 +1,47 @@
+name: send-pdfs-to-kindle
+run-name: ${{ github.actor }} - PDF Uploaded
+on:
+  push:
+    paths:
+      - OMSCS/Courses/**
+jobs:
+  send-to-kindle:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: PDF filter.
+      id: filter
+      uses: dorny/paths-filter@v2
+      with:
+        filters: |
+          newpdfs:
+            - added|modified: '**/*.pdf'
+        list-files: 'csv'
+    - name: Send mail
+      if: steps.filter.outputs.newpdfs == 'true'
+      uses: dawidd6/action-send-mail@v3
+      with:
+        # Required mail server address if not connection_url:
+        server_address: ${{secrets.SMTP_ADDRESS}}
+        # Optional whether this connection use TLS (default is true if server_port is 465)
+        secure: true
+        # Optional (recommended) mail server username:
+        username: ${{secrets.MAIL_USERNAME}}
+        # Optional (recommended) mail server password:
+        password: ${{secrets.MAIL_PASSWORD}}
+        # Required mail subject:
+        subject: Github Actions job result
+        # Required recipients' addresses:
+        to: ${{secrets.KINDLE_EMAIL_ADDRESS}}
+        # Required sender full name (address can be skipped):
+        from: Austin's PDF Sending GitHub Action
+        # Optional plain body:
+        body: A new PDF has been uploaded to your notebook repository.
+        # Optional carbon copy recipients:
+        cc: schaffer.austin.t@gmail.com
+        # Optional recipient of the email response:
+        reply_to: schaffer.austin.t@gmail.com
+        # Optional unsigned/invalid certificates allowance:
+        ignore_cert: true
+        # Optional attachments:
+        attachments: ${{ steps.filter.outputs.newpdfs_files }}
