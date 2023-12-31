@@ -21,13 +21,10 @@ jobs:
       if: steps.filter.outputs.newpdfs == 'true'
       uses: dawidd6/action-send-mail@v3
       with:
-        # Required mail server address if not connection_url:
         server_address: ${{secrets.SMTP_ADDRESS}}
-        # Optional whether this connection use TLS (default is true if server_port is 465)
         secure: true
-        # Optional (recommended) mail server username:
+        server_port: ${{secrets.SMTP_SERVER_PORT}}
         username: ${{secrets.MAIL_USERNAME}}
-        # Optional (recommended) mail server password:
         password: ${{secrets.MAIL_PASSWORD}}
         # Required mail subject:
         subject: Github Actions job result
