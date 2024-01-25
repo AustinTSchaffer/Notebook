@@ -4,7 +4,7 @@ tags:
   - AI
 ---
 # Module 01 - Search
-[[AIMA - Chapter 3]]
+[[AIMA - Chapter 3 - Solving Problems by Searching]]
 ## Notes from Korf Paper
 This paper explores different heuristics and their effectiveness on allowing an informed search algorithm to find the optimal solution for solving a Rubik's cube with the fewest number of moves. This paper appears to predate the 20-move proof (aka "god's number").
 
@@ -28,7 +28,7 @@ This paper was from 1997.
 
 Important to note as well that the authors "locked" the center pieces in place. Effectively, the agent always oriented the cube such that the same color always "faced the camera" and the same color always "faced the ceiling". They also did not attempt to read in arbitrary Rubik's cube states as input, so there was no need to validate that the initial state was solvable (though re: "12 subgraphs" from earlier, unsolvable initial conditions would simply not exist in the pattern DBs). Their tests were run against solved cube states after making 100 random moves.
 
-More notes on pattern DBs in the Chapter 3 notes from AIMA: [[AIMA - Chapter 3]].
+More notes on pattern DBs in the Chapter 3 notes from AIMA: [[AIMA - Chapter 3 - Solving Problems by Searching]].
 
 ### "12 separate but isomorphic subgraphs"
 Another thing I found interesting in this paper, not related to the methods they used, was the note about there being 12 disconnected subgraphs within the state space of all Rubik's cubes.

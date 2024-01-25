@@ -4,7 +4,7 @@ tags:
   - AI
   - AIMA
 ---
-# AIMA - Chapter 3
+# AIMA - Chapter 3 - Solving Problems by Searching
 
 Key terms and takeaways from the "search" chapter of "AI: A Modern Approach", 4th edition.
 
