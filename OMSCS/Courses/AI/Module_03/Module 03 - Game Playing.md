@@ -115,7 +115,11 @@ How to keep the computer from making a bad opening moves?
 ![[Pasted image 20240128194748.png]]
 
 - Tree nodes at depth $d$, branching factor $b$: $n=\sum_{x=0}^{d}b^x=\frac{b^{d+1}-1}{b-1}$ 
-- Iterative deepening nodes at depth $d$, branching factor $b$: $n=\sum_{x=0}^{d}\sum_{y=0}^{x}b^y$
+- Iterative deepening nodes at depth $d$, branching factor $b$: $n=\sum_{x=0}^{d}\sum_{y=0}^{x}b^y$. Closed form expansion is below thanks to WolframAlpha.
+
+$$
+n = \sum_{x=0}^{d}\sum_{y=0}^{x}b^y = \frac{b^{d+2}-b(d+2)+d+1}{(b-1)^2}
+$$
 
 > In games like chess, players are given an amount of time for the whole game, not individual moves. An agent may want to spend more time searching deeper in some parts of the game, and shallower in others. \[...\] We can create a strategy for how deep we want to search in certain parts of the game.
 
@@ -130,3 +134,70 @@ The evaluation function defined earlier additionally falls apart at this part of
 
 Can the evaluation function determine the size of the partition that O is in vs X is in? Making the evaluation function more complicated is not always good. More computation is equivalent to searching deeper in the tree. More computation means you won't be able to search as deep.
 
+## Alpha-Beta Pruning
+The idea is that you can propagate 2 parameters "a" and "b" down the search tree. Any 
+
+## Reducing the Search Space
+### Symmetry
+Some games have reflection and rotational symmetry, just like isolation. In these kinds of games, you can be more efficient in how the tree is expanded by checking for equivalent move sequences that you've already expanded.
+
+Taking symmetry into account cuts down on the number of nodes that you need to expand.
+
+![[Pasted image 20240205193129.png]]
+
+![[Pasted image 20240205193241.png]]
+
+In this game, there's very little symmetry in the game tree after move 3 or so, so symmetry checking can be phased out as you delve deeper in the search tree.
+
+### Partitions
+You already know the result of the game once the board state has a partition.
+
+![[Pasted image 20240205193505.png]]
+
+### Heuristics
+- In this game, if both players play optimally, player 2 always wins.
+- If you're player 1, always move to the center square, then reflect player 2's moves.
+
+## Multiplayer Games (N>2) + MAXN
+For games with more than 2 players, we can abstract minimax into the "MAX N" algorithm. In MAXN, the game tree keeps track of a vector of scores for each player. At each level of the tree, the players take turns selecting the move which maximizes their own score. Evaluation function returns the vector.
+
+![[Pasted image 20240205210905.png]]
+
+Complications
+- Some players may run out of moves before others.
+
+## 3-Player Alpha Beta
+- Works if the evaluation function has an upper and lower bound for each player.
+- Some shallow pruning is possible, deep pruning is not possible.
+
+## Expectimax
+In stochastic games like backgammon, we can use an algorithm called "expectimax" to build a game tree.
+
+## Example Stochastic Game: Sloppy Isolation
+
+![[Pasted image 20240205211737.png]]
+
+![[Pasted image 20240205211836.png]]
+
+- 80% chance that a move will hit the intended square.
+- 10% chance of undershooting
+- 10% chance of overshooting
+- For boundary conditions
+	- if overshooting is beyond the edge of the board, 0% chance of overshooting
+	- if undershooting is the current player's location, 0% chance of undershooting
+
+![[Pasted image 20240205212047.png]]
+
+- Green nodes are probability nodes.
+- When propagating utility scores upward, utility scores are multiplied by probabilities at probability nodes.
+- With expectimax, you can use a variant of alphabeta pruning if the evaluation function never goes negative. If it can go negative, you can't prune. If the evaluation function can go negative, but the bounds are known, you can always translate the utility function's output such that it's always positive, re-enabling pruning
+
+## Expectimax $\alpha \space \beta$
+- Works similarly to standard alpha-beta
+- Effectively we need to do algebra to determine which branches are worth exploring
+- In the diagram below, we can avoid exploring the right branch of the middle subtree, because the evaluation function is bounded by \[0, 10\]. The probability of that branch is 0.5, and the max value is 10, so the expected value of that branch is at most 5. We already know from the left subtree that we can get an expected value of 6.5, so that allows the agent to prune that whole subtree.
+- For optimal pruning
+	- Evaluate branches with the highest probabilities first
+	- Evaluate branches with the highest expected values first.
+
+![[Pasted image 20240205213057.png]]
