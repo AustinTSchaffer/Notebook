@@ -2,6 +2,9 @@
 tags:
   - OMSCS
   - AI
+  - Statistics
+  - Probability
+  - Bayes
 ---
 # Module 05 - Probability
 
