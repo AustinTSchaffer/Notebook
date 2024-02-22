@@ -1,5 +1,7 @@
 # Towards D of M C A
 
+ref impl: https://GitHub.com/ServiceWeaver
+
 ## notes on paper
 
 couple of interesting ideas in this one
@@ -8,7 +10,7 @@ couple of interesting ideas in this one
 - delegating the boundary between method calls and RPCs to an automated framework
 - if you can guarantee that different versions of a single application NEVER interact, you can send raw structs over the wire. no need for intermediate data formats, nor serialization / deserialization
 
-interestingly, the model proposed in the paper doesn't support streaming methods. its reference implementation is Go, but channels aren't supported
+interestingly, the model proposed in the paper doesn't support streaming methods, makes little/no mention of async pub/sub, and prioritizes regular params/return methods. its reference implementation is Go, but channels aren't supported
 
 ## musing about weaknesses
 
