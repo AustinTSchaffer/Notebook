@@ -449,4 +449,188 @@ Using bayesian distributions, we only need to specify $2^A$ different probabilit
 - $F \perp A \space | \space H$
 
 ## Probabilistic Inference
-TODO
+- Still uses bayes networks
+- variables are either "evidence" variables or "query" variables
+	- "evidence" - we know these variables
+	- "query" - these are variables that we'd like to know the values of
+	- "hidden" variables are neither "evidence" nor "query"
+- The output is not a single number. It's a probability distribution. Typically it's a joint distribution over all of the query variables. This is called the "posterior" distribution.
+	- $P(Q_1, Q_2, ... | E_1=e_1, E_2=e_2, ...)$
+- We also sometimes want to know which variables have the highest probability.
+	- $argmax_q \space P(Q_1=q_1, Q_2=q_2,...|E_1=e_1,...)$
+- Bayes nets can run these queries in the causal direction or it can reverse the causal flow by swapping query and evidence variables.
+
+### Enumeration
+
+![[Pasted image 20240218173255.png]]
+
+> Given a bayes net like the one below, find $P(+b|+j, +m)$
+
+> Definition: Conditional probability. $P(Q|E)=P(Q,E)/P(E)$
+
+We can apply this definition to the question: $P(+b|+j,+m)=P(+b,+j,+m)/P(+j,+m)$
+
+To perform enumeration, we rephrase all conditional probabilities as unconditional probabilities using the definition above. Then we enumerate all the atomic probabilities and calculate the sum of products.
+
+Using $P(+b, +j, +m)$ as an example
+
+- $=\sum_e \sum_a P(+b,+j,+m,e,a)$
+- $=\sum_e \sum_a [P(+b)*P(e)*P(a|+b,e)*P(+j|a)*P(+m|a)]$
+	- $f(e,a)=P(+b)*P(e)*P(a|+b,e)*P(+j|a)*P(+m|a)$
+- $=\sum_e \sum_a f(e, a)$
+- $=f(+e,+a)+f(+e,\neg a)+f(\neg e, +a)+f(\neg e, \neg a)$
+
+All of these numbers should have been supplied by the conditional probability tables that were used to define the bayes network.
+
+![[Pasted image 20240218174324.png]]
+
+Finding $f(+e, +a)$
+- $f(+e,+a)=P(+b)*P(+e)*P(+a|+b,+e)*P(+j|+a)*P(+m|+a)$
+- $f(+e,+a)=(0.001)(0.002)(0.95)(0.9)(0.7)$
+- $f(+e,+a)=$ a small number.
+
+We need to now enumerate for all of the other 3 possibilities and we're done.
+
+### Speeding Up Enumeration
+In theory, this works. In practice, if there's many more nodes, or many more arcs, or variables with larger domains (compared to 0,1 booleans), this algorithm slows down considerably.
+#### Pulling out Terms
+- In the example above, $P(+b)$ doesn't depend on the parameters of $f$, so we can pull it out and multiply it at the end.
+- In the example above, $P(e)$ doesn't depend on $a$, so we can move terms around to only calculate it once per $e$ instead of once per $(e,a)$.
+- $P(+b) \space \sum_e \space P(e) \space \sum_a \space [P(a|+b,e)*P(+j|a)*P(+m|a)]$
+- Doesn't cut down on the size of the loop, the total number of iterations, but it does make the calculations more efficient.
+#### Maximize Independence
+> The structure of a bayes net determines how efficient it is to do inference on it.
+
+A network that is a linear string of $n$ variables takes $O(n)$ time to compute inference.
+
+![[Pasted image 20240218181141.png]]
+
+A network that's a complete network of $n$ variables takes $O(2^n)$, assuming the variables are boolean.
+
+![[Pasted image 20240218181252.png]]
+
+### Causal Direction
+Bayes nets tend to be more compact, and therefore easier to do inference on, when they are written in the causal direction. It's possible to flip them around
+
+![[Pasted image 20240219082952.png]]
+
+## Variable Elimination
+- NP-hard in general
+- faster than inference by enumeration in most practical cases
+- requires an algebra for manipulating factors
+
+![[Pasted image 20240219083206.png]]
+
+Enumeration solution: $P(+L)= \sum_r \sum_t P(r)P(t|r)P(+L|t)$
+
+1. Joining Factors
+	1. Join factors to create a joint distribution
+	2. In this case, generate $P(R,T)$, which is computed by multiplying together relevant entries from the $P(R)$ and $P(T|R)$ tables.
+	3. ![[Pasted image 20240219083426.png]]
+2. Elimination
+	1. Continue this process until you're left with $P(Q_1,...)$
+	2. ![[Pasted image 20240219083541.png]]
+	3. ![[Pasted image 20240219085507.png]]
+	4. ![[Pasted image 20240219085550.png]]
+	5. ![[Pasted image 20240219085942.png]]
+	6. ![[Pasted image 20240219094728.png]]
+## Approximate Inference via Sampling
+
+![[Pasted image 20240219095804.png]]
+
+Given an infinite number of samples, the results of sampling approaches the true total probability distribution, or the probability distribution of a single variable, or a set of variables. Pick a joint probability that you care about, run the simulation, collect the results.
+
+### Sampling Example
+
+![[Pasted image 20240219095849.png]]
+
+### Rejection Sampling
+Using the example above, suppose we want to know $P(W|\neg C)$. We could run the simulation for the whole network and reject any samples that conflict with the query, and accept any samples that match the query.
+
+- Rejected: $+C, \neg S, +R, +W$
+- Accepted: $\neg C, \neg S, \neg R, +W$
+- Rejected: ...
+- Accepted: ...
+- Accepted: ...
+- ...
+
+And so on, then total the results. The ratio of "Rejected" to "Accepted" is the approximate answer to the query.
+
+The problem with Rejection Sampling is that you end up rejecting a lot of samples when the probability of the query is unlikely, which can be inefficient.
+
+For example:
+Given the distributions below, the query $P(B|+a)$ will end up rejecting a lot of results, because burglaries are very unlikely. Most of the samples will be $(\neg B, \neg A)$, which doesn't match the query.
+
+| Condition | $\rho$ |
+| ---- | ---- |
+| $P(+B)$ | 0.001 |
+| $P(\neg B)$ | 0.999 |
+| $P(+A\|+B)$ | 0.999 |
+| $P(\neg A \| +B)$ | 0.001 |
+| $P(+A \| \neg B)$ | 0.01 |
+| $P(\neg A \| \neg B)$ | 0.99 |
+
+### Likelihood Weighting
+- "Fix" the evidence variables to the values that we're querying for.
+- Sample the rest of the variables.
+- Multiply each sample by a "weight" indicating the likelihood of that result actually occurring.
+
+### Cloudy/Sprinkler/Rain/WetGrass Example 1
+
+![[Pasted image 20240219095849.png]]
+
+What is $P(R|+s,+w)$?
+- When generating a sample:
+	- Initialize the sample's weight to $1$
+	- Randomly pick a value for $C$. This variable is unconstrained by the query, so we don't adjust the weight.
+	- Constrain the choice for $S$ to $+s$ based on $C$ and the query.
+		- If $+c$ was chosen for $C$, this outcome only has a $0.1$ chance of occurring, so that gets multiplied into the sample's weight.
+		- If $-c$ was chosen for $C$, this outcome only has a $0.5$ chance of occurring, so that gets multiplied into the sample's weight.
+	- Randomly pick a value for $R$ based on $C$. This variable is unconstrained by the query, so we don't adjust the weight.
+	- Constrain the choice for $W$ based on $S$, $R$, and the query.
+		- If $+r$ was chosen for $R$, then the sample comes out to $C, +s, +r, +w$, and the sample's weight is multiplied by an additional $0.99$.
+		- If $-r$ was chosen for $R$, then the sample comes out to $C, +s, -r, +w$, and the sample's weight is multiplied by an additional $0.90$.
+- Example Samples
+	- $+c, +s, +r, +w$. Weight: $(0.1)(0.99)=0.099$
+	- $+c, +s, -r, +w$. Weight: $(0.1)(0.9)=0.09$
+	- $-c, +s, +r, +w$. Weight: $(0.5)(0.99)=0.495$
+	- $-c, +s, -r, +w$. Weight: $(0.5)(0.9)=0.45$
+
+### Cloudy/Sprinkler/Rain/WetGrass Example 2
+
+What is $P(C|+s,+r)$?
+
+In this example, we'll be randomly generating values for $C$, since it's unconstrained by the query. Half the time it'll be $+c$, and the other half of the time it'll be $\neg c$.
+- In the $+c$ case, we'll have a likelihood weighting of $(0.1)(0.8)=0.08$.
+- In the $-c$ case, we'll have a likelihood weighting of $(0.5)(0.2)=0.1$.
+
+The issue here is that we'll always have a low likelihood weighting, because $C$ will always have a bad fit for the evidence $+s, +r$, given that $S$ tends to be positive only when it's not cloudy, and $R$ tends to only be positive when it is cloudy.
+
+## Gibbs Sampling
+- Uses a technique called Markov Chain Monte Carlo (MCMC)
+- Samples only one variable at a time
+- Have a set of variables, randomly initialized, which constitutes one sample
+- At each iteration, pick one variable which is not part of the evidence and resample it based on all of the other variables, which constitutes another sample.
+- This constitutes a random walk through the probability distributions
+- Adjacent samples are very similar to each other
+
+## Monte Hall Problem
+- 3 doors
+	- expensive car
+	- goat
+	- goat
+- You pick one door
+- The host reveals one of the other doors, knowing that the door contains a goat
+- Do you stay with your choice or do you switch?
+- If you stay, your probability of winning is 1/3
+	- When you started, the car was in one door, you chose one door, you had a 1/3 chance of getting it right
+- If you switch, your probability of winning is 2/3
+	- The other 2 doors each had a 1/3 chance of containing the car
+	- The host eliminated one of the options, by selecting the door with the goat.
+	- The 1/3 probability from the door that the host revealed gets redistributed.
+	- Your 1/3 probability doesn't change. The total probability must sum to 1. The 1/3 probability must be added to the door that you didn't choose.
+	- The difference is that door 2 ISN'T the door that the host flipped open. That is additional information.
+	- We don't learn anything new about door 1 because it was never an option for the host to open it.
+
+![[Pasted image 20240219105017.png]]
+
