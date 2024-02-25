@@ -614,6 +614,53 @@ The issue here is that we'll always have a low likelihood weighting, because $C$
 - This constitutes a random walk through the probability distributions
 - Adjacent samples are very similar to each other
 
+### Implementing Gibbs
+For actually implementing Gibbs...
+
+#### At t=0
+- You start off by randomly initializing the state
+- Typically the "state" is implemented as a vector/list/tuple/array/whatever of values, one for each variable.
+- Typically you have "fixed evidence", variables for which the values are known. You don't randomize these, they just stay the same for the whole simulation.
+- For all of the other variables, you pick one value from their list of possible values. We'll call this list of potential values for each variable the "domain" for each variable.
+- Typically you're trying to answer the question $P(SomeVariable=A | FixedEvidence_1=B, FixedEvidence_2=C, ...)$. $SomeVariable$ is included in the list of variables that you randomize in each iteration.
+#### For each subsequent iteration
+- Randomly pick one of the non-fixed-evidence variables. Call this variable "variable to tweak" or VTT.
+- For each value in VTT's domain, determine the _relative_ likelihood of that value relative to all other values.
+	- This is the "Markov Blanket" part of the algorithm, which sounds scary, but is totally doable.
+	- For each value $v$ in VTT's domain, you're going to multiply a bunch of probabilities together using the formula below
+	- $f(VTT=v)=P(VTT=v | Parents(VTT)) \prod_{Y_j \in Children(VTT)} P(Y_j=y_j | Parents(Y_j))$
+		- $Parents(VTT)$
+			- The "parents" of VTT are variables which would point to VTT if the variables are rendered as a graph.
+		- $Children(VTT)$
+			- The "children" of VTT are variables which VTT would point to if the variables are rendered as a graph.
+		- $P(VTT=v | Parents(VTT))$
+			- "What is the probability that $VTT=v$, given the values of the "parents" of VTT?"
+			- This is shorthand for $P(VTT=v|)$
+			- Remember that for this iteration, the values of the parents of VTT are fixed.
+			- Some variables have no parents. In these cases $P(VTT=v | Parents(VTT))=P(VTT=v)$
+		- $P(Y_j=y_j | Parents(Y_j))$
+			- This follows the same logic as the previous bullet point, just for a different variable.
+			- $V_j$ is a child of VTT.
+		- $\prod_{Y_j \in children(VTT)} P(Y_j=y_j | Parents(Y_j))$
+			- For each child of $VTT$, compute the $P(...)$ value, then multiply all that shit together.
+	- When computing the $f$ value for a , you can do it in stages by initializing the value to 1, then multiplying values based on the formula.
+- At this stage, you'll likely have a list of _relative_ probabilities which do not sum to `1.0`. You can normalize this list by dividing each value by the sum of the list.
+- Now that you have a list of probabilities which sum to 1, randomly generate a value in the range 0 to 1. Correlate the random value with the list of probabilities to get the new value for VTT.
+- Now that you have a new value for VTT, this iteration is over. Replace VTT's value in the state with its new value.
+- In between each iteration, you're going to want to record the values of each variable that you're trying to probabilistically measure. In the case of $P(SomeVariable=A | FixedEvidence_1=B, FixedEvidence_2=C, ...)$, you'll want to record the number of times that each value of $SomeVariable$ appears. Call this a "histogram", or something.
+
+#### Exit condition.
+- This algorithm can go on for some fixed number of iterations. This is the dumb way of going about it.
+- More intelligently, you can define a $delta$ (some value much less than 1) and an $N$ (some value larger than 10).
+	- Keep track of a $n$ value, initialized to 0.
+	- Convert the "histogram" to probabilities by dividing each value by the total sum of the list. This yields a "probability distribution".
+	- Keep track of this probability distribution, so that you have a copy from the previous iteration, and a copy for the current iteration.
+	- Compare the values between the previous iteration's probability distribution and the current one.
+		- If ANY differ by more than $delta$, reset $n$ to 0.
+		- If ALL differ by less than $delta$, increment $n$.
+	- Once $n$ is larger than $N$, you've "converged". This means that subsequent iterations are unlikely to change the probability distribution by much.
+	- Tweaking $delta$ and $N$ will help make sure that you get the same answer every time, but there's also a lot of randomness involved, so you're likely to get some variance in your output.
+
 ## Monte Hall Problem
 - 3 doors
 	- expensive car
