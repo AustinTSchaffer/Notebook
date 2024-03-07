@@ -1,10 +1,7 @@
 ---
 tags: TODO
 ---
-
 # TODO
-
-## Things to Do
 
 ## Notes to Take
 
