@@ -1,5 +1,7 @@
 # Towards Modern Development of Cloud Applications
 
+Notes on [[Towards Modern Development of Cloud Applications]]
+
 > Sanjay Ghemawat, Robert Grandl, Srdjan Petrovic, Michael Whittaker, Parveen Patel, Ivan Posva, and Amin Vahdat. 2023. Towards Modern Development of Cloud Applications. In Proceedings of the 19th Workshop on Hot Topics in Operating Systems (HOTOS '23). Association for Computing Machinery, New York, NY, USA, 110–117. https://doi.org/10.1145/3593856.3595909
 
 Reference Implementation: https://GitHub.com/ServiceWeaver
@@ -12,7 +14,8 @@ couple of interesting ideas in this one
 
 - defining hard network boundaries between applications almost always means you'll end up underutilizing application hosts
 - delegating the boundary between method calls and RPCs to an automated framework
-- if you can guarantee that different versions of a single application NEVER interact, you can send raw structs over the wire. no need for intermediate data formats, nor serialization / deserialization
+- if you can guarantee that different versions of a single application NEVER interact, you can send raw structs over the wire. no need for intermediate data formats, nor serialization / deserialization.
+	- Jack made the point that the endianness of different hosts could differ. The runtime could be aware of that and could translate the structs prior to sending (if necessary). Still, there would be no need to serialize the data to protobuf/json
 
 interestingly, the model proposed in the paper doesn't support streaming methods, makes little/no mention of async pub/sub, and prioritizes regular params/return methods. its reference implementation is Go, but channels aren't supported
 
