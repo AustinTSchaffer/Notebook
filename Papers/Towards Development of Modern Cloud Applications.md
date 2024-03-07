@@ -1,11 +1,12 @@
 # Towards Modern Development of Cloud Applications
 
-paper doi: https://doi.org/10.1145/3593856.3595909
+> Sanjay Ghemawat, Robert Grandl, Srdjan Petrovic, Michael Whittaker, Parveen Patel, Ivan Posva, and Amin Vahdat. 2023. Towards Modern Development of Cloud Applications. In Proceedings of the 19th Workshop on Hot Topics in Operating Systems (HOTOS '23). Association for Computing Machinery, New York, NY, USA, 110–117. https://doi.org/10.1145/3593856.3595909
 
-ref impl: https://GitHub.com/ServiceWeaver
+Reference Implementation: https://GitHub.com/ServiceWeaver
 
+Grammar and capitalization are rough in this note as it was written on an Android keyboard using the GitHub app.
 
-## notes on paper
+## notes
 
 couple of interesting ideas in this one
 
@@ -15,11 +16,11 @@ couple of interesting ideas in this one
 
 interestingly, the model proposed in the paper doesn't support streaming methods, makes little/no mention of async pub/sub, and prioritizes regular params/return methods. its reference implementation is Go, but channels aren't supported
 
-## musing about weaknesses
+## potential weaknesses of approach
 
 as a software developer, there's a bit of weirdness given that the runtime can turn any simple method call into an RPC. An application's overall performance would be subject to poor judgement calls by the runtime framework. with the framework, should you make all method calls (at least the inter-component ones, which are subject to placement on another host) async, move them to be as early as possible, await their results only when needed? do you not worry about it and hope the runtime always makes good decisions about frequent vs infrequent inter-component method calls?
 
-another weakness with this model is that you can easily fall into poor architecture pitfalls. one advantage of distributed application models which use message brokers (Rabbit, Kafka, etc), is the idea that producers and consumers can deliver mupltiple messages simultaneously via batching, which can help make sure that network packet frames are being filled to the brim, reducing network overhead on a per-packet basis. message queueing also helps overall process reliability, allowing intermediate results to be unACKed by downstream consumers, in various failure conditions
+another weakness with this model is that you can easily fall into poor architecture pitfalls. one advantage of distributed application models which use messaging/queueing brokers (RabbitMQ, Kafka, etc), is the idea that producers and consumers can deliver mupltiple messages simultaneously via batching, which can help make sure that network packet frames are being filled to the brim, reducing network overhead on a per-packet basis. message queueing also helps overall process reliability, allowing intermediate results to be unACKed by downstream consumers, in various failure conditions
 
 - external resource not available
 - programming errors
