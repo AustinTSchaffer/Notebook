@@ -48,4 +48,4 @@ key terms and section headers
 	- kernel functions
 
 ## 20.3 Learning with Hidden Variables: The EM Algorithm
-(skipped for now)
+(skipped for now)**

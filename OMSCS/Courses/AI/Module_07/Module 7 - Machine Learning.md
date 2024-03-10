@@ -175,3 +175,57 @@ If we assume that the variables are independent, then we can use the naive bayes
 
 ![[Pasted image 20240305223152.png]]
 
+### Example
+![[Pasted image 20240309201026.png]]
+
+$$
+\rho = P(S \space|\space \neg{P}, B, \neg{D})
+$$
+
+start off by just using regular Bayes rule
+
+$$
+\rho = \frac{P(\neg{Piazza}, Bank, \neg{Diplomat} \space|\space Spam)P(Spam)}{P(\neg{Piazza}, Bank, \neg{Diplomat})}
+$$
+
+Expand the top term by assuming they are independent ($P \perp B$, $B \perp D$, $P \perp D$)
+
+$$
+\rho = \frac{P(\neg{Piazza} \space|\space Spam)P(Bank \space|\space Spam)P( \neg{Diplomat} \space|\space Spam)P(Spam)}{P(\neg{Piazza}, Bank, \neg{Diplomat})}
+$$
+
+What the known probability values are
+
+- Spam
+	- $P(Spam)=0.3$
+	- $P(\neg Spam) = 0.7$
+- Piazza
+	- $P(Piazza \space|\space Spam) = 0.001$
+	- $P(\neg Piazza \space|\space Spam)=0.999$
+	- $P(Piazza \space|\space \neg Spam)=0.25$
+	- $P(\neg Piazza \space|\space \neg Spam)=0.75$
+- Bank
+	- $P(Bank \space|\space Spam) = 0.2$
+	- $P(\neg{Bank} \space|\space Spam) = 0.8$
+	- $P(Bank \space|\space \neg Spam) = 0.1$
+	- $P(\neg{Bank} \space|\space \neg{Spam}) = 0.8$
+- Diplomat
+	- $P(Diplomat \space|\space Spam) = 0.3$
+	- $P(\neg{Diplomat} \space|\space Spam) = 0.7$
+	- $P(Diplomat \space|\space \neg Spam) = 0.01$
+	- $P(\neg{Diplomat} \space|\space \neg{Spam}) = 0.99$
+
+Note that we don't have $P(P)$, nor $P(B)$, nor $P(D)$. We can instead use naive bayes to figure out the denominator.
+
+$P(\neg Piazza, Bank, \neg Diplomat)$
+- $=P(\neg{P}, B, \neg{D} \space|\space S)P(S)+P(\neg{P}, B, \neg{D} \space|\space \neg S)P(\neg S)$
+- $= P(\neg P \space|\space S)P(B\space|\space S)P(\neg D \space|\space S)P(S)$
+- $+ P(\neg P \space|\space \neg S)P(B\space|\space \neg S)P(\neg D \space|\space \neg S)P(\neg S)$
+- $=(0.999)(0.2)(0.7)(0.3)+(0.75)(0.1)(0.99)(0.7)$
+
+$$
+\rho=\frac{(0.999)(0.2)(0.7)(0.3)}{(0.999)(0.2)(0.7)(0.3)+(0.75)(0.1)(0.99)(0.7)}
+$$
+
+## No Free Lunch
+(Continue from video 22)
