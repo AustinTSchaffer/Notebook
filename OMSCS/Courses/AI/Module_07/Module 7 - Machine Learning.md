@@ -228,4 +228,79 @@ $$
 $$
 
 ## No Free Lunch
-(Continue from video 22)
+> The no free lunch theorem states that there is no one algorithm which is optimal for all problems.
+
+We can think of all of our algorithms as drawing a decision boundary.
+- KNN captures really complicated decision boundaries, but could be subject to overfitting when the number of examples is low
+- Bayes generally assumes that classes are equally probable, so it generates quadratic decision boundaries. Must more simplified visually, possibly less prone to overfitting, less accurate when the true boundary _IS_ complex.
+
+ ### KNN
+![[Pasted image 20240310101342.png]]
+
+### Naive Bayes
+![[Pasted image 20240310101255.png]]
+
+![[Pasted image 20240310101326.png]]
+
+### Mixture of Gaussians
+We can use more than one gaussian for classifying the data and generating decision boundaries. If the data is complex, we can just keep adding more.
+
+![[Pasted image 20240310101829.png]]
+
+The extreme case is 1 gaussian per data point.
+
+![[Pasted image 20240310101933.png]]
+
+Trying out many gaussians and then fewer gaussians is a trick known as kernel density estimation.
+
+We can use cross-validation to pick the number of gaussians that give the best results.
+
+## Visualization
+ALWAYS VISUALIZE THE DATA FIRST to get a sense of what algorithm would be the best fit for classifying the data.
+
+## Decision Trees
+- [[Mitchell - Decision Trees]]
+- [[AIMA - Chapter 19 - Learning from Examples]]
+
+> Entroy is a measure of how many bits we need to represent the problem.
+
+Alternate Gain definitions
+
+- Entropy
+	- $H(X)=-\sum_{i=1}^{n}(p(x_i))log_{2}(p(x_i))$
+	- $X$ is the attribute we care about
+	- $H$ means "entropy"
+	- $n$ is the number of distinct values of that attribute
+	- $x_i$ is a distinct value of $X$
+	- $p(x_i)$ is the number of times the classification is "positive" when $X=x_i$, divided by the times the classification is "not positive" when $X=x_i$
+	- I believe this more complicated form exists for cases where there are more than 2 classifications.
+- Simplified form for binary cases
+	- $B(q)=-(qlog_2q+(1-q)log_2(1-q)$
+	- Usage: $B(p/(p+n))$
+	- $q$ is a proportion of positive classifications divided by the number of datapoints
+	- $p$ is the number of positive classifications
+	- $n$ is the number of negative classifications\
+- Information Gain
+	- $Remainder(A)=\sum_{k=1}^{d}\frac{p_k + n_k}{p+n}B(\frac{p_k}{p_k + n_k})$
+	- $Gain(A)=B(\frac{p}{p+n})-Remainder(A)$
+	- $A$ is the attribute we're evaluating
+	- $d$ is the number of distinct values of attribute $A$
+	- $a_k$ is the k-th distinct value of $A$
+	- $p_k$ is the number of cases where the classification is "positive" when $A=a_k$
+	- $n_k$ is the number of cases where the classification is "negative" when $A=a_k$
+	- $p_k + n_k$ should probably always be equal to the total number of examples where $A=a_k$, given that we're using $B(p)$, which assumes binary classifications.
+	- $p$ is the total number of positive classifications across all examples
+	- $n$ is the total number of negative classifications across all examples
+	- $p+n$ should probably always be equal to the total number of examples given that this section only talks about binary classifications
+
+## Random Forests
+- ensemble learning technique where you generate many different decision trees and have them vote on the answer
+- work quite well for ML tasks
+- "Bagging" technique
+- AKA "Bootstrap Aggregation" technique
+- Algorithm
+	- Input: data set of size $N$ with $M$ dimensions/attributes
+	- loop from $i=1$ to $k$
+		- Sample $n$ times from data
+		- sample $m$ times from attributes
+		- learn $tree_i$ on sampled data and attributes

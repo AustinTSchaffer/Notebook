@@ -169,7 +169,7 @@ we can evaluate the performance of a learning algorithm with a **learning curve*
 
 - learning tree algorithms generally pick the attribute which gives the most information gain within the testing set at each decision point in the tree.
 - information gain is a function of entropy
-- see the mitchell notes for more info on how $Gain$ is calculated: [[Mitchell - Decision Trees]]
+- see the mitchell notes for more info on how $*Gain*$ is calculated: [[Mitchell - Decision Trees]]
 
 - we prevent overfitting by pruning the tree. There's many options for this.
 
