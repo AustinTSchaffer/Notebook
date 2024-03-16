@@ -338,9 +338,109 @@ Key terms and section headers
 	- decision lists
 
 ## 19.6 Linear Regression and Classification
-(Skipped for now.)
+### Univariate Linear Regression
+- linear functions of continuous-valued inputs
+- linear regression with a univariate linear function is AKA "fitting a straight line"
+- univariate: $y=w_{1}x + w_2$
+- $w_a$ is a "weight", we can define $w$ as a vector of weights $\langle w_0, w_1 \rangle$
+- Using hypothesis terminology: $h_w(x)=w_1x + w_2$
+- $Loss(h_w)$
+	- $=\sum_{j=1}^{N}L_2(y_j,h_w(x_j))$
+	- $=\sum_{j=1}^{N}(y_j - h_w(x_j))^2$
+	- $=\sum_{j=1}^{N}(y_j - (w_1x_j+w_0))^2$
 
-## 19.7 Nearest Neighbors Models
+![[Pasted image 20240316085935.png]]
+
+- We need to find $w^* = argmin_wLoss(h_w)$
+	- The sum: $\sum_{j=1}^{N}(y_j - (w_1x_j+w_0))^2$ is minimized when its partial derivatives with respect to $w_0$ and $w_1$ are zero.
+	- ![[Pasted image 20240316090448.png]]
+	- There's no way I'm typing that out while sick.
+- After some number crunching, you end up with
+
+$$
+w_1=\frac{N(\sum x_jy_j)-(\sum x_j)(\sum y_j}{N(\sum x_j^2)-(\sum x_j)^2}
+$$
+
+$$
+w_0=\left( \sum y_j - w_1 \left(\sum x_j \right) \right) / N
+$$
+
+That's pretty much it. If the data can be modeled using a univariate linear equation, just use the equations above (or use a Python package which does the equations above efficiently, scipy and/or numpy probably have built-in functions for this), and you're done.
+
+### Gradient Descent
+- Sometimes it's hard to find the the zeroes of derivatives.
+- Sometimes it may be easier (less cognitive load) to just march toward an optimal solution
+
+```python
+w: list[float, ...] = ... # any point in the parameter space
+while not_converged:
+	for i in range(len(w)):
+		w[i] = w[i] - (alpha * loss(w))
+```
+
+- `alpha` ($\alpha$) is called the "step size". Usually called the "learning rate"
+- We also need to take the partial derivative of whatever equation we're using as our model. Again, don't try to hand-roll this.
+- Using this method is called **batch gradient descent** or **deterministic gradient descent**
+- The loss surface is convex, which means there are no local minima, which means you always get the global minima, for reasonably sized $\alpha$
+- Problems
+	- we have to sum over all $N$ training examples in each step
+	- there will be many steps
+	- $N$ might be larger than the processor's memory
+- A step that covers all training examples is called an "epoch"
+
+A faster variant is called **stochastic gradient descent** (SGD)
+- randomly selects small number of training examples at each step
+- updates according to loss function, which uses partial derivatives
+- common to use a "minibatch" of $m$ out of the total $N$ examples
+- At each step, we have reduced the amount of computation required by a factor of $N/m$
+- Usually we have to take some multiplication of steps to converge, but it's typically still faster.
+- $m$ is typically a hyperparameter that should be tuned for each learning problem.
+- Convergence is not guaranteed. Decreasing $\alpha$ by some amount each step can guarantee convergence.
+- SGD can be used in an online setting where data comes in one at a time. Sometimes called **online gradient descent**. With a good choice of the learning rate, the model can evolve over time.
+- Even if you don't find the global minimum with SGD, often the local minima are good enough.
+
+### Multivariate Linear Regression
+- Each example $x_j$ is an $n$-element vector
+- Output is still a single variable
+- $h_w(x_j)=w_0 + \sum_i{w_ix_{j,i}}$
+- We can hack this by adding a dummy attribute to the beginning of $x$ which is always equal to 1. That allows us to take the dot product of the weights and input vector.
+- $h_w(x_j)=w \cdot x_j = \sum_i{w_ix_{j,i}}$
+- $w^*=argmin_w \sum_j L_2(y_j, w \cdot x_j)$
+- Otherwise pretty much all of the other tools work the same way as univariate
+- We can also use linear algebra for calculating loss.
+	- $X$ is the data matrix, each row is an example.
+	- The vector of predicted outputs is $\hat{y}=Xw$
+	- The squared-error loss over the training data is
+	- $L(w)=||\hat{y}-y||^2 = ||Xw-y||^2$
+- After some finagling: $w^*=(X^TX)^{-1}X^Ty$
+	- This equation is called the **normal equation**
+	- $(X^TX)^{-1}X^T$ is the "pseudo-inverse" of the data matrix
+- univariate linear equations are safe from overfitting, multivariate are not
+- Common to use "regularization" on multivariable linear functions to avoid overfitting.
+	- Minimize: $Loss(w)+\lambda Complexity(w)$
+	- When using $L_1$, we can throw away some weights/attributes by setting the appropriate $w_i$ to 0. This can produce a **sparse model**
+	- $L_2$ regularization doesn't have the same property as $L_1$, so the models will appear less sparse.
+
+### Linear Classifiers with a hard threshold
+- linear equations can do classification as well as regression
+
+![[Pasted image 20240316093809.png]]
+
+![[Pasted image 20240316094023.png]]
+
+- finding the mimimum-error solution is NP-hard
+### Linear Classification with Logistic Regression
+- Softens the threshold function by reporting a confidence
+- $Logistic(z)=\frac{1}{1+e^{-z}}$
+- This is one of the most popular classification techniques
+
+![[Pasted image 20240316094222.png]]
+
+![[Pasted image 20240316094255.png]]
+
+## 19.7 Nonparametric Models
+
+### Nearest Neighbors Models
 - given an known datapoint $x_q$ ($q$ meaning query), we can classify it based on he $k$ examples that are nearest to $x_q$.
 - This is called k-nearest neighbors lookup (KNN)
 - Notation $NN(k,x_q)$
@@ -438,7 +538,142 @@ Also note that basic KNN has trouble when the number of examples $N$ increases, 
 - soft margin classifier which allows examples to fall on the wrong side of the decision boundary
 
 ## 19.8 Ensemble Learning
-(skipped for now)
+Key terms and section headers
+
+- ensemble learning
+- ensemble
+- base model
+- ensemble model
+
+![[Pasted image 20240316094542.png]]
+
+- bagging
+	- short for "bootstrap aggregating"
+	- use multiple ML models of the same class
+	- each ML model gets a subset of the data
+	- the models vote on the result
+- random forests
+	- bagging but with decision trees
+	- each tree also only sees a subset of attributes for each example
+	- We can also randomize the decision boundary for each tree
+	- The hyperparameters can be tuned with cross-validation
+		- $K$ the number of trees
+		- $N$ the number of examples seen by each tree
+		- The number of attributes used at each split point
+		- The number of random split points tried (if we're using extra random trees)
+	- In place of regular cross-validation, we can measure out-of-bag error
+		- the mean error on each example, using only the trees whose example set didn't include that particular example
+	- Not considered "explainable"
+- Stacking
+	- short for "stacked generalization"
+	- combines multiple base models from different model classes trained on the same data
+	- For example, we could pick an SVM model, a logistic regression model, and a decision tree model, all trained on the same data
+	- The predictions made by each model are added to the attributes of the validation set
+	- We then train a new ensemble model (e.g. a logistic regression model) using the augmented data set. That new model can leverage the output of the stacked models, assigning weights to each.
+	- This is great in a team environment. Each individual can refine their individual model, then the results of those models can be combined using a final stacked ensemble model.
+	- Frequently used by winning Kaggle teams and KDD Cup teams.
+- Boosting
+	- Most popular ensemble model
+	- uses a **weighted training set**
+		- Each example has a weight, $w_j$, where $w_j \ge 0$, that describes how much the example should count during training
+		- All examples start with $w_j=1$
+		- We train a model against the data, generating hypothesis $h_1$
+		- We want $h_2$ to do better on misclassified examples
+			- we increase the weights of misclassified examples
+			- we decrease the weights of correctly classified examples
+	- Process continues until we have generated $K$ hypotheses. $K$ is an input to the boosting algorithm.
+		- Greedy algorithm, doesn't backtrack
+		- Sequential algorithm, hypotheses can't be trained in parallel
+	- The final ensemble model lets each hypothesis vote. Each hypothesis prediction is weighted by how well the hypothesis did on its respective weighted training sets.
+	- The main idea is that difficult examples get more weight as we move from one hypothesis to the next.
+	- Boosting can overcome any amount of bias in the base model, as long as the base model is $\epsilon$ better than random guessing.
+	- We stop generating hypotheses if we get one that is worse than random.
+- Gradient boosting
+	- uses gradient descent
+	- adds new boosting hypotheses, which pay attention to the gradient between the right answers and the predicted classifications, not specific examples
+	- We start with a differentiable loss function
+	- We build a decision tree
+	- we use gradient descent to minimize the parameters of a model
+	- we calculate the loss
+	- we update the parameters in the direction of less loss
+	- We are updating the parameters of the _next_ tree. We must do that in a way that reduces the loss by moving in the right direction along the gradient
+	- preventing overfitting
+		- regularization can help prevent overfitting
+		- Tweaking the learning rate (usually between 0.1 and 0.3)
+	- XGBoost does gradient boosting
+		- Also does it with pruning and regularization
+		- is efficient with memory
+		- supports parallel computation even across clustered machines
+
+### Online Learning
+- agent receives input $x_j$ from nature, predicts the corresponding $y_j$, then is told the correct answer.
+- We can measure the success of this algorithm in terms of **regret**, defined as the number of additional mistakes we make compared to the best expert
+	- $M^*$ is the number of mistakes made by the best expert
+	- $M$ is the number of mistakes made by the random weighted majority algorithm
+- Helpful when the data may be changing rapidly over time
+- Useful for application that involve a large collection of data that is constantly growing. It would be impractical to train the algorithm on the entire dataset.
 
 ## 19.9 Developing Machine Learning Systems
-(skipped for now)
+Key terms and section headings
+
+- problem formulation
+	- supervised learning? unsupervised? reinforcement? semi-supervised learning?
+	- weakly supervised learning
+	- which parts require ML? Which parts are just regular software?
+- data collection, assessment, and management
+	- data provenance
+	- how much training data is enough?
+	- errors?
+	- data augmentation
+	- unbalanced classes
+		- undersample majority class
+		- over-sample minority class
+	- outliers
+- feature engineering
+	- preprocess data to make it easier to digest
+	- nearest neighbor works better when data is normalized and has a stddev of 1
+	- one-hot encoding
+	- date field? might be useful to add whether the date is a holiday or weekend
+- exploratory data analysis and visualization
+	- visualizations using pairs/triples
+	- dimensionality reduction
+	- map
+	- t-distributed stochastic neighbor embedding (t-SNE)
+
+![[Pasted image 20240316111323.png]]
+
+- model selection and training
+	- receiver operating characteristic (ROC) curve
+	- area under ROC curve (AUC)
+	- confusion matrix
+- Trust, interpretability, explainability
+	- source control
+	- testing
+	- review
+	- monitoring
+	- accountability
+	- interpretability
+	- explainability
+- operation, monitoring, and maintenance
+	- long tail
+	- monitor
+	- nonstationarity
+
+## Summary
+- Learning takes many forms, depending on the nature of the agent, the component to be improved, and the available feedback.
+- If the available feedback provides the correct answer for example inputs, then the learning problem is called supervised learning. The task is to learn a function $y=h(x)$
+	- Learning a function whose output is a continuous or ordered value (like weight) is called **regression**
+	- Learning a function with a small number of possible output categories is called **classification**
+- We want to learn a function that not only agrees with the data but also is likely to agree with future data. We need to balance agreement with the data against simplicity of the hypothesis.
+- **Decision trees** can represent all Boolean functions. The **information-gain** heuristic provides an efficient method for finding a simple, consistent decision tree.
+- The performance of a learning algorithm can be visualized by a learning curve, which shows the prediction accuracy on the test set as a function of the training set size.
+- When there are multiple models to choose from, model selection can pick good values of hyperparameters, as confirmed by cross-validation on validation data. Once the hyperparameter values are chosen, we build our best model using all the training data.
+- Sometimes not all errors are equal. A loss function tells us how bad each error is; the goal is then to minimize loss over a validation set.
+- **Computational learning theory** analyzes the sample complexity and computational complexity of inductive learning. There is a tradeoff between the expressiveness of the hypothesis space and the ease of learning.  
+- **Linear regression** is a widely used model. The optimal parameters of a linear regression model can be calculated exactly, or can be found by gradient descent search, which is a technique that can be applied to models that do not have a closed-form solution.
+- A linear classifier with a hard threshold—also known as a **perceptron**—can be trained by a simple weight update rule to fit data that are **linearly separable**. In other cases, the rule fails to converge.
+- **Logistic regression** replaces the perceptron’s hard threshold with a soft threshold defined by a logistic function. Gradient descent works well even for noisy data that are not linearly separable. 
+- **Nonparametric models** use all the data to make each prediction, rather than trying to summarize the data with a few parameters. Examples include **nearest neighbors** and **locally weighted regression**.
+- **Support vector machines** find linear separators with **maximum margin** to improve the generalization performance of the classifier. **Kernel methods** implicitly transform the input data into a high-dimensional space where a linear separator may exist, even if the original data are nonseparable.  
+- Ensemble methods such as **bagging** and **boosting** often perform better than individual methods. In **online learning** we can aggregate the opinions of experts to come arbitrarily close to the best expert’s performance, even when the distribution of the data are constantly shifting.
+- Building a good machine learning model requires experience in the complete development process, from managing data to model selection and optimization, to continued maintenance.
