@@ -304,3 +304,47 @@ Alternate Gain definitions
 		- Sample $n$ times from data
 		- sample $m$ times from attributes
 		- learn $tree_i$ on sampled data and attributes
+
+## Boosting
+See these other resources
+- [[AIMA - Chapter 19 - Learning from Examples]]
+- [[Short-Introduction-to-Boosting_Freund-Schapire.pdf]]
+- [[Short Introduction to Boosting Notes]]
+
+## Neural Networks
+- A single layer NN with a single-node output layer is essentially the same as a linear classifier.
+- The main difference is that NN's introduce the concept of an "activation function", which maps continuous outputs to some value between 0 and 1.
+- A single layer NN with an N-node output layers is essentially the same as N linear classifiers working together.
+
+![[Pasted image 20240317161119.png]]
+The image above shows what we can achieve using 2 and 3 layer perceptrons, respectively.
+
+![[Pasted image 20240317161214.png]]
+
+## K-Means and EM
+
+- Expectation Maximization (EM)
+- Pick K random points in the graph. Those are the "means"
+- Draw your decision boundaries based on which points are closest to which "mean"
+- Move the K means to their new locations, based on the average location of each example.
+- Run it again. Keep going until convergence.
+
+![[Pasted image 20240317161904.png]]
+
+## EM and Mixture of Gaussians
+
+- Pick some number of gaussians that you want to use
+- Same as K-means, except with gaussians
+	- mean_x
+	- mean_y
+	- stddev
+
+![[Pasted image 20240317162341.png]]
+
+![[Pasted image 20240317162439.png]]
+
+![[Pasted image 20240317162455.png]]
+
+![[Pasted image 20240317162503.png]]
+
+![[Pasted image 20240317162513.png]]
