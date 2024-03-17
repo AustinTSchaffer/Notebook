@@ -12,6 +12,12 @@ I consider Docker to be an invaluable tool for containerization, but that does n
 
 Good luck out there.
 
+## Getting the Resources for each Demo
+
+```bash
+tar xvf *.tar.gz
+```
+
 ## Help
 
 If you are having trouble running any of these demos, make sure you have root
