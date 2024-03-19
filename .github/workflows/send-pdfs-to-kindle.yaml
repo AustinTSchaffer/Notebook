@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - OMSCS/Courses/**
+      - .kindle-xfer/**
 jobs:
   send-to-kindle:
     runs-on: ubuntu-latest
