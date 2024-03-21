@@ -412,9 +412,9 @@ A faster variant is called **stochastic gradient descent** (SGD)
 	- The vector of predicted outputs is $\hat{y}=Xw$
 	- The squared-error loss over the training data is
 	- $L(w)=||\hat{y}-y||^2 = ||Xw-y||^2$
-- After some finagling: $w^*=(X^TX)^{-1}X^Ty$
+- After some finagling: $w^*=(X^\top X)^{-1}X^\top y$
 	- This equation is called the **normal equation**
-	- $(X^TX)^{-1}X^T$ is the "pseudo-inverse" of the data matrix
+	- $(X^\top X)^{-1}X^\top$ is the "pseudo-inverse" of the data matrix
 - univariate linear equations are safe from overfitting, multivariate are not
 - Common to use "regularization" on multivariable linear functions to avoid overfitting.
 	- Minimize: $Loss(w)+\lambda Complexity(w)$
