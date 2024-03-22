@@ -242,5 +242,83 @@ $$
 
 ![[Pasted image 20240320205831.png]]
 
-## Updating Gaussian distributions
-(continue from here)
+### Updating Gaussian distributions
+- a key property of the linear-Gaussian family of distributions is that they remain closed under bayesian updating
+- given any evidence, the posterior is still in the linear-Gaussian family
+
+1. If the current distribution $P(X_t \space|\space e_{1:t})$ is Gaussian and the transition model $P(X_{t+1} \space|\space x_t)$ is linear-Gaussian, then the one-step predicted distribution given by the following equation is also a Gaussian distribution. $$\int_{x_t}P(X_{t+1}|x_t)P(x_t|e_{1:t})dx_t$$
+2. If the prediction $P(x_{t+1}|e_{1:t})$ is Gaussian and the sensor model $P(e_{t+1}|X_{t+1})$ is linear-Gaussian, then the updated distribution is also a Gaussian distribution. $$P(X_{t+1}|e_{1:t+1})=\alpha P(e_{t+1}|X_{t+1})P(X_{t+1}|e_{1:t})$$
+
+The forward operator for Kalman filtering takes a Gaussian forward message ($\text{f}_{1:t}$), specified by a mean ($\mu_t$), and covariance ($\Sigma_t$), and produces a new multivariate Gaussian forward message, specified by a new mean and covariance.
+
+![[Pasted image 20240321174612.png]]
+
+- we can interpret the calculation for the new mean as a weighted mean of the new observation and the old mean.
+	- if the observation is unreliable, then the variance of the observation ($\sigma_z^2$) is large, and we pay more attention to the old mean
+	- if the old mean is unreliable, then the variance of the old mean ($\sigma_t^2$) is large and we pay more attention to the new observation
+	- if the process is highly unpredictable, then that variance ($\sigma_x^2$) is large, and we pay more attention to the new observation
+- the update for the variance is independent of the observation. This means we can compute what the sequence of variance values will be in advance.
+- The sequence of variance values quickly converges to a fixed value that depends only on $\sigma_x^2$ and $\sigma_z^2$, simplifying calculations
+
+### The general case
+- both the transition model and the sensor model are required to be a linear transformation with additive gaussian noise
+
+![[Pasted image 20240321175912.png]]
+
+$$
+K_{t+1}=(\text{F}\Sigma_t\text{F}^\top+\Sigma_x)\text{H}^\top\left(\text{H}\left(\text{F}\Sigma_t\text{F}^\top+\Sigma_x\right)\text{H}^\top+\Sigma_z\right)^{-1}
+$$
+
+This is the **Kalman gain matrix**
+
+![[Pasted image 20240321180324.png]]
+
+### Applicability
+- radar tracking of
+	- missles
+	- aircraft
+- acoustic tracking of submarines and ground vehicles
+- visual tracking of vehicles and people
+- "Kalman filters are used to reconstruct particle trajectories from bubble-chamber photographs and ocean currents from satellite surface measurements"
+- any system characterized by continuous state variables and noisy measurements
+	- pulp mills
+	- chemical plans
+	- nuclear reactors
+	- plant ecosystems
+	- economies
+- the **extended Kalman filter (EKF)** attempts to overcome nonlinearities in the system being modeled. A system is **nonlinear** if the transition model cannot be described as a matrix multiplication of the state vector.
+
+![[Pasted image 20240321180855.png]]
+
+The standard solution to the problem in the diagram above is a **switching Kalman filter**
+- multiple Kalman filters run in parallel
+- each uses a different model of the system
+- a weighted sum of predictions is used, where the weight depends on how well each filter fits the current data
+
+## 14.5 Dynamic Bayesian Networks
+- Abbreviated **DBNs**
+- handle probability models
+- each slice of a DBN can have any number of state variables and evidence variables
+- for simplicity
+	- assume that all variables/links/conditional-distributions are exactly replicated from slice to slice
+	- assume that the DBN represents a first-order Markov process (each variable can have parents only in its own slice or the immediately preceding slice)
+- Corresponds to a Bayesian network with infinitely many variables.
+- every HMM can be represented as a DBN with a single state variable. and a single evidence variable
+- every discrete-variable DBN can be represented as an HMM
+
+> by decomposing the state of a complex system into its constituent variables, we can take advantage of sparseness in the temporal probability model.
+
+- an HMM representation for a temporal process with $n$ discrete variables, each with up to $d$ values, needs a transition matrix of size $O(d^{2d})$
+- The DBN representation has size $O(nd^k)$ if the number of parents of each variable is bounded by $k$
+
+![[Pasted image 20240321200703.png]]
+
+## Summary
+
+This chapter has addressed the general problem of representing and reasoning about probabilistic temporal processes. The main points are as follows:
+
+- The changing state of the world is handled by using a set of random variables to represent the state at each point in time.  
+- Representations can be designed to (roughly) satisfy the Markov property, so that the future is independent of the past given the present. Combined with the assumption that the process is time-homogeneous, this greatly simplifies the representation.
+- A temporal probability model can be thought of as containing a transition model describing the state evolution and a sensor model describing the observation process. The principal inference tasks in temporal models are filtering (state estimation), prediction, smoothing, and computing the most likely explanation. Each of these tasks can be achieved using simple, recursive algorithms whose run time is linear in the length of the sequence.  
+- Three families of temporal models were studied in more depth: hidden Markov models, Kalman filters, and dynamic Bayesian networks (which include the other two as special cases).  
+- Unless special assumptions are made, as in Kalman filters, exact inference with many state variables is intractable. In practice, the particle filtering algorithm and its descendants are an effective family of approximation algorithms.
