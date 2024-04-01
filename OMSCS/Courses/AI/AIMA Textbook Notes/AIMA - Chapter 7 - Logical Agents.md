@@ -224,4 +224,6 @@ OMSCS has a whole separate course on [Knowledge-Based AI (KBAI)](https://omscs.g
 
 ## Summary
 
-Take the course on KBAI if you find these terms compelling.
+Take the course on KBAI if you find these key terms compelling.
+
+Interestingly, this chapter does get into satisfiability problems. I've used Z3-solver before on [Advent of Code 2023 to solve a series of non-linear equations](https://github.com/AustinTSchaffer/DailyProgrammer/blob/main/AdventOfCode/2023/day_24/sln.py#L61). It was definitely interesting and useful then.
