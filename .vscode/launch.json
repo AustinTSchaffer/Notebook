@@ -6,10 +6,10 @@
     "configurations": [
         {
             "name": "Re-Generate Tags Directory",
-            "type": "python",
+            "type": "debugpy",
             "request": "launch",
-            "program": "tags_to_links.py",
-            "cwd": "${workspaceFolder}/_app/",
+            "program": ".stats/get-commit-stats.py",
+            "cwd": "${workspaceFolder}",
             "console": "internalConsole"
         }
     ]
