@@ -5,7 +5,7 @@ import subprocess
 import json
 
 MAIN_BRANCH_NAME = "main"
-STATS_FILE = "./.stats/stats.json"
+STATS_FILE = "./.stats/data/stats.json"
 STATS_VERSION = 1
 
 def compute_stats(commit_hash: str) -> dict:

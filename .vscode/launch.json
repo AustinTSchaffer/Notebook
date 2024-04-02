@@ -5,10 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Re-Generate Tags Directory",
+            "name": "Generate Repository Stats JSON",
             "type": "debugpy",
             "request": "launch",
             "program": ".stats/get-commit-stats.py",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole"
+        },
+        {
+            "name": "Render Plots from JSON",
+            "type": "debugpy",
+            "request": "launch",
+            "program": ".stats/render-commit-stats.py",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole"
         }
