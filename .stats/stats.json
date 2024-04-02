@@ -1,0 +1,2936 @@
+{
+  "59582df8316323fd085bc5fb7e46067fb57abc59": {
+    "timestamp": "2024-04-01T19:31:33-04:00",
+    "num_files": 1868,
+    "num_words": 228762,
+    "version": 1
+  },
+  "d0f8c06df065efbf4d1f43c5a069f220f036b382": {
+    "timestamp": "2024-04-01T16:12:10-04:00",
+    "num_files": 1868,
+    "num_words": 228762,
+    "version": 1
+  },
+  "38b396ca710952bce86686398fa743fc4dc00586": {
+    "timestamp": "2024-04-01T15:24:09-04:00",
+    "num_files": 1868,
+    "num_words": 228762,
+    "version": 1
+  },
+  "c932107b696069610405dcd1657aff37a4a2bc2e": {
+    "timestamp": "2024-04-01T15:20:41-04:00",
+    "num_files": 1868,
+    "num_words": 228730,
+    "version": 1
+  },
+  "16537fc2227b06e6951a88547e5c7f20437c21fe": {
+    "timestamp": "2024-03-31T15:57:40-04:00",
+    "num_files": 1866,
+    "num_words": 227559,
+    "version": 1
+  },
+  "994cc28cce6b0a7050e169bda947f8f0e1ec00c7": {
+    "timestamp": "2024-03-30T14:23:44-04:00",
+    "num_files": 1861,
+    "num_words": 226592,
+    "version": 1
+  },
+  "13e41db9be8436e852fbc7d8f13e2a328c55ff75": {
+    "timestamp": "2024-03-29T10:21:16-04:00",
+    "num_files": 1840,
+    "num_words": 226292,
+    "version": 1
+  },
+  "0a1dee942983a826efe2196d4c101d16bbc4611f": {
+    "timestamp": "2024-03-28T17:03:05-04:00",
+    "num_files": 1839,
+    "num_words": 226283,
+    "version": 1
+  },
+  "288ba4b4e491119c62fdfdf6d5ff87d7e9646011": {
+    "timestamp": "2024-03-21T20:10:03-04:00",
+    "num_files": 1838,
+    "num_words": 226189,
+    "version": 1
+  },
+  "60f914a00f2bb00b03968a364a0e70d23005a3de": {
+    "timestamp": "2024-03-20T20:59:18-04:00",
+    "num_files": 1833,
+    "num_words": 225334,
+    "version": 1
+  },
+  "45764c8eb3207533067dc4c02add30e294691bea": {
+    "timestamp": "2024-03-18T22:08:28-04:00",
+    "num_files": 1821,
+    "num_words": 223178,
+    "version": 1
+  },
+  "e120fc5361f9af57e85c4572420ac7885358eb1a": {
+    "timestamp": "2024-03-18T21:01:27-04:00",
+    "num_files": 1820,
+    "num_words": 223178,
+    "version": 1
+  },
+  "9aace0c0853126d867ca42bed050146207fdea45": {
+    "timestamp": "2024-03-17T19:58:27-04:00",
+    "num_files": 1818,
+    "num_words": 223178,
+    "version": 1
+  },
+  "bbcc1e1f6004ca8a581d1c4ea6765e707554779b": {
+    "timestamp": "2024-03-17T19:04:52-04:00",
+    "num_files": 1815,
+    "num_words": 222980,
+    "version": 1
+  },
+  "5fbc8ad60513f302c97e5bda8192112c528f18d1": {
+    "timestamp": "2024-03-17T18:46:37-04:00",
+    "num_files": 1814,
+    "num_words": 222674,
+    "version": 1
+  },
+  "6b91879518758c05b5b81706b6406cd66878f241": {
+    "timestamp": "2024-03-17T18:43:27-04:00",
+    "num_files": 1814,
+    "num_words": 222662,
+    "version": 1
+  },
+  "017df93c019c4a77e0f7f67cd17a2786b2f41641": {
+    "timestamp": "2024-03-17T18:32:15-04:00",
+    "num_files": 1925,
+    "num_words": 223001,
+    "version": 1
+  },
+  "791fd5c2357ac1b82bb4b467fcf8c6986164bf62": {
+    "timestamp": "2024-03-17T18:31:43-04:00",
+    "num_files": 1924,
+    "num_words": 223001,
+    "version": 1
+  },
+  "339f79fcfab726d777b6b142d2ff9aa662cffba6": {
+    "timestamp": "2024-03-16T11:34:09-04:00",
+    "num_files": 1914,
+    "num_words": 222273,
+    "version": 1
+  },
+  "a7df1211c8c0961d5092b1c3c6ace2728ee0d125": {
+    "timestamp": "2024-03-16T11:29:49-04:00",
+    "num_files": 1913,
+    "num_words": 222273,
+    "version": 1
+  },
+  "f9736805fc40e0d5a24c4c924554b24f5ec7fa85": {
+    "timestamp": "2024-03-16T11:21:19-04:00",
+    "num_files": 1913,
+    "num_words": 221899,
+    "version": 1
+  },
+  "325ead352c4a363f42aee056b2ac851a6c4f377c": {
+    "timestamp": "2024-03-10T11:31:06-04:00",
+    "num_files": 1905,
+    "num_words": 219650,
+    "version": 1
+  },
+  "c7233afa8ee1bd922c5a113a3fae76da9da09136": {
+    "timestamp": "2024-03-09T20:45:30-05:00",
+    "num_files": 1899,
+    "num_words": 219093,
+    "version": 1
+  },
+  "a85f1cce9cced9df7cfe2798ae2facb53d1070a4": {
+    "timestamp": "2024-03-09T19:42:18-05:00",
+    "num_files": 1898,
+    "num_words": 218860,
+    "version": 1
+  },
+  "6c7aee05ad16ae32355213d4931dd5451e6aab46": {
+    "timestamp": "2024-03-09T19:33:49-05:00",
+    "num_files": 1897,
+    "num_words": 218688,
+    "version": 1
+  },
+  "7976f859fb6f39d7efb752385f8c06d56dbe913b": {
+    "timestamp": "2024-03-09T19:33:28-05:00",
+    "num_files": 1896,
+    "num_words": 218687,
+    "version": 1
+  },
+  "a355107d98bada756175340fac86ed8ecb47d839": {
+    "timestamp": "2024-03-09T11:10:23-05:00",
+    "num_files": 1884,
+    "num_words": 214041,
+    "version": 1
+  },
+  "0840298428212d50a595cafbdc5867ea2c44a318": {
+    "timestamp": "2024-03-06T22:18:58-05:00",
+    "num_files": 1884,
+    "num_words": 213474,
+    "version": 1
+  },
+  "4ce2de98e4614878f6b09fdefb5bb9790ee01a0b": {
+    "timestamp": "2024-03-06T21:46:31-05:00",
+    "num_files": 1883,
+    "num_words": 212914,
+    "version": 1
+  },
+  "97cd8c64c44041f9220799bfd361fd1d4922d8ae": {
+    "timestamp": "2024-03-06T21:24:11-05:00",
+    "num_files": 1884,
+    "num_words": 212864,
+    "version": 1
+  },
+  "821982b514a892bf7f52ec61d10413e2955cba95": {
+    "timestamp": "2024-03-06T21:24:01-05:00",
+    "num_files": 1862,
+    "num_words": 211724,
+    "version": 1
+  },
+  "bf086c7c870fdda6ed77d6dadbe5a7661d0c1ee5": {
+    "timestamp": "2024-03-06T21:14:58-05:00",
+    "num_files": 1862,
+    "num_words": 211661,
+    "version": 1
+  },
+  "d3dd7f5db5d5a98bbd8ea018254102d666d57098": {
+    "timestamp": "2024-03-06T21:14:31-05:00",
+    "num_files": 1858,
+    "num_words": 211661,
+    "version": 1
+  },
+  "ef7988bb67db13ffec4cd14138f71cc4764bf049": {
+    "timestamp": "2024-03-03T22:07:14-05:00",
+    "num_files": 1857,
+    "num_words": 211661,
+    "version": 1
+  },
+  "90df0e2b51a158d61590fc4153bd96f0db707057": {
+    "timestamp": "2024-02-27T08:01:07-05:00",
+    "num_files": 1857,
+    "num_words": 211506,
+    "version": 1
+  },
+  "f9b59666955c4d621530321a2bbf30019a3f6285": {
+    "timestamp": "2024-02-24T21:49:07-05:00",
+    "num_files": 1852,
+    "num_words": 209659,
+    "version": 1
+  },
+  "6e86244184d83fa42cae3ec5baf1384cc1fa256a": {
+    "timestamp": "2024-02-24T17:47:29-05:00",
+    "num_files": 1852,
+    "num_words": 208935,
+    "version": 1
+  },
+  "692576e54c469cc4ee84c652bf97bef61a8a6fcc": {
+    "timestamp": "2024-02-21T23:01:30-05:00",
+    "num_files": 1837,
+    "num_words": 207447,
+    "version": 1
+  },
+  "dc425c866bee15db356638d4a6f20f38098e87e0": {
+    "timestamp": "2024-02-21T22:59:05-05:00",
+    "num_files": 1837,
+    "num_words": 207433,
+    "version": 1
+  },
+  "f617305cc21c6c669ece51428e16cb384fd84a2b": {
+    "timestamp": "2024-02-18T14:16:35-05:00",
+    "num_files": 1836,
+    "num_words": 207146,
+    "version": 1
+  },
+  "8fd41af9cd1c6f5862c34090252622dad11f32ca": {
+    "timestamp": "2024-02-18T12:33:35-05:00",
+    "num_files": 1825,
+    "num_words": 206220,
+    "version": 1
+  },
+  "b4f26b97450eeb6ae14589a2444543a1f8a79842": {
+    "timestamp": "2024-02-17T12:15:06-05:00",
+    "num_files": 1819,
+    "num_words": 205248,
+    "version": 1
+  },
+  "a9429044d96a4e0cf08f23fd032926dd9f6b98a1": {
+    "timestamp": "2024-02-17T12:14:42-05:00",
+    "num_files": 1819,
+    "num_words": 205242,
+    "version": 1
+  },
+  "1605803ee4bded104f128ca6de987eead12b363b": {
+    "timestamp": "2024-02-11T14:55:35-05:00",
+    "num_files": 1812,
+    "num_words": 204445,
+    "version": 1
+  },
+  "04233ecd28360576a8d9fd63b3939af7cd451aa1": {
+    "timestamp": "2024-02-06T08:29:17-05:00",
+    "num_files": 1780,
+    "num_words": 201201,
+    "version": 1
+  },
+  "285da07da67aa6ed602213b337045034be4a27a5": {
+    "timestamp": "2024-01-28T20:48:50-05:00",
+    "num_files": 1771,
+    "num_words": 200246,
+    "version": 1
+  },
+  "368ffdb6471a5efd1395c067e30d984103fa1d6a": {
+    "timestamp": "2024-01-24T19:24:47-05:00",
+    "num_files": 1758,
+    "num_words": 199108,
+    "version": 1
+  },
+  "cb716b0f59ba559efa62bcbd0bc179e5b4b0e7b7": {
+    "timestamp": "2024-01-24T19:24:35-05:00",
+    "num_files": 1758,
+    "num_words": 199108,
+    "version": 1
+  },
+  "80092ffc3c88888c3592a575ad590da7a92284a6": {
+    "timestamp": "2024-01-19T15:38:00-05:00",
+    "num_files": 1754,
+    "num_words": 197560,
+    "version": 1
+  },
+  "e433c367985eeaf887e0b97fe244c06c8f80dc8b": {
+    "timestamp": "2024-01-16T18:52:34-05:00",
+    "num_files": 1748,
+    "num_words": 197560,
+    "version": 1
+  },
+  "f81bae234934a46c76e65dc2d7cca2e975c854b1": {
+    "timestamp": "2024-01-09T10:04:18-05:00",
+    "num_files": 1746,
+    "num_words": 197204,
+    "version": 1
+  },
+  "b72ab8516e86014933d88afa69a5f7b4cb2a59c2": {
+    "timestamp": "2024-01-08T10:20:10-05:00",
+    "num_files": 1743,
+    "num_words": 196365,
+    "version": 1
+  },
+  "7fb56cd898c829b87573a889a9c7e40371e980e7": {
+    "timestamp": "2024-01-08T10:04:21-05:00",
+    "num_files": 1743,
+    "num_words": 196099,
+    "version": 1
+  },
+  "c003001b22324e7fb212de810d680b6620c5f692": {
+    "timestamp": "2024-01-08T09:40:40-05:00",
+    "num_files": 1743,
+    "num_words": 195753,
+    "version": 1
+  },
+  "64d23674342fdab3ff3b4e92fa192465b385565f": {
+    "timestamp": "2023-12-31T13:40:14-05:00",
+    "num_files": 1742,
+    "num_words": 193113,
+    "version": 1
+  },
+  "3d3a6113ece48fe47fddacf0e864397ca0d4a83a": {
+    "timestamp": "2023-12-31T13:37:00-05:00",
+    "num_files": 1743,
+    "num_words": 193113,
+    "version": 1
+  },
+  "1b33af3373a0af512e853dffcb4fbc1e90d5acfe": {
+    "timestamp": "2023-12-31T13:24:39-05:00",
+    "num_files": 1742,
+    "num_words": 193113,
+    "version": 1
+  },
+  "2159e540895f9c0de627a1ac8b61ff8e4ad742b0": {
+    "timestamp": "2023-12-31T13:21:40-05:00",
+    "num_files": 1742,
+    "num_words": 193113,
+    "version": 1
+  },
+  "bc9b07886512946cb525f9d3f2827c33506e55a1": {
+    "timestamp": "2023-12-31T13:14:57-05:00",
+    "num_files": 1742,
+    "num_words": 193113,
+    "version": 1
+  },
+  "8b827637b48e6c5ea879cf30b37df83ae31e0097": {
+    "timestamp": "2023-12-31T13:08:09-05:00",
+    "num_files": 1742,
+    "num_words": 193113,
+    "version": 1
+  },
+  "de32413aab906ac3ce28c5487c5366f4612907d9": {
+    "timestamp": "2023-12-31T13:06:34-05:00",
+    "num_files": 1741,
+    "num_words": 193113,
+    "version": 1
+  },
+  "23cd3ae1ed376b532f7c4db1ee6b6d0a93fcb5dc": {
+    "timestamp": "2023-12-28T22:40:11-05:00",
+    "num_files": 1740,
+    "num_words": 193113,
+    "version": 1
+  },
+  "6306226b3e80b1ebd3414d972ddc41a4cbd7f17b": {
+    "timestamp": "2023-12-28T22:39:26-05:00",
+    "num_files": 1736,
+    "num_words": 193101,
+    "version": 1
+  },
+  "6a443c0bade85e669ef414e3d1d9205193fef451": {
+    "timestamp": "2023-11-21T16:56:02-05:00",
+    "num_files": 1735,
+    "num_words": 193099,
+    "version": 1
+  },
+  "1094b0b92002827692ee42d5ad0d91b8dc4e31a6": {
+    "timestamp": "2023-11-18T17:02:14-05:00",
+    "num_files": 1711,
+    "num_words": 189517,
+    "version": 1
+  },
+  "d702fef2b92336f372814df093f25bcc725c85d8": {
+    "timestamp": "2023-11-11T11:39:48-05:00",
+    "num_files": 1689,
+    "num_words": 184424,
+    "version": 1
+  },
+  "6c2c006b6c84f5f81726e1ea6cc1b3ef5ccc43de": {
+    "timestamp": "2023-11-04T10:45:09-04:00",
+    "num_files": 1683,
+    "num_words": 181134,
+    "version": 1
+  },
+  "77f644ec55c47be62024c26a6c41b347fc73ce1c": {
+    "timestamp": "2023-11-03T14:23:59-04:00",
+    "num_files": 1665,
+    "num_words": 175053,
+    "version": 1
+  },
+  "1f2192c5665a8b82586c432fb1608f9c853a0ad1": {
+    "timestamp": "2023-10-28T12:21:15-04:00",
+    "num_files": 1664,
+    "num_words": 174966,
+    "version": 1
+  },
+  "0c7bbc502f6d42628a6e6d4d462266b726e2c178": {
+    "timestamp": "2023-10-25T21:30:29-04:00",
+    "num_files": 1656,
+    "num_words": 170589,
+    "version": 1
+  },
+  "5ebee2085b142fd81744a5cdbdee78b2c7ff7e86": {
+    "timestamp": "2023-10-25T21:30:20-04:00",
+    "num_files": 1649,
+    "num_words": 168245,
+    "version": 1
+  },
+  "c7187d33b8569b042b904fe3407e0ed6e56ee477": {
+    "timestamp": "2023-10-25T21:29:54-04:00",
+    "num_files": 1644,
+    "num_words": 168245,
+    "version": 1
+  },
+  "08a20456f3938aaa6d4d02fb95760a49ae50e245": {
+    "timestamp": "2023-10-18T18:16:29-04:00",
+    "num_files": 1627,
+    "num_words": 159516,
+    "version": 1
+  },
+  "cfb80769e91230973d908fff1fae2e0102697e86": {
+    "timestamp": "2023-09-27T14:44:17-04:00",
+    "num_files": 1620,
+    "num_words": 157172,
+    "version": 1
+  },
+  "0d139b9c4faf4b2bc3e985116a44b992d77ebb38": {
+    "timestamp": "2023-09-19T13:48:19-04:00",
+    "num_files": 1599,
+    "num_words": 154813,
+    "version": 1
+  },
+  "2384ae383d13da313d0fef01ccf375d8cdba180c": {
+    "timestamp": "2023-09-14T17:30:00-04:00",
+    "num_files": 1580,
+    "num_words": 148934,
+    "version": 1
+  },
+  "aa9f70f0112da7885d91371a8da04b9a4bbd5ad2": {
+    "timestamp": "2023-09-06T17:07:59-04:00",
+    "num_files": 1573,
+    "num_words": 147083,
+    "version": 1
+  },
+  "39f722ca967f4d2a9b1941d1cd8a6c03a8be7f59": {
+    "timestamp": "2023-09-06T11:59:43-04:00",
+    "num_files": 1557,
+    "num_words": 144593,
+    "version": 1
+  },
+  "559dd83c352dad10bae8d87670e1019f48151c9c": {
+    "timestamp": "2023-09-03T15:19:53-04:00",
+    "num_files": 1557,
+    "num_words": 144600,
+    "version": 1
+  },
+  "9209b36f5afe86b02932eae1b977acafc82daea9": {
+    "timestamp": "2023-08-29T21:14:59-04:00",
+    "num_files": 1545,
+    "num_words": 141628,
+    "version": 1
+  },
+  "115a60732a0c74dd81a4494c5da93dfd6405c0c5": {
+    "timestamp": "2023-07-24T21:29:56-04:00",
+    "num_files": 1498,
+    "num_words": 138570,
+    "version": 1
+  },
+  "30d252767528df8289023c3d8a7a77a76f7966a2": {
+    "timestamp": "2023-07-07T22:21:34-04:00",
+    "num_files": 1451,
+    "num_words": 138418,
+    "version": 1
+  },
+  "6935c1576304bf9c716105709bb869f33265f040": {
+    "timestamp": "2023-07-07T22:04:10-04:00",
+    "num_files": 1451,
+    "num_words": 138227,
+    "version": 1
+  },
+  "5307158ce7267ef4d2a2627c190c767627c466f3": {
+    "timestamp": "2023-07-07T21:57:35-04:00",
+    "num_files": 1451,
+    "num_words": 138092,
+    "version": 1
+  },
+  "3249d710052c02a6ff9e28822c0f3863dba026ac": {
+    "timestamp": "2023-07-07T21:56:32-04:00",
+    "num_files": 1448,
+    "num_words": 136940,
+    "version": 1
+  },
+  "df941cfade2fe653e5cfa5726b84bacd453641e9": {
+    "timestamp": "2023-07-07T13:59:02-04:00",
+    "num_files": 1433,
+    "num_words": 136688,
+    "version": 1
+  },
+  "fa7f543c8a05db17aeda8c7ee8d2c4e62e562287": {
+    "timestamp": "2023-07-07T13:40:51-04:00",
+    "num_files": 1433,
+    "num_words": 136686,
+    "version": 1
+  },
+  "98f0dbf7d6a9f3352916a8257eca8ccd96eaeec5": {
+    "timestamp": "2023-07-05T22:27:37-04:00",
+    "num_files": 1433,
+    "num_words": 136684,
+    "version": 1
+  },
+  "4d433caae3976e34a30d4d416f87e57dcac575f1": {
+    "timestamp": "2023-07-04T17:04:49-04:00",
+    "num_files": 1397,
+    "num_words": 136232,
+    "version": 1
+  },
+  "6711067fb09b9a401245256ba7b582e36aa4c99a": {
+    "timestamp": "2023-07-04T16:47:19-04:00",
+    "num_files": 1384,
+    "num_words": 136002,
+    "version": 1
+  },
+  "ea7f513e35c8b2e7f018c57c2bfc227579556e89": {
+    "timestamp": "2023-07-03T14:16:29-04:00",
+    "num_files": 1368,
+    "num_words": 135871,
+    "version": 1
+  },
+  "76faadb029c71d89202bb5e02b9e1def839cd4e3": {
+    "timestamp": "2023-06-24T15:06:04-04:00",
+    "num_files": 1367,
+    "num_words": 135409,
+    "version": 1
+  },
+  "f747ed57df5a681cfdd142348f82fd819eefb17b": {
+    "timestamp": "2023-06-14T20:58:26-04:00",
+    "num_files": 1315,
+    "num_words": 133104,
+    "version": 1
+  },
+  "1851198cfd342d1ed8d140e7c64e795a36d64667": {
+    "timestamp": "2023-06-14T20:07:20-04:00",
+    "num_files": 1292,
+    "num_words": 132511,
+    "version": 1
+  },
+  "2bdebcdb6ebd62a2c5683ff821139ef6f3df7257": {
+    "timestamp": "2023-06-06T22:33:59-04:00",
+    "num_files": 1267,
+    "num_words": 132310,
+    "version": 1
+  },
+  "3a999233b6040fe46c0432f17c9f1e7ea76aedac": {
+    "timestamp": "2023-06-06T22:17:31-04:00",
+    "num_files": 1253,
+    "num_words": 132234,
+    "version": 1
+  },
+  "8b86159d4d7c3945bf4f315231124da150bf0376": {
+    "timestamp": "2023-05-30T16:41:10-04:00",
+    "num_files": 1235,
+    "num_words": 131793,
+    "version": 1
+  },
+  "e72f3a0ab27f96240f75a354cd733505853d1021": {
+    "timestamp": "2023-05-21T22:25:03-04:00",
+    "num_files": 1216,
+    "num_words": 131547,
+    "version": 1
+  },
+  "6e321e8d596292a444d9d3ec179293403d518155": {
+    "timestamp": "2023-05-20T09:55:03-04:00",
+    "num_files": 1215,
+    "num_words": 130871,
+    "version": 1
+  },
+  "755ecf7ab4f05777f0f7d4b538841cb6dc7dc699": {
+    "timestamp": "2023-05-17T14:53:26-04:00",
+    "num_files": 1197,
+    "num_words": 129306,
+    "version": 1
+  },
+  "64c9813d6cac82fee1fc7a2b155fb944b41dcf70": {
+    "timestamp": "2023-05-10T13:53:36-04:00",
+    "num_files": 1196,
+    "num_words": 129315,
+    "version": 1
+  },
+  "acf30ad648df4b8c38a3080e8819d44e7722c6ee": {
+    "timestamp": "2023-05-10T13:52:44-04:00",
+    "num_files": 1196,
+    "num_words": 129315,
+    "version": 1
+  },
+  "fd9aeeba3655b85069b68ccbeaed764b0e02a38d": {
+    "timestamp": "2023-05-10T13:51:04-04:00",
+    "num_files": 1218,
+    "num_words": 144194,
+    "version": 1
+  },
+  "ae17ef13b8d70be3e388b714280a99ef1e7c6d24": {
+    "timestamp": "2023-05-10T13:48:51-04:00",
+    "num_files": 1218,
+    "num_words": 144194,
+    "version": 1
+  },
+  "ecb2b2997c98d546064478d42e013cbaa72ea759": {
+    "timestamp": "2023-05-10T13:48:01-04:00",
+    "num_files": 1218,
+    "num_words": 144194,
+    "version": 1
+  },
+  "83269c2690c043ec79c767c860549a9199177b10": {
+    "timestamp": "2023-05-10T13:45:30-04:00",
+    "num_files": 1219,
+    "num_words": 144247,
+    "version": 1
+  },
+  "cd55eebc5cb2d17b1166bf0dd6cc9d6ec9c0e58d": {
+    "timestamp": "2023-05-10T13:44:57-04:00",
+    "num_files": 1219,
+    "num_words": 144247,
+    "version": 1
+  },
+  "8bf1ac19065c0d7cdb2bda6f8796f568048cdc47": {
+    "timestamp": "2023-05-10T13:44:12-04:00",
+    "num_files": 1218,
+    "num_words": 144098,
+    "version": 1
+  },
+  "532f66cab5d93a164583334d46bce8e31c2e2cdd": {
+    "timestamp": "2023-05-03T17:29:46-04:00",
+    "num_files": 1217,
+    "num_words": 143401,
+    "version": 1
+  },
+  "ce27880408df5e34e74717b4d92b5ee316e8ef47": {
+    "timestamp": "2023-05-03T16:00:17-04:00",
+    "num_files": 1214,
+    "num_words": 142791,
+    "version": 1
+  },
+  "2f1769480a1a8508ad1831f955ccd4c5012952cc": {
+    "timestamp": "2023-05-03T15:58:28-04:00",
+    "num_files": 1215,
+    "num_words": 142791,
+    "version": 1
+  },
+  "7b5485e8af30bf6037fb83a853d9fbfdea3c4a0a": {
+    "timestamp": "2023-05-03T15:27:00-04:00",
+    "num_files": 1214,
+    "num_words": 142423,
+    "version": 1
+  },
+  "ee23354441a3f70a0383e8248caa563935c69b14": {
+    "timestamp": "2023-05-03T11:54:54-04:00",
+    "num_files": 1212,
+    "num_words": 141979,
+    "version": 1
+  },
+  "5eb7a8e28e06390d29129558e5b6985b9a3a7d52": {
+    "timestamp": "2023-05-03T11:24:56-04:00",
+    "num_files": 1211,
+    "num_words": 141605,
+    "version": 1
+  },
+  "2e09632dd9b89ebde7f3da8f76f8f8f2c74dcafa": {
+    "timestamp": "2023-05-03T10:32:38-04:00",
+    "num_files": 1209,
+    "num_words": 141521,
+    "version": 1
+  },
+  "56c8e99e4181b9662a5d2a49d164bb7c8f4259d9": {
+    "timestamp": "2023-05-03T09:41:32-04:00",
+    "num_files": 1207,
+    "num_words": 140840,
+    "version": 1
+  },
+  "3e439375c7809d504de390137ec49a8e97c89c8c": {
+    "timestamp": "2023-05-01T16:49:42-04:00",
+    "num_files": 1206,
+    "num_words": 140196,
+    "version": 1
+  },
+  "3e06bab75157c763217cb32af85aee44ec0cf078": {
+    "timestamp": "2023-04-27T12:06:58-04:00",
+    "num_files": 1209,
+    "num_words": 140642,
+    "version": 1
+  },
+  "dc5548a23048832ab8fb6353feec778366641fb6": {
+    "timestamp": "2023-04-22T16:53:01-04:00",
+    "num_files": 1208,
+    "num_words": 140571,
+    "version": 1
+  },
+  "790ced41dd0f4abf0718d7dad1e495e47a53e06a": {
+    "timestamp": "2023-04-18T14:28:52-04:00",
+    "num_files": 1209,
+    "num_words": 140572,
+    "version": 1
+  },
+  "69107b88dd1f8461c0b6e0a7b48274de86b063ea": {
+    "timestamp": "2023-04-18T11:59:19-04:00",
+    "num_files": 1209,
+    "num_words": 140570,
+    "version": 1
+  },
+  "310f583ea8d63aa55a8cc26fb5886bd03dd279d4": {
+    "timestamp": "2023-04-18T11:47:00-04:00",
+    "num_files": 1209,
+    "num_words": 140570,
+    "version": 1
+  },
+  "15af0758963923c0f6aba8a6ed0caa311ac58bce": {
+    "timestamp": "2023-04-11T20:11:27-04:00",
+    "num_files": 1207,
+    "num_words": 140195,
+    "version": 1
+  },
+  "dd008555cdd55e2f830bbc0175f750ff7601e934": {
+    "timestamp": "2023-04-11T19:52:12-04:00",
+    "num_files": 1203,
+    "num_words": 140195,
+    "version": 1
+  },
+  "f0c062d0f432ed22c1af60ecf36b5eaf12260279": {
+    "timestamp": "2023-04-10T17:21:13-04:00",
+    "num_files": 1147,
+    "num_words": 139809,
+    "version": 1
+  },
+  "13171c0751d0b075b1998e0d83cd29c74da7eb34": {
+    "timestamp": "2023-04-10T16:04:16-04:00",
+    "num_files": 1124,
+    "num_words": 139164,
+    "version": 1
+  },
+  "28ee380e290b01b9a514429d8895860a4a0eef00": {
+    "timestamp": "2023-03-28T22:05:59-04:00",
+    "num_files": 1103,
+    "num_words": 138253,
+    "version": 1
+  },
+  "b0eb938a9751a6689cc97633961768414624cb54": {
+    "timestamp": "2023-03-28T21:33:01-04:00",
+    "num_files": 1059,
+    "num_words": 137988,
+    "version": 1
+  },
+  "bf6ce983e34607d603f5e9d136069f9d81cc80e6": {
+    "timestamp": "2023-03-28T21:30:28-04:00",
+    "num_files": 1059,
+    "num_words": 137988,
+    "version": 1
+  },
+  "216154977dbdd5e7db696ad06b151061e5a897fa": {
+    "timestamp": "2023-03-28T21:30:11-04:00",
+    "num_files": 1055,
+    "num_words": 137715,
+    "version": 1
+  },
+  "b0278ce9a952e019a67fa6dc85ea9aa178f0e1be": {
+    "timestamp": "2023-03-21T19:40:19-04:00",
+    "num_files": 1054,
+    "num_words": 137686,
+    "version": 1
+  },
+  "e04b8a2c1ddb16b82076200d2ae8702caed0c3c1": {
+    "timestamp": "2023-03-16T22:40:17-04:00",
+    "num_files": 1053,
+    "num_words": 137543,
+    "version": 1
+  },
+  "1a3527448cfae60ed6d2906e295686be77cc6506": {
+    "timestamp": "2023-03-15T20:41:19-04:00",
+    "num_files": 962,
+    "num_words": 135513,
+    "version": 1
+  },
+  "9b3b7e7cc8d98c56feac7da480594456e48a17c6": {
+    "timestamp": "2023-03-15T19:13:27-04:00",
+    "num_files": 924,
+    "num_words": 135068,
+    "version": 1
+  },
+  "63e63e006d2a1995f1c582b3f232f2f1a0ea97ec": {
+    "timestamp": "2023-03-14T20:49:35-04:00",
+    "num_files": 900,
+    "num_words": 133814,
+    "version": 1
+  },
+  "427b9b6cf12c25d85b58fb70e2c264f5521ac883": {
+    "timestamp": "2023-03-14T20:49:24-04:00",
+    "num_files": 898,
+    "num_words": 133680,
+    "version": 1
+  },
+  "fb2e3bde69c0aa0973d403444eca458449a2cb93": {
+    "timestamp": "2023-03-08T23:09:12-05:00",
+    "num_files": 868,
+    "num_words": 133469,
+    "version": 1
+  },
+  "3d0195b18899d7032ee762c1ddbcaf548b17f900": {
+    "timestamp": "2023-03-08T22:22:16-05:00",
+    "num_files": 857,
+    "num_words": 133250,
+    "version": 1
+  },
+  "32191e5958aa24bd4907332526184a11d6889638": {
+    "timestamp": "2023-03-08T22:12:09-05:00",
+    "num_files": 857,
+    "num_words": 133250,
+    "version": 1
+  },
+  "ccb47aba111eccf812eb7bffed6c89ca168ad3a4": {
+    "timestamp": "2023-03-08T22:11:38-05:00",
+    "num_files": 857,
+    "num_words": 133244,
+    "version": 1
+  },
+  "a8f5e0ce6056c6d6d95d64b2b892bffea407540c": {
+    "timestamp": "2023-03-08T19:01:56-05:00",
+    "num_files": 826,
+    "num_words": 132841,
+    "version": 1
+  },
+  "bcfa2f9122cf2abf03ab0939e7b3fd8548c49df5": {
+    "timestamp": "2023-03-08T19:01:44-05:00",
+    "num_files": 826,
+    "num_words": 132845,
+    "version": 1
+  },
+  "427a6cd990f543ffc0da0161642052374542a915": {
+    "timestamp": "2023-03-04T19:26:59-05:00",
+    "num_files": 826,
+    "num_words": 132837,
+    "version": 1
+  },
+  "2963e8a69bef1d1d45b12e3e135235f70d270e44": {
+    "timestamp": "2023-03-04T18:12:39-05:00",
+    "num_files": 826,
+    "num_words": 132742,
+    "version": 1
+  },
+  "f8e1e82b4faea0498d1fade9f2ffcc3797545bde": {
+    "timestamp": "2023-03-04T15:10:14-05:00",
+    "num_files": 799,
+    "num_words": 132591,
+    "version": 1
+  },
+  "acde1dbf2c3bc34c1afc21f93b7db01aaab96e5f": {
+    "timestamp": "2023-03-04T14:54:32-05:00",
+    "num_files": 789,
+    "num_words": 132304,
+    "version": 1
+  },
+  "f3837a6136cc27190577030beaf97f335db24d50": {
+    "timestamp": "2023-03-04T14:47:46-05:00",
+    "num_files": 789,
+    "num_words": 132304,
+    "version": 1
+  },
+  "1a8d0a8a3fb88cb296ab1424999cd7f8f3045b29": {
+    "timestamp": "2023-03-04T14:47:31-05:00",
+    "num_files": 788,
+    "num_words": 131650,
+    "version": 1
+  },
+  "024cdcc693c56c1be08e2fa156d0352e24224a52": {
+    "timestamp": "2023-02-23T20:08:16-05:00",
+    "num_files": 754,
+    "num_words": 130951,
+    "version": 1
+  },
+  "33bee0f266a70dc6b9b0e89151863b6f13d5016e": {
+    "timestamp": "2023-02-22T08:57:15-05:00",
+    "num_files": 731,
+    "num_words": 129711,
+    "version": 1
+  },
+  "d840121c488210669570ad33a78c1d05767cb7a7": {
+    "timestamp": "2023-02-15T21:22:08-05:00",
+    "num_files": 695,
+    "num_words": 128353,
+    "version": 1
+  },
+  "c71e4bd5bb05a20a6973411ee38520c7ceb57ce4": {
+    "timestamp": "2023-02-08T20:42:13-05:00",
+    "num_files": 685,
+    "num_words": 127283,
+    "version": 1
+  },
+  "649b1f5cb3a0d99ce1b38c1e3bfd2a43be07698a": {
+    "timestamp": "2023-02-03T22:11:22-05:00",
+    "num_files": 652,
+    "num_words": 125725,
+    "version": 1
+  },
+  "859339761d37be23178038f30b01f5e570047e0c": {
+    "timestamp": "2023-01-31T22:53:11-05:00",
+    "num_files": 652,
+    "num_words": 125642,
+    "version": 1
+  },
+  "3d70a81f2c7a3c216d0bcb1d46ce9446fca679ec": {
+    "timestamp": "2023-01-30T21:57:35-05:00",
+    "num_files": 644,
+    "num_words": 124775,
+    "version": 1
+  },
+  "70fd5f857cff27437058acf3c1e837bf3c98dcfc": {
+    "timestamp": "2023-01-29T20:44:25-05:00",
+    "num_files": 637,
+    "num_words": 123731,
+    "version": 1
+  },
+  "ae1350b702dcfcee19b5e25298263f5874d0a6fd": {
+    "timestamp": "2023-01-29T20:43:58-05:00",
+    "num_files": 637,
+    "num_words": 123731,
+    "version": 1
+  },
+  "f879ca4eaaa7a7dee18989b1a9ff747497b14b05": {
+    "timestamp": "2023-01-19T21:31:55-05:00",
+    "num_files": 601,
+    "num_words": 121312,
+    "version": 1
+  },
+  "a961fddf58df968e896602f2ff82093b0a21f6bc": {
+    "timestamp": "2023-01-19T21:30:57-05:00",
+    "num_files": 600,
+    "num_words": 121312,
+    "version": 1
+  },
+  "893238b94a55c4dd4a3556c4c4429d6f09086c14": {
+    "timestamp": "2022-12-09T01:02:41-05:00",
+    "num_files": 566,
+    "num_words": 116382,
+    "version": 1
+  },
+  "f013980cb6c5a25d0afa544394f016b45873a9a8": {
+    "timestamp": "2022-12-08T23:41:09-05:00",
+    "num_files": 566,
+    "num_words": 115214,
+    "version": 1
+  },
+  "6f74f7b921cdb19cb70abbaa82b4ffbe0453f464": {
+    "timestamp": "2022-12-06T20:40:01-05:00",
+    "num_files": 564,
+    "num_words": 112579,
+    "version": 1
+  },
+  "224e024cf58d9a40e00468fc0044adca9488b931": {
+    "timestamp": "2022-12-05T19:58:08-05:00",
+    "num_files": 557,
+    "num_words": 111634,
+    "version": 1
+  },
+  "e80b98b37082469fdeb227b69169e22fdf4600fe": {
+    "timestamp": "2022-12-05T19:57:37-05:00",
+    "num_files": 557,
+    "num_words": 111634,
+    "version": 1
+  },
+  "4d0ad32c00664ef849eee9628c3c4760dc597413": {
+    "timestamp": "2022-12-03T14:20:09-05:00",
+    "num_files": 529,
+    "num_words": 108271,
+    "version": 1
+  },
+  "830fc70227595089a4a79e88e308c2d18698b55b": {
+    "timestamp": "2022-11-30T13:05:09-05:00",
+    "num_files": 521,
+    "num_words": 106581,
+    "version": 1
+  },
+  "fe212444572479c3502b7616891dbb1d0196f68b": {
+    "timestamp": "2022-11-29T14:00:43-05:00",
+    "num_files": 520,
+    "num_words": 106229,
+    "version": 1
+  },
+  "ee05ff86ebd090e3565504214ea224080c007d73": {
+    "timestamp": "2022-11-15T20:50:57-05:00",
+    "num_files": 520,
+    "num_words": 106042,
+    "version": 1
+  },
+  "af6d010ff5db6f9d907dcb6feca6116e12da3c51": {
+    "timestamp": "2022-11-13T17:22:00-05:00",
+    "num_files": 505,
+    "num_words": 104859,
+    "version": 1
+  },
+  "7ba48b90498e913a8f0d26a40dd00995ec6e485e": {
+    "timestamp": "2022-11-06T14:35:02-05:00",
+    "num_files": 487,
+    "num_words": 102232,
+    "version": 1
+  },
+  "d46262e5c6db8946a7b6239533934722119e4ee2": {
+    "timestamp": "2022-11-06T14:08:39-05:00",
+    "num_files": 485,
+    "num_words": 102232,
+    "version": 1
+  },
+  "9f9409d6a660e1b283ceffd29698a6e510664db7": {
+    "timestamp": "2022-11-06T14:03:12-05:00",
+    "num_files": 485,
+    "num_words": 102232,
+    "version": 1
+  },
+  "b9f7337cd33564681d057e1c82baf08c7fef21f4": {
+    "timestamp": "2022-11-06T11:29:54-05:00",
+    "num_files": 482,
+    "num_words": 101214,
+    "version": 1
+  },
+  "d2e26af814e71d86b5999d773514406bb8dc6c75": {
+    "timestamp": "2022-11-05T22:56:55-04:00",
+    "num_files": 471,
+    "num_words": 99907,
+    "version": 1
+  },
+  "e01fa8bd30b52957a9db70dfa31cafed6ab527ff": {
+    "timestamp": "2022-11-05T22:56:42-04:00",
+    "num_files": 471,
+    "num_words": 99907,
+    "version": 1
+  },
+  "2b6b0d216c88cc0f7613c2094b61437d2d1b92d3": {
+    "timestamp": "2022-11-05T22:56:26-04:00",
+    "num_files": 471,
+    "num_words": 99906,
+    "version": 1
+  },
+  "b033808294dfe6e6deb741d652df3b333dd82e5b": {
+    "timestamp": "2022-11-05T11:30:57-04:00",
+    "num_files": 465,
+    "num_words": 98072,
+    "version": 1
+  },
+  "d36f19d2d5856ce583286724331f8d34ed00aa4d": {
+    "timestamp": "2022-11-05T11:16:19-04:00",
+    "num_files": 465,
+    "num_words": 98070,
+    "version": 1
+  },
+  "805c4b1f8b1acd83438d809e4a67ce8435fd39ff": {
+    "timestamp": "2022-11-05T09:53:09-04:00",
+    "num_files": 456,
+    "num_words": 97310,
+    "version": 1
+  },
+  "1ae3448b893e645f2e7fd20dcd07cef9ad5ffcec": {
+    "timestamp": "2022-10-18T20:48:11-04:00",
+    "num_files": 451,
+    "num_words": 97190,
+    "version": 1
+  },
+  "483bc7b48f18a1c48fc657a36c91e400741af19b": {
+    "timestamp": "2022-10-17T21:24:34-04:00",
+    "num_files": 451,
+    "num_words": 98670,
+    "version": 1
+  },
+  "9144715b58f35e92e66647b210620d7a6a3d6bb5": {
+    "timestamp": "2022-10-16T21:44:09-04:00",
+    "num_files": 445,
+    "num_words": 97292,
+    "version": 1
+  },
+  "c77845094d0a98e3e946804ee068c007bbd55275": {
+    "timestamp": "2022-10-10T21:21:16-04:00",
+    "num_files": 427,
+    "num_words": 94230,
+    "version": 1
+  },
+  "cd174f6e1bc98b5d8c11cee5c72eaf728565f694": {
+    "timestamp": "2022-10-10T12:29:18-04:00",
+    "num_files": 423,
+    "num_words": 92432,
+    "version": 1
+  },
+  "26168cb229a8a5b7da3f14b6151475206432ec73": {
+    "timestamp": "2022-10-05T16:22:35-04:00",
+    "num_files": 410,
+    "num_words": 90884,
+    "version": 1
+  },
+  "e007c6bfcaa02fb8114a6d8236a1058db47b1146": {
+    "timestamp": "2022-10-04T22:29:55-04:00",
+    "num_files": 410,
+    "num_words": 90885,
+    "version": 1
+  },
+  "1f27729193751d5d66f7a7aadca844e49728c571": {
+    "timestamp": "2022-10-03T19:48:38-04:00",
+    "num_files": 410,
+    "num_words": 89265,
+    "version": 1
+  },
+  "b4e0fdf634fc9afc2932173e4e8f32856532aca9": {
+    "timestamp": "2022-10-01T14:04:09-04:00",
+    "num_files": 403,
+    "num_words": 84097,
+    "version": 1
+  },
+  "847d4c5110c919065ffa48e3e82a98eec8355db4": {
+    "timestamp": "2022-09-29T20:20:10-04:00",
+    "num_files": 387,
+    "num_words": 80308,
+    "version": 1
+  },
+  "49e162e7db10ddcb7568465dd5e95e8b1b6d0eda": {
+    "timestamp": "2022-09-27T22:38:09-04:00",
+    "num_files": 377,
+    "num_words": 79503,
+    "version": 1
+  },
+  "f5bf83194eded64c354e0b8ade288c635eb8c434": {
+    "timestamp": "2022-09-26T10:46:38-04:00",
+    "num_files": 376,
+    "num_words": 76433,
+    "version": 1
+  },
+  "524944fd23cfd07c9fce7ca4d9b288cc21403168": {
+    "timestamp": "2022-09-25T17:58:00-04:00",
+    "num_files": 372,
+    "num_words": 75540,
+    "version": 1
+  },
+  "593457e63371d409f4c328518d9031f79fa248b9": {
+    "timestamp": "2022-09-25T16:35:14-04:00",
+    "num_files": 369,
+    "num_words": 74627,
+    "version": 1
+  },
+  "80d6c9279e731aa0ab36843dfc0f3c82b460b567": {
+    "timestamp": "2022-09-24T23:16:48-04:00",
+    "num_files": 364,
+    "num_words": 72979,
+    "version": 1
+  },
+  "f8f4dfeee7c66029d7718537563287c097aa9607": {
+    "timestamp": "2022-09-24T21:50:51-04:00",
+    "num_files": 359,
+    "num_words": 71745,
+    "version": 1
+  },
+  "da349dc199bfbef6094e1efb04a609562ede7b34": {
+    "timestamp": "2022-09-24T21:49:37-04:00",
+    "num_files": 358,
+    "num_words": 71745,
+    "version": 1
+  },
+  "338fcc74ae85c5fa6b072c721380f78e792f7d14": {
+    "timestamp": "2022-09-16T20:43:42-07:00",
+    "num_files": 356,
+    "num_words": 70457,
+    "version": 1
+  },
+  "67ebe0d791528e4136507d85e73b812d4bb0f460": {
+    "timestamp": "2022-09-11T15:53:13-07:00",
+    "num_files": 352,
+    "num_words": 69506,
+    "version": 1
+  },
+  "c61a40717198d30a4934fb7da0e23edf5210b2d3": {
+    "timestamp": "2022-09-11T15:51:30-07:00",
+    "num_files": 352,
+    "num_words": 69506,
+    "version": 1
+  },
+  "ce6700c3e9ac1f5056e90b849700b8c2468e930c": {
+    "timestamp": "2022-08-25T22:12:01-04:00",
+    "num_files": 338,
+    "num_words": 63995,
+    "version": 1
+  },
+  "2d42feb59410966688c9db9e0c04e5dd29dcb4fc": {
+    "timestamp": "2022-08-25T21:46:32-04:00",
+    "num_files": 338,
+    "num_words": 63990,
+    "version": 1
+  },
+  "e273ea8608df45434b801545e3bbb498fc9cfd93": {
+    "timestamp": "2022-08-25T10:50:30-04:00",
+    "num_files": 337,
+    "num_words": 63291,
+    "version": 1
+  },
+  "28bb6953add08d94799ac6ba8da43aeae6e76793": {
+    "timestamp": "2022-08-25T10:47:14-04:00",
+    "num_files": 337,
+    "num_words": 63261,
+    "version": 1
+  },
+  "7a30268709f1674c7370392009237638fee3c00b": {
+    "timestamp": "2022-08-24T21:31:51-04:00",
+    "num_files": 338,
+    "num_words": 63261,
+    "version": 1
+  },
+  "a1c8ea0d124aee71d812f7997508c3a6392b18c8": {
+    "timestamp": "2022-08-24T21:12:26-04:00",
+    "num_files": 338,
+    "num_words": 63248,
+    "version": 1
+  },
+  "e8b596052a9ebb4acf6d1633f0ef27c3299d261f": {
+    "timestamp": "2022-08-24T21:07:00-04:00",
+    "num_files": 338,
+    "num_words": 63248,
+    "version": 1
+  },
+  "177fb1c3dc4c8e585dcba26fbe43fea04a9f090d": {
+    "timestamp": "2022-08-22T19:06:58-04:00",
+    "num_files": 335,
+    "num_words": 62799,
+    "version": 1
+  },
+  "61a516de0761c84daaeaace05c976c7f20bac4fd": {
+    "timestamp": "2022-08-22T19:05:10-04:00",
+    "num_files": 335,
+    "num_words": 62782,
+    "version": 1
+  },
+  "dfcb083563a235c54bf03ccdd36e1193abe085ce": {
+    "timestamp": "2022-08-17T19:03:03-04:00",
+    "num_files": 333,
+    "num_words": 62082,
+    "version": 1
+  },
+  "87260432fe91032da232142653ad16b3613ed0a9": {
+    "timestamp": "2022-08-14T19:34:37-04:00",
+    "num_files": 330,
+    "num_words": 61179,
+    "version": 1
+  },
+  "c912fce624f17b5d9c7f66be2c4cea565ec51e5b": {
+    "timestamp": "2022-08-14T17:30:38-04:00",
+    "num_files": 325,
+    "num_words": 60414,
+    "version": 1
+  },
+  "6c4761fffb567c4840fbcfe7c53206e6567c99d2": {
+    "timestamp": "2022-08-13T01:00:50-04:00",
+    "num_files": 323,
+    "num_words": 59850,
+    "version": 1
+  },
+  "dc1f94b5517933285d559ff8a124ae2efc50261e": {
+    "timestamp": "2022-08-12T23:49:20-04:00",
+    "num_files": 364,
+    "num_words": 60875,
+    "version": 1
+  },
+  "103f3fc445a22e88be910770d3166fbf77da6bfc": {
+    "timestamp": "2022-08-09T11:51:30-04:00",
+    "num_files": 364,
+    "num_words": 60866,
+    "version": 1
+  },
+  "eebe0710a767bcad7ae9bf9f7aa6711f055fb609": {
+    "timestamp": "2022-08-09T11:49:44-04:00",
+    "num_files": 364,
+    "num_words": 60858,
+    "version": 1
+  },
+  "6a9f65562cbaf502f8076b3e72aad288b91bd0bb": {
+    "timestamp": "2022-08-09T11:47:33-04:00",
+    "num_files": 364,
+    "num_words": 60842,
+    "version": 1
+  },
+  "105aed6274e5460ff37bf968841b8602fea39c11": {
+    "timestamp": "2022-08-09T11:43:17-04:00",
+    "num_files": 367,
+    "num_words": 60882,
+    "version": 1
+  },
+  "df8246d3c778181e7b1e13b72b4918fe118fe8e9": {
+    "timestamp": "2022-08-09T11:36:33-04:00",
+    "num_files": 368,
+    "num_words": 60743,
+    "version": 1
+  },
+  "e3830c5d027a3b657c6f953977b6fac4ae939256": {
+    "timestamp": "2022-08-09T11:35:14-04:00",
+    "num_files": 370,
+    "num_words": 60627,
+    "version": 1
+  },
+  "295876b2d39bf03cdd44c98e99749910d03a5194": {
+    "timestamp": "2022-08-09T11:34:08-04:00",
+    "num_files": 375,
+    "num_words": 61175,
+    "version": 1
+  },
+  "b1e75f1d259772f15942fcea4709276412a59800": {
+    "timestamp": "2022-08-09T11:28:24-04:00",
+    "num_files": 375,
+    "num_words": 61185,
+    "version": 1
+  },
+  "8c61e1d4cb28105c807a97f9a2008bed65064bd7": {
+    "timestamp": "2022-08-09T11:24:49-04:00",
+    "num_files": 375,
+    "num_words": 61185,
+    "version": 1
+  },
+  "a9e8e4d50f8db0354a4b8843dacea7f0f41c6486": {
+    "timestamp": "2022-08-08T22:01:09-04:00",
+    "num_files": 374,
+    "num_words": 60640,
+    "version": 1
+  },
+  "a8282252d8495fbe6023b81f13d61a9411b0423b": {
+    "timestamp": "2022-08-08T21:00:52-04:00",
+    "num_files": 373,
+    "num_words": 60127,
+    "version": 1
+  },
+  "ef90c6ffc3f1fdfaf39cbed251e9eea527283867": {
+    "timestamp": "2022-08-07T17:47:27-04:00",
+    "num_files": 373,
+    "num_words": 60143,
+    "version": 1
+  },
+  "3f66df50fc3cf5dc5f169051fb5d9308f1306a8e": {
+    "timestamp": "2022-08-07T17:34:04-04:00",
+    "num_files": 373,
+    "num_words": 60103,
+    "version": 1
+  },
+  "c68b0b07e788703ab4ee647ed0d0c229eaca0195": {
+    "timestamp": "2022-08-07T17:32:53-04:00",
+    "num_files": 373,
+    "num_words": 60101,
+    "version": 1
+  },
+  "7d17d8531851ff3f5ec4ae2d6b32165afaf9b568": {
+    "timestamp": "2022-08-05T23:12:17-04:00",
+    "num_files": 372,
+    "num_words": 59350,
+    "version": 1
+  },
+  "659f254c76fee30eefd15a65fc6b9a4ab81ef281": {
+    "timestamp": "2022-08-05T21:58:21-04:00",
+    "num_files": 371,
+    "num_words": 58671,
+    "version": 1
+  },
+  "51dcdd8310fd4e5a0be8703ed1d94c0f216d7a50": {
+    "timestamp": "2022-07-02T14:28:46-04:00",
+    "num_files": 368,
+    "num_words": 57805,
+    "version": 1
+  },
+  "a26d17c6c5e0f319792760c1217c6104523d4e88": {
+    "timestamp": "2022-07-02T14:25:49-04:00",
+    "num_files": 368,
+    "num_words": 57779,
+    "version": 1
+  },
+  "e9ba301d864f7bdda3a51aa8acc8268f5513f998": {
+    "timestamp": "2021-07-03T13:33:15-04:00",
+    "num_files": 362,
+    "num_words": 57229,
+    "version": 1
+  },
+  "8d74a86507842fc0c2f8b0c6cf6fee100d2d814c": {
+    "timestamp": "2021-07-03T13:31:16-04:00",
+    "num_files": 362,
+    "num_words": 57189,
+    "version": 1
+  },
+  "2cbd10a361c8fb343585c644fc8c67081693cdf2": {
+    "timestamp": "2021-07-03T13:30:10-04:00",
+    "num_files": 362,
+    "num_words": 57345,
+    "version": 1
+  },
+  "8751f95b46feb08a5d0b82d21a5895217868169e": {
+    "timestamp": "2021-04-20T12:26:28-04:00",
+    "num_files": 359,
+    "num_words": 56203,
+    "version": 1
+  },
+  "156180049b81570509f43b22472a8a19196b0704": {
+    "timestamp": "2021-04-19T20:31:15-04:00",
+    "num_files": 356,
+    "num_words": 55396,
+    "version": 1
+  },
+  "d7c30f750455f85d31db47b65e0c0cc2e0e597f4": {
+    "timestamp": "2021-04-09T18:44:07-04:00",
+    "num_files": 356,
+    "num_words": 55294,
+    "version": 1
+  },
+  "5b18ab6067a181a30fca567c85e477aa418398d7": {
+    "timestamp": "2021-03-23T21:46:44-04:00",
+    "num_files": 355,
+    "num_words": 55115,
+    "version": 1
+  },
+  "291e69b05437a2985bea4785af328e9357ba7aef": {
+    "timestamp": "2021-03-07T17:05:45-05:00",
+    "num_files": 354,
+    "num_words": 54962,
+    "version": 1
+  },
+  "c7d366cceea384c8c7d0f9d928a1032725497d95": {
+    "timestamp": "2021-03-07T16:53:16-05:00",
+    "num_files": 354,
+    "num_words": 54906,
+    "version": 1
+  },
+  "17c523ab7ac2e29639738d2814a5d63a652eb9bc": {
+    "timestamp": "2021-03-07T16:50:24-05:00",
+    "num_files": 354,
+    "num_words": 54897,
+    "version": 1
+  },
+  "0ed4cdf49fef9c809a0c367646b9eccc0bf85dad": {
+    "timestamp": "2021-03-07T16:32:44-05:00",
+    "num_files": 354,
+    "num_words": 54864,
+    "version": 1
+  },
+  "a64e05edeebfaec5448d70eb22f1b79ee0c89a5c": {
+    "timestamp": "2021-02-22T20:41:26-05:00",
+    "num_files": 354,
+    "num_words": 54616,
+    "version": 1
+  },
+  "8c35f34465025c807368a122a7bbe38a817bceda": {
+    "timestamp": "2021-02-22T15:12:07-05:00",
+    "num_files": 352,
+    "num_words": 54344,
+    "version": 1
+  },
+  "fe80edaaccad99744811cdcfe02bf8f0f05f3f84": {
+    "timestamp": "2021-02-22T13:50:46-05:00",
+    "num_files": 352,
+    "num_words": 54314,
+    "version": 1
+  },
+  "b28812bd1e1a3badbcf4bd831d316f15651df47d": {
+    "timestamp": "2021-02-22T11:28:15-05:00",
+    "num_files": 351,
+    "num_words": 53962,
+    "version": 1
+  },
+  "97bb4c8036360963a65216a0ae07bab7719df169": {
+    "timestamp": "2021-02-08T14:29:09-05:00",
+    "num_files": 345,
+    "num_words": 53527,
+    "version": 1
+  },
+  "72064d61359c20ea96d5eb21153199672c42a97f": {
+    "timestamp": "2021-01-31T15:31:13-05:00",
+    "num_files": 345,
+    "num_words": 53511,
+    "version": 1
+  },
+  "e67eb5d1117ee457289fc4ebf78412b31539e843": {
+    "timestamp": "2021-01-31T15:28:48-05:00",
+    "num_files": 345,
+    "num_words": 53623,
+    "version": 1
+  },
+  "d0f595a63da962b9959bc3ebc5397ff4afe63be9": {
+    "timestamp": "2021-01-31T15:26:53-05:00",
+    "num_files": 345,
+    "num_words": 53615,
+    "version": 1
+  },
+  "d66d39dcc79446ca926da004b2b585fdc56eb83b": {
+    "timestamp": "2021-01-31T15:08:01-05:00",
+    "num_files": 344,
+    "num_words": 53325,
+    "version": 1
+  },
+  "a97a2deb002defe7236eb9193b19b930cca56811": {
+    "timestamp": "2021-01-31T15:03:55-05:00",
+    "num_files": 344,
+    "num_words": 53308,
+    "version": 1
+  },
+  "46a65b00447f43e0d11d3ac20537b9862f3fd242": {
+    "timestamp": "2021-01-30T22:54:22-05:00",
+    "num_files": 339,
+    "num_words": 52453,
+    "version": 1
+  },
+  "3ee6dcfc0e4a64bdaa470b93729c4eb9df7a6daa": {
+    "timestamp": "2021-01-30T22:50:52-05:00",
+    "num_files": 339,
+    "num_words": 52457,
+    "version": 1
+  },
+  "43ae478063edb67caa33cdf83815d5ec01e32fb7": {
+    "timestamp": "2021-01-30T22:28:59-05:00",
+    "num_files": 338,
+    "num_words": 52161,
+    "version": 1
+  },
+  "4601ebdc410126efc2abe0fe2a7c856026a61ae4": {
+    "timestamp": "2021-01-30T22:16:26-05:00",
+    "num_files": 339,
+    "num_words": 52207,
+    "version": 1
+  },
+  "2b672674448bf876fbfec3e69df4b6d58b27a6fc": {
+    "timestamp": "2021-01-30T22:12:02-05:00",
+    "num_files": 339,
+    "num_words": 52207,
+    "version": 1
+  },
+  "8a4ec6ab4a18bf7033dfda33dc0eabd74e2b88a1": {
+    "timestamp": "2021-01-30T18:14:37-05:00",
+    "num_files": 341,
+    "num_words": 52182,
+    "version": 1
+  },
+  "f8fdd2095547e712f4d4b95e69f4c1172f5a314f": {
+    "timestamp": "2021-01-30T16:41:37-05:00",
+    "num_files": 340,
+    "num_words": 51591,
+    "version": 1
+  },
+  "eb4054060a581ae62291f0b090e7fb7a148592f2": {
+    "timestamp": "2021-01-30T16:31:07-05:00",
+    "num_files": 340,
+    "num_words": 51591,
+    "version": 1
+  },
+  "4a2a8cefedc8a8914fd9d8866fd6422c35ef4a98": {
+    "timestamp": "2021-01-30T14:53:31-05:00",
+    "num_files": 289,
+    "num_words": 50846,
+    "version": 1
+  },
+  "54775285404b8e1d0df7fb70fcd38d87927c04af": {
+    "timestamp": "2021-01-22T16:40:04-05:00",
+    "num_files": 289,
+    "num_words": 50604,
+    "version": 1
+  },
+  "24ff8fd163b9fe4fc94376eaaae12004e9da7e79": {
+    "timestamp": "2021-01-20T23:29:45-05:00",
+    "num_files": 289,
+    "num_words": 50598,
+    "version": 1
+  },
+  "6947daad91b009e24dd5061d46098d5aae63d74c": {
+    "timestamp": "2021-01-20T23:29:15-05:00",
+    "num_files": 288,
+    "num_words": 50193,
+    "version": 1
+  },
+  "e0ff1a40356d68cbbdcc4dcf64a578fa5b252221": {
+    "timestamp": "2021-01-18T13:22:22-05:00",
+    "num_files": 288,
+    "num_words": 50193,
+    "version": 1
+  },
+  "ca72737701bc2b299b571844bccdef37ff0fbc6a": {
+    "timestamp": "2021-01-16T15:18:43-05:00",
+    "num_files": 286,
+    "num_words": 49555,
+    "version": 1
+  },
+  "66b4bcc5114f9d1cd6bc1bed15e2ec7c8fc3e724": {
+    "timestamp": "2021-01-16T15:14:46-05:00",
+    "num_files": 286,
+    "num_words": 49517,
+    "version": 1
+  },
+  "2b5b884ba3d00a62c7f9c65f979bfda613871a13": {
+    "timestamp": "2021-01-16T12:52:41-05:00",
+    "num_files": 286,
+    "num_words": 49319,
+    "version": 1
+  },
+  "2dfff08d08f89f97d32817bc105be8a5cc7f6e28": {
+    "timestamp": "2021-01-16T12:34:11-05:00",
+    "num_files": 288,
+    "num_words": 49621,
+    "version": 1
+  },
+  "7cde076400563d2cfb059d21300b6774c8bd49b2": {
+    "timestamp": "2021-01-07T22:46:37-05:00",
+    "num_files": 279,
+    "num_words": 48757,
+    "version": 1
+  },
+  "9a3c9555ddbf5091e380cee1ce4392ad600b5da3": {
+    "timestamp": "2021-01-07T22:06:39-05:00",
+    "num_files": 279,
+    "num_words": 48634,
+    "version": 1
+  },
+  "c1eab103ace047b54cdc9b788a8d65b2b8f52c58": {
+    "timestamp": "2021-01-07T12:29:24+01:00",
+    "num_files": 10,
+    "num_words": 864,
+    "version": 1
+  },
+  "991970ff2c861b1af53812f2ccd668e42fda0964": {
+    "timestamp": "2021-01-06T22:59:15+01:00",
+    "num_files": 10,
+    "num_words": 819,
+    "version": 1
+  },
+  "cb52fbef67b4cbfbe33291f8cca749e14aab67b6": {
+    "timestamp": "2021-01-05T23:30:47+01:00",
+    "num_files": 10,
+    "num_words": 819,
+    "version": 1
+  },
+  "fe524365abfa8746a07557f996575d5b8b5e15f3": {
+    "timestamp": "2021-01-05T14:36:51-05:00",
+    "num_files": 279,
+    "num_words": 47865,
+    "version": 1
+  },
+  "21d92e13c7187581734185a592194e96b30f8b2f": {
+    "timestamp": "2021-01-05T14:35:59-05:00",
+    "num_files": 279,
+    "num_words": 47859,
+    "version": 1
+  },
+  "c012716120c23688926e8a52ea919bfeeb13a536": {
+    "timestamp": "2021-01-02T23:48:04-05:00",
+    "num_files": 278,
+    "num_words": 47767,
+    "version": 1
+  },
+  "530bf277c736c360d2b080eb9f17fede67766c05": {
+    "timestamp": "2021-01-02T23:46:47-05:00",
+    "num_files": 278,
+    "num_words": 47747,
+    "version": 1
+  },
+  "fcf875fd4dda8f8f27fc0891800f9f40fb2dea44": {
+    "timestamp": "2021-01-02T23:26:16-05:00",
+    "num_files": 278,
+    "num_words": 47691,
+    "version": 1
+  },
+  "79d602c88e46b96f3850fefbf27bd3b020e4263f": {
+    "timestamp": "2021-01-02T22:33:55-05:00",
+    "num_files": 274,
+    "num_words": 47317,
+    "version": 1
+  },
+  "e61f3c45b3634c8d399849865efab8af7b3d19de": {
+    "timestamp": "2021-01-02T22:28:46-05:00",
+    "num_files": 274,
+    "num_words": 47304,
+    "version": 1
+  },
+  "91f1b79377b3dc298bee6a51af4e54570d7d267f": {
+    "timestamp": "2021-01-02T22:47:40+01:00",
+    "num_files": 10,
+    "num_words": 517,
+    "version": 1
+  },
+  "52a9e037a362d4f74feba300baca46fdafb096f8": {
+    "timestamp": "2021-01-02T13:11:34-05:00",
+    "num_files": 10,
+    "num_words": 517,
+    "version": 1
+  },
+  "306be2823f037228124f4cbf8aff39dfe7dbcd69": {
+    "timestamp": "2020-12-25T11:31:24+01:00",
+    "num_files": 10,
+    "num_words": 517,
+    "version": 1
+  },
+  "97436ff6cb03dec85e68b9075f6141a0c4c5e51c": {
+    "timestamp": "2020-12-25T11:31:13+01:00",
+    "num_files": 10,
+    "num_words": 517,
+    "version": 1
+  },
+  "9abe21993aada6753db6fd1ec014b5e10b1778af": {
+    "timestamp": "2020-12-25T11:30:46+01:00",
+    "num_files": 10,
+    "num_words": 582,
+    "version": 1
+  },
+  "214d708e6cc07550d1415cca662435e2581d48a5": {
+    "timestamp": "2020-12-18T14:22:52-05:00",
+    "num_files": 274,
+    "num_words": 47304,
+    "version": 1
+  },
+  "2357070ee5f805d8f78b7e28b2d1d1218c8d55c4": {
+    "timestamp": "2020-12-18T14:07:26-05:00",
+    "num_files": 274,
+    "num_words": 47299,
+    "version": 1
+  },
+  "14cd109b72804021dcc347a92ca79fd13884baa9": {
+    "timestamp": "2020-12-15T13:29:52+01:00",
+    "num_files": 10,
+    "num_words": 582,
+    "version": 1
+  },
+  "6d46be1fded17601e082a8bec69d485fb49355b3": {
+    "timestamp": "2020-12-09T23:59:34+01:00",
+    "num_files": 10,
+    "num_words": 582,
+    "version": 1
+  },
+  "c156fdd1c0853d55b09bdffb08e77b743921167a": {
+    "timestamp": "2020-12-02T11:17:05-05:00",
+    "num_files": 273,
+    "num_words": 47215,
+    "version": 1
+  },
+  "6c4b64331a68685587b6c2b5d477d633e3fab004": {
+    "timestamp": "2020-11-13T14:44:41-05:00",
+    "num_files": 273,
+    "num_words": 47213,
+    "version": 1
+  },
+  "d2523a9c7696b9a5b534fde79ec8a3b8f4fc1eaf": {
+    "timestamp": "2020-11-13T14:42:15-05:00",
+    "num_files": 273,
+    "num_words": 47176,
+    "version": 1
+  },
+  "9e25a85ad9e755422ea18e68e05a5d3c18962f04": {
+    "timestamp": "2020-11-13T14:40:40-05:00",
+    "num_files": 273,
+    "num_words": 47156,
+    "version": 1
+  },
+  "6295bb1db9dcdeedf665c31b4d36120a58680216": {
+    "timestamp": "2020-11-13T14:39:41-05:00",
+    "num_files": 273,
+    "num_words": 47154,
+    "version": 1
+  },
+  "a5c359c38c6e524e485cabf61ad11746cf8c32e1": {
+    "timestamp": "2020-11-13T14:29:04-05:00",
+    "num_files": 273,
+    "num_words": 46925,
+    "version": 1
+  },
+  "cb696c3871d849ac287889c1209e53ed4743df92": {
+    "timestamp": "2020-11-03T10:43:12-05:00",
+    "num_files": 272,
+    "num_words": 46694,
+    "version": 1
+  },
+  "46803e434b9f9b5bf8553818317f4f9c8817ae8f": {
+    "timestamp": "2020-11-03T10:39:15-05:00",
+    "num_files": 272,
+    "num_words": 46692,
+    "version": 1
+  },
+  "dbf8c591ec27e82eb9d9971ed152146e1377a0b7": {
+    "timestamp": "2020-11-01T19:11:45-05:00",
+    "num_files": 272,
+    "num_words": 46480,
+    "version": 1
+  },
+  "a4e13f464889b6bcf4776d8458e545cbba3c2ef5": {
+    "timestamp": "2020-11-01T18:39:44-05:00",
+    "num_files": 271,
+    "num_words": 46245,
+    "version": 1
+  },
+  "8eef39d18727d7285e7ac33fe8655f509aed0b8b": {
+    "timestamp": "2020-11-01T18:24:42-05:00",
+    "num_files": 271,
+    "num_words": 46150,
+    "version": 1
+  },
+  "b6ec501cf1cf11e193e66a733ff8e75ceda7e7a4": {
+    "timestamp": "2020-10-20T16:57:02+02:00",
+    "num_files": 10,
+    "num_words": 582,
+    "version": 1
+  },
+  "de0b9b3bf00756ea5985314b1f28be5b7ef782ba": {
+    "timestamp": "2020-10-10T13:32:36-04:00",
+    "num_files": 270,
+    "num_words": 46150,
+    "version": 1
+  },
+  "6b5138da509310ae29fb963f8c4da25acb8980ee": {
+    "timestamp": "2020-09-29T10:38:11-04:00",
+    "num_files": 269,
+    "num_words": 45695,
+    "version": 1
+  },
+  "8217d1151e1e58d6061fbbee87f7ba7e3a63cb4b": {
+    "timestamp": "2020-09-04T22:19:54-04:00",
+    "num_files": 268,
+    "num_words": 45297,
+    "version": 1
+  },
+  "e74c9fceec6d80b4b4e9d118b0889212374d0abb": {
+    "timestamp": "2020-09-04T22:14:22-04:00",
+    "num_files": 268,
+    "num_words": 45297,
+    "version": 1
+  },
+  "561ace7e855676f1acc2181344e5d8176a1bc9d0": {
+    "timestamp": "2020-09-01T15:01:08-04:00",
+    "num_files": 261,
+    "num_words": 44725,
+    "version": 1
+  },
+  "1ddc6d01547fcd98fedb7ced58508371c7350b15": {
+    "timestamp": "2020-09-01T14:59:26-04:00",
+    "num_files": 261,
+    "num_words": 44705,
+    "version": 1
+  },
+  "b4efad29f303bfb4989383928d69deda8b705b9f": {
+    "timestamp": "2020-09-01T10:50:52-04:00",
+    "num_files": 259,
+    "num_words": 42525,
+    "version": 1
+  },
+  "f577a184d1e285b64b2138d10139d9844878bb39": {
+    "timestamp": "2020-09-01T10:50:25-04:00",
+    "num_files": 257,
+    "num_words": 40120,
+    "version": 1
+  },
+  "354c9f88c303368ce1d9b9f355cd6d190a289566": {
+    "timestamp": "2020-08-26T10:39:09-04:00",
+    "num_files": 257,
+    "num_words": 40117,
+    "version": 1
+  },
+  "a15664a8267c5351cb522973f0921bddbb2809bf": {
+    "timestamp": "2020-08-25T19:53:37-04:00",
+    "num_files": 252,
+    "num_words": 39798,
+    "version": 1
+  },
+  "a1484baf57683bd77af78d4071798926a5ed875e": {
+    "timestamp": "2020-08-25T19:52:37-04:00",
+    "num_files": 252,
+    "num_words": 39821,
+    "version": 1
+  },
+  "ad58f83165d9ffeddf2554248540e8aa8e4f6906": {
+    "timestamp": "2020-08-25T19:51:43-04:00",
+    "num_files": 252,
+    "num_words": 39812,
+    "version": 1
+  },
+  "1939866ea50e603136604dbe69f4b603e152abfe": {
+    "timestamp": "2020-08-25T19:49:51-04:00",
+    "num_files": 252,
+    "num_words": 39820,
+    "version": 1
+  },
+  "1ac63d2cfc7410991358b48b40cf5716550ff1f1": {
+    "timestamp": "2020-08-25T19:46:15-04:00",
+    "num_files": 252,
+    "num_words": 39802,
+    "version": 1
+  },
+  "f9665a52dddb98b07c76b29f6ae3eb4dfda7adcd": {
+    "timestamp": "2020-08-25T17:02:58-04:00",
+    "num_files": 252,
+    "num_words": 37833,
+    "version": 1
+  },
+  "d14f01b36cb1735fd17c5184b11f4d5919e242d6": {
+    "timestamp": "2020-08-24T14:32:54-04:00",
+    "num_files": 252,
+    "num_words": 37833,
+    "version": 1
+  },
+  "4869da1fbba917b5bbf66c948b806d897462a8e0": {
+    "timestamp": "2020-08-24T14:24:13-04:00",
+    "num_files": 251,
+    "num_words": 37661,
+    "version": 1
+  },
+  "a0c9dfaeedb117c987a9918c6b4b2bb80eae6260": {
+    "timestamp": "2020-08-23T22:24:33-04:00",
+    "num_files": 249,
+    "num_words": 35095,
+    "version": 1
+  },
+  "9e4f14f5d541766327f727db1cec315e789f26fa": {
+    "timestamp": "2020-08-23T22:22:55-04:00",
+    "num_files": 249,
+    "num_words": 35095,
+    "version": 1
+  },
+  "8513c09e34ebfa0df24d110a1377e4d937a6b0de": {
+    "timestamp": "2020-08-23T21:21:53-04:00",
+    "num_files": 247,
+    "num_words": 33602,
+    "version": 1
+  },
+  "0a6bf7634d9435cea2a4664657d55fe7902a363f": {
+    "timestamp": "2020-08-23T21:00:23-04:00",
+    "num_files": 247,
+    "num_words": 33262,
+    "version": 1
+  },
+  "f86d6dc74cffe1fa9ffda2c56602bd8fc75e3345": {
+    "timestamp": "2020-08-23T21:00:07-04:00",
+    "num_files": 246,
+    "num_words": 33262,
+    "version": 1
+  },
+  "bcc78730e227817e582667e4aff80ab7b32137cd": {
+    "timestamp": "2020-08-23T16:17:13-04:00",
+    "num_files": 246,
+    "num_words": 32663,
+    "version": 1
+  },
+  "d543ca1716555c4fcd36b9bcdccaec0c2fbf3a71": {
+    "timestamp": "2020-08-23T16:13:04-04:00",
+    "num_files": 246,
+    "num_words": 32638,
+    "version": 1
+  },
+  "a3f14d9ef93760864752b661f19f4b1352546e49": {
+    "timestamp": "2020-08-23T16:09:25-04:00",
+    "num_files": 246,
+    "num_words": 32638,
+    "version": 1
+  },
+  "b2638e072e9607d04cb87b9388997075241cb563": {
+    "timestamp": "2020-08-23T16:06:13-04:00",
+    "num_files": 246,
+    "num_words": 32639,
+    "version": 1
+  },
+  "eb18d4a62f82bc424cae52364ab68c88c9e10629": {
+    "timestamp": "2020-08-20T20:11:16-04:00",
+    "num_files": 246,
+    "num_words": 32694,
+    "version": 1
+  },
+  "c98b071d01b14c9ae7853b22be7805cc94b5cbf5": {
+    "timestamp": "2020-08-17T21:50:33-04:00",
+    "num_files": 242,
+    "num_words": 29852,
+    "version": 1
+  },
+  "30faea72eee8914b9f2498e480da007ca33681a4": {
+    "timestamp": "2020-08-17T21:49:21-04:00",
+    "num_files": 242,
+    "num_words": 29863,
+    "version": 1
+  },
+  "f953baeedc74b235b87662087ba20e1493a99c7e": {
+    "timestamp": "2020-08-17T21:48:05-04:00",
+    "num_files": 242,
+    "num_words": 29865,
+    "version": 1
+  },
+  "56e59b07b76fedca8bf6022e7fdfd00533df2bb4": {
+    "timestamp": "2020-08-17T21:46:03-04:00",
+    "num_files": 242,
+    "num_words": 29868,
+    "version": 1
+  },
+  "51806107a479828ccdd78c1d3acc25799f720e73": {
+    "timestamp": "2020-08-16T21:12:22-04:00",
+    "num_files": 239,
+    "num_words": 27489,
+    "version": 1
+  },
+  "f3e23bbd313199f76889eaa48dcebeb03283f9e8": {
+    "timestamp": "2020-08-16T20:46:53-04:00",
+    "num_files": 236,
+    "num_words": 27091,
+    "version": 1
+  },
+  "fd9c89b493663634cd77dc2892eb4b3bb33a2f34": {
+    "timestamp": "2020-08-16T20:45:37-04:00",
+    "num_files": 236,
+    "num_words": 27060,
+    "version": 1
+  },
+  "22c145e66812838305875641d04b88bdef6f56fd": {
+    "timestamp": "2020-08-16T20:15:38-04:00",
+    "num_files": 235,
+    "num_words": 26816,
+    "version": 1
+  },
+  "74f701f2b17279793a2e34674bef9b194a3a159b": {
+    "timestamp": "2020-08-16T19:59:58-04:00",
+    "num_files": 235,
+    "num_words": 26816,
+    "version": 1
+  },
+  "4ffc7ef28c08be1bfb2bda2f727edbac98919b4c": {
+    "timestamp": "2020-08-16T19:47:52-04:00",
+    "num_files": 235,
+    "num_words": 26816,
+    "version": 1
+  },
+  "8a4b46970eaea6679e6379f6d3f61ae2e3da68b5": {
+    "timestamp": "2020-08-16T19:41:51-04:00",
+    "num_files": 235,
+    "num_words": 26816,
+    "version": 1
+  },
+  "1c50e89177df39b478452fa5e446f12720099702": {
+    "timestamp": "2020-08-16T19:38:25-04:00",
+    "num_files": 237,
+    "num_words": 26816,
+    "version": 1
+  },
+  "b96232799d715fea948c49a813ca11254c63252c": {
+    "timestamp": "2020-08-16T19:36:02-04:00",
+    "num_files": 26,
+    "num_words": 5401,
+    "version": 1
+  },
+  "68d38962ad4fb035c36cbc9c67c1a2715cbede75": {
+    "timestamp": "2020-08-16T19:35:21-04:00",
+    "num_files": 26,
+    "num_words": 5401,
+    "version": 1
+  },
+  "f4112be793c8eca655a6fd2913d600e4d2d3b9f3": {
+    "timestamp": "2020-08-16T19:33:28-04:00",
+    "num_files": 21,
+    "num_words": 5401,
+    "version": 1
+  },
+  "3fe817afd44b349f0318bafa4b012cc890294eb8": {
+    "timestamp": "2020-08-16T19:32:59-04:00",
+    "num_files": 21,
+    "num_words": 5401,
+    "version": 1
+  },
+  "c7fa455a379c0da6867f8328fabf927476a5c906": {
+    "timestamp": "2020-08-16T19:31:28-04:00",
+    "num_files": 1,
+    "num_words": 11,
+    "version": 1
+  },
+  "191546162aea820ae2137ad7318ae0c7f8f63d37": {
+    "timestamp": "2020-08-14T15:56:15-04:00",
+    "num_files": 5,
+    "num_words": 0,
+    "version": 1
+  },
+  "21605350b458d22f3c37f739809427476530d845": {
+    "timestamp": "2020-08-04T15:39:01+01:00",
+    "num_files": 10,
+    "num_words": 582,
+    "version": 1
+  },
+  "acb8399451939d529740f51ea400ec1027f10b2b": {
+    "timestamp": "2020-08-04T15:38:27+01:00",
+    "num_files": 10,
+    "num_words": 582,
+    "version": 1
+  },
+  "2010cbd45070c788b9b320ddda4301b5a17274f2": {
+    "timestamp": "2020-08-04T15:36:52+01:00",
+    "num_files": 10,
+    "num_words": 582,
+    "version": 1
+  },
+  "c2a7f6f070892c234c036913e23e2c162d6d8f71": {
+    "timestamp": "2020-08-03T21:00:16+02:00",
+    "num_files": 10,
+    "num_words": 582,
+    "version": 1
+  },
+  "ae371fcbc638768d82e3f2d1d42b80ec05c5a207": {
+    "timestamp": "2020-08-03T17:37:19+01:00",
+    "num_files": 10,
+    "num_words": 582,
+    "version": 1
+  },
+  "51f53d9f9a2b357e6451c6c58e0235fb871e2a05": {
+    "timestamp": "2020-08-01T18:07:42+02:00",
+    "num_files": 10,
+    "num_words": 582,
+    "version": 1
+  },
+  "55866c8a29931e72c0a8095c66417b3930cd9dca": {
+    "timestamp": "2020-07-27T20:51:16+01:00",
+    "num_files": 10,
+    "num_words": 582,
+    "version": 1
+  },
+  "18682f1ea47b0107d221ad1263b0e0bb0e6a4104": {
+    "timestamp": "2020-07-25T11:49:05+03:00",
+    "num_files": 10,
+    "num_words": 582,
+    "version": 1
+  },
+  "6d987c3a40e33f555d8e5bc1ebd1937ed9b7ac47": {
+    "timestamp": "2020-07-25T11:46:33+03:00",
+    "num_files": 10,
+    "num_words": 582,
+    "version": 1
+  },
+  "27dcabe1c3361ccc9e37931538a4144b5ce87eb9": {
+    "timestamp": "2020-07-20T21:12:58-04:00",
+    "num_files": 20,
+    "num_words": 5390,
+    "version": 1
+  },
+  "f1afee9df16623eb1c781cda085f597cd068e04d": {
+    "timestamp": "2020-07-15T21:26:24+01:00",
+    "num_files": 10,
+    "num_words": 582,
+    "version": 1
+  },
+  "07767bdb98418444dd605d99c4becd1d37bda101": {
+    "timestamp": "2020-07-15T21:25:33+01:00",
+    "num_files": 10,
+    "num_words": 582,
+    "version": 1
+  },
+  "cc84862e0094d696b6921a22e786e6b55b4dcbf6": {
+    "timestamp": "2020-07-10T15:17:10+01:00",
+    "num_files": 10,
+    "num_words": 577,
+    "version": 1
+  },
+  "d8083dbb7665459d31e93163614840e0b9c7eaba": {
+    "timestamp": "2020-07-03T17:23:02+01:00",
+    "num_files": 10,
+    "num_words": 560,
+    "version": 1
+  },
+  "2e2c9661f5f8ff58817a27b7595239e8198d8272": {
+    "timestamp": "2020-06-29T23:09:25+01:00",
+    "num_files": 10,
+    "num_words": 560,
+    "version": 1
+  },
+  "3d6428d77bb7196ba036663a3366af1d9176cd6e": {
+    "timestamp": "2020-06-29T23:08:41+01:00",
+    "num_files": 10,
+    "num_words": 560,
+    "version": 1
+  },
+  "fbd6d672db3c771c821909305ae7d0d5d9c1317b": {
+    "timestamp": "2020-06-29T17:49:40-04:00",
+    "num_files": 10,
+    "num_words": 560,
+    "version": 1
+  },
+  "c85ce0941018ce34ad88afe41faa991fbb6e98b0": {
+    "timestamp": "2020-06-29T13:40:10-07:00",
+    "num_files": 10,
+    "num_words": 560,
+    "version": 1
+  },
+  "cde2306b82eb38a9c630f744345f2b1e0896fcbe": {
+    "timestamp": "2020-06-28T16:25:39+01:00",
+    "num_files": 10,
+    "num_words": 560,
+    "version": 1
+  },
+  "a9f36cae4458b5d4ab830c275a28a0af740f1046": {
+    "timestamp": "2020-06-28T16:24:37+01:00",
+    "num_files": 10,
+    "num_words": 565,
+    "version": 1
+  },
+  "05966eacf4a8134e7269c7ee7823a2184fc23e3d": {
+    "timestamp": "2020-06-28T16:24:05+01:00",
+    "num_files": 10,
+    "num_words": 557,
+    "version": 1
+  },
+  "9fd9a1544732279614f08c83817726f8139765ef": {
+    "timestamp": "2020-06-27T00:02:12+01:00",
+    "num_files": 10,
+    "num_words": 329,
+    "version": 1
+  },
+  "d05176b3ee5330c3c5fbc2a9c8d437ae5f1ea2e9": {
+    "timestamp": "2020-06-26T23:59:59+01:00",
+    "num_files": 10,
+    "num_words": 329,
+    "version": 1
+  },
+  "22839e83e35cbaf1e6f31615ab817640f9cb8515": {
+    "timestamp": "2020-06-26T17:43:23+01:00",
+    "num_files": 10,
+    "num_words": 329,
+    "version": 1
+  },
+  "9a80f433f0707e42fb7103274a5511ed212c1fb0": {
+    "timestamp": "2020-06-26T11:37:50-04:00",
+    "num_files": 10,
+    "num_words": 329,
+    "version": 1
+  },
+  "76cf9f4a2635f6107a1eacfa82efb7ad8082e8f7": {
+    "timestamp": "2020-06-25T23:16:37+01:00",
+    "num_files": 10,
+    "num_words": 329,
+    "version": 1
+  },
+  "047828a136a31d2caa30784cbe36f0b01ccc4814": {
+    "timestamp": "2020-06-25T16:37:36+01:00",
+    "num_files": 11,
+    "num_words": 327,
+    "version": 1
+  },
+  "96c6a8bfad6ee2fd46fe03b4becf9cad5a45916f": {
+    "timestamp": "2020-06-25T00:20:38+01:00",
+    "num_files": 9,
+    "num_words": 327,
+    "version": 1
+  },
+  "99281f2b4ba545076b08fe1bd905b4076569160c": {
+    "timestamp": "2020-06-20T02:42:41+01:00",
+    "num_files": 7,
+    "num_words": 445,
+    "version": 1
+  },
+  "f3eddf8b906761e9fd367391b99bd8829c3b8db5": {
+    "timestamp": "2020-06-20T02:41:01+01:00",
+    "num_files": 7,
+    "num_words": 448,
+    "version": 1
+  },
+  "55d4922998a9079dd1895bccfcc776b2397c433f": {
+    "timestamp": "2020-06-20T02:32:32+01:00",
+    "num_files": 7,
+    "num_words": 405,
+    "version": 1
+  },
+  "448a00b8b6b8f0d8d773e23f6224506be4d7bc9a": {
+    "timestamp": "2020-06-20T02:29:43+01:00",
+    "num_files": 8,
+    "num_words": 407,
+    "version": 1
+  },
+  "86dfa9c87acc215c6dc3ced7d1fdbb3fdcdb0c12": {
+    "timestamp": "2020-06-20T02:27:50+01:00",
+    "num_files": 7,
+    "num_words": 407,
+    "version": 1
+  },
+  "6b34fb4ce83ccc0586d00aa1d0535593ce2d4155": {
+    "timestamp": "2020-06-20T02:24:45+01:00",
+    "num_files": 6,
+    "num_words": 407,
+    "version": 1
+  },
+  "bf6658019d9f7a96ea317503a5fe9b6ad563e153": {
+    "timestamp": "2020-06-20T00:41:56+01:00",
+    "num_files": 1,
+    "num_words": 5,
+    "version": 1
+  },
+  "f2d4d90ea7f8247582752bf5d5f53d10ff666a1b": {
+    "timestamp": "2020-01-30T21:10:04-05:00",
+    "num_files": 211,
+    "num_words": 21415,
+    "version": 1
+  },
+  "cbe0bf9e091f15f06556ecdd1f4c238589b659a2": {
+    "timestamp": "2020-01-30T21:06:20-05:00",
+    "num_files": 211,
+    "num_words": 21398,
+    "version": 1
+  },
+  "7cf79741bf44e88ddc09e49b91c99498160f1e7e": {
+    "timestamp": "2020-01-30T21:04:30-05:00",
+    "num_files": 211,
+    "num_words": 21382,
+    "version": 1
+  },
+  "8d8ab57156566a3cadcddcf2c9f706cc5effbd91": {
+    "timestamp": "2020-01-30T20:57:55-05:00",
+    "num_files": 211,
+    "num_words": 21234,
+    "version": 1
+  },
+  "c0e27f00a9e759f02b25bc4b01fc304fdd4a7c1f": {
+    "timestamp": "2020-01-30T20:37:28-05:00",
+    "num_files": 211,
+    "num_words": 21157,
+    "version": 1
+  },
+  "b3a7a6e4e53df3a14d4255968c72806e954a38d9": {
+    "timestamp": "2020-01-30T19:47:01-05:00",
+    "num_files": 211,
+    "num_words": 20669,
+    "version": 1
+  },
+  "045888c37f58fb68188c8de9c258d23416f9bed6": {
+    "timestamp": "2019-11-01T11:21:07-04:00",
+    "num_files": 209,
+    "num_words": 20338,
+    "version": 1
+  },
+  "9d818aba978d088997f7efa71ca6de80e3808443": {
+    "timestamp": "2019-11-01T15:11:10+00:00",
+    "num_files": 209,
+    "num_words": 20338,
+    "version": 1
+  },
+  "690d63eb43653e5f6eb7052dba6446deb7e9f2cb": {
+    "timestamp": "2019-09-12T22:03:50-04:00",
+    "num_files": 209,
+    "num_words": 20338,
+    "version": 1
+  },
+  "d95c347c81ef94c20732d944092a75f16ecd4a7c": {
+    "timestamp": "2019-05-16T22:46:33-04:00",
+    "num_files": 208,
+    "num_words": 19546,
+    "version": 1
+  },
+  "5de025d2b5397f2fdca916873d6a6b52a522ce21": {
+    "timestamp": "2019-03-03T16:48:27-05:00",
+    "num_files": 208,
+    "num_words": 19407,
+    "version": 1
+  },
+  "8dc6dade3880850fa1ffea6b41f0e3d7554610c5": {
+    "timestamp": "2019-03-03T16:38:59-05:00",
+    "num_files": 208,
+    "num_words": 19282,
+    "version": 1
+  },
+  "222b382d8bbe983fd1b1fa9b991df127e352b617": {
+    "timestamp": "2019-01-27T17:05:12-05:00",
+    "num_files": 208,
+    "num_words": 19208,
+    "version": 1
+  },
+  "ac38dcf239f35614b4642acd7e7f9e3797c6bee4": {
+    "timestamp": "2019-01-27T17:00:34-05:00",
+    "num_files": 208,
+    "num_words": 19141,
+    "version": 1
+  },
+  "c42df4030a34d092dcbae45913e7d89480e2bf12": {
+    "timestamp": "2019-01-27T16:00:00-05:00",
+    "num_files": 208,
+    "num_words": 18778,
+    "version": 1
+  },
+  "dcad90fff05ab1c5474f6137fd475e310a5aa98e": {
+    "timestamp": "2019-01-27T15:58:58-05:00",
+    "num_files": 208,
+    "num_words": 18778,
+    "version": 1
+  },
+  "ca1b7bca05d9bed204e3ff16a42cab4055efd079": {
+    "timestamp": "2019-01-27T15:36:08-05:00",
+    "num_files": 198,
+    "num_words": 17458,
+    "version": 1
+  },
+  "97a5dceb83ad77a31dc31ba1cc684e9b0acba872": {
+    "timestamp": "2019-01-27T15:35:28-05:00",
+    "num_files": 198,
+    "num_words": 17445,
+    "version": 1
+  },
+  "ea36e27e96b4178ca8fbc13742d750ca8a4bb8c7": {
+    "timestamp": "2019-01-27T15:08:55-05:00",
+    "num_files": 198,
+    "num_words": 17139,
+    "version": 1
+  },
+  "5db6c349d1ab4955785fb5cacca404a5a39ac233": {
+    "timestamp": "2019-01-27T14:15:08-05:00",
+    "num_files": 198,
+    "num_words": 16642,
+    "version": 1
+  },
+  "6670de2b8bad92d3d61ca8cdcab0570b7bd7655c": {
+    "timestamp": "2019-01-27T14:03:35-05:00",
+    "num_files": 196,
+    "num_words": 16320,
+    "version": 1
+  },
+  "7ae53c44edcf3225fdcd4bd64248ffe4a498406d": {
+    "timestamp": "2019-01-27T14:02:39-05:00",
+    "num_files": 195,
+    "num_words": 16006,
+    "version": 1
+  },
+  "54b674d4d774d9ca2589f48092cc1c5d4fa917fc": {
+    "timestamp": "2019-01-27T13:58:04-05:00",
+    "num_files": 193,
+    "num_words": 15552,
+    "version": 1
+  },
+  "6810b17e5c2413bb5078d2f5e227130a04138ba5": {
+    "timestamp": "2018-11-11T19:31:08-05:00",
+    "num_files": 193,
+    "num_words": 15552,
+    "version": 1
+  },
+  "68ffb8adc4827479cc6e38873c2095d67fb8273e": {
+    "timestamp": "2018-11-10T17:08:44-05:00",
+    "num_files": 193,
+    "num_words": 15554,
+    "version": 1
+  },
+  "1650b6eaaaa24243493c4f50b0f7d7fd98d3d30c": {
+    "timestamp": "2018-11-10T16:46:21-05:00",
+    "num_files": 193,
+    "num_words": 15218,
+    "version": 1
+  },
+  "c8fcc9956bb81b3ecaeca749a027e2bceec3d901": {
+    "timestamp": "2018-11-10T15:53:54-05:00",
+    "num_files": 192,
+    "num_words": 15218,
+    "version": 1
+  },
+  "3071921d84b9524b837d59ba92caf865dabf96ab": {
+    "timestamp": "2018-11-10T15:41:44-05:00",
+    "num_files": 192,
+    "num_words": 15131,
+    "version": 1
+  },
+  "021cee23bfd250f29bcddeebad2f6f43d46adbc0": {
+    "timestamp": "2018-11-10T15:29:14-05:00",
+    "num_files": 192,
+    "num_words": 15010,
+    "version": 1
+  },
+  "195a63b7baffef736b6dde732a1b470f9baad052": {
+    "timestamp": "2018-11-10T14:48:51-05:00",
+    "num_files": 192,
+    "num_words": 15010,
+    "version": 1
+  },
+  "00171b4a6175023440d05d049b31eaafb3765754": {
+    "timestamp": "2018-11-10T14:36:25-05:00",
+    "num_files": 190,
+    "num_words": 14960,
+    "version": 1
+  },
+  "981fdc1fe3925ed97af8f9b1e1bd5e193e2c5978": {
+    "timestamp": "2018-11-10T14:30:29-05:00",
+    "num_files": 190,
+    "num_words": 14934,
+    "version": 1
+  },
+  "dd8e414113695aa01189aabc1aed8cde7973d665": {
+    "timestamp": "2018-11-10T14:23:52-05:00",
+    "num_files": 190,
+    "num_words": 14934,
+    "version": 1
+  },
+  "8abf6be6afd87c6b245fb10e8ca0949c6f2128d2": {
+    "timestamp": "2018-11-10T13:45:01-05:00",
+    "num_files": 188,
+    "num_words": 14745,
+    "version": 1
+  },
+  "c2f055b93b31bab1f6e107556176c5f03c238786": {
+    "timestamp": "2018-11-10T13:44:14-05:00",
+    "num_files": 188,
+    "num_words": 14745,
+    "version": 1
+  },
+  "b2907bf9fc0c30a3507c4fb09d29bbec718871a7": {
+    "timestamp": "2018-11-04T08:57:48-05:00",
+    "num_files": 188,
+    "num_words": 14496,
+    "version": 1
+  },
+  "f9c1c6dab768b30ed92080b6902131a5600c972f": {
+    "timestamp": "2018-11-01T21:52:40-04:00",
+    "num_files": 186,
+    "num_words": 14154,
+    "version": 1
+  },
+  "cbc9ded78b7b6f1f512daa341b189284433be183": {
+    "timestamp": "2018-11-01T21:51:46-04:00",
+    "num_files": 186,
+    "num_words": 14137,
+    "version": 1
+  },
+  "e0b72ab6f1fc0d9a5cda19d465ec907ce47e26c7": {
+    "timestamp": "2018-10-28T21:14:44-04:00",
+    "num_files": 184,
+    "num_words": 13958,
+    "version": 1
+  },
+  "1c68493dd138f5929f9c71e5b5a85e0b0ea15de5": {
+    "timestamp": "2018-10-28T18:04:14-04:00",
+    "num_files": 183,
+    "num_words": 13958,
+    "version": 1
+  },
+  "60be8ad805fd5fcfea4a3633157d87b123cc9891": {
+    "timestamp": "2018-10-28T18:02:54-04:00",
+    "num_files": 180,
+    "num_words": 13599,
+    "version": 1
+  },
+  "244baa6fce3c00ccf75f5e79fe8ad402d35b83b8": {
+    "timestamp": "2018-10-28T16:58:13-04:00",
+    "num_files": 178,
+    "num_words": 13349,
+    "version": 1
+  },
+  "e81e5472f12b43f53d4cb816cee4beca373e66c9": {
+    "timestamp": "2018-10-10T21:11:07-04:00",
+    "num_files": 175,
+    "num_words": 13052,
+    "version": 1
+  },
+  "bb1e131edfa2e5aff4a2bcd1a66e647d66017d97": {
+    "timestamp": "2018-10-09T23:13:08-04:00",
+    "num_files": 173,
+    "num_words": 11738,
+    "version": 1
+  },
+  "b4ad9db5046797c9d2d17c3c705cd5b97ad5c8e2": {
+    "timestamp": "2018-10-09T23:02:32-04:00",
+    "num_files": 173,
+    "num_words": 11738,
+    "version": 1
+  },
+  "76a658624f5f89102bbbc2c1c547f47283553e44": {
+    "timestamp": "2018-10-09T22:41:00-04:00",
+    "num_files": 169,
+    "num_words": 10996,
+    "version": 1
+  },
+  "52bbac33ade10aa3884539b064465438c3a6cff3": {
+    "timestamp": "2018-10-09T22:36:14-04:00",
+    "num_files": 169,
+    "num_words": 10906,
+    "version": 1
+  },
+  "ea2dda729c69df9e60343e3def48c113a986dae9": {
+    "timestamp": "2018-10-09T22:34:28-04:00",
+    "num_files": 169,
+    "num_words": 10906,
+    "version": 1
+  },
+  "92cb02cf06b7410b3b40714e4c587cdff10deb3f": {
+    "timestamp": "2018-10-09T22:34:05-04:00",
+    "num_files": 168,
+    "num_words": 10731,
+    "version": 1
+  },
+  "89691bfad08047d797dd39d1c152a2429ff00a3b": {
+    "timestamp": "2018-10-09T22:09:21-04:00",
+    "num_files": 71,
+    "num_words": 10374,
+    "version": 1
+  },
+  "a55d603a4ffd8dbf9e424aa637700d07cc7ba450": {
+    "timestamp": "2018-10-09T21:52:59-04:00",
+    "num_files": 71,
+    "num_words": 10322,
+    "version": 1
+  },
+  "2be293224cac0d57b333881ff206f49f8723ba73": {
+    "timestamp": "2018-10-09T21:14:45-04:00",
+    "num_files": 69,
+    "num_words": 10245,
+    "version": 1
+  },
+  "59d2577db37323ad478bbc30d0e6299755774b0a": {
+    "timestamp": "2018-10-09T21:01:53-04:00",
+    "num_files": 68,
+    "num_words": 10147,
+    "version": 1
+  },
+  "35514eb69bc90fa82707ddf0fc7ad17e3d16018b": {
+    "timestamp": "2018-10-09T21:00:05-04:00",
+    "num_files": 68,
+    "num_words": 10129,
+    "version": 1
+  },
+  "6e61e7a13a85f84788b2806733a6b679af0b1732": {
+    "timestamp": "2018-10-09T20:53:02-04:00",
+    "num_files": 68,
+    "num_words": 10099,
+    "version": 1
+  },
+  "c56aca2af93df0ce4a6158ead0ec5d08f0837014": {
+    "timestamp": "2018-10-06T11:53:38-04:00",
+    "num_files": 68,
+    "num_words": 10077,
+    "version": 1
+  },
+  "0cace87aa97ffb9a454bedba169c47b3a89a222e": {
+    "timestamp": "2018-10-06T11:47:45-04:00",
+    "num_files": 68,
+    "num_words": 9991,
+    "version": 1
+  },
+  "f1173ed9cabfb751f58d2c77bd9839e473822f39": {
+    "timestamp": "2018-10-05T00:09:11-04:00",
+    "num_files": 67,
+    "num_words": 9587,
+    "version": 1
+  },
+  "14f0c7c0ce55740e296b8a3678859ffe0cc3f0c2": {
+    "timestamp": "2018-10-05T00:04:00-04:00",
+    "num_files": 66,
+    "num_words": 9587,
+    "version": 1
+  },
+  "54ad6a6273dfa3db55db092e6e09a397c4834596": {
+    "timestamp": "2018-10-04T23:58:34-04:00",
+    "num_files": 59,
+    "num_words": 9410,
+    "version": 1
+  },
+  "f8793654ce01e4f1fa5b18bcf54ff1b8bd4043e8": {
+    "timestamp": "2018-10-04T23:50:30-04:00",
+    "num_files": 59,
+    "num_words": 9410,
+    "version": 1
+  },
+  "86bdf717ea0543793d20cd347f16908637c4b8c1": {
+    "timestamp": "2018-10-04T23:24:42-04:00",
+    "num_files": 57,
+    "num_words": 9199,
+    "version": 1
+  },
+  "3cc6d2ef30f6c790e531c41bd9c8587d16bf98a7": {
+    "timestamp": "2018-10-04T23:03:36-04:00",
+    "num_files": 56,
+    "num_words": 8972,
+    "version": 1
+  },
+  "56f6c8e6b9f7261891d24f7976b9dcfe3117c2ef": {
+    "timestamp": "2018-10-04T22:57:17-04:00",
+    "num_files": 56,
+    "num_words": 8833,
+    "version": 1
+  },
+  "7937a06e21e5b33d3d884b68fee2587e3f1ab322": {
+    "timestamp": "2018-10-04T22:36:22-04:00",
+    "num_files": 55,
+    "num_words": 8580,
+    "version": 1
+  },
+  "d11210544f0e64e7c810236517e11faca75f8e10": {
+    "timestamp": "2018-10-04T22:31:26-04:00",
+    "num_files": 54,
+    "num_words": 8530,
+    "version": 1
+  },
+  "7ffbf60a07da7192b257e37d7dedaa49a6f649df": {
+    "timestamp": "2018-10-04T22:05:41-04:00",
+    "num_files": 53,
+    "num_words": 8274,
+    "version": 1
+  },
+  "dda10fe7fcbcfa12ad295bbf538c7ba19acabde1": {
+    "timestamp": "2018-10-04T21:59:56-04:00",
+    "num_files": 53,
+    "num_words": 8274,
+    "version": 1
+  },
+  "b513b1d8a5a20c5f6af9ca08f5c4edfa6c221408": {
+    "timestamp": "2018-10-04T21:58:59-04:00",
+    "num_files": 53,
+    "num_words": 8274,
+    "version": 1
+  },
+  "ebe404aa28c55a66961933dc11d4f327f642f94b": {
+    "timestamp": "2018-09-30T16:48:13-04:00",
+    "num_files": 44,
+    "num_words": 8274,
+    "version": 1
+  },
+  "5ce30c4193ac746a494b4facfcaf453b5bfeb150": {
+    "timestamp": "2018-09-30T15:40:55-04:00",
+    "num_files": 41,
+    "num_words": 7988,
+    "version": 1
+  },
+  "837e346e53f5f694ed23e822808f2ae6574d5022": {
+    "timestamp": "2018-09-30T15:40:39-04:00",
+    "num_files": 41,
+    "num_words": 7988,
+    "version": 1
+  },
+  "4b537ed6b6b1ae62b8ab2320942de685e40321b0": {
+    "timestamp": "2018-09-30T15:14:00-04:00",
+    "num_files": 40,
+    "num_words": 7638,
+    "version": 1
+  },
+  "8a91ed6f818e5ca6946c3fcb0532e1ffa7a6a95e": {
+    "timestamp": "2018-09-30T15:13:46-04:00",
+    "num_files": 37,
+    "num_words": 7638,
+    "version": 1
+  },
+  "9aa713742df30d2ae59a68e8bce559bfab355db6": {
+    "timestamp": "2018-09-30T14:29:53-04:00",
+    "num_files": 36,
+    "num_words": 7312,
+    "version": 1
+  },
+  "c06f576187be79994a842bf41ab4c56db43eb7f0": {
+    "timestamp": "2018-09-29T15:52:07-04:00",
+    "num_files": 35,
+    "num_words": 6387,
+    "version": 1
+  },
+  "0a3431dec2db21207ea0bf888ca92e9b3f7d61b6": {
+    "timestamp": "2018-09-29T15:51:53-04:00",
+    "num_files": 31,
+    "num_words": 5348,
+    "version": 1
+  },
+  "015f7df01b1ecf64ab04d142800cebba86b95dff": {
+    "timestamp": "2018-09-28T15:52:03-04:00",
+    "num_files": 31,
+    "num_words": 5308,
+    "version": 1
+  },
+  "670a171ee31a47d2f65bda80fff22a4b2f48eef7": {
+    "timestamp": "2018-09-26T23:18:58-04:00",
+    "num_files": 31,
+    "num_words": 5308,
+    "version": 1
+  },
+  "caee3432d02f237757d3da20fa288b9e4f465065": {
+    "timestamp": "2018-09-26T22:51:27-04:00",
+    "num_files": 30,
+    "num_words": 4909,
+    "version": 1
+  },
+  "bca39c8d9daed5557d3e9e62d2dcf32680a412cc": {
+    "timestamp": "2018-09-26T22:19:43-04:00",
+    "num_files": 29,
+    "num_words": 4538,
+    "version": 1
+  },
+  "64d48cdb7587fe597dfc8d1db2a9c29f17822766": {
+    "timestamp": "2018-09-22T16:18:55-04:00",
+    "num_files": 28,
+    "num_words": 4434,
+    "version": 1
+  },
+  "5517f55118c643fce5bcbc239a6bbdad19353cc5": {
+    "timestamp": "2018-09-10T21:47:20-04:00",
+    "num_files": 28,
+    "num_words": 3812,
+    "version": 1
+  },
+  "fd462e692bc30cac8ea18dcb8271592c67ea6824": {
+    "timestamp": "2018-09-10T21:46:22-04:00",
+    "num_files": 27,
+    "num_words": 3812,
+    "version": 1
+  },
+  "00ea187aeff2dae8f2f43f313a35c12b6ddc6a63": {
+    "timestamp": "2018-09-10T21:43:22-04:00",
+    "num_files": 27,
+    "num_words": 3729,
+    "version": 1
+  },
+  "47e35a51c4fe1eef8abd1df3143e209ee99ac784": {
+    "timestamp": "2018-09-08T16:55:20-04:00",
+    "num_files": 26,
+    "num_words": 3117,
+    "version": 1
+  },
+  "dd4f63c61850d1f2eefb54005052d75650faa33f": {
+    "timestamp": "2018-09-08T16:52:39-04:00",
+    "num_files": 24,
+    "num_words": 3087,
+    "version": 1
+  },
+  "b255322eb9f886beebe3491ceadfe1eb6c97ce73": {
+    "timestamp": "2018-09-08T15:53:01-04:00",
+    "num_files": 22,
+    "num_words": 2492,
+    "version": 1
+  },
+  "cfbfb3b1d0a271602cf691d021f2d1f89d4d7413": {
+    "timestamp": "2018-09-08T15:52:46-04:00",
+    "num_files": 21,
+    "num_words": 1985,
+    "version": 1
+  },
+  "60cc0338b1e51499a3cee608e6368684c248a0d4": {
+    "timestamp": "2018-09-08T15:52:33-04:00",
+    "num_files": 20,
+    "num_words": 1959,
+    "version": 1
+  },
+  "b41691511455f92e954d049052905cdd33ac4fd1": {
+    "timestamp": "2018-09-08T14:58:46-04:00",
+    "num_files": 18,
+    "num_words": 1875,
+    "version": 1
+  },
+  "834b5caf74e268405b01a3e001ce3d3f293e5055": {
+    "timestamp": "2018-09-03T16:03:59-04:00",
+    "num_files": 15,
+    "num_words": 1444,
+    "version": 1
+  },
+  "9b43454645f621b8d025ec7931cb0fe7ae155101": {
+    "timestamp": "2018-09-03T16:01:37-04:00",
+    "num_files": 16,
+    "num_words": 1465,
+    "version": 1
+  },
+  "d432a5517ee591afed8216218357d3ef69f00a72": {
+    "timestamp": "2018-09-03T16:01:20-04:00",
+    "num_files": 15,
+    "num_words": 1293,
+    "version": 1
+  },
+  "9f8a8df222443c64fd9c63fcfdca2570c49ec19c": {
+    "timestamp": "2018-09-03T15:10:36-04:00",
+    "num_files": 15,
+    "num_words": 1285,
+    "version": 1
+  },
+  "0bc0349207e9ae8ebb6435abfdc0205d80f2be26": {
+    "timestamp": "2018-09-03T14:52:39-04:00",
+    "num_files": 15,
+    "num_words": 1260,
+    "version": 1
+  },
+  "1890fe2811de9d72ec5cf527f0b7e0a4e13e2010": {
+    "timestamp": "2018-08-26T21:07:20-04:00",
+    "num_files": 15,
+    "num_words": 1125,
+    "version": 1
+  },
+  "81cd304c7fbd40ef836b4368d0f7dce11a47dcaf": {
+    "timestamp": "2018-08-26T19:14:03-04:00",
+    "num_files": 14,
+    "num_words": 908,
+    "version": 1
+  },
+  "5d6cd35051d5453022edba3da73f1666da1d5ed5": {
+    "timestamp": "2018-08-26T18:55:56-04:00",
+    "num_files": 14,
+    "num_words": 861,
+    "version": 1
+  },
+  "59ef9fe8a2db2c53ea5d40f812c80eca868c6e67": {
+    "timestamp": "2018-08-26T18:50:48-04:00",
+    "num_files": 13,
+    "num_words": 861,
+    "version": 1
+  },
+  "0c317afb6fc45448b5fe46d14014f8e5e0dee558": {
+    "timestamp": "2018-08-26T18:46:13-04:00",
+    "num_files": 13,
+    "num_words": 842,
+    "version": 1
+  },
+  "c1c4a72fe0aff4a4e96789badbf6d9c74ac7f614": {
+    "timestamp": "2018-08-26T18:45:41-04:00",
+    "num_files": 9,
+    "num_words": 48,
+    "version": 1
+  },
+  "7238dcf23057378e6d2bf546997f0678b7af6368": {
+    "timestamp": "2018-08-25T17:28:27-04:00",
+    "num_files": 6,
+    "num_words": 48,
+    "version": 1
+  },
+  "6849c6833ef0d9dff1f2327057f82a489587f491": {
+    "timestamp": "2018-08-25T15:47:13-04:00",
+    "num_files": 5,
+    "num_words": 16,
+    "version": 1
+  },
+  "740cdc8bfc9861a65577de42201b82e6c0d18c29": {
+    "timestamp": "2018-08-25T15:43:56-04:00",
+    "num_files": 4,
+    "num_words": 16,
+    "version": 1
+  },
+  "707a744cee96316ad16fb9f2a00de34f7937f493": {
+    "timestamp": "2018-08-25T15:42:07-04:00",
+    "num_files": 2,
+    "num_words": 16,
+    "version": 1
+  },
+  "650b72fac7d2e374f05b9703ef56739949f69e78": {
+    "timestamp": "2018-08-25T15:39:41-04:00",
+    "num_files": 2,
+    "num_words": 0,
+    "version": 1
+  }
+}
