@@ -9,6 +9,7 @@
             "type": "debugpy",
             "request": "launch",
             "program": ".stats/get-commit-stats.py",
+            "python": "${workspaceFolder}/.stats/venv-get/bin/python",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole"
         },
@@ -17,6 +18,7 @@
             "type": "debugpy",
             "request": "launch",
             "program": ".stats/render-commit-stats.py",
+            "python": "${workspaceFolder}/.stats/venv-render/bin/python",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole"
         }

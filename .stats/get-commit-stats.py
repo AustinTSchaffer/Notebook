@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 
-import os
 import subprocess
 import json
+import re
 
 MAIN_BRANCH_NAME = "main"
 STATS_FILE = "./.stats/data/stats.json"
-STATS_VERSION = 1
+STATS_VERSION = 2
+WORD_RE = re.compile(br"(\w*-\w+)|(\w+-\w*)|(\w*'\w+)|(\w+'\w*)|(\w+)")
 
 def compute_stats(commit_hash: str) -> dict:
     stats = {}
@@ -26,8 +27,8 @@ def compute_stats(commit_hash: str) -> dict:
     for md_file in markdown_files:
         result = subprocess.run(["git", "show", f"{commit_hash}:{md_file}"], stdout=subprocess.PIPE)
         result.check_returncode()
-        contents = result.stdout
-        num_words += len(contents.split())
+        for _ in WORD_RE.finditer(result.stdout):
+            num_words += 1
 
     stats['num_words'] = num_words
 
