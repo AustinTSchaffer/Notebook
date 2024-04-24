@@ -30,7 +30,7 @@ Key terms for this chapter
 - prior knowledge - what the agent knows prior to learning (this chapter assumes little-to-0 pk)
 - transfer learning - knowledge from one domain is transferred to a new domain, so that learning can proceed faster with less data
 - induction - going from a specific set of observations to a general rule
-- deduction - conclusions are guaranteed to be correct if the premises are correct (more on this in Chapter 7.
+- deduction - conclusions are guaranteed to be correct if the premises are correct (more on this in [[AIMA - Chapter 7 - Logical Agents]]
 - factored representation - a vector of the attribute values are used as inputs, representing the problems abstractly
 - types of learning problems
 	- classification - when a learning problem is designed around the output being a finite set of values
@@ -282,7 +282,7 @@ There's 4 main reasons for $\hat{h}^* \ne f$
 	- We can measure both in terms of bits
 	- This comes from information theory
 	- The **minimum description length** or MDL hypothesis minimizes the total number of bits required
-	- More on this in Chapter 20
+	- More on this in [[AIMA - Chapter 20 - Learning Probabilistic Models]]
 
 ### Hyperparameter Tuning
 i it can be hard to choose good values for hyperparameters
