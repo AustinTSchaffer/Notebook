@@ -6,3 +6,8 @@ If found, please return to:
     schaffer.austin.t@gmail.com
 
 This notebook contains notes about various topics, from various settings, almost all of them written in Markdown. Most of the contained notes are related to computer science and software engineering.
+
+## Directory
+
+- [Notebook Size Statistics](./Stats.md)
+
