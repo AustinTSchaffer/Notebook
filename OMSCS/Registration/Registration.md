@@ -6,29 +6,30 @@ tags: OMSCS
 
 NOTE: Double check the CRNs before attempting to register for any of these. OMSCS students can only take courses whose section number is formatted `O\d\d`, such as `O01`, `O02`, `O03`, etc.
 
-| Taken?      | CRN   | Subj | Crse | Fnd? | Nickname   | Prereqs?   | Title                                      |
-| ----------- | ----- | ---- | ---- | ---- | ---------- | ---------- | ------------------------------------------ |
-| Fall 2022   | 87238 | CS   | 6200 | Yes  | GIOS       |            | Graduate Intro to OS                       |
-| Spring 2023 | 93647 | CS   | 6675 | Yes  | AISA       |            | Advanced Internet Systems and Applications |
-|             | 85222 | CS   | 6250 | Yes  | CN         |            | Computer Networks                          |
-|             | 91851 | CS   | 6603 | Yes  | AIES       |            | AI Ethics Society                          |
-|             | 85225 | CS   | 6290 | Yes  | HPCA       | GIOS       | High Perform Comput Arch                   |
-|             | 86152 | CS   | 6400 | Yes  |            |            | DB Sys Concepts & Design                   |
-|             | 85228 | CS   | 7637 | Yes  |            |            | Knowledge-Based AI                         |
-|             | 91853 | CS   | 7280 | Yes  |            |            | Network Science                            |
-|             | 86153 | CS   | 6601 | Yes  |            |            | Artificial Intelligence                    |
-|             | 88294 | CS   | 6515 | Yes  |            |            | Intro to Grad Algorithms                   |
-|             | 91852 | CS   | 7210 | Yes  |            |            | Distributed Computing                      |
-|             | 90255 | CSE  | 6220 | Yes  | HPC / IHPC | GIOS, HPCA | High Perform Computing                     |
-|             | 85223 | CS   | 6300 | Yes  |            |            | Software Dev Process                       |
-|             | 85226 | CS   | 6310 | Yes  |            |            | Software Arch & Design                     |
-|             | 86151 | CS   | 6340 | Yes  |            |            | Software Analysis & Test                   |
-|             | 85224 | CS   | 7641 | Yes  |            |            | Machine Learning                           |
-|             | 91855 | CS   | 7642 | Yes  |            |            | Reinforcement Learning                     |
-|             | 85656 | CS   | 6475 | Yes  |            |            | Comp. Photography                          |
-|             | 85787 | CS   | 6476 | Yes  |            |            | Computer Vision                            |
-|             | 91854 | CS   | 7632 | Yes  |            |            | Game AI                                    |
-|             | 85227 | CS   | 6440 | Yes  |            |            | Intro Health Informatics                   |
+| Taken?      | Subj | Crse | Fnd? | Nickname   | Prereqs?   | Title                                      |
+| ----------- | ---- | ---- | ---- | ---------- | ---------- | ------------------------------------------ |
+| Fall 2022   | CS   | 6200 | Yes  | GIOS       |            | Graduate Intro to OS                       |
+| Spring 2023 | CS   | 6675 | Yes  | AISA       |            | Advanced Internet Systems and Applications |
+| Summer 2023 | CS   | 6603 | Yes  | AIES       |            | AI Ethics Society                          |
+| Fall 2023   | CS   | 6250 | Yes  | CN         |            | Computer Networks                          |
+| Spring 2024 | CS   | 6601 | Yes  | AI         |            | Artificial Intelligence                    |
+|             | CS   | 7280 | No   | NS         |            | Network Science                            |
+|             | CS   | 7650 | No   | NLP        |            | Natural Language                           |
+|             | CS   | 6290 | Yes  | HPCA       | GIOS       | High Perform Comput Arch                   |
+|             | CS   | 6400 | Yes  |            |            | DB Sys Concepts & Design                   |
+|             | CS   | 7637 | Yes  |            |            | Knowledge-Based AI                         |
+|             | CS   | 6515 | Yes  |            |            | Intro to Grad Algorithms                   |
+|             | CS   | 7210 | Yes  |            |            | Distributed Computing                      |
+|             | CSE  | 6220 | Yes  | HPC / IHPC | GIOS, HPCA | High Perform Computing                     |
+|             | CS   | 6300 | Yes  |            |            | Software Dev Process                       |
+|             | CS   | 6310 | Yes  |            |            | Software Arch & Design                     |
+|             | CS   | 6340 | Yes  |            |            | Software Analysis & Test                   |
+|             | CS   | 7641 | Yes  |            |            | Machine Learning                           |
+|             | CS   | 7642 | Yes  |            |            | Reinforcement Learning                     |
+|             | CS   | 6475 | Yes  |            |            | Comp. Photography                          |
+|             | CS   | 6476 | Yes  |            |            | Computer Vision                            |
+|             | CS   | 7632 | Yes  |            |            | Game AI                                    |
+|             | CS   | 6440 | Yes  |            |            | Intro Health Informatics                   |
 
 This second table contains other courses that are also offered by OMSCS. I'm not currently interesting in taking any of these, but I could be persuaded. I'm sure a lot of these are great, I just haven't yet taken the time to persuade myself.
 
