@@ -4,7 +4,7 @@ tags:
   - AI
   - AIMA
 ---
-**# AIMA - Chapter 6 - Constraint Satisfaction Problems
+# AIMA - Chapter 6 - Constraint Satisfaction Problems
 - [[AIMA - Chapter 3 - Solving Problems by Searching]] and Chapter 4 (no chapter notes, module notes link: [[Module 02 - Simulated Annealing]])
 	- These prior chapters considered the "state" of a problem to be a black box, atomic, indivisible.
 	- Searching for solutions within the state space required domain-specific code to describe the transition between states.
