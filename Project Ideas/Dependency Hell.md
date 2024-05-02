@@ -1,6 +1,6 @@
 # Dependency Hell
 
-Any project that makes it easier to figure out how to upgrade software package dependencies would be a $$$ idea.
+Any project that makes it easier to figure out how to upgrade software package dependencies would be a \$\$\$ idea.
 
 My current issue at work is trying to figure out how to upgrade a bunch of dependencies that are _currently_ compatible with each other and my group's source code. My ticket is a bit open ended, but essentially, we need to get Pandas and Snowflake up to date. This will 100% introduce regressions and breaking changes in our source code, but that's just the nature of it.
 

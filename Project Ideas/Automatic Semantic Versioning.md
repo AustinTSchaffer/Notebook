@@ -1,8 +1,13 @@
 ---
 tags: Ideas, Programming, SemanticVersioning
 ---
-
 # Auto-Versioning Python Packages
+## Prior Art
+- 2 papers on detecting breaking changes in a third-party package's (TPL) API
+- X. Du and J. Ma, "AexPy: Detecting API Breaking Changes in Python Packages," _2022 IEEE 33rd International Symposium on Software Reliability Engineering (ISSRE)_, Charlotte, NC, USA, 2022, pp. 470-481, doi: 10.1109/ISSRE55969.2022.00052.
+	- Specifically for Python
+- A. Brito, L. Xavier, A. Hora and M. T. Valente, "APIDiff: Detecting API breaking changes," _2018 IEEE 25th International Conference on Software Analysis, Evolution and Reengineering (SANER)_, Campobasso, Italy, 2018, pp. 507-511, doi: 10.1109/SANER.2018.8330249.
+	- Specifically for Java
 
 ## Semantic Versioning
 

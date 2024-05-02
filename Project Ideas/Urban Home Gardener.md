@@ -1,6 +1,6 @@
 # Urban Home Gardener
 
-### Strugglefest USA 2023
+## Strugglefest USA 2023
 When setting up my new raised bed planter boxes for this season (and all future seasons), here are a few things I struggled with:
 
 - Determining whether to use in-ground vs raised beds
@@ -47,7 +47,7 @@ When setting up my new raised bed planter boxes for this season (and all future 
 		- "Can I go away for a week without calling a friend to come water it?"
 - Determining when to pull the crops out and replant new crops.
 
-### Technological Solutions
+## Technological Solutions
 
 - Monitoring
 	- Soil moisture sensors?

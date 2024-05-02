@@ -14,10 +14,7 @@ Pull down a copy of all federal code in a text format and perform text operation
 
 At the least it'd be interesting to track changes in a git repo so it was easier to see a diff over time.
 
-## Example of ProLogLaw
+## Example
 
 > (a) Identity. (1) Frozen cherry pie (excluding baked and then frozen) is the food prepared by incorporating in a filling contained in a pastry shell mature, pitted, stemmed cherries that are fresh, frozen, and/or canned. The top of the pie may be open or it may be wholly or partly covered with pastry or other suitable topping. Filling, pastry, and topping components of the food consist of optional ingredients as prescribed by paragraph (a)(2) of this section. The finished food is frozen. 
-
-```prolog
-#TODO
 ```
