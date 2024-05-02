@@ -69,6 +69,7 @@ Crop/resize reduced dataset size from 300GB to 15GB.
 - Discrete Cosine Transform (DCT)
 - downscale image
 - train model on embeddings
+- Images are cut into multiple sub images during training and evaluation
 
 ## Future Work
 - Collage pipeline
