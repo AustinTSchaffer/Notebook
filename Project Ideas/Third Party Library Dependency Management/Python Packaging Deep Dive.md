@@ -94,3 +94,21 @@ johnnydep botocore[crt] -o json --fields name requires --no-deps
 ## Note on `manylinux`
 
 `manylinux` seems to be an infix that controls what version of `pip` is supported by the package's distribution.
+
+## Metadata File
+
+PyPI exposes the metadata file for various packages without requiring that you download the entire wheel. An example URL for Boto3:
+
+https://files.pythonhosted.org/packages/76/83/1dee8818c499efda9632be228bb7dcbb25e2d8ba8db6410e50d088e255d5/boto3-1.26.35-py3-none-any.whl.metadata
+
+```bash
+curl https://files.pythonhosted.org/packages/76/83/1dee8818c499efda9632be228bb7dcbb25e2d8ba8db6410e50d088e255d5/boto3-1.26.35-py3-none-any.whl.metadata 2>&1 | grep '^Provides-Extra'
+# Provides-Extra: crt
+
+curl https://files.pythonhosted.org/packages/76/83/1dee8818c499efda9632be228bb7dcbb25e2d8ba8db6410e50d088e255d5/boto3-1.26.35-py3-none-any.whl.metadata 2>&1 | grep '^Requires-Dist'
+# Requires-Dist: botocore (<1.30.0,>=1.29.35)
+# Requires-Dist: jmespath (<2.0.0,>=0.7.1)
+# Requires-Dist: s3transfer (<0.7.0,>=0.6.0)
+# Requires-Dist: botocore[crt] (<2.0a0,>=1.21.0) ; extra == 'crt'
+```
+

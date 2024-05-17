@@ -1,7 +1,7 @@
 ---
 tags:
 ---
-# Static Analysis Tools for Determining Dependent Projects
+# Static Analysis Tools for Determining Effective Dependent Project Interface
 
 The idea here synthesizes a few different lines of research
 - Given a package, and a changeset, we can determine the list of classes/functions/properties/structs/etc which have received a breaking change, if any.
