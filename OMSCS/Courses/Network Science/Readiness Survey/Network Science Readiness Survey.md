@@ -123,6 +123,7 @@ The answer is C. Again, this is something that is memorize-able. Doing the deriv
 	- $g'(x)=1/x$
 	- $\frac{d}{dx}\frac{f(x)}{g(x)}=\frac{(a^xln(a))(ln(x))-(1/x)(a^x)}{ln(x)ln(x)}$
 	- I'm not an insane person, and I don't really feel like simplifying this right now. I plugged it into an online calculator, which found that the simplification is indeed not $a^x$
+- This also drives home why $e^x$ derives and integrates to itself. $ln(e)=log_e(e)=1$
 
 ## Q9: Diff-EQ
 ![[Pasted image 20220814155827.png]]
@@ -202,7 +203,7 @@ Oh thank fuck, that's one of the answers.
 
 $A=\begin{bmatrix}-2&1\\12&-3\end{bmatrix}; \lambda=?$
 
-$\lambda$ means "eigenvalue". You can get the eigenvalue by doing $|A-\lambda{I}|=0$. The vertical bars is the same as $\det(A-\lambda{I})$, which means to find the determinate of the matrix.
+$\lambda$ means "eigenvalue". You can get the eigenvalue by doing $|A-\lambda I|=0$. The vertical bars is the same as $\det(A-\lambda I)$, which means to find the determinate of the matrix.
 
 $\det(A-\lambda{I_2})=0$
 $\det({\begin{bmatrix}-2&1\\12&-3\end{bmatrix}-\begin{bmatrix}\lambda&0\\0&\lambda\end{bmatrix})}=0$
@@ -213,7 +214,7 @@ $\begin{bmatrix}a&s\\ d&f\end{bmatrix}*\begin{bmatrix}q&w\\ e&r\end{bmatrix}=\be
 
 $\begin{vmatrix}-2&1\\12&-3\end{vmatrix}*\begin{vmatrix}\lambda&0\\0&\lambda\end{vmatrix}=\begin{vmatrix}{-2\lambda+0}&{0+\lambda}\\ {12\lambda+0}&{0-3\lambda}\end{vmatrix}=\begin{vmatrix}{-2\lambda}&{\lambda}\\ {12\lambda}&{-3\lambda}\end{vmatrix}=0$
 
-The determinate of a 2x2 matrix looks like:
+The determinant of a 2x2 matrix looks like:
 
 $\begin{vmatrix}a&s\\ d&f\end{vmatrix}=af-sd$
 
@@ -279,7 +280,7 @@ A singular matrix is a [square matrix](https://mathworld.wolfram.com/SquareMatri
 
 Therefore, `A` is super false. It's the exact opposite of true.
 
-A matrix has an inverse if the determinant is non-zero. That means `D` is not true. A 0 determinant is not negative.
+A matrix has an inverse if the determinant is non-zero. That includes positives and negatives. `D` is therefore true, but not completely correct.
 
 `B` is also not true. A matrix being symmetric doesn't have any bearing on whether it has an inverse. There do exist symmetric matrices that have determinants of 0. Check out this example
 
