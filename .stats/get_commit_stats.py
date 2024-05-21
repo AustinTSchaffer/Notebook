@@ -3,11 +3,13 @@
 import subprocess
 import json
 import re
+import os
 
 MAIN_BRANCH_NAME = "main"
 STATS_FILE = "./.stats/data/stats.json"
 STATS_VERSION = 2
 WORD_RE = re.compile(br"(\w*-\w+)|(\w+-\w*)|(\w*'\w+)|(\w+'\w*)|(\w+)")
+NOTES_DIRECTORY = os.environ.get("NOTES_DIRECTORY", None)
 
 def compute_stats(commit_hash: str) -> dict:
     stats = {}
@@ -23,7 +25,19 @@ def compute_stats(commit_hash: str) -> dict:
     stats["num_files"] = len(file_list)
 
     num_words = 0
-    markdown_files = [ f.split('\t')[-1] for f in file_list if f.endswith('.md') ]
+    markdown_files = [
+        f.split('\t')[-1]
+        for f in file_list
+        if f.endswith('.md')
+    ]
+
+    markdown_files = [
+        f for f in markdown_files
+        if not NOTES_DIRECTORY or f.startswith(NOTES_DIRECTORY)
+    ]
+
+    stats["num_md_files"] = len(markdown_files)
+
     for md_file in markdown_files:
         result = subprocess.run(["git", "show", f"{commit_hash}:{md_file}"], stdout=subprocess.PIPE)
         result.check_returncode()

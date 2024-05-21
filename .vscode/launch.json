@@ -8,8 +8,7 @@
             "name": "Generate Repository Stats JSON",
             "type": "debugpy",
             "request": "launch",
-            "program": ".stats/get-commit-stats.py",
-            "python": "${workspaceFolder}/.stats/venv-get/bin/python",
+            "program": ".stats/get_commit_stats.py",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole"
         },
@@ -17,7 +16,7 @@
             "name": "Render Plots from JSON",
             "type": "debugpy",
             "request": "launch",
-            "program": ".stats/render-commit-stats.py",
+            "program": ".stats/render_commit_stats.py",
             "python": "${workspaceFolder}/.stats/venv-render/bin/python",
             "cwd": "${workspaceFolder}",
             "console": "internalConsole"
