@@ -110,6 +110,12 @@ We can find if a network is fully connected using BFS
 ## Walks, Paths, and Cycles
 > How can we efficiently count the number of walks of length k between nodes s and t?
 
+A walk in a graph is a sequence of successive edge that starts at some node $S$ and ends at some node $T$. A walk may visit the same node more than once.
+
+A path is a walk where intermediate nodes are not visited more than once.
+
+A cycle is a path that stars and ends on the same node.
+
 The number of walks of length $k$ from node $s$ to node $t$ can be retrieved by raising the network's adjacency matrix to the $k$-th power, then grabbing element $(s,t)$: $A^k_{s,t}$.
 
 For $k=1$, the number of walks is either 1 or 0, depending on whether the nodes are directly connected or not.
