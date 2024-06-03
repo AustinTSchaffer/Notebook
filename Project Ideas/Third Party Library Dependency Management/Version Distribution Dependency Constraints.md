@@ -142,6 +142,54 @@ To help normalize the schema, if desired, we could potentially add a separate sc
 
 With this, is there a platform hierarchy? For example, are there any packages that have a generic OSX distribution, and then distributions for specific versions of OSX? Effectively, how does `pip` and/or [`resolvelib`](https://pypi.org/project/resolvelib/) decide which wheels to download?
 
+## Notes on Extras
+In a broad sense, packages on PyPI can have "markers", which are tags which instruct pip to install additional/different dependencies that are not installed by default. The "Requires-Dist" and "Provides-Extra" section of a package which leverages this feature will look something like the following:
+
+```
+Provides-Extra: all
+Requires-Dist: awkward-cuda-kernels (==1.0.0) ; extra == 'all'
+Requires-Dist: pytest (>=3.9) ; extra == 'all'
+Requires-Dist: flake8 ; extra == 'all'
+Requires-Dist: PyYAML ; extra == 'all'
+Requires-Dist: numba (>=0.50.0) ; (python_version >= "3.6") and extra == 'all'
+Requires-Dist: pandas (>=0.24.0) ; (python_version >= "3.6") and extra == 'all'
+Requires-Dist: numexpr ; (python_version >= "3.6") and extra == 'all'
+Requires-Dist: autograd ; (python_version >= "3.6") and extra == 'all'
+Requires-Dist: pyarrow (>=2.0.0) ; (python_version >= "3.6" and sys_platform != "win32") and extra == 'all'
+Provides-Extra: cuda
+Requires-Dist: awkward-cuda-kernels (==1.0.0) ; extra == 'cuda'
+Provides-Extra: dev
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: PyYAML ; extra == 'dev'
+Requires-Dist: numba (>=0.50.0) ; (python_version >= "3.6") and extra == 'dev'
+Requires-Dist: pandas (>=0.24.0) ; (python_version >= "3.6") and extra == 'dev'
+Requires-Dist: numexpr ; (python_version >= "3.6") and extra == 'dev'
+Requires-Dist: autograd ; (python_version >= "3.6") and extra == 'dev'
+Requires-Dist: pyarrow (>=2.0.0) ; (python_version >= "3.6" and sys_platform != "win32") and extra == 'dev'
+Provides-Extra: test
+Requires-Dist: pytest (>=3.9) ; extra == 'test'
+```
+
+Most of the requires-dist lines in the sample above have a "marker" section, which is the part that follows the semicolon. The markers appear to be structured like a python expression. From PEP-508, the expression can use a variety of boolean comparisons, including `in` and `not in`, support `and` and `or`, and can reference any combination of the following variables.
+
+```
+'python_version' | 'python_full_version' | 'os_name' |
+'sys_platform' | 'platform_release' | 'platform_system' | 
+'platform_version' | 'platform_machine' | 
+'platform_python_implementation' | 'implementation_name' | 
+'implementation_version' | 'extra'
+```
+
+The point of bringing this up is to say that these "markers" are an additional layer of platform specification on top of the platform specification that can be parsed from each Wheel's filename. It may be important to compare each wheel's platform constraints against each requirement's platform constraints. The "extras" section of each marker should be separated from the platform requirements.
+
+- `(python_version >= "3.7" and python_version < "4.0") and (extra == "all" or extra == "bson" or extra == "json" or extra == "yaml" or extra == "mongodb")`
+- `extra == "dynamodb" or extra == "all"`
+
+Relevant Docs:
+- https://packaging.python.org/en/latest/specifications/core-metadata/
+- https://peps.python.org/pep-0508/
+- https://packaging.python.org/en/latest/specifications/platform-compatibility-tags/#platform-compatibility-tags
+
 ## PV Pair Backlinks
 One of the existing problems with the current $\text{pip} \leftarrow \text{PyPI}$ scheme is the "backtracking" algorithm. Essentially, if Package A depends on Package B, and Package C depends on Package A (any version) and Package B (an old version), pip has to backtrack on 
 
