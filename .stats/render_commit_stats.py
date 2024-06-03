@@ -19,7 +19,18 @@ if __name__ == '__main__':
     sns.lineplot(x=df_stats.timestamp, y=df_stats.num_words)
     plt.title("Word Count over Time")
     plt.xlabel("Timestamp")
-    plt.savefig('./.stats/rendered/wordcount.png')
+    plt.ylabel("Word Count")
+
+    plt.yticks(
+        ticks=[
+            n for n in range(50_000, 301_000, 50_000)        
+        ],
+        labels=[
+            f"{n}k" for n in range(50, 301, 50)
+        ],
+    )
+
+    plt.savefig('./images/rendered/wordcount.png')
 
     plt.clf()
 
@@ -27,4 +38,4 @@ if __name__ == '__main__':
     plt.title("File Count over Time")
     plt.xlabel("Timestamp")
     plt.ylabel("File Count")
-    plt.savefig('./.stats/rendered/filecount.png')
+    plt.savefig('./images/rendered/filecount.png')
