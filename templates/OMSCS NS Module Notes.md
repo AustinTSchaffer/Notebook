@@ -1,6 +1,6 @@
 ---
 tags:
   - OMSCS
-  - AI
+  - NS
 ---
 # {{title}}
