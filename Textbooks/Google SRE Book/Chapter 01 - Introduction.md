@@ -141,3 +141,25 @@ Three kinds of valid monitoring output
 - services slowdown as they process more load and eventually stop responding entirely
 - SREs provision to meet a capacity target at a specific response speed
 
+## Chapter Assessment
+
+### Priming Questions
+> How does google measure the time spent by SREs on dev vs ops work?
+
+The chapter doesn't really get into that. That seems like management overhead. I'm not sure how Google tracks work completed, i.e. I doubt they use Jira, but they probably use some other kind of agile-adjacent work tracking software. That system would likely be able to estimate the amount of time spent on development tasks vs operational tasks. That, and regular standups, would likely give you an idea of how much of the workweek is being consumed by incident response.
+
+> What is the rationale behind the 50% cap on ops work?
+
+The 50% cap on ops work gives the SRE team breathing room, giving them time to build software systems designed to automate incident response and build systems that make the whole platform more reliable.
+
+> What are the key principles and responsibilities of an SRE team according to this document, and how do they differ from traditional operations teams?
+
+Traditional ops teams do not devote any time to automating solutions to problems, and instead focus on manual intervention. SRE teams are software engineers at their core. The key principles are primarily organized around reliability/uptime.
+
+> What are the key principles and responsibilities of an SRE team according to this document, and how do they differ from traditional operations teams?
+
+See the above section.
+
+### Summary
+Traditional sysadmin is a model that is easy to implement and works fine for smaller systems, but becomes incredibly expensive as the system grows in scale and complexity. Traditional sysadmin is also somewhat at odds with software engineering, which can slow down the software development lifecycle, reducing an organization's ability to innovate and ship features. SRE puts software engineers in that role and gives them time and space to automate everything which can be automated.
+
