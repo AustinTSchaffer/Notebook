@@ -91,15 +91,48 @@ tags:
 - BNS uses Chubby to store mapping between BNS paths and `IP:port` pairs
 
 ## Monitoring and Alerting
+- Google uses some app called "Borgmon" to scrape metrics from monitored servers (seems like a prometheus-like thing)
+- Set up alerting for acute problems
+- compare behavior before/after a release
+- examine resource consumption behavior, helpful/essential for capacity planning
 
+## Software Infrastructure
+- software designed to make most efficient use of hardware infra
+- code is heavily multithreaded, tasks can use multiple cores
+- every server has an HTTP service that provides diagnostics/statistics (pull-based metrics I guess)
+- Google's services communicate using RPCs. gRPC is their open-source version of what they use internally
+- RPCs are also used to call subroutines within a single program, which makes it easier to spread subroutines across the cluster.
+- GSPB can load balance RPCs
+- Servers receive RPCs from the frontend and sends RPCs to the backend.
+- Google uses protobuf for object serialization
+
+## Dev Environment
+- single shared repository for code
+- engineers are encouraged to submit code changes to code owned by teams they aren't on
+- the datacenter has build servers which are capable of building apps in parallel
+- some projects use a push-on-green system where new software versions are published automatically as long as all tests pass
+
+## Other Notes
+- Use load testing and traffic estimation to determine the minimum number of replicas of a service that you need in order to handle user requests. Take that number of replicas and add 2
+	- One will be down during updates
+	- One might crash during an update
+- Spread replicas across regions based on where the users are.
+- For some apps/regions, it may be worth to run fewer replicas in order to tradeoff cost for a small risk of higher latency.
+- Database replication can be expensive to keep in sync, but will perform much better in the event the data doesn't actually change much.
 
 ## Chapter Assessment
 
 ### Priming Questions
 > What are the challenges and opportunities that Google faces in managing its proprietary datacenters, and how does it address them?
 
-> What are the challenges and opportunities that Google faces in managing its proprietary datacenters, and how does it address them?
+> How does Borg, Google's distributed cluster operating system, manage jobs and allocate resources to them?
+
+Borg became Kubernetes, so that's pretty much the TLDR.
+- Custom DNS to resolve service names to ip addresses
+- Distributed task allocation to reduce single points of failure.
+- Lots of distributed consensus protocols.
 
 > How does Google optimize its network bandwidth allocation and load balancing to ensure efficient and effective service delivery?
 
-### Summary
+- smart task allocation to distributed sets of nodes
+- GSLB
