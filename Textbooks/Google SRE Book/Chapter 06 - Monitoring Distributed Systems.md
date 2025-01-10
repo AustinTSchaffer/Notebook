@@ -4,6 +4,7 @@ tags:
 ---
 # Chapter 06 - Monitoring Distributed Systems
 
+Definitions
 - monitoring
 	- collecting
 	- processing
