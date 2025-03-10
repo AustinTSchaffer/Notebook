@@ -31,6 +31,7 @@ Examples
 - merge two closest clusters
 - repeat $n-k$ times to make $k$ clusters
 - Requires many inter-cluster distance function evaluations
+	- [[simple_clustering_example.py]]
 	- $n-k:$ number of algorithm repetitions
 	- $\frac{1}{2}(n^2-n):$ triangle numbers, determines the number of comparisons done in the first algorithm iteration
 	- $-\frac{1}{6}\left((n-k-1)*(n-k)*(n-k+1)\right):$ tetrahedral numbers, correction factor determined experimentally.
