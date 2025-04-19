@@ -45,3 +45,42 @@ Boltzmann Distribution (analogy).
 ## Genetic Algorithms
 https://edstem.org/us/courses/71185/lessons/126665/slides/706912
 
+## MIMIC
+See: [[isbell-mimic-nips-1997.pdf]]
+
+- only points, no structure
+	- convey structure
+- unclear probability distribution
+	- directly model distribution
+	- successively refine model
+
+$$
+P_\theta(X)=
+\begin{cases}
+	\frac{1}{Z_\theta} \text{ if } f(X) \ge \theta \\
+	0 \text{ otherwise} \\
+\end{cases}
+$$
+- $P_{\theta_{min}}(X)$
+	- The output is the uniform distribution
+- $P_{\theta_{min}}(X)$
+	- The output is optima distribution
+
+![[Pasted image 20250310104533.png]]
+
+![[Pasted image 20250310104614.png]]
+
+- Similar to GA
+	- define some population
+	- select only the fittest from that population
+	- estimate a new distribution that's similar to those
+	- The structure is how we represent the probability distribution
+- Gradually move from $\theta_{min}$ to $\theta_{max}$
+- $P_{\theta} \approx P_{\theta+\epsilon}$
+- $P_{\theta_t}$ should contain all of the samples that exist in $P_{\theta_{t+1}}$. This allows you to refine from the uniform distribution toward the optimum distribution.
+
+### Estimating Distributions (MIMIC)
+- $P(X)=P(X_1 \space|\space X_{2..n})P(X_2 \space|\space X_{3..n})...P(X_n)$
+- $X=\{X_1, X_2, X_3, ... X_n\}$
+- "The probability of seeing all of the features of some example is just the joint distribution over all of the features."
+
