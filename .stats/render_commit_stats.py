@@ -10,6 +10,9 @@ import seaborn as sns
 
 MAIN_BRANCH_NAME = "main"
 STATS_FILE = "./.stats/data/stats.json"
+WORDCOUNT_IMAGE_FILE = "./images/rendered/wordcount.png"
+FILECOUNT_IMAGE_FILE = "./images/rendered/filecount.png"
+
 STATS_VERSION = 2
 WORD_RE = re.compile(rb"(\w*-\w+)|(\w+-\w*)|(\w*'\w+)|(\w+'\w*)|(\w+)")
 NOTES_DIRECTORY = os.environ.get("NOTES_DIRECTORY", None)
@@ -90,7 +93,7 @@ def generate_commit_stats():
 
 
 def render_commit_stats():
-    df_stats = pd.read_json("./.stats/data/stats.json")
+    df_stats = pd.read_json(STATS_FILE)
     df_stats = df_stats.T
     df_stats.timestamp = pd.Series.apply(
         df_stats.timestamp, datetime.datetime.fromisoformat
@@ -113,7 +116,7 @@ def render_commit_stats():
         labels=[f"{n}k" for n in range(50, 301, 50)],
     )
 
-    plt.savefig("./images/rendered/wordcount.png")
+    plt.savefig(WORDCOUNT_IMAGE_FILE)
 
     plt.clf()
 
@@ -121,7 +124,7 @@ def render_commit_stats():
     plt.title("File Count over Time")
     plt.xlabel("Timestamp")
     plt.ylabel("File Count")
-    plt.savefig("./images/rendered/filecount.png")
+    plt.savefig(FILECOUNT_IMAGE_FILE)
 
 
 if __name__ == "__main__":
