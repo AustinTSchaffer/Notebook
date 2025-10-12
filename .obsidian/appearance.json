@@ -1,10 +1,12 @@
 {
-  "baseFontSize": 20,
+  "baseFontSize": 18,
   "theme": "obsidian",
   "accentColor": "#2e8a3d",
   "showViewHeader": true,
   "nativeMenus": true,
   "enabledCssSnippets": [
     "centeredimages"
-  ]
+  ],
+  "textFontFamily": "",
+  "baseFontSizeAction": false
 }

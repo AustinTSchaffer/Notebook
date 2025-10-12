@@ -61,3 +61,10 @@ tags:
 - Keep the floor potty in the room that you spend the most time in.
 - Keep them in just underpants.
 - It's hard to tell if quick dry pants are wet. Just stick with standard cotton under pants.
+- Acknowledge that this is a big thing that's very hard.
+- We're allowed to go use the toilet before leaving school.
+- Montessori focuses on intrinsic validations/acknowledgements of accomplishments.
+	- No reward system.
+	- No cheering and clapping.
+	- No bribery.
+	- "If it works for you at home, do your thing."
