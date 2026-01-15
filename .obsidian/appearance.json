@@ -1,6 +1,6 @@
 {
   "baseFontSize": 18,
-  "theme": "obsidian",
+  "theme": "moonstone",
   "accentColor": "#2e8a3d",
   "showViewHeader": true,
   "nativeMenus": true,
@@ -8,5 +8,6 @@
     "centeredimages"
   ],
   "textFontFamily": "",
-  "baseFontSizeAction": false
+  "baseFontSizeAction": false,
+  "cssTheme": ""
 }
