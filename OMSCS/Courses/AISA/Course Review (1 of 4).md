@@ -1,5 +1,7 @@
 ---
-tags: OMSCS, AISA
+tags:
+  - OMSCS
+  - AISA
 ---
 # Course Review (1 of 4)
 

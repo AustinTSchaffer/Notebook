@@ -1,8 +1,12 @@
 ---
-tags: OMSCS, GIOS, 
+tags:
+  - OMSCS
+  - GIOS
 ---
 # P3: Anderson Paper Notes
 > The Performance of Spin Lock Alternatives for Shared-Memory Multiprocessors.
+
+[[P3L4 Anderson Paper.pdf]]
 
 - This paper came out when shared-memory multiprocessors were new-ish (1990)
 	- Each processor can directly access memory that can also be addressed by all other processors

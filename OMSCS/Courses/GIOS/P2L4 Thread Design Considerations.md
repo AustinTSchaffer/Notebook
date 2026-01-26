@@ -1,5 +1,9 @@
 ---
-tags: OMSCS, GIOS, Threads, PThreads
+tags:
+  - OMSCS
+  - GIOS
+  - PThreads
+  - Threads
 ---
 # P2L4: Thread Design Considerations
 

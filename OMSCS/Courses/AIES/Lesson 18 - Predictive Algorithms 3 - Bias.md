@@ -1,5 +1,8 @@
 ---
-tags: OMSCS, AIES, ML
+tags:
+  - OMSCS
+  - AIES
+  - ML
 ---
 # Lesson 17 - Predictive Algorithms 3 - Bias
 

@@ -1,5 +1,7 @@
 ---
-tags: OMSCS, AISA
+tags:
+  - OMSCS
+  - AISA
 ---
 # M09B18 - Web Proxy and Application Server Technology
 

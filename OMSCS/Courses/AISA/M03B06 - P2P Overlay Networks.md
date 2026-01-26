@@ -1,5 +1,7 @@
 ---
-tags: OMSCS, AISA
+tags:
+  - OMSCS
+  - AISA
 ---
 # M03B06 - P2P Overlay Networks
 

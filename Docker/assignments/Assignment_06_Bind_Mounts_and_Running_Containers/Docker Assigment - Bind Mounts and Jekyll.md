@@ -1,5 +1,6 @@
 ---
-tags: Docker, Jekyll, Volumes, WebServer
+tags:
+  - Docker
 ---
 
 # Assignment 6 - Jekyll Static Site Generator

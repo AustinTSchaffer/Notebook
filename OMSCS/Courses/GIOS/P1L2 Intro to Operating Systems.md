@@ -1,5 +1,7 @@
 ---
-tags: GIOS, OMSCS
+tags:
+  - OMSCS
+  - GIOS
 ---
 # P1L2: Introduction to OSes
 

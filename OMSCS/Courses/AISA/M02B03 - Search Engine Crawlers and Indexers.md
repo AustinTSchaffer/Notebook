@@ -1,5 +1,7 @@
 ---
-tags: OMSCS, AISA
+tags:
+  - OMSCS
+  - AISA
 ---
 # M02B03 - Search Engine Crawlers and Indexers
 > Crawlers and Indexers

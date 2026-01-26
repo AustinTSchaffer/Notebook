@@ -1,5 +1,7 @@
 ---
-tags: OMSCS, AISA
+tags:
+  - OMSCS
+  - AISA
 ---
 # M07B14 - Intro to Blockchain
 

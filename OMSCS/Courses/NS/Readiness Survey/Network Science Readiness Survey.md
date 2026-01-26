@@ -1,5 +1,9 @@
 ---
-tags: OMSCS, Network Science, CS7280, Calculus, DiffEQ
+tags:
+  - OMSCS
+  - NetworkScience
+  - Calculus
+  - DiffEQ
 ---
 
 # CS 7280: Network Science

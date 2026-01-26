@@ -1,5 +1,7 @@
 ---
-tags: OMSCS, AIES
+tags:
+  - OMSCS
+  - AIES
 ---
 # Lesson 06 - BS of Big Data
 

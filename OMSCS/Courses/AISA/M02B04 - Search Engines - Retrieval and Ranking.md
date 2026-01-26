@@ -1,6 +1,7 @@
-
 ---
-tags: OMSCS, AISA
+tags:
+  - OMSCS
+  - AISA
 ---
 # M02B04 - Search Engines - Retrieval and Ranking
 > Ranking and retrieval

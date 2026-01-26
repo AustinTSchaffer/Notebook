@@ -1,5 +1,7 @@
 ---
-tags: OMSCS, AISA
+tags:
+  - OMSCS
+  - AISA
 ---
 # M10B19 - Cloud Computing Basics
 > Everything as a Service (EaaS) Computing Paradigm

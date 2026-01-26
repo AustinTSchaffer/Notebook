@@ -1,5 +1,8 @@
 ---
-tags: OMSCS, GIOS, Distributed
+tags:
+  - OMSCS
+  - GIOS
+  - Distributed
 ---
 # P4L3: Distributed Shared Memory
 

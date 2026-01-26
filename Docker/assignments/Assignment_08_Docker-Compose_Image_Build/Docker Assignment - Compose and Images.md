@@ -1,3 +1,7 @@
+---
+tags:
+  - Docker
+---
 # Assignment: Compose For On-The-Fly Image Building and Multi-Container Testing
 
 Goal: This time imagine you're just wanting to learn Drupal's admin and GUI, or

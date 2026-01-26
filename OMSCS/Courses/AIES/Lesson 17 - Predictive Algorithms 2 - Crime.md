@@ -1,5 +1,7 @@
 ---
-tags: OMSCS, AIES, ML
+tags:
+  - OMSCS
+  - AIES
 ---
 # Lesson 17 - Predictive Algorithms 2 - Crime
 

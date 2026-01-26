@@ -1,5 +1,8 @@
 ---
-tags: OMSCS, GIOS, Processes
+tags:
+  - OMSCS
+  - GIOS
+  - Processes
 ---
 # P2L1: Process and Thread Management
 

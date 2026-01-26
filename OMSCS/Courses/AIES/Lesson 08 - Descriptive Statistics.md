@@ -1,5 +1,8 @@
 ---
-tags: OMSCS, AIES
+tags:
+  - OMSCS
+  - AIES
+  - Statistics
 ---
 # Lesson 08 - Descriptive Statistics
 

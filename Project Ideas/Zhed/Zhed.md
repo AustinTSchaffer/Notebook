@@ -1,5 +1,8 @@
 ---
-tags: Journal, AI, Games
+tags:
+  - Journal
+  - AI
+  - Games
 ---
 # Zhed
 

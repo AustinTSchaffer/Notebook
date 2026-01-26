@@ -1,5 +1,6 @@
 ---
-tags: OMSCS, OMSCS Orientation
+tags:
+  - OMSCS
 ---
 
 # OMSCS Orientation

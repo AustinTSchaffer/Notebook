@@ -1,5 +1,7 @@
 ---
-tags: OMSCS, AIES
+tags:
+  - OMSCS
+  - AIES
 ---
 # Lesson 19 - Fairness and Bias
 

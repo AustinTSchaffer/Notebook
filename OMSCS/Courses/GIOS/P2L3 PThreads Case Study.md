@@ -1,5 +1,8 @@
 ---
-tags: OMSCS, GIOS, PThreads
+tags:
+  - OMSCS
+  - GIOS
+  - PThreads
 ---
 # P2L3: PThreads Case Study
 

@@ -1,5 +1,7 @@
 ---
-tags: OMSCS, GIOS, AOS
+tags:
+  - OMSCS
+  - GIOS
 ---
 # P1L1: Course Overview
 -   [Ada Gavrilovska](http://www.cc.gatech.edu/home/ada/) (Professor)

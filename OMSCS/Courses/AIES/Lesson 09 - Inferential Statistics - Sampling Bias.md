@@ -1,5 +1,8 @@
 ---
-tags: Inferentuial, Statistics, OMSCS, AIES
+tags:
+  - OMSCS
+  - AIES
+  - Statistics
 ---
 # Lesson 09 - Inferential Statistics & Sampling Bias
 

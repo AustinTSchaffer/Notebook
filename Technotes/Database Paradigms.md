@@ -1,5 +1,8 @@
 ---
-tags: Infrastructure, Databases, Architecture
+tags:
+  - Infrastructure
+  - Databases
+  - Architecture
 ---
 
 # Database Paradigms

@@ -1,5 +1,8 @@
 ---
-tags: OMSCS, AIES, ML
+tags:
+  - OMSCS
+  - AIES
+  - ML
 ---
 # Lesson 16 - AI and ML Techniques - Predictive Algorithms
 

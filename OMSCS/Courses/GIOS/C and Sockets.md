@@ -1,5 +1,10 @@
 ---
-tags: C, Sockets, GIOS, OMSCS, TLPI
+tags:
+  - C
+  - Sockets
+  - GIOS
+  - OMSCS
+  - TLPI
 ---
 
 # C and Sockets
