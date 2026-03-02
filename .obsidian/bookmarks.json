@@ -1,9 +1,43 @@
 {
   "items": [
     {
-      "type": "file",
-      "ctime": 1771877611803,
-      "path": "OMSCS/Courses/GA/Practice Problems/3.15 - Computopia.md"
+      "type": "group",
+      "ctime": 1772487111632,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1772487134517,
+          "path": "OMSCS/Courses/GA/Practice Problems/4.9 - Dijkstra with Some Negative Edges.md"
+        }
+      ],
+      "title": "TODO"
+    },
+    {
+      "type": "group",
+      "ctime": 1772487417458,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1772487396538,
+          "path": "OMSCS/Courses/GA/Practice Problems/4.14 - Shortest Path through Vertex.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1772487302712,
+          "path": "OMSCS/Courses/GA/Practice Problems/5.9 - Properties of Weighted Undirected Graphs.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1772487488022,
+          "path": "OMSCS/Courses/GA/Practice Problems/5.1 - MST Practice 1.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1772487521841,
+          "path": "OMSCS/Courses/GA/Practice Problems/5.2 - MST Practice 2.md"
+        }
+      ],
+      "title": "TODO HW6"
     }
   ]
 }
