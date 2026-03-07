@@ -7,7 +7,7 @@
         {
           "type": "file",
           "ctime": 1772487134517,
-          "path": "OMSCS/Courses/GA/Practice Problems/4.9 - Dijkstra with Some Negative Edges.md"
+          "path": "OMSCS/Courses/GA/Practice Problems/4.9 - Dijkstra with Some Negative Edges (TODO).md"
         }
       ],
       "title": "TODO"
@@ -18,23 +18,8 @@
       "items": [
         {
           "type": "file",
-          "ctime": 1772487396538,
-          "path": "OMSCS/Courses/GA/Practice Problems/4.14 - Shortest Path through Vertex.md"
-        },
-        {
-          "type": "file",
-          "ctime": 1772487488022,
-          "path": "OMSCS/Courses/GA/Practice Problems/5.1 - MST Practice 1.md"
-        },
-        {
-          "type": "file",
           "ctime": 1772487521841,
           "path": "OMSCS/Courses/GA/Practice Problems/5.2 - MST Practice 2.md"
-        },
-        {
-          "type": "file",
-          "ctime": 1772487302712,
-          "path": "OMSCS/Courses/GA/Practice Problems/5.9 - Properties of Weighted Undirected Graphs.md"
         }
       ],
       "title": "TODO HW6"
