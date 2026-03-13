@@ -21,8 +21,10 @@ tags:
 	1. Modified BFS (outside the scope of the course)  
 	2. Solution with a propagation step
 	3. [[3.16 - CS Curriculum]]
-- **3.22** – Give an efficient algorithm which takes as input a directed graph $G=(V,E)$...
+- **3.22** – Give an efficient algorithm which takes as input a directed graph $G=(V,E)$
+	- [[3.22 - Global Source Vertex]]
 - **3.24** – Give a linear-time algorithm for the following task.
+	- [[3.24 - Global Path in DAG]]
 
 ## Chapter 4 (BFS, Dijkstra's, shortest paths)
 - **4.1** – Suppose Dijkstra's algorithm is run...
