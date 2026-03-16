@@ -28,16 +28,24 @@ tags:
 
 ## Chapter 4 (BFS, Dijkstra's, shortest paths)
 - **4.1** – Suppose Dijkstra's algorithm is run...
+	- [[4.1 - Dijkstra Example]]
 - **4.2** – Just like the previous problem, but this time with the Bellman-Ford algorithm.
+	- [[4.2 - Bellman-Ford Example]]
 - **4.3** – _Squares._
+	- [[4.3 - Squares (TODO)]]
 - **4.8** – Professor F. Lake suggests...
+	- [[4.8 - Dijkstra's with Some Negative Weights]]
 - **4.9** –  Consider a directed graph in which the only negative edges...
-	- [[4.9 - Dijkstra with Some Negative Edges (TODO)]]
+	- [[4.9 - Dijkstra's with Some Negative Edges (TODO)]]
 - **4.11** – Give an algorithm that takes as input a directed graph with positive edge lengths...
+	- [[4.11 - Detect Cycles in Cubic Time]]
 - **4.12** – Give an $O(|V|^2)$ algorithm...
 	- It is recommended to ignore the target runtime which is based on one of the algorithm variations outside the scope of the course.
+	- [[4.12 - Shortest Cycle Containing Edge]]
 - **4.13** – You are given a set of cities...
+	- [[4.13 - Set of Cities]]
 - **4.20** – There is a network of roads $G=(V,E)$...
+	- [[4.20 - Network of Roads (TODO)]]
 - **4.21** – Shortest path algorithms can be applied in currency trading.
 	- [[4.21 - Currency Exchange]]
 
