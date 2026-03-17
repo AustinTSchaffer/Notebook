@@ -15,11 +15,11 @@ tags:
 - **5.7** – Show how to find the _maximum_ spanning tree of a graph...
 	- [[5.7 - Maximum Spanning Tree]]
 - **5.20** – Give a linear-time algorithm... (_feedback edge set_ not included here)
-	- [[5.20 - Perfect Matching Tree (TODO)]]
+	- [[5.20 - Perfect Matching Tree]]
 - **5.22** – In this problem, we will develop a new algorithm for finding minimum spanning trees.
-	- [[5.22 - Fast MST Recomputation (TODO)]]
+	- [[5.22 - Fast MST Recomputation]]
 - **5.23** – You are given a graph $G=(V,E)$ with positive edge weights, and a minimum spanning tree $T=(V,E')$...
-	- [[5.23 - Light Spanning Trees (TODO)]]
+	- [[5.23 - Light Spanning Trees]]
 - **5.24** – Sometimes we want light spanning trees with certain special properties.
 	- [[5.24 - Amortized Binary Counter (TODO)]]
 

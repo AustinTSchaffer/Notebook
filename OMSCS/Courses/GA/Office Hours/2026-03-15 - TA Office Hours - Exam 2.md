@@ -29,8 +29,8 @@ This OH covers the following strategies, outlined below. It also covers the foll
 	- Correct: "The chosen edge must be in the MST due to the Cut Property."
 	- Incorrect: "The algorithm is correct due to the Cut Property".
 - **Don't** rebuild the entire MST if/when you don't need to.
-	- [[5.22 - Fast MST Recomputation (TODO)]]
-	- [[5.23 - Light Spanning Trees (TODO)]]
+	- [[5.22 - Fast MST Recomputation]]
+	- [[5.23 - Light Spanning Trees]]
 
 ## Max-Flow Strategies
 - Convert to flow network

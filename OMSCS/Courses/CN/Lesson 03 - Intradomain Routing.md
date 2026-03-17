@@ -1,5 +1,7 @@
 ---
-tags: OMSCS, CN
+tags:
+  - OMSCS
+  - CN
 ---
 # Lesson 03 - Intradomain Routing
 > Focuses on the network layer and a specific function of the network layer: routing within a single administrative domain.
