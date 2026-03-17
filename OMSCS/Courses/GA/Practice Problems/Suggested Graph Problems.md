@@ -32,7 +32,7 @@ tags:
 - **4.2** – Just like the previous problem, but this time with the Bellman-Ford algorithm.
 	- [[4.2 - Bellman-Ford Example]]
 - **4.3** – _Squares._
-	- [[4.3 - Squares (TODO)]]
+	- [[4.3 - Squares]]
 - **4.8** – Professor F. Lake suggests...
 	- [[4.8 - Dijkstra's with Some Negative Weights]]
 - **4.9** –  Consider a directed graph in which the only negative edges...
@@ -45,7 +45,7 @@ tags:
 - **4.13** – You are given a set of cities...
 	- [[4.13 - Set of Cities]]
 - **4.20** – There is a network of roads $G=(V,E)$...
-	- [[4.20 - Network of Roads (TODO)]]
+	- [[4.20 - Network of Roads]]
 - **4.21** – Shortest path algorithms can be applied in currency trading.
 	- [[4.21 - Currency Exchange]]
 
