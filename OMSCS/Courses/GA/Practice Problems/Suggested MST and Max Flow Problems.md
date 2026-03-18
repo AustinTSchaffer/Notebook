@@ -26,12 +26,12 @@ tags:
 ## Chapter 7 (Flows)
 
 - **7.18(a,b)** – There are many common variations of the maximum flow problem.
-	- [[7.18 -]]
+	- [[7.18 - Max Flow Variations]]
 - **7.19** – Suppose someone presents you with a solution to a max-flow problem on some network.
-	- [[7.19 -]]
+	- [[7.19 - Max Flow Validation]]
 - **7.21** – critical edge
-	- [[7.21 -]]
+	- [[7.21 - Critical Edges (TODO)]]
 - **7.22** – In a particular network $G=(V,E)$ whose edges have integer capacities cece​...
-	- [[7.22 -]]
+	- [[7.22 - Fast Max-Flow Recomputation (TODO)]]
 - **7.24** – _Direct bipartite matching._
-	- [[7.24 -]]
+	- [[7.24 - Direct Bipartite Matching (TODO)]]

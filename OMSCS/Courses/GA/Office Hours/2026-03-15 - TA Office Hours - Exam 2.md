@@ -7,8 +7,8 @@ tags:
 This OH covers the following strategies, outlined below. It also covers the following practice problems:
 - [[4.3 - Squares]]
 - [[5.9 - Properties of Weighted Undirected Graphs]]
-- [[7.22 -]]
-- [[7.24 -]]
+- [[7.22 - Fast Max-Flow Recomputation (TODO)]]
+- [[7.24 - Direct Bipartite Matching (TODO)]]
 
 ## Graph Strategies
 - Check for connectivity with BFS or DFS
@@ -34,7 +34,7 @@ This OH covers the following strategies, outlined below. It also covers the foll
 
 ## Max-Flow Strategies
 - Convert to flow network
-	- [[7.3 -]]
+	- [[7.3 - Cargo Plane (TODO)]]
 	- Adding new source and sink
 - Updating capacities
 	- infinite capacity
