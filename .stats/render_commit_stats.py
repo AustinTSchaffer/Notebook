@@ -111,9 +111,14 @@ def render_commit_stats():
     plt.xlabel("Timestamp")
     plt.ylabel("Word Count")
 
+    # Set y limit to nearest 50k above the max word count to make the graph easier to read
+    max_words = df_stats.num_words.max()
+    y_limit = ((max_words // 50_000) + 1) * 50_000
+    plt.ylim(0, y_limit)
+
     plt.yticks(
-        ticks=[n for n in range(50_000, 301_000, 50_000)],
-        labels=[f"{n}k" for n in range(50, 301, 50)],
+        ticks=[n for n in range(50_000, y_limit + 1, 50_000)],
+        labels=[f"{n}k" for n in range(50, (y_limit // 1_000) + 1, 50)],
     )
 
     plt.savefig(WORDCOUNT_IMAGE_FILE)
@@ -124,6 +129,12 @@ def render_commit_stats():
     plt.title("File Count over Time")
     plt.xlabel("Timestamp")
     plt.ylabel("File Count")
+
+    # Set y limit to nearest 500 above the max file count to make the graph easier to read
+    max_files = df_stats.num_files.max()
+    y_limit = ((max_files // 500) + 1) * 500
+    plt.ylim(0, y_limit)
+
     plt.savefig(FILECOUNT_IMAGE_FILE)
 
 
