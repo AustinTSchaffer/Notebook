@@ -34,4 +34,4 @@ tags:
 - **7.22** – In a particular network $G=(V,E)$ whose edges have integer capacities cece​...
 	- [[7.22 - Fast Max-Flow Recomputation]]
 - **7.24** – _Direct bipartite matching._
-	- [[7.24 - Direct Bipartite Matching (TODO)]]
+	- [[7.24 - Direct Bipartite Matching]]

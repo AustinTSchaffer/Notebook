@@ -8,7 +8,7 @@ This OH covers the following strategies, outlined below. It also covers the foll
 - [[4.3 - Squares]]
 - [[5.9 - Properties of Weighted Undirected Graphs]]
 - [[7.22 - Fast Max-Flow Recomputation]]
-- [[7.24 - Direct Bipartite Matching (TODO)]]
+- [[7.24 - Direct Bipartite Matching]]
 
 ## Graph Strategies
 - Check for connectivity with BFS or DFS
