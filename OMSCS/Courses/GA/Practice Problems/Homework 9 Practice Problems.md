@@ -14,4 +14,4 @@ tags:
 - **[DPV] Problem 8.8** (Exact 4SAT)
 	- [[8.8 - Exact 4SAT]]
 - **[DPV] Problem 8.10 (a)** (Subgraph isomorphism. You are welcome to try them all)
-	- [[8.10 - NP-Completeness by Generalization (TODO)]]
+	- [[8.10 - NP-Completeness by Generalization]]
