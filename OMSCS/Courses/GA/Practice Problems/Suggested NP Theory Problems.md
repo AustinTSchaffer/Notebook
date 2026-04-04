@@ -12,7 +12,7 @@ tags:
 - **8.13(a-d, f)** – Determine which of the following problems are **NP**-Complete...
 	- [[8.13 - NP-Complete Spanning Tree Problems (TODO)]]
 - **8.14** – Clique & Independent Set
-	- [[8.14 - Clique + IS (TODO)]]
+	- [[8.14 - Clique + IS]]
 - **8.15** – Maximum Common Subgraph
 	- [[8.15 - Maximum Common Subgraph (TODO)]]
 - **8.17** – problem Π
