@@ -16,8 +16,8 @@ tags:
 - **8.15** – Maximum Common Subgraph
 	- [[8.15 - Maximum Common Subgraph (TODO)]]
 - **8.17** – problem Π
-	- [[8.17 - Problem Pi (TODO)]]
+	- [[8.17 - Problem Pi]]
 - **8.20** – Dominating Set
 	- [[8.20 - Dominating Set (TODO)]]
 - **8.22** – Feedback Arc Set
-	- [[8.22 - Feedback Arc Set (TODO)]]
+	- [[8.22 - Feedback Arc Set (FAS) (TODO)]]

@@ -34,7 +34,7 @@ This OH covers the following strategies, outlined below. It also covers the foll
 
 ## Max-Flow Strategies
 - Convert to flow network
-	- [[7.3 - Cargo Plane (TODO)]]
+	- [[7.3 - Cargo Plane]]
 	- Adding new source and sink
 - Updating capacities
 	- infinite capacity
