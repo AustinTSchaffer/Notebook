@@ -1,0 +1,26 @@
+---
+tags:
+  - OMSCS
+  - Algorithms
+  - Practice
+---
+# Suggested LP Problems
+- **7.2** – Duckwheat
+	- [[7.2 - Duckwheat (TODO)]]
+- **7.3** – Cargo plane
+	- [[7.3 - Cargo Plane]]
+- **7.7** – Find necessary and sufficient conditions...
+	- [[7.7 - Necessary and Sufficient Conditions (TODO)]]
+- **7.8** – You are given the following points in the plane:
+	- [[7.8 - Points on a Plane (TODO)]]
+- **7.25** – _The dual of maximum flow._
+	- [[7.25 - The Dual of Maximum Flow (TODO)]]
+	- **This problem is an extra challenge!**
+- **7.26** –In a satisfiable system of linear inequalities...
+	- [[7.26 - Satisfiable System of Linear Inequalities (TODO)]]
+	- **This problem is an extra challenge!**
+- **7.27** – _change-making problem_
+	- [[7.27 - Change-Making Problem (TODO)]]
+- **7.28** – _A linear program for shortest path._
+	- [[7.28 - A Linear Program for Shortest Path (TODO)]]
+	- **This problem is an extra challenge!**
