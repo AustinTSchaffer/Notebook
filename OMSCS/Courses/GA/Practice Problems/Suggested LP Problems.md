@@ -6,11 +6,11 @@ tags:
 ---
 # Suggested LP Problems
 - **7.2** – Duckwheat
-	- [[7.2 - Duckwheat (TODO)]]
+	- [[7.2 - Duckwheat]]
 - **7.3** – Cargo plane
 	- [[7.3 - Cargo Plane]]
 - **7.7** – Find necessary and sufficient conditions...
-	- [[7.7 - Necessary and Sufficient Conditions (TODO)]]
+	- [[7.7 - Necessary and Sufficient Conditions]]
 - **7.8** – You are given the following points in the plane:
 	- [[7.8 - Points on a Plane (TODO)]]
 - **7.25** – _The dual of maximum flow._

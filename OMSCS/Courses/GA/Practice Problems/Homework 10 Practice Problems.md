@@ -20,6 +20,6 @@ tags:
 - **[DPV] Problem 7.6** (Give an example of an LP with an unbounded feasible region but bounded optimum.)
 	- [[7.6 - Unbounded Feasible LP]]
 - **[DPV] Problem 7.11** (dual to the example)
-	- [[7.11 - Dual to the Example (TODO)]]
+	- [[7.11 - Dual to the Example]]
 - **[DPV] Problem 7.12** (prove that point (1.5, 0.5, 0) is optimal)
-	- [[7.12 - Prove Optimality of Point (TODO)]]
+	- [[7.12 - Prove Optimality of Point]]
