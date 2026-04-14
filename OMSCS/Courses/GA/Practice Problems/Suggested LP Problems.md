@@ -12,15 +12,15 @@ tags:
 - **7.7** – Find necessary and sufficient conditions...
 	- [[7.7 - Necessary and Sufficient Conditions]]
 - **7.8** – You are given the following points in the plane:
-	- [[7.8 - Points on a Plane (TODO)]]
+	- [[7.8 - Points on a Plane]]
 - **7.25** – _The dual of maximum flow._
-	- [[7.25 - The Dual of Maximum Flow (TODO)]]
+	- [[7.25 - The Dual of Maximum Flow]]
 	- **This problem is an extra challenge!**
 - **7.26** –In a satisfiable system of linear inequalities...
 	- [[7.26 - Satisfiable System of Linear Inequalities (TODO)]]
 	- **This problem is an extra challenge!**
 - **7.27** – _change-making problem_
-	- [[7.27 - Change-Making Problem (TODO)]]
+	- [[7.27 - Change-Making Problem]]
 - **7.28** – _A linear program for shortest path._
 	- [[7.28 - A Linear Program for Shortest Path (TODO)]]
 	- **This problem is an extra challenge!**
