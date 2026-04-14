@@ -10,11 +10,11 @@ tags:
 - **8.10(b-f)** – _Proving **NP**-Completeness by generalization._
 	- [[8.10 - NP-Completeness by Generalization]]
 - **8.13(a-d, f)** – Determine which of the following problems are **NP**-Complete...
-	- [[8.13 - NP-Complete Spanning Tree Problems (TODO)]]
+	- [[8.13 - NP-Complete Spanning Tree Problems]]
 - **8.14** – Clique & Independent Set
 	- [[8.14 - Clique + IS]]
 - **8.15** – Maximum Common Subgraph
-	- [[8.15 - Maximum Common Subgraph (TODO)]]
+	- [[8.15 - Maximum Common Subgraph]]
 - **8.17** – problem Π
 	- [[8.17 - Problem Pi]]
 - **8.20** – Dominating Set
