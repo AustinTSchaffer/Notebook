@@ -7,7 +7,7 @@ tags:
 # Homework 10 Practice Problems
 ## NP Theory
 - **[DPV] Problem 8.9** (Hitting Set)
-	- [[8.9 - Hitting Set (TODO)]]
+	- [[8.9 - Hitting Set]]
 - **[DPV] Problem 8.19** (Kite)
 	- [[8.19 - Kite]]
 ## Linear Programming
